@@ -6,8 +6,8 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'Ingeniería Térmica y de Fluidos: Píldoras Teóricas'
-copyright = '2025-26, Mondragon Goi Eskola Politeknikoa (MGEP), TEFLU'
+project = 'Thermal and Fluids Engineering: Theoretical Pills'
+copyright = '2025, TEFLU Arloa, Mondragon Goi Eskola Politeknikoa (MGEP)'
 author = 'TEFLU'
 
 # conf.py
@@ -29,7 +29,8 @@ extensions = [
     'sphinx.ext.napoleon',
     'sphinx.ext.viewcode',
     'sphinx.ext.mathjax',
-    'sphinx.ext.imgconverter',
+    # 'sphinx.ext.imgconverter',
+    "sphinxcontrib.cairosvgconverter",
     'hoverxref.extension'
 ]
 
@@ -95,6 +96,96 @@ togglebutton_hint_none = True
 # Point to your .bib file(s)
 bibtex_bibfiles = ["references.bib"]
 
-# (optional) Formatting settings
+# Formatting settings
 bibtex_default_style = "unsrt"
 bibtex_reference_style = "label"
+
+latex_additional_files = ['_static/MGEP_logo.pdf']
+
+latex_engine = "xelatex"
+
+# LaTeX settings.
+latex_elements = {
+
+    "preamble": r"""
+        \usepackage{etoolbox}
+        
+        \makeatletter
+        \renewcommand{\sphinxmaketitle}{
+          \begin{titlepage}
+            \thispagestyle{empty}
+            \begingroup
+              \centering
+              {\Huge \py@HeaderFamily \@title\par}
+              \vspace{10em}
+              {\Large \py@HeaderFamily \@author\par}
+              \vspace{5em}
+              
+              \begin{figure}[h!]
+              \centering
+              {\scalebox{0.5}{\includegraphics{MGEP_logo.pdf}}}
+              \end{figure}
+              
+            \endgroup
+          \end{titlepage}
+          \clearpage
+        }
+        
+        \@ifundefined{fancyhf}{}{
+          \fancypagestyle{normal}{
+            \fancyhf{}
+            \fancyfoot[LE,RO]{{\py@HeaderFamily\thepage}}
+            \fancyfoot[LO]{{\py@HeaderFamily\nouppercase{\rightmark}}}
+            \fancyfoot[RE]{{\py@HeaderFamily\nouppercase{\leftmark}}}
+            \fancyhead[LE,RO]{{\py@HeaderFamily \@title \py@release}}
+            \fancyhead[LO]{\scalebox{0.1}{\includegraphics{MGEP_logo.pdf}}}
+            \fancyhead[RE]{\scalebox{0.1}{\includegraphics{MGEP_logo.pdf}}}
+            \renewcommand{\headrulewidth}{0.4pt}
+            \renewcommand{\footrulewidth}{0.4pt}
+          }
+        }        
+        
+        \makeatother  
+        """,
+    
+    "tableofcontents": r"""
+        \begingroup
+          \setcounter{tocdepth}{1} % 0=chapter, 1=section, 2=subsection, ...
+          \sphinxtableofcontents
+        \endgroup
+        """,    
+    
+    "sphinxsetup": r"""
+        noteBgColor={RGB}{230,240,255},
+        noteBorderColor={RGB}{60,110,200},
+        noteborder=0.8pt,
+        importantBgColor={RGB}{253,246,200},
+        importantBorderColor={RGB}{204,153,0},
+        importantborder=0.8pt,
+        tipBgColor={RGB}{226,244,226},
+        tipBorderColor={RGB}{70,140,70},
+        tipborder=0.8pt,
+        warningBgColor={RGB}{253,246,200},
+        warningBorderColor={RGB}{204,153,0},
+        warningborder=1pt,  
+        """,  
+    
+    "fontpkg": r"""
+        \setmainfont{TeX Gyre Pagella}
+        \setsansfont{TeX Gyre Heros}
+        \setmonofont{Fira Code}
+    """,
+    
+    # Optional: paper size, base font size
+    "papersize": "a4paper",
+    "pointsize": "10pt",    
+}
+
+latex_documents = [
+    ("index",
+     "teflu.tex",
+     "Thermal and Fluids Engineering: Theoretical Pills",
+     "TEFLU Arloa, Mondragon Goi Eskola Politeknikoa (MGEP)",
+     "manual",
+     False),
+]

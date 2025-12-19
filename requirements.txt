@@ -1,5 +1,6 @@
 myst-parser
 myst-nb
+sphinx==7.4.7
 sphinx-rtd-theme
 sphinx-design
 sphinxcontrib-mermaid
@@ -8,3 +9,4 @@ nbsphinx
 jupyter_sphinx
 sphinx-hoverxref
 sphinx-togglebutton
+sphinxcontrib-svg2pdfconverter[CairoSVG]

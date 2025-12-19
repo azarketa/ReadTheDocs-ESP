@@ -17,8 +17,10 @@ The **ideal gas model** rests on two simplifying postulates
 
 2. **Negligible intermolecular forces:** intermolecular attractions and repulsions are disregarded. This is reasonable at **high temperatures**, where kinetic energy dominates.
 
-:::{admonition} Important: validity of the ideal gas approximation
-:class: warning
+:::{important}
+
+**VALIDITY OF THE IDEAL GAS APPROXIMATION**
+
 The ideal gas model describes gases under the limit of low density and high temperature, where molecular interactions vanish.
 In this regime, all gases behave similarly, regardless of their chemical nature.
 :::
@@ -66,8 +68,10 @@ $$
 
 where $v = V/m$ is the specific volume ($\text{m}^3/\text{kg}$).
 
-:::{admonition} Note: relation to the state postulate
-:class: note, dropdown
+:::{note}
+
+**RELATION TO THE STATE POSTULATE**
+
 The relation $p{}v = R{}T$ connects the three intensive variables introduced in {ref}`the previous section <sec_characterization_substances>` and is a particular realization of {ref}`the generic state relation <eq_general_state_equation>`.
 :::
 
@@ -85,8 +89,10 @@ $$
 
 For an ideal gas, $Z = 1$. If $Z < 1$, attractive interactions dominate; if $Z > 1$, repulsive effects prevail. The compressibility factor thus provides a compact, dimensionless measure of real-gas deviation.
 
-:::{admonition} Note: the meaning of $Z$
-:class: note, dropdown
+:::{note}
+
+**THE MEANING OF $Z$**
+
 The compressibility factor $Z$ quantifies how far a real gas deviates from the ideal law under a given combination of $p$ and $T$.
 Plotting $Z$ versus $p$ for several gases at various temperatures reveals a common trend —
 they all approach $Z=1$ at low pressure, showing that ideal-gas behavior is the limiting case of real gases.
@@ -110,8 +116,10 @@ $$
 
 Expressing thermodynamic relationships in terms of $(T_r, p_r, v_r)$ makes the behavior of different gases **comparable on a universal basis**, which is the essence of the **law of corresponding states**.
 
-:::{admonition} Tip: law of corresponding states
-:class: tip, dropdown
+:::{tip}
+
+**THE LAW OF CORRESPONDING STATES**
+
 When data for various gases are plotted in terms of the reduced variables $(T_r, p_r, v_r)$, their compressibility curves collapse onto nearly the same surface. This empirical observation implies that the thermodynamic behavior of gases is fundamentally governed by non-dimensional ratios, not by their absolute properties.
 :::
 
@@ -124,15 +132,17 @@ While $Z$ serves as an excellent descriptor of real-gas behavior, we still need 
 To this end, several **semi-empirical EOS** have been developed. These equations modify the ideal gas law by including corrective terms
 for **finite molecular volume** and **intermolecular attractions**.
 
-:::{admonition} Note: why cubic equations appear
-:class: note, dropdown
+:::{note}
+
+**WHY CUBIC EQUATIONS APPEAR**
+
 When the ideal gas law is corrected by one term proportional to $1/v^2$ (to model attractions) and another that subtracts a finite volume $b$ (to model repulsions),
 the resulting expression becomes **cubic in specific volume** $v$. That is why most classical EOS — van der Waals, Redlich–Kwong, Peng–Robinson —
 belong to the family of **cubic EOS**. They are the simplest algebraic forms capable of reproducing the experimentally observed S-shaped $p$–$v$ curves
 near phase transitions while remaining solvable in closed form.
 :::
 
-* **The van der Waals Equation**
+* **The van der Waals equation**
 
   The first equation introducing both types of molecular corrections:
 
@@ -148,7 +158,7 @@ near phase transitions while remaining solvable in closed form.
 
   When $a = b = 0$, the ideal gas law is recovered.
 
-* **The Redlich–Kwong Equation**
+* **The Redlich–Kwong equation**
 
   An improvement introducing a temperature-dependent attraction term:
 
@@ -160,7 +170,7 @@ near phase transitions while remaining solvable in closed form.
   This model performs well for moderate pressures and high temperatures
   and remains algebraically simple.
 
-* **The Peng–Robinson Equation**
+* **The Peng–Robinson equation**
 
   Developed to improve accuracy near the critical and liquid regions:
 
@@ -177,8 +187,9 @@ near phase transitions while remaining solvable in closed form.
   The Peng–Robinson model is particularly effective for calculating vapor–liquid equilibria
   and is widely used in engineering thermodynamics.
 
-:::{admonition} Note: comparative accuracy
-:class: note, dropdown
+:::{note}
+
+**COMPARATIVE ACCURACY**
 
 * **van der Waals** — qualitative but oversimplified.
 * **Redlich–Kwong** — improved temperature behavior, moderate accuracy.
@@ -209,8 +220,9 @@ each corresponding to increasingly complex molecular interactions:
 
 At large $v$ (low density), the higher-order terms vanish, and the ideal gas law is recovered. At moderate densities, the first few terms suffice to capture real-gas deviations.
 
-:::{admonition} Note: connection with cubic equations
-:class: note, dropdown
+:::{note}
+
+**CONNECTION WITH CUBIC EQUATIONS**
 
 Expanding any cubic EOS — van der Waals, Redlich–Kwong, or Peng–Robinson — for small pressures ($p_r \ll 1$) or large specific volumes yields a **Virial-type series**. In that limit, the constants $a$ and $b$ from those cubic models can be expressed in terms of the Virial coefficients $B(T)$ and $C(T)$. Therefore, the Virial equation represents the **universal low-pressure limit** of all real-gas models.
 
@@ -235,8 +247,9 @@ The truncated Virial expansion is accurate at **low to moderate pressures**, whe
 At higher pressures or near the critical point, cubic equations such as Peng–Robinson offer better accuracy and thermodynamic consistency.
 :::
 
-:::{admonition} Note: the meaning and origin of the word *Virial*
-:class: note, dropdown
+:::{note}
+
+**THE MEANING AND ORIGIN OF THE WORD *VIRIAL***
 
 The word **“Virial”** comes from the Latin term *vis*, meaning *force* or *strength*. It was first introduced by the German physicist **Rudolf Clausius** in 1870
 in the context of his studies on the mechanical theory of heat. Clausius used the expression *“virialis”* to denote the *energy associated with molecular forces*,
@@ -249,9 +262,9 @@ So the term *Virial* refers to the “force-energy content” (*vis*) of a syste
 
 ---
 
-::::{card}
-**WORKED EXAMPLE — pressure and compressibility of $\text{CO}_2$ at $300 \ \text{K}$**
-^^^
+::::{important}
+
+**WORKED EXAMPLE — PRESSURE AND COMPRESSIBILITY OF $\text{CO}_2$ AT $300 \ \text{K}$**
 
 **Problem statement**
 
@@ -421,8 +434,9 @@ Because $p$ is to be determined, $p_r$ will be evaluated separately for each mod
 
 ---
 
-:::{admonition} Tip: interpretation
-:class: tip, dropdown
+:::{tip}
+
+**INTERPRETATION**
 
 At $T_r \approx 0.99$, $\text{CO}_2$ lies close to its critical region.
 
@@ -434,13 +448,12 @@ At $T_r \approx 0.99$, $\text{CO}_2$ lies close to its critical region.
 
 * Finally, the **Virial model** nearly reproduces the ideal-gas prediction — a clear indication that it is reliable mainly at low pressures, where intermolecular forces become negligible.
 
-* The one-term Virial approximation reduces the ideal-gas pressure only slightly (to $Z{}\approx{}0.988$), still **overestimating** by $\sim 9.5%$ vs **Peng–Robinson**. Adding the **third virial term** changes $Z$ by only $5.2\times10^{-5}$, so the two-term Virial approximation is practically identical here.
+* The one-term Virial approximation reduces the ideal-gas pressure only slightly (to $Z{}\approx{}0.988$), still **overestimating** by $\sim 9.5 \ \%$ vs **Peng–Robinson**. Adding the **third virial term** changes $Z$ by only $5.2\times10^{-5}$, so the two-term Virial approximation is practically identical here.
 
 * Near-critical curvature of the $p$–$v$–$T$ surface is captured much better by **cubic EOS** (Redlich-Kwong/Peng-Robinson) than by **low-order Virial truncations**.
+
 :::
 
-+++
-END OF WORKED EXAMPLE
 ::::
 
 ---
@@ -452,10 +465,3 @@ END OF WORKED EXAMPLE
 * **Real-gas** behavior requires corrections for finite size and interactions — via {ref}`van der Waals <eq_vanderwaals>`, {ref}`Redlich–Kwong <eq_redlich_kwong>`, {ref}`Virial <eq_virial_equation>`, and {ref}`Peng–Robinson <eq_peng_robinson>`.
 * For broad engineering conditions, **Peng–Robinson** typically offers the best accuracy–simplicity balance; **Redlich–Kwong** is a solid lighter-weight alternative.
 * Truncated **virial** forms remain valuable for dilute gases but are not the most accurate at moderate densities or near phase boundaries.
-
----
-
-(subsec_references_ideal_and_real_gases)=
-### References
-```{bibliography}
-:filter: docname in docnames

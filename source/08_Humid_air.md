@@ -56,16 +56,18 @@ Given that the enthalpy of saturated water vapor at $0 \ ^{\circ}\mathrm{C}$ is 
 (eq_hg_approximation)=
 $$h_g(T) \simeq h_g(0 \ ^{\circ}\mathrm{C}){}+{}1.82T{}={}2500.9{}+{}1.82{}T \ [\mathrm{kJ/kg}]$$
 
-:::{admonition} Note: ideal-gas assumption for water vapor
-:class: note, dropdown
+:::{note}
 
-Treating water vapor as an ideal gas implies a small accuracy loss, but it is negligible under typical atmospheric conditions. At $50 \ ^{\circ}\mathrm{C}$, the saturation pressure of water is $12.3 \ \mathrm{kPa}$. Below this pressure, water vapor behaves as an **ideal gas** with an error below $0.2%$, even in saturated states.
+**IDEAL-GAS ASSUMPTION FOR WATER VAPOR**
+
+Treating water vapor as an ideal gas implies a small accuracy loss, but it is negligible under typical atmospheric conditions. At $50 \ ^{\circ}\mathrm{C}$, the saturation pressure of water is $12.3 \ \mathrm{kPa}$. Below this pressure, water vapor behaves as an **ideal gas** with an error below $0.2 \ \%$, even in saturated states.
 Thus, water vapor enthalpy depends **only on temperature**, $h_{\text{v}}{}={}h(T)$.
 
 :::
 
-:::{admonition} Note: the temperature reference for enthalpy calculation
-:class: note, dropdown
+:::{note}
+
+**THE TEMPERATURE REFERENCE FOR ENTHALPY CALCULATION**
 
 The expression for {ref}`the enthalpy variation of dry air <eq_h_dry_air>` shows, apparently, that the enthalpy at a given thermodynamic state can be computed **in absolute terms**. Thermodynamics, however, does not provide any means of calculating absolute energetic values, but **differences of energies** (or enthalpies, or entropies). Indeed, as the reference temperature is set at $0 \ ^{\circ}\text{C}$, and there is a **linear relationship** between $^{\circ}\text{C}$ and $K$ (a temperature difference of $X \ ^{\circ}\text{C}$ is the same as a difference of $X \ \text{K}$), it is possible to **drop the reference temperature** term from the expression. Formally, though, the expression should have read:
 
@@ -77,8 +79,9 @@ $$\Delta{}h_{i\to{}f} = c_p{}\left(\Delta{}T_{0\to{}f} - \Delta{}T_{0\to{}i}\rig
 
 :::
 
-:::{admonition} Tip: approximate evaluation of humid-air enthalpy
-:class: tip, dropdown
+:::{tip}
+
+**APPROXIMATE EVALUATION OF HUMID-AIR ENTHALPY**
 
 When performing psychrometric calculations, use {ref}`dry-air enthalpy <eq_h_dry_air>` for the dry portion and {ref}`water-vapor enthalpy <eq_hg_approximation>` for the vapor portion. Both can be combined later to express the total enthalpy of humid air per unit mass of dry air.
 :::
@@ -125,18 +128,19 @@ and, dividing by $m_a$:
 (eq_specific_enthalpy_humid_air)=
 $$h{}={}h_a{}+{}\frac{m_{\text{v}}}{m_a}{}h_{\text{v}}{}={}h_a{}+{}\omega{}h_{\text{v}} \quad [\mathrm{kJ/kg_{dry,air}}]$$
 
-:::{admonition} Note: reference basis for humid-air properties
-:class: note, dropdown
+:::{note}
+
+**REFERENCE BASIS FOR HUMID-AIR PROPERTIES**
 
 In psychrometric calculations, properties are commonly expressed **per kilogram of dry air** rather than per kilogram of total mixture.
 This simplifies comparisons, since $m_a$ remains constant while $m_{\text{v}}$ varies with humidity and temperature.
 :::
 
-:::{admonition} Important: physical meaning of relative humidity
-:class: warning
+:::{important}
 
-The relative humidity $\phi$ ranges from 0 (dry air) to 1 (saturated air).
-As temperature increases, the capacity of air to hold water vapor grows, so $\phi$ changes even when $\omega$ (the actual vapor content) remains constant.
+**PHYSICAL MEANING OF RELATIVE HUMIDITY**
+
+The relative humidity $\phi$ ranges from 0 (dry air) to 1 (saturated air). As temperature increases, the capacity of air to hold water vapor grows, so $\phi$ changes even when $\omega$ (the actual vapor content) remains constant.
 :::
 
 ---
@@ -146,24 +150,24 @@ As temperature increases, the capacity of air to hold water vapor grows, so $\ph
 
 Humid environments often give rise to **dew formation**, such as finding grass wet on summer mornings even when no rain has fallen. This phenomenon occurs when **moist air** cools down until its capacity to hold water vapor equals its actual vapor content.
 
-During the day, evaporation increases the vapor content of the air. As the temperature drops at night, the **moisture-holding capacity** decreases. Eventually, the air becomes **saturated**, meaning that its **relative humidity** reaches $100%$.
-Any further temperature decrease causes condensation — this is the onset of dew formation.
+During the day, evaporation increases the vapor content of the air. As the temperature drops at night, the **moisture-holding capacity** decreases. Eventually, the air becomes **saturated**, meaning that its **relative humidity** reaches $100 \%$. Any further temperature decrease causes condensation — this is the onset of dew formation.
 
 The **dew-point temperature**, $T_{\text{dp}}$, is defined as the temperature at which condensation begins when air is cooled at constant pressure.
 In thermodynamic terms, it is the **saturation temperature** of water corresponding to the **current vapor pressure** $p_{\text{v}}$ of the mixture:
 
 (eq_dew_point_definition)=
-$$T_{\text{dp}}{}={}T_{\text{sat @ }p_{\text{v}}}$$
+$$T_{\text{dp}}{}={}T_{\text{sat. @ }p_{\text{v}}}$$
 
-:::{admonition} Note: meaning of dew-point temperature
-:class: note, dropdown
+:::{note}
+
+**MEANING OF DEW-POINT TEMPERATURE**
 
 The dew point reflects the **actual moisture content** of air: higher $T_{\text{dp}}$ values imply greater vapor content. When air is cooled to its dew point, condensation begins, marking the transition from unsaturated to saturated conditions.
 :::
 
-::::{card}
-**WORKED EXAMPLE - water and air contents in a sauna**
-^^^
+::::{important}
+
+**WORKED EXAMPLE - WATER AND AIR CONTENTS IN A SAUNA**
 
 **Problem statement**
 
@@ -229,20 +233,21 @@ $$
         $$
         
         $$
-        \boxed{p_{\text{v}} = 23.4 \ \text{kPa}}, \qquad \boxed{p_{\text{a}}=77.925\ \text{kPa}}.
+        \boxed{p_{\text{v}} = 23.4 \ \text{kPa}}, \qquad \boxed{p_{\text{a}}=77.925 \ \text{kPa}}.
         $$
 
     * **Humidity ratio:**
 
         $$
-        \begin{gather*}
-        \omega = 0.62198{}\frac{23.4}{101.325-23.4} = \\[10pt]
+        \omega = 0.62198{}\frac{23.4}{101.325-23.4} =
+        $$
+
+        $$
         = 0.62198{}\frac{23.4}{77.925} = 0.62198\times 0.3004 = 0.1868.
-        \end{gather*}
         $$
         
         $$
-        \boxed{\omega_{70} = 0.1868\ \text{kg}_{\text{v}}/\text{kg}_{\text{a}}}.
+        \boxed{\omega_{70} = 0.1868 \ \text{kg}_{\text{v}}/\text{kg}_{\text{a}}}.
         $$
 
     * **Masses in the room:**
@@ -286,10 +291,11 @@ $$
         Interpolating between $60 \ {^\circ}\text{C}$ and $65 \ {^\circ}\text{C}$:
   
         $$
-        \begin{gather*}
-        T_{\text{dp},70} = 60 + (23.4 - 19.94)\frac{65 - 60}{25.04 - 19.94} = \\[10pt]
+        T_{\text{dp},70} = 60 + (23.4 - 19.94)\frac{65 - 60}{25.04 - 19.94} =        
+        $$
+
+        $$
         = 60 + 3.46\times 0.98 \approx 63.4 \ ^\circ\text{C}.
-        \end{gather*}
         $$
 
         $$
@@ -317,10 +323,11 @@ $$
     * **Humidity ratio:**
 
         $$
-        \begin{gather*}
-        \omega = 0.62198{}\frac{1.754}{101.325 - 1.754} = \\[10pt]
+        \omega = 0.62198{}\frac{1.754}{101.325 - 1.754} =        
+        $$
+
+        $$
         = 0.62198{}\frac{1.754}{99.57075} = 0.62198 \times 0.01762 = 0.01096.
-        \end{gather*}
         $$
         
         $$
@@ -365,12 +372,13 @@ $$
         Interpolating between $15 \ ^{\circ}\text{C}$ and $20 \ ^{\circ}\text{C}$:
   
         $$
-        \begin{gather*}
-        T_{\text{dp},20} = 15 + (1.754 - 1.705)\frac{20 - 15}{2.339 - 1.705} = \\[10pt]
-        = 15 + 0.049\times 7.87 \approx 15.4 \ ^\circ\text{C}.
-        \end{gather*}
+        T_{\text{dp},20} = 15 + (1.754 - 1.705)\frac{20 - 15}{2.339 - 1.705} =        
         $$
-        
+
+        $$
+        = 15 + 0.049\times 7.87 \approx 15.4 \ ^\circ\text{C}.
+        $$
+
         $$
         \boxed{T_{\text{dp},20} \approx 15.4 \ ^\circ\text{C}}.
         $$
@@ -389,7 +397,7 @@ $$
 
 4. **Discussion of results**
 
-    * **Sharp collapse of vapor pressure and humidity ratio:** when cooled from $70 \ ^{\circ}\text{C}$ to $20  \ ^{\circ}\text{C}$ (keeping $\phi=75%$), the vapor partial pressure $p_{\text{v}}$ drops by more than **$90 \ \%$**, and the specific humidity $w$ decreases by roughly **$94 \ \%$** $\Longrightarrow$ The air’s capacity to hold water vapor dramatically declines at low temperature.
+    * **Sharp collapse of vapor pressure and humidity ratio:** when cooled from $70 \ ^{\circ}\text{C}$ to $20  \ ^{\circ}\text{C}$ (keeping $\phi = 75 \ \%$), the vapor partial pressure $p_{\text{v}}$ drops by more than **$90 \ \%$**, and the specific humidity $w$ decreases by roughly **$94 \ \%$** $\Longrightarrow$ The air’s capacity to hold water vapor dramatically declines at low temperature.
     
     * **Substantial reduction in vapor mass.**
        Water vapor mass in the room falls from **$4.43 \ \text{kg}$** to **$0.39 \ \text{kg}$** ($\approx -91 \ \%$). The warm-air condition thus contains more than ten times as much moisture per cubic meter as the cool condition.
@@ -402,13 +410,13 @@ $$
 
 ---
 
-:::{admonition} Tip: physical implication of real cooling
-:class: tip, dropdown
+:::{tip}
+
+**PHYSICAL IMPLICATION OF REAL COOLING**
+
 In practice, if the $70 \ ^{\circ}\text{C}$ air were cooled in a closed volume without dehumidification, most of the water vapor could not remain in the gaseous phase; about **$4 \ \text{kg}$** of liquid water would **condense** on walls and benches to re-establish saturation at low temperature.
 :::
 
-+++
-END OF WORKED EXAMPLE
 ::::
 
 ---
@@ -421,10 +429,3 @@ END OF WORKED EXAMPLE
 * {ref}`Specific humidity <eq_specific_humidity>` ($\omega$) quantifies vapor mass per unit dry air, while {ref}`relative humidity <eq_relative_humidity>` ($\phi$) expresses the ratio of current to maximum vapor content.
 * The {ref}`enthalpy of humid air <eq_specific_enthalpy_humid_air>` is calculated per unit mass of dry air, combining dry-air and vapor contributions.
 * The {ref}`dew-point temperature <eq_dew_point_definition>` indicates when condensation begins and serves as a key measure of actual moisture in air.
-
----
-
-(subsec_references_humid_air)=
-### References
-```{bibliography}
-:filter: docname in docnames

@@ -1,7 +1,3 @@
-```python
-
-```
-
 (sec_specific_heats_as_properties)=
 ## Specific heats
 
@@ -47,8 +43,9 @@ These cases are not only conceptually simple but also **easy to reproduce in lab
 
 These two situations — constant volume and constant pressure — are the most fundamental experimental settings for studying the relation between **heat input** and **temperature variation**, since they can be realized with simple, well-controlled apparatuses.
 
-:::{admonition} Note: why experimental feasibility matters
-:class: note, dropdown
+:::{note}
+
+**WHY EXPERIMENTAL FEASIBILITY MATTERS**
 
 The relevance of these two constraints lies in the fact that they can be practically achieved and precisely controlled. A rigid container naturally enforces constant volume, while a piston–cylinder exposed to the atmosphere maintains constant pressure. This experimental feasibility allows direct measurement of how much heat is required to change a substance’s temperature under each condition — making $c_v$ and $c_p$ measurable, reproducible, and physically meaningful properties.
 :::
@@ -87,8 +84,9 @@ $$
 
 since the microscopic mechanisms governing energy storage evolve with temperature.
 
-:::{admonition} Warning: heat is not a state property
-:class: warning
+:::{important}
+
+**HEAT IS NOT A STATE PROPERTY**
 
 Although the expressions
 $\delta q_v = c_v\mathrm{d}T$ and $\delta q_p = c_p\mathrm{d}T$
@@ -106,8 +104,10 @@ Only the energy-related quantities ($u$, $h$) are **state functions**; the heat 
 | Heat transfer (isobaric)  | $\delta q_p = c_p\mathrm{d}T$      |         No         |             Yes            | $p = \text{constant}$            |
 :::
 
-:::{admonition} Note: on the units of specific heats
-:class: note, dropdown
+:::{note}
+
+**ON THE UNITS OF SPECIFIC HEATS**
+
 Notice that both $c_p$ and $c_v$ are measured in $[\text{kJ}/(\text{kg}{\cdot}\text{K})]$, which means that the specific heats express the **amount of energy required to raise the temperature of one kilogram of a substance by one kelvin**, under the specified constraint (constant volume or constant pressure).
 :::
 
@@ -136,8 +136,9 @@ This simplification makes ideal gases particularly convenient for analytical mod
 
 Yet a further simplification defines the **perfect gas**, a special case of the ideal gas in which $c_v$ and $c_p$ are **assumed constant** over the temperature range considered.
 
-:::{admonition} Important: summary of the three gas models
-:class: warning
+:::{important}
+
+**SUMMARY OF THE THREE GAS MODELS**
 
 | **Gas type**    | **Dependence of $c_v$, $c_p$**               | **Interactions**                         |            **Equation of state**            |
 | :-------------- | :------------------------------------------- | :--------------------------------------- | :-----------------------------------------: |
@@ -161,8 +162,9 @@ $$
 \boxed{\Delta u = c_v\Delta T, \qquad \Delta h = c_p\Delta T.}
 $$
 
-::::{admonition} Important: the Joule free-expansion experiment
-:class: warning
+::::{important}
+
+**THE JOULE FREE-EXPANSION EXPERIMENT**
 
 The **Joule free-expansion experiment** provides direct experimental evidence that, for an **ideal gas**, both the **internal energy** and **enthalpy** depend only on temperature.
 
@@ -213,8 +215,10 @@ This experiment therefore established a fundamental property of ideal gases:
 **For an ideal gas, both $u$ and $h$ are functions of temperature only — independent of pressure and volume.**
 :::
 
-:::{admonition} Note: significance of Joule’s result
-:class: note, dropdown
+:::{note}
+
+**THE SIGNIFICANCE OF JOULE'S RESULT**
+
 Joule’s finding not only confirmed the validity of the ideal gas model but also provided the physical foundation for using temperature-dependent specific heats $c_v(T)$ and $c_p(T)$, since:
 
 $$
@@ -223,6 +227,7 @@ $$
 
 These relations remain valid for all ideal gases and form the basis for most thermodynamic analyses involving temperature changes.
 :::
+
 ::::
 
 ---
@@ -245,8 +250,9 @@ $$
 
 This simple expression links both specific heats through the gas constant and reveals how much additional energy must be supplied at constant pressure to account for the work of expansion.
 
-:::{admonition} Note: the role of $R$ in isothermal processes
-:class: note, dropdown
+:::{note}
+
+**THE ROLE OF $R$ IN ISOTHERMAL PROCESSES**
 
 In analogy to how $c_v$ and $c_p$ appear under their respective constraints (isochoric and isobaric), the **gas constant** $R$ plays a similar role for **isothermal** processes of **ideal gases** — where temperature remains constant but **pressure** and **volume** vary.
 
@@ -295,8 +301,10 @@ For most real gases, $\gamma$ decreases slightly with temperature as vibrational
 
 Because $c_p$, $c_v$, and $\gamma$ are **thermodynamic properties**, their values depend on the gas type and temperature and are therefore **tabulated** in engineering handbooks and reference sources for practical use {cite}`2015Cengel`
 
-:::{admonition} Note: on the relation between $\gamma$ and the molecular structure
-:class: note, dropdown
+:::{note}
+
+**ON THE RELATION BETWEEN $\gamma$ AND THE MOLECULAR STRUCTURE**
+
 The decreasing values of $\gamma$ with the increasing complexity of the molecular structre illustrates how such a complexity broadens the number of energy-storage modes and making the gas more “thermally compliant.” Such a thermal compliance means that the gas can **absorb more energy for a given temperature increase** — in other words, it has more ways to store energy internally (through rotational and vibrational modes). As molecular complexity increases, energy is distributed among more degrees of freedom, so temperature rises less for the same energy input, resulting in a **lower** value of $\gamma$.
 :::
 
@@ -319,8 +327,9 @@ Intermediate values of $c$ correspond to **polytropic processes** with partial h
 | **Isothermal**   | $T = \text{const.}$ |          $n = 1$         | $c \to \infty$ (undefined) |
 | **Adiabatic**    | $Q = 0$             |       $n = \gamma$       |              $c = 0$              |
 
-:::{admonition} Note: on the derivation of $n=(c_{p} - c)/(c_{v} - c)$
-:class: note, dropdown
+:::{note}
+
+**ON THE DERIVATION OF $n=(c_{p} - c)/(c_{v} - c)$**
 
 For a **simple compressible system**, the infinitesimal form of the first law is:
 
@@ -409,13 +418,13 @@ The exponent $n$ thus acts as a **thermodynamic dial** between these limits:
 
 :::
 
-::::{card}
-**WORKED EXAMPLE — final temperatures with a perfect gas model**
-^^^
+::::{important}
+
+**WORKED EXAMPLE — FINAL TEMPERATURES WITH A PERFECT GAS MODEL**
 
 **Problem statement**
 
-In the two previous worked examples, we have {ref}`calculated the work associated with different processes <card_worked_example_boundary_work>` and {ref}`obtained the required heat input for a fixed net energy change <card_worked_example_energy_balance>`.
+In the two previous worked examples, we have {ref}`calculated the work associated with different processes <worked_example_boundary_work>` and {ref}`obtained the required heat input for a fixed net energy change <worked_example_energy_balance>`.
 The purpose of this worked example is to determine the **final temperature** of nitrogen ($\mathrm{N_2}$) at the end of those processes, using the **perfect gas model**. For the polytropic process, calculate the effective heat capacity $c$ as well.
 
 We consider the **same system and initial state** (closed system, $m=1~\mathrm{kg}$ of $\mathrm{N_2}$, $p_1=100~\mathrm{kPa}$, $T_1=300~\mathrm{K}$) and keep the **same net stored‐energy change** as before:
@@ -499,12 +508,13 @@ Path relations used to obtain $T_2$:
    $$
 
    $$
-   \begin{gather*}
    \boxed{T_2 = 227.4~\mathrm{K}}, \quad
-   \boxed{Q = -53.9~\mathrm{kJ}}, \\[10pt]
+   \boxed{Q = -53.9~\mathrm{kJ}},
+   $$
+
+   $$
    \boxed{\Delta U = -53.9~\mathrm{kJ}}, \quad
    \boxed{\Delta E_{\mathrm{mech.}} = 0.0~\mathrm{kJ}} \ .
-   \end{gather*}
    $$
 
 ---
@@ -564,12 +574,13 @@ Path relations used to obtain $T_2$:
    $$
    
    $$
-   \begin{gather*}
    \boxed{T_2 = 600.0~\mathrm{K}}, \quad
-   \boxed{Q = +35.1~\mathrm{kJ}}, \\[10pt]
+   \boxed{Q = +35.1~\mathrm{kJ}},   
+   $$
+
+   $$
    \boxed{\Delta U = +222.6~\mathrm{kJ}}, \quad
    \boxed{\Delta E_{\mathrm{mech.}} = -276.5~\mathrm{kJ}} \ .
-   \end{gather*}
    $$
 
 ---
@@ -596,12 +607,13 @@ Path relations used to obtain $T_2$:
    $$
 
    $$
-   \begin{gather*}
    \boxed{T_2 = 300.0~\mathrm{K}}, \quad
-   \boxed{Q = +7.8~\mathrm{kJ}}, \\[10pt]
+   \boxed{Q = +7.8~\mathrm{kJ}},
+   $$
+
+   $$
    \boxed{\Delta U = 0.0~\mathrm{kJ}}, \quad
    \boxed{\Delta E_{\mathrm{mech.}} = -53.9~\mathrm{kJ}} \ .
-   \end{gather*}
    $$
 
 ---
@@ -633,12 +645,13 @@ Path relations used to obtain $T_2$:
    $$
 
    $$
-   \begin{gather*}
    \boxed{T_2 = 227.4~\mathrm{K}}, \quad
-   \boxed{Q = 0.0~\mathrm{kJ}}, \\[10pt]
+   \boxed{Q = 0.0~\mathrm{kJ}},
+   $$
+
+   $$
    \boxed{\Delta U = -53.9~\mathrm{kJ}}, \quad
    \boxed{\Delta E_{\mathrm{mech.}} = 0.0~\mathrm{kJ}} \ .
-   \end{gather*}
    $$
 
 ---
@@ -678,13 +691,14 @@ Path relations used to obtain $T_2$:
    $$
 
    $$
-   \begin{gather*}
    \boxed{T_2 = 261.2~\mathrm{K}}, \quad
    \boxed{Q = +11.1~\mathrm{kJ}}, \quad
-   \boxed{\Delta U = -28.8~\mathrm{kJ}}, \\[10pt]
+   \boxed{\Delta U = -28.8~\mathrm{kJ}},
+   $$
+
+   $$
    \boxed{\Delta E_{\mathrm{mech.}} = -25.1~\mathrm{kJ}}, \quad
    \boxed{c = -0.737 \ \text{kJ}/\left(\text{kg}\cdot\text{K}\right)} \ .
-   \end{gather*}
    $$
 
 ---
@@ -710,8 +724,9 @@ A horizontal dashed line marks $\Delta E$.
 
 ---
 
-:::{admonition} Tip: interpretation
-:class: tip, dropdown
+:::{tip}
+
+**INTERPRETATION**
 
 This example extends the same–$\Delta E$ comparison to **final temperatures** under a perfect‐gas model, while explicitly tracking **mechanical‐energy changes**.
 
@@ -753,8 +768,6 @@ This example extends the same–$\Delta E$ comparison to **final temperatures** 
 
 :::
 
-+++
-END OF WORKED EXAMPLE
 ::::
 
 ---
@@ -770,10 +783,3 @@ END OF WORKED EXAMPLE
 * Increasing molecular complexity broadens the number of energy-storage modes, lowering $\gamma$ and making the gas more “thermally adaptable.”
 
 Together, these ideas form the bridge between **measurable heat effects** and **intrinsic thermodynamic properties**, setting the foundation for later analyses of **energy transformations** and **flow processes**.
-
----
-
-(subsec_references_ideal_and_real_gases)=
-### References
-```{bibliography}
-:filter: docname in docnames

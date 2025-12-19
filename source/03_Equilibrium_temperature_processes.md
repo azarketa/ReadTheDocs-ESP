@@ -12,8 +12,10 @@ Thermodynamic equilibrium serves as the conceptual bridge between observable pro
 A system is in **equilibrium** when no measurable changes occur in its macroscopic properties while it is isolated from its surroundings.
 In such a state, every possible internal imbalance — mechanical, thermal, or chemical — has been cancelled out.
 
-:::{admonition} Important: meaning of equilibrium
-:class: warning
+:::{important}
+
+**MEANING OF EQUILIBRIUM**
+
 Thermodynamic equilibrium means that the system has reached a condition where no spontaneous internal evolution occurs.
 It represents a state of **maximum stability** under the given constraints.
 :::
@@ -41,14 +43,13 @@ Chronologically, the **$0^{\text{th}}$ law** was formulated after the other laws
 
 It can be stated as follows:
 
-:::{admonition} Important: the $0^{\text{th}}$ law
-:class: warning
-If two systems are each in thermal equilibrium with a third system, then they are in thermal equilibrium with each other.
+:::{epigraph}
+**If two systems are each in thermal equilibrium with a third system, then they are in thermal equilibrium with each other.**
 :::
 
 Formally, if system $A$ (at temperature $T_A$) is in equilibrium with system $B$ ($T_B$), and $B$ is in equilibrium with $C$ ($T_C$), then:
 
-(eq_$0^{\text{th}}$_law_consequence)=
+(eq_zeroth_law_consequence)=
 $$
 T_A = T_B \quad \text{and} \quad T_B = T_C \ \Longrightarrow \ T_A = T_C
 $$
@@ -56,10 +57,21 @@ $$
 This transitive property implies that temperature is a **well-defined property** independent of system size or composition.
 The $0^{\text{th}}$ law does not define a *numerical scale* for temperature but proves that **temperature is a property that can be measured** — it legitimizes the concept of a **thermometer**.
 
-:::{admonition} Note: empirical meaning of temperature
-:class: note, dropdown
-Temperature is the property that determines whether two systems are in thermal equilibrium.
-If no heat flow occurs between them when placed in contact, they share the same temperature.
+The schematic illustration below intends to represent the $0^{\text{th}}$ law as explained above. As observed, the conception of such a law enables defining the notion of thermometers.
+
+:::{figure} 1_fundamentals_figs/schematic_zeroth_law.svg
+:name: zeroth_law
+:width: %
+:align: center
+
+Schematic representation of the $0^{\text{th}}$ law
+:::
+
+:::{note}
+
+**EMPIRICAL MEANING OF TEMPERATURE**
+
+Temperature is the **equilibrium state property** that determines whether two systems are in **thermal equilibrium** $\implies$  if two systems are said to be in thermal equilibrium, they **share the same temperature**.
 :::
 
 ---
@@ -99,15 +111,19 @@ William Thomson (Lord Kelvin) deduced the concept of **absolute zero**, the temp
 This lower limit, $0\ \text{K}$, corresponds to $-273.15\ [^\circ\text{C}]$.
 While absolute zero cannot be reached (as prohibited by quantum mechanics and the Third law), it provides a universal reference.
 
-:::{admonition} Important: absolute temperature
-:class: warning
+:::{important}
+
+**ABSOLUTE TEMPERATURE**
+
 The absolute temperature scale is independent of material properties.
 Zero Kelvin represents the limit of complete molecular rest (conceptually), though quantum uncertainty prevents its realization.
 This universality makes the Kelvin scale the foundation for scientific and engineering applications.
 :::
 
-:::{admonition} Tip: units and notation
-:class: tip, dropdown
+:::{tip}
+
+**UNITS AND NOTATION**
+
 The unit of thermodynamic temperature is the **Kelvin** ($[\text{K}]$), not “degree Kelvin.”
 The symbol $^\circ$ is used only for the Celsius scale.
 :::
@@ -128,8 +144,10 @@ A system’s state can either change with time or remain constant:
 A **process** represents the *transition between two states*.
 It can be viewed as a path that links an initial state $(1)$ and a final state $(2)$.
 
-:::{admonition} Important: definition of process
-:class: warning
+:::{important}
+
+**DEFINITION OF PROCESS**
+
 A thermodynamic process is any transformation that carries a system from one equilibrium state to another.
 The **path** followed and the **time** required to reach the final state define the type of process.
 :::
@@ -147,8 +165,10 @@ Empirically:
 * $\tau$ increases with system **volume** ($V$); larger systems take longer to equilibrate.
 * $\tau$ decreases with **boundary surface area** ($A$); larger surfaces allow faster exchange.
 
-:::{admonition} Tip: interpreting relaxation time
-:class: tip, dropdown
+:::{tip}
+
+**INTERPRETING RELAXATION TIME**
+
 A large bath takes longer to heat up because of its larger volume,
 but increasing the heating surface reduces the time needed to reach equilibrium.
 :::
@@ -168,8 +188,10 @@ Although countless processes exist, only a few idealized cases have analytical i
    Infinitely slow transformations in which the system remains infinitesimally close to equilibrium at all times.
    In practice, no process is truly quasi-static, but this idealization allows us to derive fundamental relationships among state variables.
 
-:::{admonition} Important: quasi-static as an ideal limit
-:class: warning
+:::{important}
+
+**QUASI-STATIC AS AN IDEAL LIMIT**
+
 A quasi-static process is not real but serves as a **reference model**.
 Because equilibrium holds at every stage, the system passes through a continuous series of equilibrium states,
 making it possible to define and integrate its thermodynamic properties.

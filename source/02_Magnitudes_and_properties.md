@@ -17,8 +17,10 @@ A valid measurement unit must satisfy three essential conditions:
 2. It must be **universal**, applicable under all physical conditions.
 3. It must be **reproducible**, so that any laboratory can realize it.
 
-:::{admonition} Note: magnitudes vs. units
-:class: note, dropdown
+:::{note}
+
+**MAGNITUDES VS. UNITS**
+
 A magnitude expresses *what* we measure (e.g., energy or pressure); a unit expresses *how* we measure it (joule, pascal).
 Thermodynamics requires both to describe the state of a system quantitatively.
 :::
@@ -33,24 +35,26 @@ In thermodynamics, we commonly employ five of them:
 
 | **Fundamental Magnitude** | **Symbol** | **Unit (SI)** | **Symbol (Unit)** |
 | :------------------------ | :--------: | :-----------: | :---------------: |
-| Length                    |     $L$    |     metre     |    $[\text{m}]$   |
-| Time                      |     $t$    |     second    |    $[\text{s}]$   |
-| Mass                      |     $m$    |    kilogram   |   $[\text{kg}]$   |
-| Temperature               |     $T$    |     Kelvin    |    $[\text{K}]$   |
-| Amount of substance       |     $n$    |      mole     |   $[\text{mol}]$  |
+| Length                    |     $L$    |     metre     |    $\text{m}$   |
+| Time                      |     $t$    |     second    |    $\text{s}$   |
+| Mass                      |     $m$    |    kilogram   |   $\text{kg}$   |
+| Temperature               |     $T$    |     Kelvin    |    $\text{K}$   |
+| Amount of substance       |     $n$    |      mole     |   $\text{mol}$  |
 
 From these fundamental ones, many other **derived magnitudes** can be built:
 
 | **Derived Magnitude** | **Definition** | **SI Unit**              | **Unit Expression**                                  |
 | :-------------------- | :------------- | :----------------------- | :--------------------------------------------------- |
-| Density ($\rho$)      | $\rho = m/V$   | kilogram per cubic metre | $[\text{kg}/\text{m}^{3}]$                           |
-| Force ($F$)           | $F = m{\cdot}a$    | Newton                   | $[\text{N}] = [\text{kg}\cdot\text{m}/\text{s}^{2}]$ |
-| Pressure ($p$)        | $p = F/A$      | Pascal                   | $[\text{Pa}] = [\text{N}/\text{m}^{2}]$              |
-| Energy ($E$)          | —              | Joule                    | $[\text{J}] = [\text{N}\cdot\text{m}]$               |
-| Power ($\dot{W}$)     | —              | Watt                     | $[\text{W}] = [\text{J}/\text{s}]$                   |
+| Density ($\rho$)      | $\rho = m/V$   | kilogram per cubic metre | $\text{kg}/\text{m}^{3}$                           |
+| Force ($F$)           | $F = m{\cdot}a$    | Newton                   | $\text{N} = \text{kg}\cdot\text{m}/\text{s}^{2}$ |
+| Pressure ($p$)        | $p = F/A$      | Pascal                   | $\text{Pa} = \text{N}/\text{m}^{2}$              |
+| Energy ($E$)          | —              | Joule                    | $\text{J} = \text{N}\cdot\text{m}$               |
+| Power ($\dot{W}$)     | —              | Watt                     | $\text{W} = \text{J}/\text{s}$                   |
 
-:::{admonition} Tip: dimensional reasoning
-:class: tip, dropdown
+:::{tip}
+
+**DIMENSIONAL REASONING**
+
 Knowing how derived units depend on the fundamental ones allows quick error checks and conversion between magnitudes.
 Dimensional consistency is a built-in verification of physical correctness.
 :::
@@ -73,8 +77,10 @@ Thermodynamic properties can be grouped according to how they depend on the syst
 * **Intensive properties** are *independent* of system size; they remain unchanged when subsystems are combined.
   Examples: **pressure** ($p$), **temperature** ($T$), **density** ($\rho$).
 
-:::{admonition} Important: additivity vs. independence
-:class: warning
+:::{warning}
+
+**ADDITIVITY VS. INDEPENDENCE**
+
 Extensive properties describe *quantities of substance*; intensive properties describe *conditions of substance*.
 Thermodynamics relates them through ratios such as “per mass,” “per volume,” or “per mole,” which convert extensives into intensives.
 :::
@@ -90,13 +96,15 @@ The resulting quantities are densities, specific magnitudes, or molar magnitudes
 
 | **Reference Magnitude**     | **Extensive Magnitude**     | **Resulting Intensive Property** | **Expression**     | **Unit (SI)**               |
 | :-------------------------- | :-------------------------- | :------------------------------- | :----------------- | :-------------------------- |
-| Volume $V$ $[\text{m}^{3}]$ | Mass $m$ $[\text{kg}]$      | Density $\rho$                   | $\rho = m/V$       | $[\text{kg}/\text{m}^{3}]$  |
-| Volume $V$ $[\text{m}^{3}]$ | Energy $E$ $[\text{J}]$     | Energy density $e$               | $e = E/V$          | $[\text{J}/\text{m}^{3}]$   |
-| Mass $m$ $[\text{kg}]$      | Volume $V$ $[\text{m}^{3}]$ | Specific volume $v$              | $v = V/m = 1/\rho$ | $[\text{m}^{3}/\text{kg}]$  |
-| Amount $n$ $[\text{mol}]$   | Volume $V$ $[\text{m}^{3}]$ | Molar volume $v_m$               | $v_m = V/n$        | $[\text{m}^{3}/\text{mol}]$ |
+| Volume $V$ $[\text{m}^{3}]$ | Mass $m$ $[\text{kg}]$      | Density $\rho$                   | $\rho = m/V$       | $\text{kg}/\text{m}^{3}$  |
+| Volume $V$ $[\text{m}^{3}]$ | Energy $E$ $[\text{J}]$     | Energy density $e$               | $e = E/V$          | $\text{J}/\text{m}^{3}$   |
+| Mass $m$ $[\text{kg}]$      | Volume $V$ $[\text{m}^{3}]$ | Specific volume $v$              | $v = V/m = 1/\rho$ | $\text{m}^{3}/\text{kg}$  |
+| Amount $n$ $[\text{mol}]$   | Volume $V$ $[\text{m}^{3}]$ | Molar volume $v_m$               | $v_m = V/n$        | $\text{m}^{3}/\text{mol}$ |
 
-:::{admonition} Tip: normalization by reference quantity
-:class: tip, dropdown
+:::{tip}
+
+**NORMALIZATION BY REFERENCE QUANTITY**
+
 Relating an extensive magnitude to a reference (mass, volume, or mole) allows property comparison among different systems.
 For example, energy per unit mass (specific energy) or per mole (molar energy) are standard thermodynamic descriptors.
 :::
@@ -110,16 +118,16 @@ For example, energy per unit mass (specific energy) or per mole (molar energy) a
 
     For fluids, **volume** is the only geometrical property of interest.
     Shape and surface area are secondary; the total space occupied by the substance is what matters.
-    It is measured in cubic metres $[\text{m}^{3}]$.
+    It is measured in cubic metres $(\text{m}^{3})$.
 
 * **Mass**
 
-    **Mass** measures the amount of matter and is expressed in kilograms $[\text{kg}]$.
+    **Mass** measures the amount of matter and is expressed in kilograms $(\text{kg})$.
     It is a conserved extensive quantity in all non-reactive processes.
 
 * **Amount of Substance**
 
-    The **amount of substance**, measured in moles $[\text{mol}]$, connects macroscopic and molecular descriptions.
+    The **amount of substance**, measured in moles $(\text{mol})$, connects macroscopic and molecular descriptions.
     By definition, one mole of any substance contains the same number of entities (atoms, molecules, ions)
     as there are atoms in $0.012\ \text{kg}$ of carbon-12:
 
@@ -130,8 +138,10 @@ For example, energy per unit mass (specific energy) or per mole (molar energy) a
 
     Thus, $1\ \text{mol}$ of $\text{H}_{2}\text{O}$ contains $6.022\times10^{23}$ water molecules.
 
-:::{admonition} Note: why the mole matters
-:class: note, dropdown
+:::{note}
+
+**WHY THE MOLE MATTERS**
+
 Many physical and chemical processes scale with the **number of particles**, not their mass.
 At the same temperature and pressure, one mole of any gas occupies the same volume, regardless of its molecular mass.
 This makes the mole a natural unit for describing proportionality in reactions and equations of state.
@@ -151,31 +161,46 @@ This makes the mole a natural unit for describing proportionality in reactions a
     p = \frac{F_\perp}{A}.
     $$
 
-    Although **force** is a vector, **pressure** is a scalar because it acts normal to the surface element.
+    The figure below shows a schematic definition of the pressure magnitude. A gas confined inside the cylindrical volume of a piston-cylinder system is subjected to a pressure $(p)$ that resutls from the division of the force $(F_{\perp})$ applied to the piston divided by the cross-sectional area $(A=\pi{}D^{2}/4)$ of the cylinder.
+
+    :::{figure} 1_fundamentals_figs/pressure_definition.svg
+    :name: pressure_definition
+    :width: 50%
+    :align: center
+
+    Piston-cylinder system showing the force-based pressure definition.
+    :::
+
+    <br/>
+
+    Although **force** is a vector, **pressure** is a scalar because it acts normal to the surface element.    
 
 * **Units and Scales**
 
-    The SI unit of pressure is the **pascal** $[\text{Pa}] = [\text{N}/\text{m}^{2}]$.
+    The SI unit of pressure is the **pascal** $(\text{Pa} = \text{N}/\text{m}^{2})$.
     It is a small unit: a 70 $\text{kg}$ person standing on a $0.3\times0.3\ \text{m}^{2}$ tile exerts
     
     $$
-    p = \frac{m g}{A} = \frac{70\text{kg}\times9.81\text{m}/\text{s}^{2}}{0.09\text{m}^{2}} \approx 8\times10^{3}\text{Pa} = 8\text{kPa}.
+    p = \frac{m g}{A} = \frac{70 \ \text{kg}\times9.81 \ \text{m}/\text{s}^{2}}{0.09 \ \text{m}^{2}} \approx 8\times10^{3} \ \text{Pa} = 8 \ \text{kPa}.
     $$
     
     Hence, larger multiples are used in practice:
     
-    | **Unit**                       |    **Symbol**    |          **Equivalent in Pa**          | **Typical Usage**             |
-    | :----------------------------- | :--------------: | :------------------------------------: | :---------------------------- |
-    | kilopascal                     |       $[\text{kPa}]$      |          $10^{3}$ $\text{Pa}$          | Engineering and laboratory    |
-    | megapascal                     |       $[\text{MPa}]$      |          $10^{6}$ $\text{Pa}$          | High-pressure applications    |
-    | atmosphere                     |       $[\text{atm}]$      |    $1.01325\times10^{5}$ $\text{Pa}$   | Standard sea-level pressure   |
-    | bar                            |       $[\text{bar}]$      |          $10^{5}$ $\text{Pa}$          | Industrial and meteorological |
-    | millibar                       |      $[\text{mbar}]$      |          $10^{2}$ $\text{Pa}$          | Weather data                  |
-    | millimetre of mercury          | $[\text{mmHg}]$ or $[\text{torr}]$ |           $133.3$ $\text{Pa}$          | Manometry and medicine        |
-    | kilogram per square centimetre |     $[\text{kg}/\text{cm}^{2}]$     | $\approx 9.81\times10^{4}$ $\text{Pa}$ | Legacy (non-SI) unit          |
+    | **Unit** | **Symbol** | **Equivalent in Pa** | **Typical Usage** |
+    | :-- | :-: | :-: | :- |
+    | kilopascal                     |       $\text{kPa}$      |          $10^{3}$ $\text{Pa}$          | Engineering and laboratory    |
+    | megapascal                     |       $\text{MPa}$      |          $10^{6}$ $\text{Pa}$          | High-pressure applications    |
+    | atmosphere                     |       $\text{atm}$      |    $1.01325\times10^{5}$ $\text{Pa}$   | Standard sea-level pressure   |
+    | bar                            |       $\text{bar}$      |          $10^{5}$ $\text{Pa}$          | Industrial and meteorological |
+    | millibar                       |      $\text{mbar}$      |          $10^{2}$ $\text{Pa}$          | Weather data                  |
+    | millimetre of mercury          | $\text{mmHg}$ or $\text{torr}$ |           $133.3$ $\text{Pa}$          | Manometry and medicine        |
+    | kilogram per square centimetre |     $\text{kg}/\text{cm}^{2}$     | $\approx 9.81\times10^{4}$ $\text{Pa}$ | Legacy (non-SI) unit          |
 
-:::{admonition} Tip: interpretation of 1 atm
-:class: tip, dropdown
+
+:::{tip}
+
+**INTERPRETATION OF 1 ATM**
+
 At sea level, atmospheric pressure equals approximately $1.013\times10^{5}$ $\text{Pa}$.
 This corresponds to the weight of an air column of mass about $200$ $\text{kg}$ pressing on the area of an outstretched human hand ($\approx0.02\ \text{m}^{2}$).
 We do not feel this load because internal body pressure counterbalances it; only *pressure differences* are perceptible.
@@ -196,8 +221,10 @@ Thus, we distinguish four related quantities:
 | **Gauge (manometric) pressure** | $p_\text{man} = p_\text{abs} - p_\text{atm}$                | Manometer                    |
 | **Vacuum pressure**             | $p_\text{vac} = p_\text{atm} - p_\text{abs}$                | Vacuum gauge                 |
 
-:::{admonition} Tip: understanding what the gauge shows
-:class: tip, dropdown
+:::{tip}
+
+**UNDERSTANDING WHAT THE GAUGE SHOWS**
+
 Pressure gauges and manometers report the **difference** from the current atmospheric value.
 When a tire reads “2 bar,” it means 2 bar *above* ambient, not 2 bar absolute.
 :::
@@ -216,12 +243,23 @@ This parallels the notion of microscopic pressure as the collective effect of co
 
 From the **macroscopic** standpoint, temperature is a **state variable** that indicates the degree of thermal equilibrium between systems.
 
-:::{admonition} Important: intensive nature of temperature
-:class: warning
-Unlike extensive quantities such as mass or energy, **temperature is an intensive property** — it does not add up.
-Combining two bodies of water at $100\ ^\circ\text{C}$ does not yield $200\ ^\circ\text{C}$;
-the final temperature lies between them, depending on heat capacities and masses.
-:::
+::::{warning}
+
+**INTENSIVE NATURE OF TEMPERATURE**
+
+Unlike extensive quantities such as mass or energy, **temperature is an intensive property** — it does not add up. Combining two bodies of water at $100\ ^\circ\text{C}$ does not yield $200\ ^\circ\text{C}$; the final temperature lies between them, depending on heat capacities and masses.
+
+The figure below illustrates the difference between extensive and intensive properties when combining two systems ($A$ and $B$) which, before joining, show their own masses, volumes, temperatures and pressures. The extensiveness of mass and volume allows to sum them up for getting the mass and volume of the combined system. However, such an additivity is not applicable to temperature and pressure, due to the intensive nature of those magnitudes.
+
+:::{figure} 1_fundamentals_figs/magnitudes_extensivity_intensivity.svg
+:name: magnitudes_extensivity_intensivity
+:width: 60%
+:align: center
+
+Illustrative example of the extensive and intesive nature of some main thermodynamic magnitudes.
+:::  
+
+::::
 
 ---
 
@@ -230,14 +268,16 @@ the final temperature lies between them, depending on heat capacities and masses
 
 Because temperature cannot be measured by simple addition or direct comparison, two requirements are needed:
 
-1. A **measurement unit** — the kelvin $[\text{K}]$ — defined as a fundamental SI magnitude.
+1. A **measurement unit** — the kelvin $\text{K}$ — defined as a fundamental SI magnitude.
 2. A **reference procedure** to compare temperatures, based on equilibrium and reproducible reference points (e.g., triple point of water).
 
 The establishment of such procedures leads directly to the notion of **thermodynamic equilibrium**,
 a condition where no net macroscopic changes occur and temperature is uniform throughout the system.
 
-:::{admonition} Note: why equilibrium matters
-:class: note, dropdown
+:::{note}
+
+**WHY EQUILIBRIUM MATTERS**
+
 Defining temperature requires that the system be at equilibrium; otherwise, local variations prevent consistent measurement.
 Thermodynamic temperature scales are founded on equilibrium states, which provide reproducible reference conditions.
 :::

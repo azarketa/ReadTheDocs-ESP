@@ -33,8 +33,9 @@ $$
 A **steady system** is therefore one in which the **mass inside the control volume remains constant**, even though individual fluid particles continuously enter and leave.
 This assumption is valid for most engineering devices working under design conditions, where the inlet and outlet flows remain stable with time.
 
-:::{admonition} Important: single inlet–single outlet (steady)
-:class: warning
+:::{important}
+
+**SINGLE INLET-SINGLE OUTLET (STEADY)**
 
 With one inlet (1) and one outlet (2) at steady state,
 
@@ -46,8 +47,10 @@ $$
 which means that **all the mass flux entering** from the inlet **must be coming out** from the outlet.
 :::
 
-:::{admonition} Note: steady-state meaning
-:class: note, dropdown
+:::{note}
+
+**STEADY-STATE MEANING**
+
 A steady state does not imply that the **flow is static** — it only means that, when observed over time, the **average properties** (mass, pressure, temperature, etc.) within the control volume remain constant.
 :::
 
@@ -72,8 +75,10 @@ where $\dot{m} = \rho{}A{}c$ and $v = 1/\rho$ is the specific volume.
 
 Thus, each mass flow crossing the boundary carries an **associated rate of mechanical work** equal to $pv$.
 
-:::{admonition} Important: physical meaning of flow work
-:class: warning
+:::{important}
+
+**PHYSICAL MEANING OF FLOW WORK**
+
 Flow work represents the **pressure effort required to drive the fluid** across a control boundary.
 It is not an independent form of energy but rather part of the **mechanical work** involved in maintaining steady flow through the device.
 :::
@@ -129,8 +134,9 @@ $$
 \boxed{\dot{Q} - \dot{W} = \sum_{\text{out}} \dot{m} \left(u + \frac{c^2}{2} + g z\right) + \sum_{\text{in}} \dot{m} \left(u + \frac{c^2}{2} + g z\right)} \ .
 $$
 
-:::{admonition} Important: single inlet–single outlet (specific form)
-:class: warning
+:::{important}
+
+**SINGNLE INLET-SINGLE OUTLET (SPECIFIC FORM, ENERGY-BASED)**
 
 With $\dot m_1=\dot m_2=\dot m$ and dividing by $\dot m$,
 
@@ -168,8 +174,9 @@ $$
 \boxed{\dot Q - \dot W_{\text{shaft}} = \sum_{\text{out}} \dot m \left(h + \frac{c^2}{2} + g z\right) + \sum_{\text{in}} \dot m \left(h + \frac{c^2}{2} + g z\right)} \ .
 $$
 
-:::{admonition} Important: single inlet–single outlet (specific form)
-:class: warning
+:::{important}
+
+**SINGLE INLET-SINGLE OUTLET (SPECIFIC FORM, ENTHALPY-BASED)**
 
 With $\dot m_1=\dot m_2=\dot m$ and dividing by $\dot m$,
 
@@ -180,8 +187,9 @@ $$
 
 :::
 
-:::{admonition} Important: comparative formulation of closed and open systems
-:class: warning
+:::{important}
+
+**COMPARATIVE FORMULATION OF CLOSED AND OPEN SYSTEMS**
 
 | **Formulation** | **Closed system** | **Open system under steady flow (single inlet-outlet when applies)** |
 | :-  | :-  | :- |
@@ -192,14 +200,19 @@ $$
 
 :::
 
-:::{admonition} Note: differential form of the shaft work
-:class: note, dropdown
+:::{note}
+
+**DIFFERENTIAL FORM OF THE SHAFT WORK**
 
 Due to the {ref}`work decomposition relation <eq_decomposition_work_contributions_open_systems>`, such a relation can be written for differential work-like energy transfers. As $\delta{}w=p\mathrm{d}v$ in simple compressible systems, and $\delta{}w_{\text{flow}}=\mathrm{d}(pv)$
 
 (eq_shaft_work_expression)=
 $$
-\delta{}w = \delta{}w_{\text{shaft}} + \delta{}w_{\text{flow}} \implies p\mathrm{d}v = \delta{}w_{\text{shaft}} + \mathrm{d}(pv) = \delta{}w_{\text{shaft}} + p\mathrm{d}v + v\mathrm{d}p \implies \boxed{\delta{}w_{\text{shaft}} = -v(p)\mathrm{d}p} \ , \qquad \boxed{w_{\text{shaft}} = -\int_{p_1}^{p_2} v(p)\mathrm{d}p} \ .
+\delta{}w = \delta{}w_{\text{shaft}} + \delta{}w_{\text{flow}} \implies p\mathrm{d}v = \delta{}w_{\text{shaft}} + \mathrm{d}(pv) = \delta{}w_{\text{shaft}} + p\mathrm{d}v + v\mathrm{d}p \implies
+$$
+
+$$
+\implies \boxed{\delta{}w_{\text{shaft}} = -v(p)\mathrm{d}p} \ , \qquad \boxed{w_{\text{shaft}} = -\int_{p_1}^{p_2} v(p)\mathrm{d}p} \ .
 $$
 
 :::

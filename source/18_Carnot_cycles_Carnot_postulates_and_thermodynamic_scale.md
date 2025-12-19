@@ -37,8 +37,10 @@ $$
 Even though every step is reversible, the **$2^{\text{nd}}$ law** is fully respected:
 some energy must always be rejected as heat, so the total conversion of $Q_H$ into work is impossible.
 
-:::{admonition} Important: the reversible ideal
-:class: warning
+:::{important}
+
+**THE REVERSIBLE IDEAL**
+
 A Carnot cycle represents the **reversible limit** of a heat engine — a process that proceeds without any dissipative effects.
 It defines the **maximum theoretical efficiency** achievable between two temperature levels $T_H$ and $T_L$.
 All real engines are **irreversible**, and thus their efficiencies are **lower** than that of the Carnot engine operating between the same reservoirs.
@@ -57,12 +59,11 @@ Because the Carnot cycle is **reversible**, it can be **operated in reverse**. W
 
 The process satisfies the **Clausius postulate**: heat can flow from cold to hot **only if external work is supplied**.
 
-:::{admonition} Note: relation between direct and inverse cycles
-:class: note, dropdown
-Both the **direct** and **inverse** Carnot cycles operate between the same two reservoirs, $T_H$ and $T_L$.
-They differ only in the **direction of energy flow**:
-the direct cycle produces work by exploiting the natural flow of heat (hot → cold),
-whereas the inverse one consumes work to reverse that flow (cold → hot).
+:::{note}
+
+**THE RELATION BETWEEN DIRECT AND INVERSE CYCLES**
+
+Both the **direct** and **inverse** Carnot cycles operate between the same two reservoirs, $T_H$ and $T_L$. They differ only in the **direction of energy flow**: the direct cycle produces work by exploiting the natural flow of heat (hot → cold), whereas the inverse one consumes work to reverse that flow (cold → hot).
 :::
 
 ---
@@ -166,8 +167,9 @@ $$
 
 This equation defines the **thermodynamic temperature scale**, also known as the **Kelvin scale**, where the ratio of temperatures between two reservoirs equals the ratio of heats exchanged in a reversible cycle.
 
-:::{admonition} Important: features of the thermodynamic scale
-:class: warning
+:::{important}
+
+**FEATURES OF THE THERMODYNAMIC SCALE**
 
 * The thermodynamic temperature scale arises **purely from the $2^{\text{nd}}$ law**, independently of any particular working substance. Its universal nature comes from the fact that it connects the temperature property to an energy-transfer-related physical process (heat transfer). This gets rid of the operational dependency on a device-dependent scale.
 * For reversible cycles, **temperature ratios** equal **heat ratios**.
@@ -198,8 +200,9 @@ $$
 
 These represent the **maximum theoretical values** attainable by any refrigeration or heat-pump system operating between the same temperatures.
 
-:::{admonition} Important: Carnot cycles as reference limits
-:class: warning
+:::{important}
+
+**CARNOT CYCLES AS REFERENCE LIMITS**
 
 A comparison between real and ideal devices follows directly:
 
