@@ -1,205 +1,196 @@
 (sec_course_outline)=
-# Course outline
+# Programa del curso
 
-The course develops progressively — from the **foundations of thermodynamic reasoning** to the **analysis of canonical thermal cycles** that underpin real energy-conversion systems.
-Each block introduces a self-contained set of principles while remaining grounded in measurable quantities and engineering interpretation.
+El curso se desarrolla de forma progresiva: desde los **fundamentos del razonamiento termodinámico** hasta el **análisis de ciclos térmicos canónicos** que sustentan los sistemas reales de conversión de energía.  
+Cada bloque introduce un conjunto autónomo de principios, manteniéndose siempre basado en magnitudes medibles y en la interpretación ingenieril.
 
 (subsec_fundamentals)=
-## Fundamentals
+## Fundamentos
 
-This first block builds the conceptual and mathematical tools required to analyze any thermodynamic system, regardless of its nature or scale.
+Este primer bloque construye las herramientas conceptuales y matemáticas necesarias para analizar cualquier sistema termodinámico, independientemente de su naturaleza o escala.
 
-* **Systems, surroundings, and boundaries**
-  Establishes how to define a *system* (control mass or control volume) and distinguish it from its *surroundings*.
-  Introduces *boundaries* (fixed or moving) and the concept of *interaction* between system and surroundings via heat and work.
+* **Sistemas, entorno y fronteras**  
+  Establece cómo definir un *sistema* (masa de control o volumen de control) y distinguirlo de su *entorno*.  
+  Introduce las *fronteras* (fijas o móviles) y el concepto de *interacción* entre sistema y entorno mediante calor y trabajo.
 
-* **Properties and magnitudes**
-  Distinguishes *intensive* (temperature, pressure) from *extensive* (mass, energy) properties.
-  Defines *state*, *process*, and *cycle*; introduces the concept of *state functions* versus *path functions* (e.g., $U$ vs. $Q$, $W$).
-  Presents equilibrium conditions and the notion of *quasi-static* processes as idealized reference transformations.
+* **Propiedades y magnitudes**  
+  Distingue propiedades *intensivas* (temperatura, presión) de *extensivas* (masa, energía).  
+  Define *estado*, *proceso* y *ciclo*; introduce el concepto de *funciones de estado* frente a *funciones de trayectoria* (p. ej., $U$ frente a $Q$, $W$).  
+  Presenta las condiciones de equilibrio y la noción de procesos *cuasiestáticos* como transformaciones idealizadas de referencia.
 
-* **Models for substances**
+* **Modelos para las sustancias**  
+  * *Modelo de gas perfecto*: la relación lineal más simple entre $p$, $v$ y $T$, válida a bajas presiones; ecuación de gas ideal como modelo de trabajo.  
+  * *Gases reales*: desviaciones respecto a la idealidad mediante factores de compresibilidad; visión cualitativa de los efectos intermoleculares.  
+  * *Sustancias puras*: comportamiento en cambio de fase, diagramas $p–v–T$, campana de saturación, punto crítico, líquido subenfriado y vapor recalentado.  
+  * *Mezclas y aire atmosférico*: variables de composición, reglas de mezcla y la idea de *propiedades psicrométricas* (humedad, humedad específica, entalpía del aire húmedo).
 
-  * *Perfect gas model*: the simplest, linear relation among $p$, $v$, and $T$, valid at low pressures; ideal-gas equation as a working model.
-  * *Real gases*: deviations from ideality via compressibility factors; qualitative view of intermolecular effects.
-  * *Pure substances*: phase-change behavior, $p–v–T$ diagrams, saturation dome, critical point, subcooled liquid, and superheated vapor.
-  * *Mixtures and atmospheric air*: composition variables, mixture rules, and the idea of *psychrometric properties* (humidity, specific humidity, enthalpy of moist air).
+* **Interacciones: trabajo y calor**  
+  Define *trabajo* y *calor* como energía en tránsito, asociadas respectivamente al movimiento molecular *organizado* y *desorganizado*.  
+  Destaca las convenciones de signo y la dependencia de la trayectoria; incluye ejemplos de trabajo mecánico (de eje, de frontera, eléctrico) y de flujo.
 
-* **Interactions: work and heat**
-  Defines *work* and *heat* as energy in transit, associated respectively with *organized* and *disorganized* molecular motion.
-  Emphasizes sign conventions and path dependence; includes mechanical (shaft, boundary, electrical) and flow work examples.
+* **$1^{\text{a}}$ ley de la termodinámica**  
+  * *Sistemas cerrados*: cambio de energía interna como balance neto entre calor añadido y trabajo realizado, $\Delta U{}={}Q{}-{}W$.  
+    Introduce procesos especiales — isocórico, isobárico, isotermo, adiabático — y sus implicaciones energéticas.  
+  * *Sistemas abiertos*: ecuación de energía en flujo estacionario (EEFE), mostrando la interacción entre entalpía, energía cinética y potencial.  
+    Dispositivos canónicos: **turbina**, **compresor/bomba**, **tobera/difusor**, **intercambiador de calor**, **cámara de mezcla**, **válvula de estrangulamiento**.  
+    Cada tipo de dispositivo se estudia bajo supuestos simplificadores que revelan su conversión característica de energía.
 
-* **$1^{\text{st}}$ law of thermodynamics**
+* **$2^{\text{a}}$ ley de la termodinámica**  
+  Introduce los conceptos de *direccionalidad* y *limitación*.  
+  Expone las formulaciones de **Kelvin–Planck** y **Clausius**; define la *entropía* como propiedad cuyo cambio cuantifica la irreversibilidad.  
+  Establece el *balance de entropía*, procesos *reversibles* frente a *irreversibles* y eficiencias de dispositivos (isentropicas y globales).
 
-  * *Closed systems*: internal energy change as the net balance between heat added and work done, $\Delta U{}={}Q{}-{}W$.
-    Introduces special processes — isochoric, isobaric, isothermal, adiabatic — and their energy implications.
-  * *Open systems*: steady-flow energy equation (SFEE), showing the interplay between enthalpy, kinetic, and potential energies.
-    Canonical devices: **turbine**, **compressor/pump**, **nozzle/diffuser**, **heat exchanger**, **mixing chamber**, **throttling valve**.
-    Each device type is studied under simplifying assumptions that reveal its characteristic energy conversion.
+* **Exergía e irreversibilidad**  
+  Combina la primera y la segunda ley para expresar la *porción útil de energía* respecto a un entorno (el *estado muerto*).  
+  Define *exergía de flujo*, *exergía sin flujo* y *destrucción de exergía* $I{}={}T_0 S_{\text{gen}}$.  
+  Proporciona un marco unificado para cuantificar la *calidad* de la energía y las pérdidas en los sistemas.
 
-* **$2^{\text{nd}}$ law of thermodynamics**
-  Introduces the concepts of *directionality* and *limitation*.
-  States the **Kelvin–Planck** and **Clausius** formulations; defines *entropy* as a property whose change quantifies irreversibility.
-  Establishes *entropy balance*, *reversible* vs. *irreversible* processes, and device efficiencies (isentropic and overall).
+:::{admonition} Nota: resumen del bloque de Fundamentos
+:class: note, dropdown
 
-* **Exergy and irreversibility**
-  Combines the first and $2^{\text{nd}}$ laws to express the *useful portion of energy* relative to an environment (the *dead state*).
-  Defines *flow exergy*, *non-flow exergy*, and *exergy destruction* $I{}={}T_0 S_{\text{gen}}$.
-  Provides a unified framework for quantifying the *quality* of energy and losses across systems.
-
-:::{note}
-
-**A SUMMARY OF THE FUNDAMENTALS OUTLINE**
-
-**Central idea:** The fundamentals establish a language — systems, states, energy forms, entropy, and exergy — that enables any real process or device to be expressed as a structured balance of *quantities* and *inefficiencies*.
-This foundation supports every subsequent cycle analysis.
+**Idea central:** Los fundamentos establecen un lenguaje — sistemas, estados, formas de energía, entropía y exergía — que permite expresar cualquier proceso o dispositivo real como un balance estructurado de *magnitudes* e *ineficiencias*.  
+Esta base sustenta todo análisis posterior de ciclos.
 :::
 
 (subsec_gas_cycles)=
-## Gas cycles
+## Ciclos de gas
 
-This block applies the laws of thermodynamics to *continuous-flow* systems working primarily with gases as the working medium.
-It explores both *idealized* cycles (as baselines) and *realistic* configurations (with losses and efficiencies).
+Este bloque aplica las leyes de la termodinámica a sistemas de *flujo continuo* que trabajan principalmente con gases como fluido de trabajo.  
+Explora tanto ciclos *idealizados* (como referencia) como configuraciones *realistas* (con pérdidas y eficiencias).
 
-* **General notions**
-  Defines what a *cycle* is — a closed sequence of processes returning the working fluid to its initial state.
-  Introduces *thermal efficiency*, *work ratio*, and *pressure ratio* as performance indicators.
-  Differentiates *ideal* cycles (reversible, no losses) from *actual* ones (irreversibilities and component inefficiencies).
+* **Nociones generales**  
+  Define qué es un *ciclo*: una secuencia cerrada de procesos que devuelve el fluido de trabajo a su estado inicial.  
+  Introduce la *eficiencia térmica*, la *relación de trabajo* y la *relación de presiones* como indicadores de rendimiento.  
+  Diferencia ciclos *ideales* (reversibles, sin pérdidas) de ciclos *reales* (irreversibilidades e ineficiencias de componentes).
 
-* **Usual types and applications**
-  Presents the diversity of gas cycles: simple, regenerated, intercooled, reheat, and combined forms.
-  Discusses where each appears — e.g., **power generation**, **aerospace propulsion**, **industrial turbines**.
+* **Tipos habituales y aplicaciones**  
+  Presenta la diversidad de ciclos de gas: simples, regenerativos, con intercooler, con recalentamiento y formas combinadas.  
+  Discute dónde aparece cada uno — p. ej., **generación de energía**, **propulsión aeroespacial**, **turbinas industriales**.
 
-* **Brayton cycle (Ideal)**
-  Describes the sequence *compression → heat addition → expansion → heat rejection*.
-  Develops relations for efficiency as a function of pressure ratio and temperature limits; explains the back-work ratio concept.
+* **Ciclo Brayton (ideal)**  
+  Describe la secuencia *compresión → adición de calor → expansión → rechazo de calor*.  
+  Desarrolla relaciones para la eficiencia en función de la relación de presiones y los límites de temperatura; explica el concepto de relación de trabajo interno (*relación de retroceso*).
 
-* **Real Brayton cycles**
-  Introduces *isentropic efficiencies* for compressor and turbine, *pressure drops* in combustion and heat exchange, and *regenerator effectiveness*.
-  Examines performance sensitivity and practical optimization (pressure ratio, turbine inlet temperature).
+* **Ciclos Brayton reales**  
+  Introduce las *eficiencias isentrópicas* para compresor y turbina, *pérdidas de presión* en combustión e intercambio de calor, y la *efectividad del regenerador*.  
+  Examina la sensibilidad del rendimiento y la optimización práctica (relación de presiones, temperatura de entrada a la turbina).
 
-* **Stationary gas turbines**
-  Discusses design trade-offs, part-load behavior, and regeneration/reheat effects.
-  Highlights the distinction between *simple* and *complex* configurations (industrial vs. aeroderivative turbines).
+* **Turbinas de gas estacionarias**  
+  Analiza compromisos de diseño, comportamiento a carga parcial y efectos de regeneración/recalentamiento.  
+  Destaca la diferencia entre configuraciones *simples* y *complejas* (turbinas industriales frente a aeroderivadas).
 
-* **Aircraft propulsion systems**
-  Introduces turbojet, turbofan, and turboprop engines; explains *thrust* and *specific fuel consumption* qualitatively.
-  Shows how bypass ratio and exhaust velocity shape efficiency and noise.
+* **Sistemas de propulsión aeronáutica**  
+  Introduce motores turbojet, turbofan y turbohélice; explica *empuje* y *consumo específico de combustible* de forma cualitativa.  
+  Muestra cómo la relación de derivación (*bypass ratio*) y la velocidad de escape influyen en la eficiencia y el ruido.
 
-* **Nozzles and diffusers**
-  Reviews isentropic expansion/compression; defines *choked flow*, *Mach number effects*, and *gross thrust* concepts.
-  Explains pressure mismatch and efficiency trends in propulsion contexts.
+* **Toberas y difusores**  
+  Revisa la expansión/compresión isentrópica; define *flujo estrangulado*, *efectos del número de Mach* y conceptos de *empuje bruto*.  
+  Explica el desajuste de presión y las tendencias de eficiencia en contextos de propulsión.
 
-:::{note}
+:::{admonition} Nota: resumen del bloque de ciclos de gas
+:class: note, dropdown
 
-**A SUMMARY OF THE GAS CYCLES OUTLINE**
-
-**Central idea:** Gas cycles translate thermodynamic principles into continuous-flow processes where energy is converted mainly by compression and expansion.
-The *Brayton framework* provides the conceptual link between stationary and mobile (propulsive) systems.
+**Idea central:** Los ciclos de gas traducen los principios termodinámicos en procesos de flujo continuo donde la energía se convierte principalmente mediante compresión y expansión.  
+El *marco Brayton* proporciona el vínculo conceptual entre sistemas estacionarios y móviles (propulsivos).
 :::
 
 (subsec_ICREs)=
-## ICREs
+## Motores alternativos de combustión interna  (MACI)
 
-This block examines **reciprocating systems** where combustion occurs *inside* the working chamber.
-They are modeled as **air-standard cycles**, providing idealized references for practical engine operation.
+Este bloque examina **sistemas alternativos** donde la combustión ocurre *dentro* de la cámara de trabajo.  
+Se modelan como **ciclos aire-estándar**, proporcionando referencias idealizadas para el funcionamiento práctico de los motores.
 
-* **General notion**
-  Describes ICREs as *periodic open systems* analyzed through ideal closed cycles for simplicity.
-  Highlights their ubiquity — from small-scale generators to automotive and heavy-duty engines.
+* **Noción general**  
+  Describe los MACI como *sistemas abiertos periódicos* analizados mediante ciclos cerrados ideales por simplicidad.  
+  Destaca su ubicuidad: desde generadores pequeños hasta motores automotrices y de servicio pesado.
 
-* **Usual types and applications**
-  Differentiates **spark-ignition (SI)** and **compression-ignition (CI)** systems, noting their ignition methods, fuel types, and efficiency characteristics.
-  Discusses aspiration modes: naturally aspirated vs. turbocharged.
+* **Tipos habituales y aplicaciones**  
+  Diferencia sistemas de **encendido por chispa** y **encendido por compresión**, señalando sus métodos de ignición, tipos de combustible y características de eficiencia.  
+  Discute modos de aspiración: atmosféricos frente a sobrealimentados (turbo y compresor).
 
-* **Otto cycle (SI archetype)**
-  Describes its four processes: isentropic compression, constant-volume heat addition, isentropic expansion, and constant-volume heat rejection.
-  Explains how *compression ratio* governs efficiency and performance limits (knock onset, material constraints).
+* **Ciclo Otto (encendido por chispa)**  
+  Describe sus cuatro procesos: compresión isentrópica, adición de calor a volumen constante, expansión isentrópica y rechazo de calor a volumen constante.  
+  Explica cómo la *relación de compresión* gobierna la eficiencia y los límites de rendimiento (detonación, restricciones de materiales).
 
-* **Diesel cycle (CI archetype)**
-  Similar to Otto but with *constant-pressure* heat addition.
-  Explores *cutoff ratio* and its influence on efficiency.
-  Compares Diesel and Otto cycles at equivalent compression ratios; clarifies why Diesels can operate at higher efficiencies.
+* **Ciclo Diesel (encendido por compresión)**  
+  Similar al Otto pero con adición de calor a *presión constante*.  
+  Explora la *relación de corte* y su influencia en la eficiencia.  
+  Compara los ciclos Diesel y Otto a relaciones de compresión equivalentes; aclara por qué los Diesel pueden operar con mayor eficiencia.
 
-* **Loss models (Qualitative)**
-  Recognizes deviations from the ideal: heat transfer, finite combustion duration, friction, pumping losses, and incomplete expansion.
-  Introduces simple correction factors or empirical performance coefficients used in practical assessments.
+* **Modelos de pérdidas (cualitativos)**  
+  Reconoce desviaciones respecto al ideal: transferencia de calor, duración finita de la combustión, fricción, pérdidas de bombeo y expansión incompleta.  
+  Introduce factores de corrección simples o coeficientes empíricos de rendimiento usados en evaluaciones prácticas.
 
-:::{note}
+:::{admonition} Nota: resumen del bloque de MACI
+:class: note, dropdown
 
-**A SUMMARY OF THE ICRES OUTLINE**
-
-**Central idea:** ICRE analysis connects ideal cyclic reasoning with real engine behavior.
-Through compression, combustion, and expansion, these systems illustrate how chemical energy is cyclically converted into mechanical work — under the same **$1^{\text{st}}$ law** and **$2^{\text{nd}}$ law** constraints.
+**Idea central:** El análisis de MACI conecta el razonamiento cíclico ideal con el comportamiento real del motor.  
+Mediante compresión, combustión y expansión, estos sistemas ilustran cómo la energía química se convierte cíclicamente en trabajo mecánico — bajo las mismas restricciones de la **$1^{\text{a}}$ ley** y la **$2^{\text{a}}$ ley**.
 :::
 
 (subsec_steam_cycles)=
-## Steam cycles
+## Ciclos de vapor
 
-This block focuses on **vapor cycles**, where the working substance undergoes *phase change* as part of the energy-conversion process.
-It establishes the link between heat addition, expansion, condensation, and regeneration in systems that power much of modern electricity generation.
+Este bloque se centra en **ciclos de vapor**, donde la sustancia de trabajo experimenta *cambio de fase* como parte del proceso de conversión de energía.  
+Establece el vínculo entre adición de calor, expansión, condensación y regeneración en sistemas que impulsan gran parte de la generación eléctrica moderna.
 
-* **General notion**
-  Defines vapor cycles as systems with *external heat input* and *internal fluid recirculation*.
-  Highlights water/steam as the benchmark working fluid due to its well-known thermodynamic properties and favorable phase behavior.
+* **Noción general**  
+  Define los ciclos de vapor como sistemas con *aporte externo de calor* y *recirculación interna del fluido*.  
+  Destaca el agua/vapor como fluido de referencia por sus propiedades termodinámicas bien conocidas y comportamiento de fase favorable.
 
-* **Usual types and applications**
-  Covers **Rankine-type** cycles for electric power, **industrial cogeneration** systems, and **heat recovery** schemes.
-  Notes where vapor cycles dominate (utility plants, process steam, combined cycles).
+* **Tipos habituales y aplicaciones**  
+  Incluye ciclos tipo **Rankine** para generación eléctrica, sistemas de **cogeneración industrial** y esquemas de **recuperación de calor**.  
+  Señala dónde dominan los ciclos de vapor (centrales eléctricas, vapor de proceso, ciclos combinados).
 
-* **Rankine cycle (Ideal)**
-  Describes its four principal stages: *pumping (liquid pressurization)*, *boiling (heat addition)*, *expansion (turbine)*, and *condensation (heat rejection)*.
-  Relates efficiency to the mean temperature of heat addition and the condenser pressure.
-  Introduces *T–s* and *h–s* diagrams as diagnostic tools.
+* **Ciclo Rankine (ideal)**  
+  Describe sus cuatro etapas principales: *bombeo (presurización del líquido)*, *ebullición (adición de calor)*, *expansión (turbina)* y *condensación (rechazo de calor)*.  
+  Relaciona la eficiencia con la temperatura media de adición de calor y la presión del condensador.  
+  Introduce diagramas *T–s* y *h–s* como herramientas de diagnóstico.
 
-* **Cycle enhancements**
+* **Mejoras del ciclo**  
+  * *Recalentamiento*: mejora la sequedad a la salida de la turbina y aumenta ligeramente la eficiencia.  
+  * *Regeneración*: eleva la temperatura del agua de alimentación para reducir irreversibilidad.  
+  * *Sobrecalentamiento*: incrementa la temperatura media de adición de calor.
 
-  * *Reheat*: improves dryness at turbine exit and slightly increases efficiency.
-  * *Regeneration*: raises feedwater temperature to reduce irreversibility.
-  * *Superheat*: increases average temperature of heat addition.
+* **Centrales termoeléctricas**  
+  Analiza configuraciones típicas: caldera, tren de turbinas, condensador, sistema de refrigeración.  
+  Señala restricciones ambientales y métodos de enfriamiento (húmedo, seco, híbrido).
 
-* **Thermal power plants**
-  Discusses typical layouts: boiler, turbine train, condenser, cooling system.
-  Notes environmental constraints and cooling methods (wet, dry, hybrid).
+* **Cogeneración (CHP)**  
+  Explica cómo las turbinas de extracción/condensación o de contrapresión suministran tanto potencia como calor útil.  
+  Introduce compromisos entre producción eléctrica y térmica.
 
-* **Cogeneration (CHP)**
-  Explains how extraction/condensing or back-pressure turbines supply both power and useful heat.
-  Introduces trade-offs between electrical and thermal outputs.
+* **Ciclo Rankine orgánico (ORC)**  
+  Describe el uso de fluidos orgánicos para fuentes de calor de baja temperatura.  
+  Introduce la clasificación cualitativa de fluidos de trabajo (secos, isentrópicos, húmedos) y su adecuación a niveles de fuente térmica.
 
-* **Organic Rankine cycle (ORC)**
-  Describes use of organic fluids for low-temperature heat sources.
-  Introduces qualitative working-fluid classification (dry, isentropic, wet) and matching to heat-source levels.
+* **Ciclos duales y combinados**  
+  Presenta conceptos *topping–bottoming*, donde ciclos de gas de alta temperatura impulsan subsistemas de vapor u ORC de baja temperatura.  
+  Destaca las ganancias globales de eficiencia mediante el aprovechamiento en cascada de la energía y la utilización del calor residual.
 
-* **Dual and combined cycles**
-  Presents *topping–bottoming* concepts, where high-temperature gas cycles drive low-temperature steam or ORC subsystems.
-  Emphasizes overall efficiency gains through energy cascading and waste-heat utilization.
+:::{admonition} Nota: resumen del bloque de ciclos de vapor
+:class: note, dropdown
 
-:::{note}
-
-**A SUMMARY OF THE STEAM CYCLES OUTLINE**
-
-**Central idea:** Steam and vapor cycles illustrate thermodynamics in its most practical form — turning heat into mechanical power within real technological and environmental constraints.
-Through condensation, regeneration, and combination with gas cycles, they demonstrate how every joule of energy is progressively degraded but still *governed* by the same universal laws.
+**Idea central:** Los ciclos de vapor ilustran la termodinámica en su forma más práctica: convertir calor en potencia mecánica dentro de restricciones tecnológicas y ambientales reales.  
+Mediante condensación, regeneración y combinación con ciclos de gas, demuestran cómo cada joule de energía se degrada progresivamente pero sigue *gobernado* por las mismas leyes universales.
 :::
 
----
+:::{admonition} Importante: resumen del curso
+:class: warning
 
-:::{important}
+**Progresión global.**
 
-**A SUMMARY OF THE COURSE**
+1. El bloque de **Fundamentos** proporciona el lenguaje de sistemas, energía y entropía.
+2. Los **ciclos de gas** extienden esto a dispositivos de flujo continuo y propulsión.
+3. Los **MACI** muestran cómo el razonamiento cíclico se aplica a sistemas alternativos de combustión interna.
+4. Los **ciclos de vapor** cierran el ciclo introduciendo el cambio de fase y la conversión de energía a gran escala.
 
-**Overall progression.**
+En todos los bloques, se mantienen los mismos pilares analíticos:
 
-1. The **Fundamentals** block provides the language of systems, energy, and entropy.
-2. **Gas cycles** extend this to continuous-flow devices and propulsion.
-3. **ICREs** show how cyclic reasoning applies to reciprocating, internal combustion systems.
-4. **Steam cycles** close the loop by introducing phase change and large-scale power conversion.
+* **Conservación de la energía ($1^{\text{a}}$ ley).**
+* **Direccionalidad y limitación ($2^{\text{a}}$ ley).**
+* **Calidad y degradación de la energía (Exergía).**
 
-Across all blocks, the same analytical pillars stand:
-
-* **Conservation of energy ($1^{\text{st}}$ law).**
-* **Directionality and limitation ($2^{\text{nd}}$ law).**
-* **Quality and degradation of energy (Exergy).**
-
-Together they form a coherent view of **Applied Thermodynamics** — from first principles to interconnected energy systems.
+Juntos forman una visión coherente de la **Termodinámica Aplicada**: desde los principios fundamentales hasta los sistemas energéticos interconectados.
 :::
+

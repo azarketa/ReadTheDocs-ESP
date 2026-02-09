@@ -1,294 +1,242 @@
-(sec_magnitudes_and_properties)=
-## Magnitudes and properties
+## Magnitudes y propiedades
 
-Thermodynamics deals with **physical systems** and their measurable characteristics. To describe any fluid, we need to know *which quantities* define its behavior and *how* those quantities are measured. This section introduces the **magnitudes** and **properties** that allow us to characterize fluids in macroscopic terms, laying the groundwork for later laws and state relations.
+La termodinámica trata con **sistemas físicos** y sus características medibles. Para describir cualquier fluido, necesitamos saber **qué magnitudes** definen su comportamiento y **cómo** se miden. Esta sección introduce las **magnitudes** y **propiedades** que permiten caracterizar los fluidos en términos macroscópicos, sentando las bases para leyes y relaciones de estado posteriores.
 
 ---
 
-(subsec_physical_magnitudes_units)=
-### Physical magnitudes and measurement units
-
-A **magnitude** is any measurable physical quantity associated with a system — such as mass, volume, temperature, or pressure.
-Every magnitude must be accompanied by a **measurement unit**, which serves as a fixed reference.
-
-A valid measurement unit must satisfy three essential conditions:
-
-1. It must be **constant** in time and independent of where it is used.
-2. It must be **universal**, applicable under all physical conditions.
-3. It must be **reproducible**, so that any laboratory can realize it.
+### Magnitudes físicas y unidades de medida
+Una **magnitud** es cualquier cantidad física medible asociada a un sistema — como masa, volumen, temperatura o presión.
+Cada magnitud debe ir acompañada de una **unidad de medida**, que sirve como referencia fija.
+Una unidad válida debe cumplir tres condiciones esenciales:
+1. Debe ser **constante** en el tiempo e independiente del lugar donde se use.
+2. Debe ser **universal**, aplicable en todas las condiciones físicas.
+3. Debe ser **reproducible**, para que cualquier laboratorio pueda realizarla.
 
 :::{note}
+**MAGNITUDES VS. UNIDADES**
 
-**MAGNITUDES VS. UNITS**
-
-A magnitude expresses *what* we measure (e.g., energy or pressure); a unit expresses *how* we measure it (joule, pascal).
-Thermodynamics requires both to describe the state of a system quantitatively.
+Una magnitud expresa **qué** medimos (por ejemplo, energía o presión); una unidad expresa **cómo** lo medimos (joule, pascal).
+La termodinámica requiere ambas para describir cuantitativamente el estado de un sistema.
 :::
 
 ---
 
-(subsec_international_system_units)=
-### The International System (SI)
+### El Sistema Internacional (SI)
+El **Sistema Internacional de Unidades (SI)** define siete magnitudes fundamentales, de las cuales se derivan todas las demás.
+En termodinámica, usamos habitualmente cinco:
 
-The **International System of Units (SI)** defines seven fundamental magnitudes, from which all others are derived.
-In thermodynamics, we commonly employ five of them:
+| **Magnitud fundamental** | **Símbolo** | **Unidad (SI)** | **Símbolo (Unidad)** |
+| :------------------------ | :---------: | :-------------: | :-------------------: |
+| Longitud | $L$ | metro | $\text{m}$ |
+| Tiempo | $t$ | segundo | $\text{s}$ |
+| Masa | $m$ | kilogramo | $\text{kg}$ |
+| Temperatura | $T$ | Kelvin | $\text{K}$ |
+| Cantidad de sustancia | $n$ | mol | $\text{mol}$ |
 
-| **Fundamental Magnitude** | **Symbol** | **Unit (SI)** | **Symbol (Unit)** |
-| :------------------------ | :--------: | :-----------: | :---------------: |
-| Length                    |     $L$    |     metre     |    $\text{m}$   |
-| Time                      |     $t$    |     second    |    $\text{s}$   |
-| Mass                      |     $m$    |    kilogram   |   $\text{kg}$   |
-| Temperature               |     $T$    |     Kelvin    |    $\text{K}$   |
-| Amount of substance       |     $n$    |      mole     |   $\text{mol}$  |
+A partir de estas, se construyen muchas **magnitudes derivadas**:
 
-From these fundamental ones, many other **derived magnitudes** can be built:
-
-| **Derived Magnitude** | **Definition** | **SI Unit**              | **Unit Expression**                                  |
-| :-------------------- | :------------- | :----------------------- | :--------------------------------------------------- |
-| Density ($\rho$)      | $\rho = m/V$   | kilogram per cubic metre | $\text{kg}/\text{m}^{3}$                           |
-| Force ($F$)           | $F = m{\cdot}a$    | Newton                   | $\text{N} = \text{kg}\cdot\text{m}/\text{s}^{2}$ |
-| Pressure ($p$)        | $p = F/A$      | Pascal                   | $\text{Pa} = \text{N}/\text{m}^{2}$              |
-| Energy ($E$)          | —              | Joule                    | $\text{J} = \text{N}\cdot\text{m}$               |
-| Power ($\dot{W}$)     | —              | Watt                     | $\text{W} = \text{J}/\text{s}$                   |
+| **Magnitud derivada** | **Definición** | **Unidad SI** | **Expresión** |
+| :--------------------- | :------------: | :-----------: | :-----------: |
+| Densidad ($\rho$) | $\rho = m/V$ | kg/m³ | $\text{kg}/\text{m}^3$ |
+| Fuerza ($F$) | $F = m \cdot a$ | Newton | $\text{N} = \text{kg}\cdot\text{m}/\text{s}^2$ |
+| Presión ($p$) | $p = F/A$ | Pascal | $\text{Pa} = \text{N}/\text{m}^2$ |
+| Energía ($E$) | — | Joule | $\text{J} = \text{N}\cdot\text{m}$ |
+| Potencia ($\dot{W}$) | — | Watt | $\text{W} = \text{J}/\text{s}$ |
 
 :::{tip}
+**RAZONAMIENTO DIMENSIONAL**
 
-**DIMENSIONAL REASONING**
-
-Knowing how derived units depend on the fundamental ones allows quick error checks and conversion between magnitudes.
-Dimensional consistency is a built-in verification of physical correctness.
+Conocer cómo dependen las unidades derivadas de las fundamentales permite verificar errores y convertir magnitudes rápidamente.
+La consistencia dimensional es una comprobación integrada de la corrección física.
 :::
 
 ---
 
-(subsec_extensive_intensive_properties)=
-### Extensive and intensive properties
-
-Thermodynamic properties can be grouped according to how they depend on the system’s size.
-
-* **Extensive properties** scale with system size; they are *additive*:
-
-  $$
-  X_\text{total} = \sum_i X_i
-  $$
-
-  Examples: **mass** ($m$), **volume** ($V$), **total energy** ($E$).
-
-* **Intensive properties** are *independent* of system size; they remain unchanged when subsystems are combined.
-  Examples: **pressure** ($p$), **temperature** ($T$), **density** ($\rho$).
+### Propiedades extensivas e intensivas
+Las propiedades termodinámicas se agrupan según cómo dependen del tamaño del sistema:
+* **Propiedades extensivas** escalan con el tamaño del sistema; son **aditivas**:
+$$
+X_{\text{total}} = \sum_i X_i
+$$
+Ejemplos: **masa** ($m$), **volumen** ($V$), **energía total** ($E$).
+* **Propiedades intensivas** son **independientes** del tamaño del sistema; permanecen inalteradas al combinar subsistemas.
+Ejemplos: **presión** ($p$), **temperatura** ($T$), **densidad** ($\rho$).
 
 :::{warning}
+**ADITIVIDAD VS. INDEPENDENCIA**
 
-**ADDITIVITY VS. INDEPENDENCE**
-
-Extensive properties describe *quantities of substance*; intensive properties describe *conditions of substance*.
-Thermodynamics relates them through ratios such as “per mass,” “per volume,” or “per mole,” which convert extensives into intensives.
+Las propiedades extensivas describen **cantidades de sustancia**; las intensivas describen **condiciones de la sustancia**.
+La termodinámica las relaciona mediante razones como “por masa”, “por volumen” o “por mol”, que convierten extensivas en intensivas.
 :::
 
 ---
 
-(subsec_conversion_extensive_intensive)=
-### From extensive to intensive: reference conversions
+### De extensivas a intensivas: conversiones de referencia
+Las magnitudes extensivas pueden transformarse en intensivas dividiéndolas por una **magnitud extensiva de referencia**: volumen, masa o cantidad de sustancia.
+Los resultados son densidades, magnitudes específicas o magnitudes molares:
 
-Extensive magnitudes can be turned into intensive ones by dividing them by a **reference extensive**:
-volume, mass, or amount of substance.
-The resulting quantities are densities, specific magnitudes, or molar magnitudes, respectively.
-
-| **Reference Magnitude**     | **Extensive Magnitude**     | **Resulting Intensive Property** | **Expression**     | **Unit (SI)**               |
-| :-------------------------- | :-------------------------- | :------------------------------- | :----------------- | :-------------------------- |
-| Volume $V$ $[\text{m}^{3}]$ | Mass $m$ $[\text{kg}]$      | Density $\rho$                   | $\rho = m/V$       | $\text{kg}/\text{m}^{3}$  |
-| Volume $V$ $[\text{m}^{3}]$ | Energy $E$ $[\text{J}]$     | Energy density $e$               | $e = E/V$          | $\text{J}/\text{m}^{3}$   |
-| Mass $m$ $[\text{kg}]$      | Volume $V$ $[\text{m}^{3}]$ | Specific volume $v$              | $v = V/m = 1/\rho$ | $\text{m}^{3}/\text{kg}$  |
-| Amount $n$ $[\text{mol}]$   | Volume $V$ $[\text{m}^{3}]$ | Molar volume $v_m$               | $v_m = V/n$        | $\text{m}^{3}/\text{mol}$ |
+| **Referencia** | **Magnitud extensiva** | **Propiedad intensiva** | **Expresión** | **Unidad SI** |
+| :------------- | :---------------------- | :----------------------- | :-----------: | :-----------: |
+| Volumen $V$ [m³] | Masa $m$ [kg] | Densidad $\rho$ | $\rho = m/V$ | kg/m³ |
+| Volumen $V$ [m³] | Energía $E$ [J] | Densidad de energía $e$ | $e = E/V$ | J/m³ |
+| Masa $m$ [kg] | Volumen $V$ [m³] | Volumen específico $v$ | $v = V/m = 1/\rho$ | m³/kg |
+| Cantidad $n$ [mol] | Volumen $V$ [m³] | Volumen molar $v_m$ | $v_m = V/n$ | m³/mol |
 
 :::{tip}
+**NORMALIZACIÓN POR MAGNITUD DE REFERENCIA**
 
-**NORMALIZATION BY REFERENCE QUANTITY**
-
-Relating an extensive magnitude to a reference (mass, volume, or mole) allows property comparison among different systems.
-For example, energy per unit mass (specific energy) or per mole (molar energy) are standard thermodynamic descriptors.
+Relacionar una magnitud extensiva con una referencia (masa, volumen o mol) permite comparar propiedades entre sistemas.
+Por ejemplo, energía por unidad de masa (energía específica) o por mol (energía molar) son descriptores estándar.
 :::
 
 ---
 
-(subsec_measurable_fundamental_properties)=
-### Measurable fundamental properties
-
-* **Volume**
-
-    For fluids, **volume** is the only geometrical property of interest.
-    Shape and surface area are secondary; the total space occupied by the substance is what matters.
-    It is measured in cubic metres $(\text{m}^{3})$.
-
-* **Mass**
-
-    **Mass** measures the amount of matter and is expressed in kilograms $(\text{kg})$.
-    It is a conserved extensive quantity in all non-reactive processes.
-
-* **Amount of Substance**
-
-    The **amount of substance**, measured in moles $(\text{mol})$, connects macroscopic and molecular descriptions.
-    By definition, one mole of any substance contains the same number of entities (atoms, molecules, ions)
-    as there are atoms in $0.012\ \text{kg}$ of carbon-12:
-
-    (eq_mol_def)=
-    $$    
-    1\ \text{mol} = N_A = 6.022\times10^{23}\ \text{entities}.
-    $$
-
-    Thus, $1\ \text{mol}$ of $\text{H}_{2}\text{O}$ contains $6.022\times10^{23}$ water molecules.
+### Propiedades fundamentales medibles
+* **Volumen**: Para fluidos, el volumen es la única propiedad geométrica relevante. Se mide en m³.
+* **Masa**: Mide la cantidad de materia y se expresa en kg. Es conservativa en procesos no reactivos.
+* **Cantidad de sustancia**: Medida en moles (mol), conecta la descripción macroscópica con la molecular.
+Por definición:
+$$
+1\ \text{mol} = N_A = 6,022\times10^{23}\ \text{entidades}.
+$$
+Así, $1\ \text{mol}$ de $\text{H}_{2}\text{O}$ contiene $6,022\times10^{23}$ moléculas de agua.
 
 :::{note}
+**POR QUÉ IMPORTA EL MOL**
 
-**WHY THE MOLE MATTERS**
-
-Many physical and chemical processes scale with the **number of particles**, not their mass.
-At the same temperature and pressure, one mole of any gas occupies the same volume, regardless of its molecular mass.
-This makes the mole a natural unit for describing proportionality in reactions and equations of state.
+Muchos procesos físicos y químicos escalan con el **número de partículas**, no con su masa.
+A la misma temperatura y presión, un mol de cualquier gas ocupa el mismo volumen, independientemente de su masa molecular.
 :::
 
 ---
 
-(subsec_pressure)=
-### Complex measurable properties: pressure
-
-* **Definition**
-
-    **Pressure ($p$)** is the **normal force per unit area** that a system exerts on its boundaries or on another system:
-
-    (eq_pressure_def)=
-    $$    
+### Propiedades complejas medibles: presión
+* **Definición**:
+    $$
     p = \frac{F_\perp}{A}.
     $$
-
-    The figure below shows a schematic definition of the pressure magnitude. A gas confined inside the cylindrical volume of a piston-cylinder system is subjected to a pressure $(p)$ that resutls from the division of the force $(F_{\perp})$ applied to the piston divided by the cross-sectional area $(A=\pi{}D^{2}/4)$ of the cylinder.
-
+    La figura siguiente muestra una definición esquemática de la magnitud presión. Un gas confinado dentro del volumen cilíndrico de un sistema pistón–cilindro está sometido a una presión $(p)$ que resulta de dividir la fuerza $(F_{\perp})$ aplicada sobre el pistón entre el área de la sección transversal $(A = \pi D^{2}/4)$ del cilindro.
     :::{figure} 1_fundamentals_figs/pressure_definition.svg
     :name: pressure_definition
     :width: 50%
     :align: center
-
-    Piston-cylinder system showing the force-based pressure definition.
+    Sistema pistón–cilindro mostrando la definición de presión basada en la fuerza.
     :::
+    
+    Aunque la fuerza es un vector, la presión es un escalar porque actúa normal al elemento de superficie.
 
-    <br/>
 
-    Although **force** is a vector, **pressure** is a scalar because it acts normal to the surface element.    
+* **Unidades y escalas**:
 
-* **Units and Scales**
-
-    The SI unit of pressure is the **pascal** $(\text{Pa} = \text{N}/\text{m}^{2})$.
-    It is a small unit: a 70 $\text{kg}$ person standing on a $0.3\times0.3\ \text{m}^{2}$ tile exerts
+    La unidad SI es el pascal (Pa = N/m²). Es pequeña, por lo que se usan múltiplos: kPa, MPa, atm, bar, etc.
+    
+    Es una unidad pequeña: una persona de 70 $\text{kg}$ de pie sobre una baldosa de $0,3\times0,3\ \text{m}^{2}$ ejerce  
     
     $$
-    p = \frac{m g}{A} = \frac{70 \ \text{kg}\times9.81 \ \text{m}/\text{s}^{2}}{0.09 \ \text{m}^{2}} \approx 8\times10^{3} \ \text{Pa} = 8 \ \text{kPa}.
+    p = \frac{m g}{A} = \frac{70 \ \text{kg}\times9,81 \ \text{m}/\text{s}^{2}}{0,09 \ \text{m}^{2}} \approx 8\times10^{3} \ \text{Pa} = 8 \ \text{kPa}.
     $$
     
-    Hence, larger multiples are used in practice:
+    Por ello, en la práctica se utilizan múltiplos mayores:
     
-    | **Unit** | **Symbol** | **Equivalent in Pa** | **Typical Usage** |
-    | :-- | :-: | :-: | :- |
-    | kilopascal                     |       $\text{kPa}$      |          $10^{3}$ $\text{Pa}$          | Engineering and laboratory    |
-    | megapascal                     |       $\text{MPa}$      |          $10^{6}$ $\text{Pa}$          | High-pressure applications    |
-    | atmosphere                     |       $\text{atm}$      |    $1.01325\times10^{5}$ $\text{Pa}$   | Standard sea-level pressure   |
-    | bar                            |       $\text{bar}$      |          $10^{5}$ $\text{Pa}$          | Industrial and meteorological |
-    | millibar                       |      $\text{mbar}$      |          $10^{2}$ $\text{Pa}$          | Weather data                  |
-    | millimetre of mercury          | $\text{mmHg}$ or $\text{torr}$ |           $133.3$ $\text{Pa}$          | Manometry and medicine        |
-    | kilogram per square centimetre |     $\text{kg}/\text{cm}^{2}$     | $\approx 9.81\times10^{4}$ $\text{Pa}$ | Legacy (non-SI) unit          |
-
+    | **Unidad**                         | **Símbolo**                | **Equivalente en Pa**                | **Uso típico**                     |
+    | :--------------------------------- | :-------------------------: | :-----------------------------------: | :--------------------------------- |
+    | kilopascal                        | $\text{kPa}$               | $10^{3}$ $\text{Pa}$                 | Ingeniería y laboratorio           |
+    | megapascal                        | $\text{MPa}$               | $10^{6}$ $\text{Pa}$                 | Aplicaciones de alta presión       |
+    | atmósfera                         | $\text{atm}$               | $1,01325\times10^{5}$ $\text{Pa}$    | Presión estándar a nivel del mar   |
+    | bar                               | $\text{bar}$               | $10^{5}$ $\text{Pa}$                 | Uso industrial y meteorológico     |
+    | milibar                           | $\text{mbar}$              | $10^{2}$ $\text{Pa}$                 | Datos meteorológicos               |
+    | milímetro de mercurio             | $\text{mmHg}$ o $\text{torr}$ | $133,3$ $\text{Pa}$                | Manometría y medicina              |
+    | kilogramo por centímetro cuadrado | $\text{kg}/\text{cm}^{2}$ | $\approx 9,81\times10^{4}$ $\text{Pa}$ | Unidad heredada (no SI)          |
 
 :::{tip}
+**INTERPRETACIÓN DE 1 ATM**
 
-**INTERPRETATION OF 1 ATM**
-
-At sea level, atmospheric pressure equals approximately $1.013\times10^{5}$ $\text{Pa}$.
-This corresponds to the weight of an air column of mass about $200$ $\text{kg}$ pressing on the area of an outstretched human hand ($\approx0.02\ \text{m}^{2}$).
-We do not feel this load because internal body pressure counterbalances it; only *pressure differences* are perceptible.
+A nivel del mar, la presión atmosférica ≈ $1,013\times10^5$ Pa, equivalente al peso de una columna de aire de unos $200\ \text{kg}$ sobre la superficie de una mano ($\approx0.02\ \text{m}^{2}$).
+No sentimos esta carga porque la presión interna del cuerpo la contrarresta; solo las *diferencias de presión* son perceptibles.
 :::
 
 ---
 
-(subsec_local_relative_pressures)=
-### Local and relative pressure measurements
 
-When measuring pressure, what instruments record is often the **difference** between the local pressure and the surrounding atmospheric one.
-Thus, we distinguish four related quantities:
+subsec_local_relative_pressures)=
+### Medición local y relativa de la presión
 
-| **Type of Pressure**            | **Definition / Expression**                                 | **Typical Measuring Device** |
+Al medir la presión, lo que registran los instrumentos suele ser la **diferencia** entre la presión local y la presión atmosférica circundante.
+Así, distinguimos cuatro magnitudes relacionadas:
+
+| **Tipo de presión**             | **Definición / Expresión**                                  | **Instrumento típico**       |
 | :------------------------------ | :---------------------------------------------------------- | :--------------------------- |
-| **Atmospheric pressure**        | Local ambient pressure                                      | Barometer                    |
-| **Absolute pressure**           | $p_\text{abs}$ — total pressure relative to absolute vacuum | Barometer                    |
-| **Gauge (manometric) pressure** | $p_\text{man} = p_\text{abs} - p_\text{atm}$                | Manometer                    |
-| **Vacuum pressure**             | $p_\text{vac} = p_\text{atm} - p_\text{abs}$                | Vacuum gauge                 |
+| **Presión atmosférica**         | Presión ambiente local                                      | Barómetro                    |
+| **Presión absoluta**            | $p_\text{abs}$ — presión total respecto al vacío absoluto   | Barómetro                    |
+| **Presión manométrica (gauge)** | $p_\text{man} = p_\text{abs} - p_\text{atm}$               | Manómetro                    |
+| **Presión de vacío**            | $p_\text{vac} = p_\text{atm} - p_\text{abs}$               | Vacuómetro                   |
 
 :::{tip}
+**CÓMO INTERPRETAR LO QUE MUESTRA EL MANÓMETRO**
 
-**UNDERSTANDING WHAT THE GAUGE SHOWS**
-
-Pressure gauges and manometers report the **difference** from the current atmospheric value.
-When a tire reads “2 bar,” it means 2 bar *above* ambient, not 2 bar absolute.
+Los manómetros y medidores de presión informan la **diferencia** respecto al valor atmosférico actual.
+Cuando un neumático marca “2 bar”, significa 2 bar *por encima* de la presión ambiente, no 2 bar absolutos.
 :::
 
 ---
 
 (subsec_complex_measurable_properties_temperature)=
-### Complex measurable properties: temperature
+### Propiedades complejas medibles: temperatura
 
 (subsubsec_microscopic_macroscopic_temperature)=
-#### Microscopic and macroscopic perspectives
+#### Perspectivas microscópica y macroscópica
 
-From the **microscopic** viewpoint, temperature measures the **average kinetic energy** of particles:
-the higher their mean velocity, the higher the temperature.
-This parallels the notion of microscopic pressure as the collective effect of countless particle impacts on boundaries.
+Desde el punto de vista **microscópico**, la temperatura mide la **energía cinética promedio** de las partículas:
+cuanto mayor es su velocidad media, mayor es la temperatura.
+Esto es análogo a la noción de presión microscópica como el efecto colectivo de innumerables impactos de partículas sobre las paredes.
 
-From the **macroscopic** standpoint, temperature is a **state variable** that indicates the degree of thermal equilibrium between systems.
+Desde el punto de vista **macroscópico**, la temperatura es una **variable de estado** que indica el grado de equilibrio térmico entre sistemas.
 
 ::::{warning}
+**NATURALEZA INTENSIVA DE LA TEMPERATURA**
 
-**INTENSIVE NATURE OF TEMPERATURE**
+A diferencia de magnitudes extensivas como la masa o la energía, **la temperatura es una propiedad intensiva** — no se suma. Combinar dos cuerpos de agua a $100\ ^\circ\text{C}$ no produce $200\ ^\circ\text{C}$; la temperatura final se sitúa entre ambas, dependiendo de las capacidades caloríficas y las masas.
 
-Unlike extensive quantities such as mass or energy, **temperature is an intensive property** — it does not add up. Combining two bodies of water at $100\ ^\circ\text{C}$ does not yield $200\ ^\circ\text{C}$; the final temperature lies between them, depending on heat capacities and masses.
-
-The figure below illustrates the difference between extensive and intensive properties when combining two systems ($A$ and $B$) which, before joining, show their own masses, volumes, temperatures and pressures. The extensiveness of mass and volume allows to sum them up for getting the mass and volume of the combined system. However, such an additivity is not applicable to temperature and pressure, due to the intensive nature of those magnitudes.
+La figura siguiente ilustra la diferencia entre propiedades extensivas e intensivas al combinar dos sistemas ($A$ y $B$) que, antes de unirse, presentan sus propias masas, volúmenes, temperaturas y presiones. La extensividad de masa y volumen permite sumarlos para obtener la masa y el volumen del sistema combinado. Sin embargo, tal aditividad no es aplicable a la temperatura y la presión, debido a la naturaleza intensiva de estas magnitudes.
 
 :::{figure} 1_fundamentals_figs/magnitudes_extensivity_intensivity.svg
 :name: magnitudes_extensivity_intensivity
 :width: 60%
 :align: center
 
-Illustrative example of the extensive and intesive nature of some main thermodynamic magnitudes.
-:::  
-
+Ejemplo ilustrativo de la naturaleza extensiva e intensiva de algunas magnitudes termodinámicas principales.
+:::
 ::::
 
 ---
 
 (subsubsec_operational_definition_temperature)=
-#### Operational definition
+#### Definición operacional
 
-Because temperature cannot be measured by simple addition or direct comparison, two requirements are needed:
+Como la temperatura no puede medirse mediante suma simple ni comparación directa, se requieren dos condiciones:
 
-1. A **measurement unit** — the kelvin $\text{K}$ — defined as a fundamental SI magnitude.
-2. A **reference procedure** to compare temperatures, based on equilibrium and reproducible reference points (e.g., triple point of water).
+1. Una **unidad de medida** — el kelvin $\text{K}$ — definida como magnitud fundamental del SI.
+2. Un **procedimiento de referencia** para comparar temperaturas, basado en el equilibrio y puntos de referencia reproducibles (por ejemplo, el punto triple del agua).
 
-The establishment of such procedures leads directly to the notion of **thermodynamic equilibrium**,
-a condition where no net macroscopic changes occur and temperature is uniform throughout the system.
+El establecimiento de tales procedimientos conduce directamente a la noción de **equilibrio termodinámico**,
+una condición en la que no ocurren cambios macroscópicos netos y la temperatura es uniforme en todo el sistema.
 
 :::{note}
+**POR QUÉ IMPORTA EL EQUILIBRIO**
 
-**WHY EQUILIBRIUM MATTERS**
-
-Defining temperature requires that the system be at equilibrium; otherwise, local variations prevent consistent measurement.
-Thermodynamic temperature scales are founded on equilibrium states, which provide reproducible reference conditions.
+Definir la temperatura requiere que el sistema esté en equilibrio; de lo contrario, las variaciones locales impiden una medición coherente.
+Las escalas termodinámicas de temperatura se basan en estados de equilibrio, que proporcionan condiciones de referencia reproducibles.
 :::
 
 ---
 
 (subsec_conceptual_closure_magnitudes_properties)=
-### Conceptual closure
+### Cierre conceptual
 
-* Magnitudes and properties provide the measurable framework for describing thermodynamic systems.
-* Fundamental and derived quantities, together with their units, form the basis of all thermodynamic analysis.
-* The distinction between extensive and intensive properties defines how system size affects measurable quantities.
-* Pressure and temperature serve as key intensive variables that connect directly to equilibrium and energy exchange.
-* These concepts prepare the ground for the study of equilibrium, temperature scales or processes, as done {ref}`in the next section <sec_equilibrium_temperature_processes>`, where the conditions of balance and transformation between states are formally introduced.
+* Las magnitudes y propiedades proporcionan el marco medible para describir sistemas termodinámicos.
+* Las cantidades fundamentales y derivadas, junto con sus unidades, forman la base de todo análisis termodinámico.
+* La distinción entre propiedades extensivas e intensivas define cómo el tamaño del sistema afecta las magnitudes medibles.
+* La presión y la temperatura son variables intensivas clave que se conectan directamente con el equilibrio y el intercambio de energía.
+* Estos conceptos preparan el terreno para el estudio del equilibrio, las escalas de temperatura y los procesos, como se hace {ref}`en la siguiente sección <sec_equilibrium_temperature_processes>`, donde se introducen formalmente las condiciones de balance y transformación entre estados.
+
+
