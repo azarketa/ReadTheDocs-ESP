@@ -341,6 +341,7 @@ $$
 ---
 
 * **Ecuación de Redlich–Kwong**
+
 $$
 \boxed{p = \frac{\text{R}_{\text{u}}{}T}{V_m - b} - \frac{a}{T^{1/2}{}V_m(V_m + b)} = 2{,}20\times10^{5} \ \text{Pa}} \ ,
 $$
