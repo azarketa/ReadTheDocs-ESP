@@ -1,12 +1,12 @@
 ======================
-Main substance models
+Modelos de sustancia básicos
 ======================
 
 .. toctree::
    :maxdepth: 3
 
-   Characterization of substances <04_Characterization_of_substances>
-   Ideal and real gases <05_Ideal_and_real_gases>
-   p-v-T diagrams <06_P-v-T_diagrams>
-   Gas mixtures <07_Gas_mixtures>
-   Humid air <08_Humid_air>
+   Caracterización de las sustancias <04_Characterization_of_substances>
+   Gases ideales y reales <05_Ideal_and_real_gases>
+   Diagramas p-v-T <06_P-v-T_diagrams>
+   Mezclas de gases <07_Gas_mixtures>
+   Aire húmedo <08_Humid_air>
