@@ -316,9 +316,11 @@ Como $p$ debe determinarse, $p_r$ se evaluará por separado para cada modelo.
 2. **Predicciones de los modelos**
 
 * **Modelo de gas ideal**
+
 $$
 \boxed{p = \frac{\text{R}_{\text{u}}{}T}{V_m} = 2{,}49\times10^{5} \ \text{Pa}} \ ,
 $$
+
 $$
 \boxed{Z = \frac{p{}V_m}{\text{R}_{\text{u}}{}T} = 1{,}000} \ .
 $$
@@ -326,10 +328,12 @@ $$
 ---
 
 * **Ecuación de van der Waals**
+
 $$
 \boxed{p = \frac{\text{R}_{\text{u}}{}T}{V_m - b} - a{}\frac{1}{V_m^2}
 = 2{,}13\times10^{5} \ \text{Pa}} \ ,
 $$
+
 $$
 \boxed{Z = \frac{p{}V_m}{\text{R}_{\text{u}}{}T} = 0{,}857} \ .
 $$
@@ -340,6 +344,7 @@ $$
 $$
 \boxed{p = \frac{\text{R}_{\text{u}}{}T}{V_m - b} - \frac{a}{T^{1/2}{}V_m(V_m + b)} = 2{,}20\times10^{5} \ \text{Pa}} \ ,
 $$
+
 $$
 \boxed{Z = 0{,}885} \ .
 $$
@@ -347,20 +352,26 @@ $$
 ---
 
 * **Ecuación de Peng–Robinson**
+
 $$
 p =
 \frac{\text{R}_{\text{u}}{}T}{V_m - b} - \frac{a\alpha(T)}{V_m(V_m + b) + b(V_m - b)},
 $$
+
 donde:
+
 $$
 \alpha(T) = [1 + \kappa(1 - \sqrt{T/T_c})]^2,
 \qquad
 \kappa = 0{,}37464 + 1{,}54226\omega - 0{,}26992\omega^2.
 $$
+
 Numéricamente:
+
 $$
 \boxed{p = 2{,}25\times10^{5} \ \text{Pa}} \ ,
 $$
+
 $$
 \boxed{Z = 0{,}905} \ .
 $$
@@ -368,9 +379,11 @@ $$
 ---
 
 * **Ecuación de Virial (aproximación de primer orden)**
+
 $$
 \boxed{p = \frac{\text{R}_{\text{u}}{}T}{V_m}{}\left(1 + \frac{B}{V_m}\right) = 2{,}47\times10^{5}{} \ \text{Pa}} \ ,
 $$
+
 $$
 \boxed{Z = 1 + \frac{B}{V_m} = 0{,}994} \ .
 $$
@@ -378,12 +391,15 @@ $$
 ---
 
 * **Ecuación de Virial (aproximación de segundo orden)**
+
 $$
 \frac{C}{V_m^{2}} = \frac{5{,}2\times10^{-9}}{(0{,}01)^2} = 5{,}2\times10^{-5},
 $$
+
 $$
 \boxed{Z = 1 - 0{,}01215 + 5{,}2\times10^{-5} = 0{,}98790} \ ,
 $$
+
 $$
 \boxed{p = \frac{\text{R}_{\text{u}}{}T}{V_m}{}Z \approx 2{,}4642\times10^{5}{}\text{Pa}} \ .
 $$
@@ -391,6 +407,7 @@ $$
 ---
 
 3. **Evaluación de presión reducida**
+
 (eq_example_reduced_pressure)=
 $$
 p_r = \frac{p}{p_c}.
@@ -398,12 +415,12 @@ $$
 
 | Modelo           | $p$ [$\text{Pa}$] | $Z$ | $p_r$ | $\Delta{}p$ [%] vs Peng–Robinson |
 | :-------------- | :----------------: | :---: | :----: | :----------: |
-| Gas ideal       | $2{,}49{\times}10^5$ | 1{,}000 | 0{,}0337 | +10{,}7 |
-| van der Waals   | $2{,}13{\times}10^5$ | 0{,}857 | 0{,}0288 | −5{,}3 |
-| Redlich–Kwong   | $2{,}20{\times}10^5$ | 0{,}885 | 0{,}0298 | −2{,}2 |
-| Peng–Robinson   | $2{,}25{\times}10^5$ | 0{,}905 | 0{,}0305 | 0{,}0 |
-| Virial (1 término) | $2{,}47{\times}10^5$ | 0{,}994 | 0{,}0335 | +9{,}8 |
-| Virial (2 términos) | $2{,}4642{\times}10^5$ | 0{,}988 | 0{,}0334 | +9{,}5 |
+| Gas ideal       | $2{,}49{\times}10^5$ | $1{,}000$ | $0{,}0337$ | $+10{,}7$ |
+| van der Waals   | $2{,}13{\times}10^5$ | $0{,}857$ | $0{,}0288$ | $−5{,}3$ |
+| Redlich–Kwong   | $2{,}20{\times}10^5$ | $0{,}885$ | $0{,}0298$ | $−2{,}2$ |
+| Peng–Robinson   | $2{,}25{\times}10^5$ | $0{,}905$ | $0{,}0305$ | $0{,}0$ |
+| Virial (1 término) | $2{,}47{\times}10^5$ | $0{,}994$ | $0{,}0335$ | $+9{,}8$ |
+| Virial (2 términos) | $2{,}4642{\times}10^5$ | $0{,}988$ | $0{,}0334$ | $+9{,}5$ |
 
 ---
 
@@ -416,7 +433,7 @@ A $T_r \approx 0{,}99$, el $\text{CO}_2$ se encuentra cerca de su región críti
 * El **modelo de van der Waals** la subestima ligeramente, al sobrecorregir por cohesión.
 * **Redlich–Kwong** y **Peng–Robinson** capturan repulsión y atracción con mayor precisión, siendo este último el más exacto.
 * El **modelo virial** reproduce casi la predicción del gas ideal — señal clara de que es fiable principalmente a bajas presiones.
-* La aproximación de un término reduce la presión ideal solo ligeramente ($Z{}\approx{}0{,}988$), aún **sobreestimando** ~9{,}5 % frente a **Peng–Robinson**. Añadir el **tercer término virial** cambia $Z$ solo en $5{,}2\times10^{-5}$, por lo que la aproximación de dos términos es prácticamente idéntica.
+* La aproximación de un término reduce la presión ideal solo ligeramente ($Z{}\approx{}0{,}988$), aún **sobreestimando** ~$9{,}5$ % frente a **Peng–Robinson**. Añadir el **tercer término virial** cambia $Z$ solo en $5{,}2\times10^{-5}$, por lo que la aproximación de dos términos es prácticamente idéntica.
 * La curvatura cerca del punto crítico en la superficie $p$–$v$–$T$ se captura mucho mejor con **ecuaciones de estado cúbicas** (Redlich–Kwong/Peng–Robinson) que con truncamientos viriales de bajo orden.
 :::
 

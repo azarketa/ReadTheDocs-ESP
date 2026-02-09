@@ -1,8 +1,7 @@
 (sec_equilibrium_temperature_processes)=
 ## Equilibrio, escalas de temperatura y procesos
 
-Esta sección se basa en los fundamentos introducidos en {ref}`la sección anterior <sec_magnitudes_properties>` y formaliza cómo los sistemas alcanzan el **equilibrio**, cómo definimos y medimos la **temperatura**, y cómo caracterizamos los **estados** y **procesos**.
-El equilibrio termodinámico sirve como puente conceptual entre las propiedades observables y las leyes que gobiernan sus transformaciones.
+Esta sección se basa en los fundamentos introducidos en {ref}`la sección anterior <sec_magnitudes_properties>` y formaliza cómo los sistemas alcanzan el **equilibrio**, cómo definimos y medimos la **temperatura**, y cómo caracterizamos los **estados** y **procesos**. El equilibrio termodinámico sirve como puente conceptual entre las propiedades observables y las leyes que gobiernan sus transformaciones.
 
 ---
 
@@ -27,23 +26,13 @@ Para verificar si un sistema está en equilibrio, debemos examinar los siguiente
 * **Equilibrio mecánico:** ausencia de movimiento relativo o fuerzas no balanceadas.
   Dado que la presión es fuerza por unidad de área, el equilibrio mecánico requiere que las presiones sean uniformes en todo el sistema. Tomando dos puntos arbitrarios ($1$ y $2$) en el sistema, debe cumplirse que $p_1 = p_2$.
 
-* **Equilibrio térmico:** temperatura uniforme en todo el sistema y entre sistemas que interactúan ($T_1 = T_2$).
+* **Equilibrio térmico:** temperatura uniforme en todo el sistema y entre sistemas que interactúan $(T_1 = T_2)$.
 
-* **Equilibrio químico:** composición uniforme; las concentraciones químicas permanecen constantes en el tiempo ($\mu_{1} = \mu_{2}$).
+* **Equilibrio químico:** composición uniforme; las concentraciones químicas permanecen constantes en el tiempo $(\mu_{1} = \mu_{2})$.
 
 Un sistema en equilibrio completo satisface simultáneamente las tres condiciones.
 
 ---
-
-
-
-
-
-
-
-
-
-
 
 (subsec_zeroth_law)=
 ### Ley cero de la Termodinámica y definición empírica de la temperatura
@@ -56,7 +45,7 @@ Puede enunciarse así:
 **Si dos sistemas están cada uno en equilibrio térmico con un tercer sistema, entonces están en equilibrio térmico entre sí.**
 :::
 
-Formalmente, si el sistema $A$ (a temperatura $T_A$) está en equilibrio con el sistema $B$ ($T_B$), y $B$ está en equilibrio con $C$ ($T_C$), entonces:
+Formalmente, si el sistema $A$ (a temperatura $T_A$) está en equilibrio con el sistema $B$ $(T_B)$, y $B$ está en equilibrio con $C$ $(T_C)$, entonces:
 
 (eq_zeroth_law_consequence)=
 $$
@@ -88,11 +77,10 @@ La temperatura es la **propiedad de estado en equilibrio** que determina si dos 
 (subsec_temperature_scales)=
 ### Escalas de temperatura
 
-Una vez establecida la ley cero, podemos construir **escalas de temperatura** como protocolos comparativos.
-Cualquier fenómeno físico reproducible que varíe monótonamente con la temperatura (como el volumen de un líquido, la resistencia de un hilo o la presión de un gas) puede servir como base para una escala.
+Una vez establecida la ley cero, podemos construir **escalas de temperatura** como protocolos comparativos. Cualquier fenómeno físico reproducible que varíe monótonamente con la temperatura (como el volumen de un líquido, la resistencia de un hilo o la presión de un gas) puede servir como base para una escala.
 
 La elección de una escala es convencional — coexisten múltiples escalas de temperatura, aunque dos son dominantes en ingeniería y ciencia.
-``
+
 
 
 (subsubsec_celsius_scale)=
@@ -117,12 +105,10 @@ Está directamente relacionada con la escala Celsius mediante:
 
 (eq_C_to_K)=
 $$
-T\left(\text{K}\right) = T\left(^\circ\text{C}\right) + 273.15
+T\left(\text{K}\right) = T\left(^\circ\text{C}\right) + 273{,}15
 $$
 
-William Thomson (Lord Kelvin) dedujo el concepto de **cero absoluto**, la temperatura a la cual el movimiento molecular cesaría teóricamente.
-Este límite inferior, $0\ \text{K}$, corresponde a $-273.15\ [^\circ\text{C}]$.
-Aunque el cero absoluto no puede alcanzarse (prohibido por la mecánica cuántica y la Tercera Ley), proporciona una referencia universal.
+William Thomson (Lord Kelvin) dedujo el concepto de **cero absoluto**, la temperatura a la cual el movimiento molecular cesaría teóricamente. Este límite inferior, $0\ \text{K}$, corresponde a $-273{,}15\ [^\circ\text{C}]$. Aunque el cero absoluto no puede alcanzarse (prohibido por la mecánica cuántica y la Tercera Ley), proporciona una referencia universal.
 
 :::{important}
 **TEMPERATURA ABSOLUTA**

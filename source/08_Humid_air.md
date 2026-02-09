@@ -66,7 +66,7 @@ Tratar el vapor de agua como gas ideal implica una pequeña pérdida de precisi�
 
 **REFERENCIA DE TEMPERATURA PARA EL CÁLCULO DE ENTALPÍA**
 
-La expresión para {ref}`la variación de entalpía del aire seco <eq_h_dry_air>` muestra, aparentemente, que la entalpía en un estado termodinámico dado puede calcularse **en términos absolutos**. La termodinámica, sin embargo, no proporciona medios para calcular valores energéticos absolutos, sino **diferencias de energía** (o entalpía, o entropía). De hecho, como la temperatura de referencia se fija en $0 \ ^{\circ}\text{C}$, y existe una **relación lineal** entre $^{\circ}\text{C}$ y $K$ (una diferencia de temperatura de $X \ ^{\circ}\text{C}$ equivale a una diferencia de $X \ \text{K}$), es posible **eliminar el término de referencia** de la expresión. Formalmente, no obstante, la expresión debería haber sido:
+La expresión para la variación de {ref}`entalpía del aire seco <eq_h_dry_air>` muestra, aparentemente, que la entalpía en un estado termodinámico dado puede calcularse **en términos absolutos**. La termodinámica, sin embargo, no proporciona medios para calcular valores energéticos absolutos, sino **diferencias de energía** (o entalpía, o entropía). De hecho, como la temperatura de referencia se fija en $0 \ ^{\circ}\text{C}$, y existe una **relación lineal** entre $^{\circ}\text{C}$ y $K$ (una diferencia de temperatura de $X \ ^{\circ}\text{C}$ equivale a una diferencia de $X \ \text{K}$), es posible **eliminar el término de referencia** de la expresión. Formalmente, no obstante, la expresión debería haber sido:
 
 $$\Delta{}h_{0\to{}i}={}c_p{}(T_{i} - T_{0})\left[^{\circ}\text{C}\right]$$
 

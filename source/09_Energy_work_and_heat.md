@@ -169,8 +169,7 @@ Sin embargo, no toda la energía interna es térmica: las energías química, nu
 
 **ENERGÍA ORGANIZADA VS. DESORGANIZADA**
 
-La energía “organizada” (como el movimiento macroscópico o el trabajo mecánico) puede **convertirse completamente** en energía desorganizada (movimiento molecular aleatorio o energía térmica).  
-Como veremos, la transformación inversa está **limitada** por la $2^{\text{a}}$ ley de la termodinámica.
+La energía “organizada” (como el movimiento macroscópico o el trabajo mecánico) puede **convertirse completamente** en energía desorganizada (movimiento molecular aleatorio o energía térmica). Como veremos, la transformación inversa está **limitada** por la $2^{\text{a}}$ ley de la termodinámica.
 
 Por ello, convertir trabajo mecánico en calor es fácil (p. ej., fricción), pero convertir todo el calor en trabajo (como en los motores) es imposible.
 :::
@@ -277,8 +276,7 @@ Gráficamente, esto representa el **área bajo la curva del proceso** en un diag
 
 * **Proceso adiabático de gas ideal**:
 
-  En un proceso adiabático, no cruza calor la frontera del sistema — toda la transferencia de energía ocurre como trabajo.  
-  La presión y el volumen están relacionados por la expresión $p V^{\gamma} = \text{constante}$, donde $\gamma = c_p / c_v$ es la razón de calores específicos.  
+  En un proceso adiabático, no cruza calor la frontera del sistema — toda la transferencia de energía ocurre como trabajo. La presión y el volumen están relacionados por la expresión $p V^{\gamma} = \text{constante}$, donde $\gamma = c_p / c_v$ es la razón de calores específicos.  
   Sustituyendo $p = \text{C}/V^{\gamma}$,
 
   $$
@@ -289,8 +287,7 @@ Gráficamente, esto representa el **área bajo la curva del proceso** en un diag
 
 * **Proceso politrópico**:
 
-    Una forma de generalizar los casos anteriores es mediante la **relación politrópica**, $p V^n = \text{constante}$.  
-    Dicha relación describe una amplia clase de procesos donde la relación presión–volumen sigue una ley de potencia. El exponente $n$ indica cómo el gas intercambia energía durante la transformación:
+    Una forma de generalizar los casos anteriores es mediante la **relación politrópica**, $p V^n = \text{constante}$. Dicha relación describe una amplia clase de procesos donde la relación presión–volumen sigue una ley de potencia. El exponente $n$ indica cómo el gas intercambia energía durante la transformación:
     
     * Para **$n$ pequeño**, la presión disminuye lentamente con el volumen, lo que significa que se produce más trabajo (similar a una expansión isobárica o isotérmica).
     * Para **$n$ grande**, la presión cae rápidamente y se realiza menos trabajo (aproximándose al comportamiento isocórico).
@@ -305,9 +302,7 @@ Gráficamente, esto representa el **área bajo la curva del proceso** en un diag
   = \frac{p_2 V_2 - p_1 V_1}{1 - n}.
   $$
 
-  {ref}`Como se mencionó anteriormente <subsec_work_simple_compressible_systems>`, el trabajo realizado por un sistema compresible simple puede representarse mediante el área bajo la curva $p-V$ que describe el proceso $p(V)$.  
-  La relación general $pV^n = \text{constante}$ describe una familia particular de curvas posibles en el diagrama $p-V$ para sustancias que siguen el modelo de gas ideal.  
-  De hecho, dicha familia es el conjunto de **curvas hiperbólicas**, donde la curvatura y la pendiente están determinadas por el **índice politrópico $n$**:
+  {ref}`Como se mencionó anteriormente <subsec_work_simple_compressible_systems>`, el trabajo realizado por un sistema compresible simple puede representarse mediante el área bajo la curva $p-V$ que describe el proceso $p(V)$. La relación general $pV^n = \text{constante}$ describe una familia particular de curvas posibles en el diagrama $p-V$ para sustancias que siguen el modelo de gas ideal. De hecho, dicha familia es el conjunto de **curvas hiperbólicas**, donde la curvatura y la pendiente están determinadas por el **índice politrópico $n$**:
     
   * Cuando $n = 1$, la curva es una **hipérbola equilátera**, correspondiente a un proceso **isotérmico** para un gas ideal $(pV = \text{constante})$.
   * Cuando $n = \gamma$, la curva representa un proceso **adiabático**, más pronunciado que el isotérmico porque no hay intercambio de calor.
@@ -429,8 +424,7 @@ Confirma siempre la convención de signos utilizada antes de comparar ecuaciones
 
 **Enunciado del problema**
 
-Un sistema cerrado contiene **1 kg de gas nitrógeno ($\text{N}_2$)** inicialmente a una presión de $p_1 = 100 \ \text{kPa}$ y una temperatura de $T_1 = 300 \ \text{K}$.  
-Siempre que el proceso considerado lo permita, el gas se expande **cuasiestáticamente** hasta que su **volumen final se duplica** ($V_2 = 2V_1$).
+Un sistema cerrado contiene **1 kg de gas nitrógeno ($\text{N}_2$)** inicialmente a una presión de $p_1 = 100 \ \text{kPa}$ y una temperatura de $T_1 = 300 \ \text{K}$. Siempre que el proceso considerado lo permita, el gas se expande **cuasiestáticamente** hasta que su **volumen final se duplica** ($V_2 = 2V_1$).
 
 El proceso se analiza bajo diferentes condiciones — **isocórico**, **isobárico**, **isotérmico**, **adiabático** y **politrópico** — para determinar el **trabajo de frontera** realizado por el gas en cada caso. Para el caso más genérico, se asume un índice politrópico de $n = 1{,}2$.
 
@@ -446,8 +440,7 @@ $$
 W_{1\to2} = \int_{V_1}^{V_2} p \mathrm{d}V.
 $$
 
-Para un gas ideal, $pV = mRT$, y la forma funcional de $p(V)$ depende del **tipo de proceso**.  
-Aplicamos las relaciones apropiadas para cada proceso y evaluamos los valores correspondientes de $W_{1\to2}$.
+Para un gas ideal, $pV = mRT$, y la forma funcional de $p(V)$ depende del **tipo de proceso**. Aplicamos las relaciones apropiadas para cada proceso y evaluamos los valores correspondientes de $W_{1\to2}$.
 
 ---
 

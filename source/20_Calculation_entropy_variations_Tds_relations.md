@@ -435,16 +435,21 @@ Esta deducción, basada únicamente en la relación funcional $T(s)$, también p
 
 * Calcular **variaciones de entropía** requiere un **modelo de sustancia**:
 
-  * **Gas ideal** $(c_p(T), c_v(T))$: formas integrales con  
-    $\displaystyle \int \frac{c(T)}{T}\,\mathrm{d}T$ más términos logarítmicos.
+  * **Gas ideal** $(c_p(T), c_v(T))$: formas integrales con $\displaystyle \int \frac{c(T)}{T}\,\mathrm{d}T$ más términos logarítmicos.
   * **Gas perfecto** ($c_p$, $c_v$ constantes): expresiones **logarítmicas cerradas** (analíticas).
   * **Sustancia pura (real)**: valores tabulados; $s$ queda fijada por dos propiedades intensivas independientes.
 
 * La **condición isoentrópica** significa **cambio neto nulo de entropía** ($\Delta S = 0$). La ruta más sencilla es **adiabática + reversible** ($Q = 0$, $S_{\text{gen}} = 0$), pero otros balances especiales (no adiabático + irreversible) también pueden llevar a $\Delta S = 0$.
 
 * Para **gases perfectos**, la especialización adiabático–reversible da las clásicas **leyes potenciales**:  
-  * $T v^{\gamma-1}=\text{const.}$  
-  * $T p^{(1-\gamma)/\gamma}=\text{const.}$  
-  * $p v^{\gamma}=\text{const.}$
+
+\begin{equation*}
+    \text{Proceso isoentrópico} \implies
+    \begin{cases}
+        Tv^{\gamma - 1} = \text{const.}\\[1ex]
+        Tp^{(1 - \gamma)/\gamma}=\text{const.}\\[1ex]
+        pv^{\gamma}=\text{const.}
+    \end{cases}
+\end{equation*}
 
 * Los planos **$p-v$** y **$T-s$** son **complementarios**: trabajo ↔ área en $p-v$; calor reversible ↔ área en $T-s$. Esta dualidad proporciona un registro geométrico claro de **trabajo** y **calor reversible** en procesos y ciclos.

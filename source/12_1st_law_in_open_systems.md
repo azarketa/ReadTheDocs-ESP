@@ -94,7 +94,7 @@ Comenzamos con el **principio de balance**: la **tasa de cambio de energía en e
 
 (eq_1st_law_open_systems_general)=
 $$
-\frac{\mathrm{d}E}{\mathrm{d}t} = \Big(\dot Q_{\text{in}} - \dot W_{\text{in}} + \sum_{\text{in}} \dot m e_{\text{in}}\Big) - \Big(\dot Q_{\text{out}} - \dot W_{\text{out}} + \sum_{\text{out}} \dot m e_{\text{out}}\Big),
+\frac{\mathrm{d}E}{\mathrm{d}t} = \Big(\dot Q_{\text{in}} - \dot W_{\text{in}} + \sum_{\text{in}} \dot m e \Big) - \Big(\dot Q_{\text{out}} - \dot W_{\text{out}} + \sum_{\text{out}} \dot m e\Big),
 $$
 
 donde la **energía total específica** de una corriente de flujo es

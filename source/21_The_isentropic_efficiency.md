@@ -93,7 +93,7 @@ El cociente entre el *trabajo que sería necesario para elevar la presión de un
 
 (eq_eta_comp)=
 $$
-\boxed{\eta_{\text{s, comp.}} = \frac{h_{2s} - h_1}{h_{2a} - h_1}}
+\boxed{\eta_{\text{s, comp.}} = \frac{h_{2s} - h_1}{h_{2a} - h_1}} \ .
 $$
 
 Aquí, el numerador representa la aportación energética *ideal* (mínima), y el denominador la aportación *real*. La diferencia de signos y el orden de los límites de integración siguen del hecho de que tanto la energía como la entropía **aumentan** durante la compresión. Por tanto, las diferencias de entalpía son **positivas** en la expresión anterior.

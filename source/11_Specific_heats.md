@@ -425,7 +425,7 @@ El exponente $n$ actúa así como un **selector termodinámico** entre estos lí
 * Sus definiciones surgen de **procesos realizables experimentalmente** —volumen constante y presión constante— que aíslan un mecanismo de transferencia de energía a la vez.
 * Como $u$ y $h$ son **propiedades de estado**, las cantidades $c_v$ y $c_p$ son **propiedades termodinámicas bien definidas**, aunque el **calor** intercambiado ($\delta q$) siga siendo una variable de proceso **dependiente de la trayectoria**.
 * La dependencia de $c_v$ y $c_p$ con la **temperatura** (y, para gases reales, con la **presión o el volumen**) conecta la termodinámica macroscópica con la estructura microscópica de la materia.
-* Para **gases ideales**, donde $u$ y $h$ dependen solo de la temperatura, la **relación de Mayer** ($c_p - c_v = R$) y la **relación de calores específicos** ($\gamma = c_p / c_v$) proporcionan vínculos compactos entre estas propiedades y el comportamiento molecular.
+* Para **gases ideales**, donde $u$ y $h$ dependen solo de la temperatura, la **relación de Mayer** $(c_p - c_v = R)$ y la **relación de calores específicos** ($\gamma = c_p / c_v$) proporcionan vínculos compactos entre estas propiedades y el comportamiento molecular.
 * Aumentar la complejidad molecular amplía el número de modos de almacenamiento de energía, reduciendo $\gamma$ y haciendo que el gas sea más “adaptable térmicamente”.
 
 En conjunto, estas ideas forman el puente entre los **efectos térmicos medibles** y las **propiedades termodinámicas intrínsecas**, estableciendo la base para análisis posteriores de **transformaciones energéticas** y **procesos de flujo**.

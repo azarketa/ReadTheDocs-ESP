@@ -68,7 +68,7 @@ Esto conduce a dos conclusiones importantes:
 
     (eq_critical_magnitudes_water)=
     $$
-    T_{\text{cr}} = 373,95 \ ^{\circ}\text{C}, \quad p_{\text{cr}} = 22,06\text{MPa}
+    T_{\text{cr}} = 373{,}95 \ ^{\circ}\text{C}, \quad p_{\text{cr}} = 22{,}06\text{MPa}
     $$
     
     Los fluidos supercríticos presentan propiedades intermedias entre las de los gases y los líquidos y se emplean en aplicaciones especializadas como la extracción con disolventes y el secado supercrítico.

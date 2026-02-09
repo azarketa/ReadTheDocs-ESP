@@ -218,8 +218,7 @@ El análisis de los **ciclos de Carnot** muestra que la eficiencia de cualquier 
 Esta observación suscita una cuestión más profunda:
 
 :::{epigraph}
-¿Existe alguna propiedad intrínseca de un sistema que gobierne la dirección y la limitación de estas transferencias de energía?  
-En caso afirmativo: ¿cuál es esa propiedad?
+¿Existe alguna propiedad intrínseca de un sistema que gobierne la dirección y la limitación de estas transferencias de energía? En caso afirmativo: ¿cuál es esa propiedad?
 :::
 
 Para responder, debemos introducir una nueva magnitud termodinámica — la **entropía** — que proporciona una medida universal de la **dispersión de energía** y de la **irreversibilidad de los procesos**. La siguiente sección desarrollará el concepto de **entropía** y derivará su fundamento matemático a través de la **desigualdad de Clausius**.

@@ -47,7 +47,7 @@ Esta ecuación **parece** describir un sistema que toma calor de un único foco 
 
 (eq_clausius_inequality)=
 $$
-\boxed{\oint \frac{\delta Q}{T} \leq 0.}
+\boxed{\oint \frac{\delta Q}{T} \leq 0}.
 $$
 
 Esta es la **desigualdad de Clausius**, una formulación general de la **$2^{\text{a}}$ ley** aplicable a cualquier **proceso cíclico**.
@@ -89,7 +89,7 @@ La **forma diferencial** de esa función de estado es, por tanto,
 
 (eq_entropy_differential)=
 $$
-\boxed{\mathrm{d}S = \left(\frac{\delta Q}{T}\right)_{\text{rev}}.}
+\boxed{\mathrm{d}S = \left(\frac{\delta Q}{T}\right)_{\text{rev}}}.
 $$
 
 Esta nueva magnitud, introducida por Clausius, se denomina **entropía** $(S)$. Constituye un puente entre las formulaciones de la **$2^{\text{a}}$ ley** basadas en **ciclos** y las basadas en **procesos**. La entropía mide tanto el **estado termodinámico** de un sistema como el **grado de irreversibilidad** de un proceso.
@@ -175,7 +175,7 @@ Así, la entropía solo puede **permanecer constante** (para procesos reversible
 
 (eq_entropy_universe)=
 $$
-\boxed{\Delta S_{\text{univ.}} = \Delta S_{\text{sys.}} + \Delta S_{\text{surr.}} = S_{\text{gen.,univ.}} \ge 0.}
+\boxed{\Delta S_{\text{univ.}} = \Delta S_{\text{sys.}} + \Delta S_{\text{surr.}} = S_{\text{gen.,univ.}} \ge 0}.
 $$
 
 Son posibles disminuciones locales de entropía dentro de subsistemas, pero siempre deben compensarse con aumentos mayores en otros lugares, asegurando que la **entropía total del universo no disminuye jamás**.

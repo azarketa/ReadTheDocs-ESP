@@ -37,11 +37,11 @@ A partir de estas, se construyen muchas **magnitudes derivadas**:
 
 | **Magnitud derivada** | **Definición** | **Unidad SI** | **Expresión** |
 | :--------------------- | :------------: | :-----------: | :-----------: |
-| Densidad ($\rho$) | $\rho = m/V$ | kg/m³ | $\text{kg}/\text{m}^3$ |
-| Fuerza ($F$) | $F = m \cdot a$ | Newton | $\text{N} = \text{kg}\cdot\text{m}/\text{s}^2$ |
-| Presión ($p$) | $p = F/A$ | Pascal | $\text{Pa} = \text{N}/\text{m}^2$ |
-| Energía ($E$) | — | Joule | $\text{J} = \text{N}\cdot\text{m}$ |
-| Potencia ($\dot{W}$) | — | Watt | $\text{W} = \text{J}/\text{s}$ |
+| Densidad $(\rho)$ | $\rho = m/V$ | kg/m³ | $\text{kg}/\text{m}^3$ |
+| Fuerza $(F)$ | $F = m \cdot a$ | Newton | $\text{N} = \text{kg}\cdot\text{m}/\text{s}^2$ |
+| Presión $(p)$ | $p = F/A$ | Pascal | $\text{Pa} = \text{N}/\text{m}^2$ |
+| Energía $(E)$ | — | Joule | $\text{J} = \text{N}\cdot\text{m}$ |
+| Potencia $(\dot{W})$ | — | Watt | $\text{W} = \text{J}/\text{s}$ |
 
 :::{tip}
 **RAZONAMIENTO DIMENSIONAL**
@@ -55,9 +55,11 @@ La consistencia dimensional es una comprobación integrada de la corrección fí
 ### Propiedades extensivas e intensivas
 Las propiedades termodinámicas se agrupan según cómo dependen del tamaño del sistema:
 * **Propiedades extensivas** escalan con el tamaño del sistema; son **aditivas**:
+
 $$
 X_{\text{total}} = \sum_i X_i
 $$
+
 Ejemplos: **masa** ($m$), **volumen** ($V$), **energía total** ($E$).
 * **Propiedades intensivas** son **independientes** del tamaño del sistema; permanecen inalteradas al combinar subsistemas.
 Ejemplos: **presión** ($p$), **temperatura** ($T$), **densidad** ($\rho$).
@@ -96,10 +98,12 @@ Por ejemplo, energía por unidad de masa (energía específica) o por mol (energ
 * **Masa**: Mide la cantidad de materia y se expresa en kg. Es conservativa en procesos no reactivos.
 * **Cantidad de sustancia**: Medida en moles (mol), conecta la descripción macroscópica con la molecular.
 Por definición:
+
 $$
-1\ \text{mol} = N_A = 6,022\times10^{23}\ \text{entidades}.
+1\ \text{mol} = N_A = 6{,}022\times10^{23}\ \text{entidades}.
 $$
-Así, $1\ \text{mol}$ de $\text{H}_{2}\text{O}$ contiene $6,022\times10^{23}$ moléculas de agua.
+
+Así, $1\ \text{mol}$ de $\text{H}_{2}\text{O}$ contiene $6{,}022\times10^{23}$ moléculas de agua.
 
 :::{note}
 **POR QUÉ IMPORTA EL MOL**
@@ -112,9 +116,12 @@ A la misma temperatura y presión, un mol de cualquier gas ocupa el mismo volume
 
 ### Propiedades complejas medibles: presión
 * **Definición**:
+
     $$
     p = \frac{F_\perp}{A}.
     $$
+
+  
     La figura siguiente muestra una definición esquemática de la magnitud presión. Un gas confinado dentro del volumen cilíndrico de un sistema pistón–cilindro está sometido a una presión $(p)$ que resulta de dividir la fuerza $(F_{\perp})$ aplicada sobre el pistón entre el área de la sección transversal $(A = \pi D^{2}/4)$ del cilindro.
     :::{figure} 1_fundamentals_figs/pressure_definition.svg
     :name: pressure_definition
@@ -133,7 +140,7 @@ A la misma temperatura y presión, un mol de cualquier gas ocupa el mismo volume
     Es una unidad pequeña: una persona de 70 $\text{kg}$ de pie sobre una baldosa de $0,3\times0,3\ \text{m}^{2}$ ejerce  
     
     $$
-    p = \frac{m g}{A} = \frac{70 \ \text{kg}\times9,81 \ \text{m}/\text{s}^{2}}{0,09 \ \text{m}^{2}} \approx 8\times10^{3} \ \text{Pa} = 8 \ \text{kPa}.
+    p = \frac{m g}{A} = \frac{70 \ \text{kg}\times9{,}81 \ \text{m}/\text{s}^{2}}{0{,}09 \ \text{m}^{2}} \approx 8\times10^{3} \ \text{Pa} = 8 \ \text{kPa}.
     $$
     
     Por ello, en la práctica se utilizan múltiplos mayores:
@@ -142,16 +149,16 @@ A la misma temperatura y presión, un mol de cualquier gas ocupa el mismo volume
     | :--------------------------------- | :-------------------------: | :-----------------------------------: | :--------------------------------- |
     | kilopascal                        | $\text{kPa}$               | $10^{3}$ $\text{Pa}$                 | Ingeniería y laboratorio           |
     | megapascal                        | $\text{MPa}$               | $10^{6}$ $\text{Pa}$                 | Aplicaciones de alta presión       |
-    | atmósfera                         | $\text{atm}$               | $1,01325\times10^{5}$ $\text{Pa}$    | Presión estándar a nivel del mar   |
+    | atmósfera                         | $\text{atm}$               | $1{,}01325\times10^{5}$ $\text{Pa}$    | Presión estándar a nivel del mar   |
     | bar                               | $\text{bar}$               | $10^{5}$ $\text{Pa}$                 | Uso industrial y meteorológico     |
     | milibar                           | $\text{mbar}$              | $10^{2}$ $\text{Pa}$                 | Datos meteorológicos               |
-    | milímetro de mercurio             | $\text{mmHg}$ o $\text{torr}$ | $133,3$ $\text{Pa}$                | Manometría y medicina              |
-    | kilogramo por centímetro cuadrado | $\text{kg}/\text{cm}^{2}$ | $\approx 9,81\times10^{4}$ $\text{Pa}$ | Unidad heredada (no SI)          |
+    | milímetro de mercurio             | $\text{mmHg}$ o $\text{torr}$ | $133{,}3$ $\text{Pa}$                | Manometría y medicina              |
+    | kilogramo por centímetro cuadrado | $\text{kg}/\text{cm}^{2}$ | $\approx 9{,}81\times10^{4}$ $\text{Pa}$ | Unidad heredada (no SI)          |
 
 :::{tip}
 **INTERPRETACIÓN DE 1 ATM**
 
-A nivel del mar, la presión atmosférica ≈ $1,013\times10^5$ Pa, equivalente al peso de una columna de aire de unos $200\ \text{kg}$ sobre la superficie de una mano ($\approx0.02\ \text{m}^{2}$).
+A nivel del mar, la presión atmosférica ≈ $1{,}013\times10^5$ Pa, equivalente al peso de una columna de aire de unos $200\ \text{kg}$ sobre la superficie de una mano ($\approx0.02\ \text{m}^{2}$).
 No sentimos esta carga porque la presión interna del cuerpo la contrarresta; solo las *diferencias de presión* son perceptibles.
 :::
 

@@ -1,8 +1,7 @@
 (sec_exergy_closed_open)=
 ## Exergía en sistemas cerrados y abiertos
 
-Una vez definidos los conceptos de **trabajo útil**, **trabajo reversible** e **irreversibilidad**, estamos preparados para formalizar la **noción de exergía**.  
-La exergía representa el **máximo trabajo teórico** que puede obtenerse cuando un sistema evoluciona **reversiblemente** desde un estado inicial dado hasta el **estado muerto**, es decir, la condición de **equilibrio termodinámico** con el entorno. Por tanto, cuantifica en términos energéticos la **calidad** de la energía de un sistema y la **degradación** causada por las irreversibilidades.
+Una vez definidos los conceptos de **trabajo útil**, **trabajo reversible** e **irreversibilidad**, estamos preparados para formalizar la **noción de exergía**. La exergía representa el **máximo trabajo teórico** que puede obtenerse cuando un sistema evoluciona **reversiblemente** desde un estado inicial dado hasta el **estado muerto**, es decir, la condición de **equilibrio termodinámico** con el entorno. Por tanto, cuantifica en términos energéticos la **calidad** de la energía de un sistema y la **degradación** causada por las irreversibilidades.
 
 ---
 
@@ -99,7 +98,7 @@ Si un fluido en movimiento ejerce presión $p$ al cruzar la frontera, la **exerg
 
 (eq_flow_exergy)=
 $$
-x_{\text{flow}} = (p - p_0)\,v
+x_{\text{flujo}} = (p - p_0)\,v
 $$
 
 Este término representa el **trabajo necesario para desplazar** el volumen de aire atmosférico ocupado por el fluido en movimiento.  

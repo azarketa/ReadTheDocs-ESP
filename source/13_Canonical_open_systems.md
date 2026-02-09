@@ -44,7 +44,7 @@ Esto indica que el **cambio de entalpía específica** es igual al **negativo de
 
 Las **toberas** y los **difusores** son dispositivos aerodinámicos que convierten energía entre **entalpía** y **energía cinética**.
 
-* En una **tobera**, la entalpía disminuye a medida que el fluido se acelera (aumentando su velocidad $c$).
+* En una **tobera**, la entalpía disminuye a medida que el fluido aumenta su velocidad $c$.
 * En un **difusor**, la energía cinética disminuye y la entalpía aumenta a medida que el fluido se desacelera.
 
 Suponiendo **operación adiabática** ($q \simeq 0$), **sin trabajo de eje** ($w_{\text{eje}} = 0$) y **cambio de elevación despreciable** ($\Delta z \simeq 0$), el balance de energía en flujo estacionario se convierte en:

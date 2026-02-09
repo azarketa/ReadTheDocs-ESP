@@ -14,7 +14,7 @@ Esta distinción se ilustra mejor mediante un **sistema pistón–cilindro**, la
 
 (eq_work_surr)=
 $$
-\boxed{W_{\text{surr.}} = p_0 (V_2 - V_1)}
+\boxed{W_{\text{surr.}} = p_0 (V_2 - V_1)} \ .
 $$
 
 Esta magnitud expresa la **acción mecánica de la presión ambiente** sobre la frontera.
@@ -23,7 +23,7 @@ El **trabajo útil** se define entonces como el **trabajo neto** obtenido tras r
 
 (eq_work_useful)=
 $$
-\boxed{W_u = W - W_{\text{surr.}}}
+\boxed{W_u = W - W_{\text{surr.}}} \ .
 $$
 
 Esta distinción aclara que:
@@ -53,7 +53,7 @@ La **irreversibilidad**, $I$, cuantifica la **pérdida de potencial de trabajo �
 
 (eq_irreversibility)=
 $$
-\boxed{I = W_{\text{rev.,out}} - W_{u,\text{out}}}
+\boxed{I = W_{\text{rev.,out}} - W_{u,\text{out}}} \ ,
 $$
 
 donde el subíndice **out** indica que las magnitudes se refieren a **trabajo de salida**.
@@ -85,7 +85,7 @@ Así, la eficiencia de la segunda ley expresa cuán eficazmente un dispositivo s
 
 (eq_eta_II_engines)=
 $$
-\boxed{\eta_{II} = \frac{\eta_{\text{th.}}}{\eta_{\text{th.,rev.}}}}
+\boxed{\eta_{II} = \frac{\eta_{\text{th.}}}{\eta_{\text{th.,rev.}}}} \ .
 $$
 
 Para ilustrarlo cuantitativamente, consideremos dos motores térmicos, **A** y **B**, cada uno con una **eficiencia térmica** de $\eta_{\text{th.}} = 0{,}30$. El motor **A** opera entre $T_H = 600\ \text{K}$ y $T_L = 300\ \text{K}$, mientras que el motor **B** opera entre $T_H = 1000\ \text{K}$ y $T_L = 300\ \text{K}$.
