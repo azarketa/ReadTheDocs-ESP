@@ -3,7 +3,7 @@
 version: 2
 
 # Build PDF
-formats:
+#formats:
     #- pdf
     
 build:
