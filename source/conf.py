@@ -6,7 +6,7 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'Thermal and Fluids Engineering: Theoretical Pills'
+project = 'Ingeniería térmica y de fluidos: píldoras teóricas'
 copyright = '2025, TEFLU Arloa, Mondragon Goi Eskola Politeknikoa (MGEP)'
 author = 'TEFLU'
 
@@ -188,7 +188,7 @@ latex_elements = {
 latex_documents = [
     ("index",
      "teflu.tex",
-     "Thermal and Fluids Engineering: Theoretical Pills",
+     "Ingeniería térmica y de fluidos: píldoras teóricas",
      "TEFLU Arloa, Mondragon Goi Eskola Politeknikoa (MGEP)",
      "manual",
      False),

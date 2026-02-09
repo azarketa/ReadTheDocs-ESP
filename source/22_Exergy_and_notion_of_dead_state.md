@@ -1,124 +1,110 @@
 (sec_exergy_and_dead_state)=
-## Exergy and the notion of dead state
+## Exergía y la noción de estado muerto
 
-The **$1^{\text{st}}$** and **$2^{\text{nd}}$ laws of thermodynamics** express two fundamental but distinct aspects of all physical transformations.
+Las **$1^{\text{a}}$** y **$2^{\text{a}}$ leyes de la termodinámica** expresan dos aspectos fundamentales, pero distintos, de todas las transformaciones físicas.
 
-* The **$1^{\text{st}}$ law** concerns the **quantity of energy**, establishing that energy is conserved — it can neither be created nor destroyed, only transformed.
-* The **$2^{\text{nd}}$ law** concerns the **quality of energy**, stating that every real process generates **entropy**, which remains constant only under perfectly reversible conditions.
+* La **$1^{\text{a}}$ ley** trata de la **cantidad de energía**, estableciendo que la energía se conserva: no puede crearse ni destruirse, solo transformarse.
+* La **$2^{\text{a}}$ ley** trata de la **calidad de la energía**, indicando que todo proceso real genera **entropía**, que solo permanece constante bajo condiciones perfectamente reversibles.
 
-These two principles together distinguish **how much energy** exists from **how useful** that energy is.
-While energy is conserved, its *usefulness* continuously diminishes as entropy increases.
+Ambos principios distinguen entre **cuánta energía** existe y **cuán útil** es esa energía. Aunque la energía se conserva, su *utilidad* disminuye continuamente a medida que aumenta la entropía.
 
-Because entropy introduces a **direction to time** — the irreversible “arrow” of natural processes — the $1^{\text{st}}$ law is a *quantitative* principle, and the second is a *qualitative* one.
-However, these quantities are **incommensurable**:
-energy is measured in **joules $\text{J}$**, whereas entropy is expressed in **joules per Kelvin $\text{J}/\text{K}$**.
-Thus, one cannot directly compare or combine them in their native form.
+Como la entropía introduce una **dirección en el tiempo** — la “flecha” irreversible de los procesos naturales — la primera ley es un principio *cuantitativo*, mientras que la segunda es *cualitativa*. Sin embargo, estas magnitudes son **inconmensurables**: la energía se mide en **julios ($\text{J}$)**, mientras que la entropía se mide en **julios por kelvin ($\text{J}/\text{K}$)**. No pueden, por tanto, compararse ni combinarse directamente.
 
-This raises a key question:
+Esto plantea una pregunta fundamental:
 
 :::{epigraph}
-Can the *quality* of energy — as expressed by the $2^{\text{nd}}$ law — be translated into an **energetic measure**?
+¿Puede la *calidad* de la energía — tal como la expresa la $2^{\text{a}}$ ley — traducirse a una **magnitud energética**?
 :::
 
-If so, we could quantify **irreversibilities** in energy terms, assessing how much of the total energy remains *useful* for producing work.
+Si así fuera, podríamos cuantificar las **irreversibilidades** en términos de energía y evaluar cuánta de la energía total sigue siendo *útil* para producir trabajo.
 
-The answer lies in combining the $1^{\text{st}}$ and $2^{\text{nd}}$ laws.
-By doing so, we obtain a new quantity — the **exergy** — which measures the **maximum useful work** that can be extracted as a system comes into equilibrium with its environment.
-Exergy is therefore **not an independent principle**, but a **derived property**, a synthesis of both laws that expresses the energetic *value* of energy itself.
+La respuesta surge al combinar la $1^{\text{a}}$ y la $2^{\text{a}}$ leyes. De este modo obtenemos una nueva magnitud — la **exergía** — que mide el **máximo trabajo útil** que puede extraerse cuando un sistema evoluciona hasta alcanzar el equilibrio con su entorno. La exergía no es, por tanto, un principio independiente, sino una **propiedad derivada**, una síntesis de ambas leyes que expresa el *valor energético* de la energía misma.
 
-However, defining exergy requires understanding what it means for a system to be in *equilibrium* with its environment — the concept of the **dead state**.
+No obstante, definir la exergía requiere comprender qué significa que un sistema esté en **equilibrio** con su entorno: este es el concepto de **estado muerto**.
 
 ::::{note}
 
-**EXERGY AND AVAILABILITY**
+**EXERGÍA Y DISPONIBILIDAD**
 
-The notion of **exergy** first appeared under the name **availability**, reflecting an early attempt to quantify how much of a system’s energy could be **converted into useful work** under the conditions set by its **environment**; or, in other words, the concern that guided the conception of the term **availability** was:
+El concepto de **exergía** apareció inicialmente bajo el nombre de **disponibilidad**, reflejando un intento temprano de cuantificar cuánta energía de un sistema podía **convertirse en trabajo útil** bajo las condiciones impuestas por su **entorno**. Dicho de otra forma, la preocupación que llevó a concebir la noción de “disponibilidad” fue:
 
 :::{epigraph}
-How much energy can be extracted from a system placed in a given environment?
+¿Cuánta energía puede extraerse de un sistema situado en un entorno dado?
 :::
 
-The answer depends not only on the system’s internal state but also on that of its surroundings. When the two are in **complete equilibrium** — the **dead state** — no spontaneous processes can occur, and the system’s energy, though present, is **unavailable**. A clear example is the **atmosphere**, which contains immense energy but cannot deliver work as long as it remains uniform. Only when **gradients** of temperature, pressure, or composition exist does the system possess **exergy** — the measurable *potential to produce work*.
+La respuesta depende no solo del estado interno del sistema, sino también del estado de su entorno. Cuando ambos se hallan en **equilibrio completo** — el **estado muerto** — ningún proceso espontáneo puede ocurrir, y la energía del sistema, aunque presente, es **inútil**. Un ejemplo ilustrativo es la **atmósfera**: contiene una enorme cantidad de energía, pero no puede entregar trabajo mientras permanezca uniforme. Solo cuando existen **gradientes** de temperatura, presión o composición, un sistema posee **exergía** — el *potencial medible para producir trabajo*.
+
 ::::
 
 ---
 
 (subsec_dead_state_and_work_potential)=
-### The dead state and work potential
+### El estado muerto y el potencial de trabajo
 
-A system is said to be in its **dead state** when it is in **complete thermodynamic equilibrium with the environment** — that is, when no gradients of temperature, pressure, or chemical potential exist between them.
-At that point, **no more work** can be extracted from the system.
+Un sistema se halla en su **estado muerto** cuando está en **equilibrio termodinámico completo con el entorno** — es decir, cuando no existen gradientes de temperatura, presión o potencial químico entre ellos. En ese punto, **no puede extraerse más trabajo** del sistema.
 
-The **atmosphere** illustrates this well: although it contains an immense amount of energy, a device in equilibrium with it cannot extract any work, since there are no property differences to exploit.
-To generate work, a system must first be **out of equilibrium** — having a higher temperature, pressure, or some other potential difference relative to its surroundings.
+La **atmósfera** ilustra bien este concepto: aunque contiene una cantidad enorme de energía, un dispositivo en equilibrio con ella no puede extraer trabajo, ya que no existen diferencias de propiedades que explotar. Para generar trabajo, un sistema debe estar inicialmente **fuera del equilibrio**, con mayor temperatura, presión o algún otro potencial respecto al entorno.
 
-Hence, extracting energy from a system effectively means extracting **organized, useful energy** — that which can perform **mechanical work**.
-The **maximum work** obtainable as a system passes from a given *initial state* to the *dead state* is called its **work potential**.
+Por tanto, extraer energía de un sistema significa extraer **energía organizada y útil** — aquella capaz de realizar **trabajo mecánico**. El **trabajo máximo** que puede obtenerse cuando un sistema pasa desde un *estado inicial* dado hasta el *estado muerto* se denomina su **potencial de trabajo**.
 
-Formally, since work is a **path function**, one may write:
+Formalmente, dado que el trabajo es una **función de trayectoria**, puede escribirse:
 
 $$
-W = f(\text{initial state}, \text{process path}, \text{final state})
+W = f(\text{estado inicial}, \text{trayectoria del proceso}, \text{estado final})
 $$
 
-In an **exergetic analysis**:
+En un **análisis exergético**:
 
-* The **initial state** is given and fixed.
-* The **final state** corresponds to the **dead state**, where equilibrium with the environment is achieved.
-* The **process path** is assumed **reversible**, since only reversible transformations yield **maximum work**.
+* El **estado inicial** está dado.
+* El **estado final** es el **estado muerto**, en equilibrio con el entorno.
+* La **trayectoria** se supone **reversible**, puesto que solo las transformaciones reversibles producen **trabajo máximo**.
 
-Any **irreversibility** within the system or its immediate surroundings reduces this theoretical maximum, resulting in **exergy destruction**.
+Cualquier **irreversibilidad** dentro del sistema o en sus alrededores inmediatos reduce este máximo teórico, originando **destrucción de exergía**.
 
 :::{important}
 
-**MEANING OF EXERGY**
+**SIGNIFICADO DE LA EXERGÍA**
 
-Exergy quantifies the **maximum useful work** obtainable as a system moves reversibly from its initial state to the **dead state**.
-It represents the **upper limit** of performance permitted by thermodynamic laws — the boundary between the *usable* and *unusable* portions of energy.
+La exergía cuantifica el **máximo trabajo útil** que puede obtenerse cuando un sistema evoluciona reversiblemente desde su estado inicial hasta el **estado muerto**. Representa el **límite superior** impuesto por las leyes termodinámicas — la frontera entre la porción *útil* y la *inútil* de la energía.
 :::
 
 ---
 
 (subsec_boundaries_and_dead_state_considerations)=
-### Boundaries, irreversibilities, and final considerations on the dead state
+### Fronteras, irreversibilidades y consideraciones finales sobre el estado muerto
 
-When studying **exergy**, it is essential to define precisely what is meant by the **system**, its **surroundings**, and its **environment**, since these distinctions determine **where irreversibilities occur** and **how work potential is lost**.
+Al estudiar la **exergía**, es esencial definir con precisión qué se entiende por **sistema**, **alrededores** y **entorno**, ya que estas distinciones determinan **dónde aparecen las irreversibilidades** y **cómo se pierde potencial de trabajo**.
 
-* The **surroundings** comprise everything outside the system’s boundary.
-* The **immediate surroundings** are the portion of those surroundings directly affected by the process — where gradients of temperature, pressure, or velocity exist.
-* The **environment** refers to the large, unaffected reservoir that defines the **reference conditions** for the **dead state**.
+* Los **alrededores** comprenden todo lo que está fuera de la frontera del sistema.
+* Los **alrededores inmediatos** son la parte de esos alrededores directamente afectada por el proceso — donde existen gradientes de temperatura, presión o velocidad.
+* El **entorno** es el gran reservorio no perturbado que define las **condiciones de referencia** para el **estado muerto**.
 
-Irreversibilities appear both **within the system** and in its **immediate surroundings**, where finite differences in temperature or pressure drive transfers of heat or mass.
-It is in these regions of non-equilibrium that **entropy generation** and, consequently, **exergy destruction** take place.
+Las irreversibilidades aparecen tanto **dentro del sistema** como en sus **alrededores inmediatos**, donde diferencias finitas de temperatura o presión impulsan transferencias de calor o masa. En estas zonas de no equilibrio se produce **generación de entropía** y, en consecuencia, **destrucción de exergía**.
 
-The concept of **exergy** extends beyond systems that directly produce mechanical work.
-Even if a device performs no shaft work, as long as it is **not in equilibrium** with its environment, it possesses a **potential to do work** — a stored capacity for useful energy conversion.
+El concepto de **exergía** va más allá de los sistemas que producen directamente trabajo mecánico. Incluso si un dispositivo no realiza trabajo de eje, mientras no esté en equilibrio con su entorno posee un **potencial para producir trabajo** — una capacidad almacenada de conversión energética útil.
 
-Indeed:
+En efecto:
 
-* If the system’s **temperature** is greater than that of the environment ($T_f > T_{\text{env.}}$), a **heat engine** could, in principle, operate between them to produce work.
-* If its **pressure** is higher than the ambient value ($P_f > P_{\text{env.}}$), expansion could yield mechanical energy.
-* If the system possesses **kinetic**, **potential**, or **chemical energy**, these can likewise be transformed into useful work — for instance, when motion ($c_f > 0$) or elevation ($z_f > 0$) differences exist.
+* Si la **temperatura** del sistema supera la del entorno $(T_f > T_{\text{ent.}})$, podría operar un **motor térmico** entre ambos para producir trabajo.
+* Si su **presión** es mayor que la presión ambiente $(P_f > P_{\text{ent.}})$, la expansión podría generar energía mecánica.
+* Si el sistema posee **energía cinética**, **potencial** o **química**, estas formas también pueden convertirse en trabajo — por ejemplo, cuando existen diferencias de velocidad $(c_f > 0)$ o de altura $(z_f > 0)$.
 
-Once all such property differences vanish, the system reaches the **dead state** — full thermodynamic equilibrium with the environment, where no further work can be obtained.
-The **reversible process** that brings a system from its initial condition to this equilibrium defines the **maximum useful work** it can deliver, that is, its **exergy**.
+Cuando todas estas diferencias desaparecen, el sistema alcanza el **estado muerto** — el equilibrio termodinámico total con el entorno, donde no puede obtenerse más trabajo. El proceso reversible que conduce al sistema desde su condición inicial hasta este equilibrio define el **trabajo útil máximo** que puede entregar: su **exergía**.
 
 :::{important}
 
-**THE ROLE OF THE DEAD STATE**
+**LA FUNCIÓN DEL ESTADO MUERTO**
 
-The **dead state** serves as the universal **reference condition** for all exergy evaluations.
-At this state, no gradients remain, no process can occur spontaneously, and no work can be extracted.
-Exergy therefore measures how far a system stands from equilibrium — and quantifies the **work potential** lost as it approaches that state.
+El **estado muerto** es la referencia universal para todas las evaluaciones de exergía. En él, no existen gradientes, no puede ocurrir ningún proceso espontáneo y no puede extraerse trabajo alguno. La exergía cuantifica, así, la distancia entre un sistema y el equilibrio — y mide el **potencial de trabajo** perdido a medida que el sistema se acerca a dicho estado.
 :::
 
 ---
 
 (subsec_conceptual_closure_exergy)=
-### Conceptual closure
+### Cierre conceptual
 
-* **Exergy** bridges the two laws of thermodynamics, expressing the quality of energy in **energetic terms**.
-* The **dead state** defines the condition of **complete equilibrium** with the environment — where all potential for work has vanished.
-* The **maximum reversible work** obtainable between an initial state and the dead state is the system’s **exergy**.
-* **Irreversibilities** reduce this maximum, representing **exergy destruction** or **loss of work potential**.
-* Exergy thus provides a **quantitative measure** of how the degradation of energy quality translates into **energetic inefficiency** — closing the conceptual link between the $1^{\text{st}}$ and $2^{\text{nd}}$ laws.
+* La **exergía** enlaza las dos leyes de la termodinámica, expresando la calidad de la energía en **términos energéticos**.
+* El **estado muerto** define la condición de **equilibrio completo** con el entorno — donde el potencial de trabajo desaparece.
+* El **trabajo reversible máximo** entre un estado inicial y el estado muerto constituye la **exergía** de un sistema.
+* Las **irreversibilidades** reducen este máximo, dando lugar a **destrucción de exergía**.
+* La exergía proporciona así una **medida cuantitativa** de cómo la degradación de la calidad de la energía se traduce en **ineficiencia energética** — cerrando el puente conceptual entre la $1^{\text{a}}$ y la $2^{\text{a}}$ leyes.

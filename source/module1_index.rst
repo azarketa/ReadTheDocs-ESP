@@ -1,4 +1,4 @@
-FUNDAMENTALS
+FUNDAMENTOS
 ============
 
 .. toctree::

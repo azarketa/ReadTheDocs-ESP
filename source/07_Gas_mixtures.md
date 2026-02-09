@@ -1,63 +1,62 @@
 (sec_gas_mixtures)=
-## Gas mixtures
+## Mezclas de gases
 
-Gas mixtures often serve as the working fluid in thermodynamic systems. Unlike pure substances, which consist of a single molecular species, a gas mixture is composed of several pure components. Each of these components contributes to the overall properties of the mixture, and their interaction must be described through specific definitions that extend the concepts used for single substances.
+Las mezclas de gases suelen actuar como fluido de trabajo en sistemas termodinámicos. A diferencia de las sustancias puras, que constan de una sola especie molecular, una mezcla gaseosa está compuesta por varios componentes puros. Cada uno de estos componentes contribuye a las propiedades globales de la mezcla, y su interacción debe describirse mediante definiciones específicas que amplían los conceptos usados para sustancias individuales.
 
-The two most fundamental composition descriptors are the **mass fraction** and the **molar fraction**, both of which quantify how each component contributes to the total mass and total number of moles of the mixture. Understanding these definitions is essential for expressing mixture properties and formulating the equation of state that governs their thermodynamic behavior.
+Los dos descriptores de composición más fundamentales son la **fracción másica** y la **fracción molar**, ambos cuantifican cómo contribuye cada componente a la masa total y al número total de moles de la mezcla, respectivamente. Comprender estas definiciones es esencial para expresar propiedades de mezclas y formular la ecuación de estado que rige su comportamiento termodinámico.
 
 ---
 
 (subsec_mass_and_molar_fractions)=
-### Mass and molar fractions
+### Fracciones másicas y molares
 
-Consider a gas mixture composed of $k$ different substances (e.g., oxygen and carbon monoxide). Since **mass** and **amount of substance** are *extensive* properties, their total values are the sums of the contributions from each component. Using the subscript $i$ to denote a specific component, we can write:
+Consideremos una mezcla gaseosa compuesta por $k$ sustancias diferentes (por ejemplo, oxígeno y monóxido de carbono). Dado que la **masa** y la **cantidad de sustancia** son propiedades *extensivas*, sus valores totales son la suma de las contribuciones de cada componente. Usando el subíndice $i$ para denotar un componente específico, podemos escribir:
 
 (eq_total_moles_mass)=
-$$N_{\text{total}}{}={} \sum_{i=1}^{k} N_i \qquad\text{and}\qquad m_{\text{total}}{}={} \sum_{i=1}^{k} m_i$$
+$$N_{\text{total}}{}={} \sum_{i=1}^{k} N_i \qquad\text{y}\qquad m_{\text{total}}{}={} \sum_{i=1}^{k} m_i$$
 
-Each component of the mixture is characterized by two fractions:
+Cada componente de la mezcla se caracteriza por dos fracciones:
 
-* The **mass fraction** $x_i$, which represents the proportion of the total mass belonging to component $i$.
-* The **molar fraction** $y_i$, which represents the proportion of the total number of moles corresponding to that same component.
+* La **fracción másica** $x_i$, que representa la proporción de la masa total que corresponde al componente $i$.
+* La **fracción molar** $y_i$, que representa la proporción del número total de moles correspondiente a ese mismo componente.
 
-They are defined as follows:
+Se definen como sigue:
 
 (eq_mass_molar_fractions)=
-$$x_i{}={} \frac{m_i}{m_{\text{total}}} \qquad\text{and}\qquad y_i{}={} \frac{N_i}{N_{\text{total}}}$$
+$$x_i{}={} \frac{m_i}{m_{\text{total}}} \qquad\text{y}\qquad y_i{}={} \frac{N_i}{N_{\text{total}}}$$
 
-Since they are fractions, they must satisfy the normalization condition:
+Dado que son fracciones, deben cumplir la condición de normalización:
 
 (eq_normalization_mass_molar)=
-$${\sum_{i=1}^{k} x_i}{}={}1 \qquad\text{and}\qquad {\sum_{i=1}^{k} y_i}{}={}1$$
+$${\sum_{i=1}^{k} x_i}{}={}1 \qquad\text{y}\qquad {\sum_{i=1}^{k} y_i}{}={}1$$
 
 :::{note}
 
-**PHYSICAL INTERPRETATION**
+**INTERPRETACIÓN FÍSICA**
 
-The mass fraction expresses how much of the mixture’s total mass corresponds to each species, whereas the molar fraction expresses how many moles of that species are present relative to the total moles.
-Both are fundamental when converting between molar and mass-based quantities in mixture calculations.
+La fracción másica expresa cuánto de la masa total de la mezcla corresponde a cada especie, mientras que la fracción molar indica cuántos moles de esa especie están presentes en relación con el total. Ambas son fundamentales para convertir entre magnitudes basadas en moles y en masa en cálculos de mezclas.
 :::
 
 ---
 
 (subsec_pvt_behaviour_ideal_mixtures)=
-### $p-v-T$ behaviour of mixtures of ideal gases
+### Comportamiento $p-v-T$ de mezclas de gases ideales
 
-The definitions of $x_i$ and $y_i$ become particularly relevant when describing the pressure–volume–temperature ($p–v–T$) behavior of mixtures that obey the **ideal gas law**. When gases behave ideally, two empirical relations—**Dalton’s law** and **Amagat’s law**—connect the overall properties of the mixture to those of its individual components.
+Las definiciones de $x_i$ y $y_i$ adquieren especial relevancia al describir el comportamiento presión–volumen–temperatura ($p–v–T$) de mezclas que obedecen la **ley de gas ideal**. Cuando los gases se comportan idealmente, dos relaciones empíricas —**ley de Dalton** y **ley de Amagat**— conectan las propiedades globales de la mezcla con las de sus componentes individuales.
 
 (eq_dalton_law)=
 $$p_{\text{total}}{}={} \sum_{i=1}^{k} p_i(T_{\text{total}}, V_{\text{total}})$$
 
-According to Dalton’s law, the **total pressure** of a mixture equals the sum of the **partial pressures** exerted by each component. Each partial pressure $p_i$ is calculated at the total temperature and total volume of the mixture, i.e., the thermodynamic state shared by all species.
+Según la ley de Dalton, la **presión total** de una mezcla es igual a la suma de las **presiones parciales** ejercidas por cada componente. Cada presión parcial $p_i$ se calcula a la temperatura y volumen totales de la mezcla, es decir, el estado termodinámico compartido por todas las especies.
 
-In a parallel manner, **Amagat’s law** applies the same additive principle to volumes:
+De forma análoga, la **ley de Amagat** aplica el mismo principio aditivo a los volúmenes:
 
 (eq_amagat_law)=
 $$V_{\text{total}}{}={} \sum_{i=1}^{k} V_i(T_{\text{total}}, p_{\text{total}})$$
 
-Amagat’s statement reflects that **volume is also an extensive property**, just like mass or moles. It follows that the total volume of the mixture equals the sum of the partial volumes each component would occupy if it alone existed at the mixture’s total pressure and temperature.
+La afirmación de Amagat refleja que el **volumen también es una propiedad extensiva**, al igual que la masa o los moles. Se deduce que el volumen total de la mezcla es igual a la suma de los volúmenes parciales que ocuparía cada componente si existiera solo a la presión y temperatura totales de la mezcla.
 
-Now, introducing the **ideal gas law** for each component, we can establish the link between the ratios of partial and total quantities and the molar fractions. For any component $i$:
+Ahora, introduciendo la **ley de gas ideal** para cada componente, podemos establecer el vínculo entre las razones de cantidades parciales y totales y las fracciones molares. Para cualquier componente $i$:
 
 (eq_partial_pressure_ratio)=
 $$\frac{p_i(T_{\text{total}}, V_{\text{total}})}{p_{\text{total}}}{}={} \frac{\left(\frac{N_i R_u T_{\text{total}}}{V_{\text{total}}}\right)}{\left(\frac{N_{\text{total}} R_u T_{\text{total}}}{V_{\text{total}}}\right)}{}={} \frac{N_i}{N_{\text{total}}}{}={}y_i$$
@@ -65,197 +64,204 @@ $$\frac{p_i(T_{\text{total}}, V_{\text{total}})}{p_{\text{total}}}{}={} \frac{\l
 (eq_partial_volume_ratio)=
 $$\frac{V_i(T_{\text{total}}, p_{\text{total}})}{V_{\text{total}}}{}={} \frac{\left(\frac{N_i R_u T_{\text{total}}}{p_{\text{total}}}\right)}{\left(\frac{N_{\text{total}} R_u T_{\text{total}}}{p_{\text{total}}}\right)}{}={} \frac{N_i}{N_{\text{total}}}{}={}y_i$$
 
-Thus, the ratios of each component’s partial pressure and partial volume to the total mixture values both coincide with the component’s **molar fraction**:
+Así, las razones entre la presión parcial y el volumen parcial de cada componente respecto a los valores totales de la mezcla coinciden con la **fracción molar** del componente:
 
 (eq_y_relation)=
 $$\frac{p_i}{p_{\text{total}}}{}={} \frac{V_i}{V_{\text{total}}}{}={} \frac{N_i}{N_{\text{total}}}{}={}y_i$$
 
 :::{tip}
 
-**THE SIGNIFICANCE OF MOLAR FRACTION**
+**IMPORTANCIA DE LA FRACCIÓN MOLAR**
 
-The molar fraction directly expresses how each species contributes to the overall pressure and volume of the gas mixture. It serves as the natural weighting factor for many other mixture properties and simplifies the formulation of state and energy equations.
+La fracción molar expresa directamente cómo contribuye cada especie a la presión y volumen globales de la mezcla gaseosa. Actúa como el factor de ponderación natural para muchas otras propiedades de la mezcla y simplifica la formulación de ecuaciones de estado y energía.
 :::
 
 ---
 
+
+
 (subsec_properties_ideal_mixtures)=
-### Properties of ideal gas mixtures
+### Propiedades de mezclas de gases ideales
 
-Once the $p$–$v$–$T$ relations for ideal mixtures are established, the same definitions of molar and mass fractions can be used to describe other thermodynamic properties. The **additivity principle** of extensive properties extends naturally to internal energy, enthalpy, entropy, and specific heats.
+Una vez establecidas las relaciones $p$–$v$–$T$ para mezclas ideales, las mismas definiciones de fracciones molares y másicas pueden emplearse para describir otras propiedades termodinámicas. El **principio de aditividad** de las propiedades extensivas se extiende naturalmente a la energía interna, entalpía, entropía y calores específicos.
 
-For the **specific molar heats** (expressed in $[\mathrm{J/mol\cdot K}]$), each property of the mixture is the molar-fraction-weighted sum of the corresponding properties of the individual gases:
+Para los **calores específicos molares** (expresados en $[\mathrm{J/mol\cdot K}]$), cada propiedad de la mezcla es la suma ponderada por fracción molar de las propiedades correspondientes de los gases individuales:
 
 (eq_molar_specific_heats)=
-$$\overline{c_{p}}_{\text{mixture}}{}={} \sum_{i=1}^{k} y_i{}\overline{c_{p}}_{i} \qquad\text{and}\qquad \overline{c_{v}}_{\text{mixture}}{}={} \sum_{i=1}^{k} y_i{}\overline{c_{v}}_{i}$$
+$$\overline{c_{p}}_{\text{mezcla}}{}={} \sum_{i=1}^{k} y_i{}\overline{c_{p}}_{i} \qquad\text{y}\qquad \overline{c_{v}}_{\text{mezcla}}{}={} \sum_{i=1}^{k} y_i{}\overline{c_{v}}_{i}$$
 
-When specific heats are expressed on a **mass basis** (in $[\mathrm{J/kg\cdot K}]$), the weighting must be performed with the **mass fractions** instead:
+Cuando los calores específicos se expresan en **base másica** (en $[\mathrm{J/kg\cdot K}]$), la ponderación debe realizarse con las **fracciones másicas**:
 
 (eq_mass_specific_heats)=
-$$c_{p_{\text{mixture}}}{}={} \sum_{i=1}^{k} x_i{}c_{p_{i}} \qquad\text{and}\qquad c_{v_{\text{mixture}}}{}={} \sum_{i=1}^{k} x_i{}c_{v_{i}}$$
+$$c_{p_{\text{mezcla}}}{}={} \sum_{i=1}^{k} x_i{}c_{p_{i}} \qquad\text{y}\qquad c_{v_{\text{mezcla}}}{}={} \sum_{i=1}^{k} x_i{}c_{v_{i}}$$
 
-Similarly, the **molar mass** of the mixture—representing the equivalent mass per kilomole of mixture—is obtained through the molar-fraction-weighted sum of the molar masses of the components:
+De manera similar, la **masa molar** de la mezcla —que representa la masa equivalente por kilomol de mezcla— se obtiene mediante la suma ponderada por fracción molar de las masas molares de los componentes:
 
 (eq_mixture_molar_mass)=
-$$\text{MW}_{\text{mixture}}{}={} \sum_{i=1}^{k} y_i{}\text{MW}_i$$
+$$\text{M}_{\text{mezcla}}{}={} \sum_{i=1}^{k} y_i{}\text{M}_i$$
 
-Finally, the **gas constant of the mixture**, in turn, is obtained by performing a mass-fraction-weighted sum of the individual gas constants:
+Finalmente, la **constante de gas de la mezcla** se obtiene realizando una suma ponderada por fracción másica de las constantes individuales:
 
 (eq_mixture_gas_constant)=
-$$R_{\text{mixture}}{}={} \sum_{i=1}^{k} x_i{}R_i$$
+$$R_{\text{mezcla}}{}={} \sum_{i=1}^{k} x_i{}R_i$$
 
-Finally, the **extensive properties** of a mixture can be expressed either as the **molar-weighted** or the **mass-weighted** sums of the corresponding molar/specific properties of each component:
+Por último, las **propiedades extensivas** de una mezcla pueden expresarse como sumas ponderadas por moles o por masa de las propiedades molares/específicas de cada componente:
 
-$$
-\Phi_{\text{mixture}} = \sum_{i=1}^{k} N_i\overline{\phi}_i = \sum_{i=1}^{k} m_i\phi_i
-$$
+\begin{equation}
+    \Phi_{\text{mezcla}}
+    \begin{cases}
+         = \sum_{i=1}^{k} N_i\overline{\phi}_i \ \ \text{(base molar)}\\[3ex]
+         = \sum_{i=1}^{k} m_i\phi_i \ \ \text{(base másica)}
+    \end{cases}
+\end{equation}
 
-where
+donde:
 
-* $\Phi_{\text{mixture}}$ is the total (extensive) property of the mixture,
-* $\overline{\phi}_i$ and $\phi_i$ are the **molar** and **specific** properties, respectively, of component $i$,
-* $N_i$ and $m_i$ are the **moles** and **mass** of that component, and
-* $k$ is the total number of components in the mixture.
+* $\Phi_{\text{mezcla}}$ es la propiedad total (extensiva) de la mezcla,
+* $\overline{\phi}_i$ y $\phi_i$ son las propiedades **molares** y **específicas**, respectivamente, del componente $i$,
+* $N_i$ y $m_i$ son los **moles** y la **masa** de dicho componente, y
+* $k$ es el número total de componentes en la mezcla.
 
-This formulation applies to any **extensive quantity** — such as total volume — and ensures that the mixture property reflects the collective contribution of all components, each weighted by its mass fraction.
+Esta formulación se aplica a cualquier **magnitud extensiva** —como el volumen total— y garantiza que la propiedad de la mezcla refleje la contribución colectiva de todos los componentes, cada uno ponderado por su fracción másica.
 
 :::{note}
 
-**VALIDITY OF ADDITIVITY**
+**VALIDEZ DE LA ADITIVIDAD**
 
-All the relations above rely on the **ideal mixture assumption**, where interactions between different species are neglected. For real mixtures—especially under high pressure, low temperature, or when chemical reactions occur—these additivity rules must be replaced by non-ideal mixture models (e.g., equations of state with mixing rules or activity coefficients).
+Todas las relaciones anteriores se basan en la **hipótesis de mezcla ideal**, donde se desprecia la interacción entre especies diferentes. Para mezclas reales —especialmente a alta presión, baja temperatura o cuando ocurren reacciones químicas— estas reglas deben sustituirse por modelos no ideales (por ejemplo, ecuaciones de estado con reglas de mezcla o coeficientes de actividad).
 :::
 
 :::{important}
 
-**UNIT-CONSISTENCY OF MIXTURE PROPERTIES**
+**COHERENCIA DE UNIDADES EN PROPIEDADES DE MEZCLAS**
 
-Each property of an ideal gas mixture—whether expressed per mole or per mass—results from **weighted averaging** of the component properties. The weighting factor depends on the reference basis:
+Cada propiedad de una mezcla de gases ideal —ya sea expresada por mol o por masa— resulta de un **promedio ponderado** de las propiedades de los componentes. El factor de ponderación depende de la base de referencia:
 
-* **Molar fraction $y_i$** for molar properties.
-* **Mass fraction $x_i$** for mass-based properties.
-This distinction ensures dimensional consistency and accurate property predictions.
+* **Fracción molar $y_i$** para propiedades molares.
+* **Fracción másica $x_i$** para propiedades en base másica.
 
-Note that the molar and mass quantities show a different nomenclature. If $\phi$ is a generic quantity being symbolized (i.e. $\phi$ can be a specific heat or a molar weight):
-* The **molar quantities** are expressed by **overlined** symbols, i.e. $\overline{\phi}$ (e.g. $\overline{c}_{p,\text{mixture}}$). When a weighted-sum formula is employed, the molar quantities will show up with the **molar fractions $y_{i}$**.
-* The **mass quantities** are expressed with **bare** symbols, i.e. $\phi$ (e.g. $c_{p,\text{mixture}}$). When a weighted-sum formula is employed, the mass quantities will show up with the **mass fractions $x_{i}$**.
+Esta distinción asegura la coherencia dimensional y predicciones precisas de propiedades. Obsérvese que las cantidades molares y másicas presentan una nomenclatura diferente. Si $\phi$ es una magnitud genérica (por ejemplo, un calor específico o una masa molar):
+* Las **cantidades molares** se expresan con **barra superior**, es decir, $\overline{\phi}$ (p. ej., $\overline{c}_{p,\text{mezcla}}$). Cuando se emplea una fórmula de suma ponderada, las cantidades molares se acompañan de las **fracciones molares $y_{i}$**.
+* Las **cantidades másicas** se expresan con símbolos **sin barra**, es decir, $\phi$ (p. ej., $c_{p,\text{mezcla}}$). Cuando se emplea una fórmula de suma ponderada, las cantidades másicas se acompañan de las **fracciones másicas $x_{i}$**.
 :::
+
+
 
 ::::{important}
 
-**WORKED EXAMPLE — MIXTURE PROPERTIES OF STANDARD AIR**
+**EJEMPLO RESUELTO — PROPIEDADES DE MEZCLA DEL AIRE ESTÁNDAR**
 
-**Problem statement**
+**Enunciado del problema**
 
-Air is a common mixture that usually described as having a volumetric composition of $21 \ \%$ $\text{O}_{2}$ and $79 \ \%$ $\text{N}_{2}$. The molar weights of those components can be obtained from standard chemical tables, as well as the values for the universal gas constant ($\text{R}_{\text{u}}$) and the specific heat constants of the components at particular temperatures. Assuming that the system being analyzed is composed of standard air at a temperature of $25 \ ^{\circ}\text{C}$, calculate its effective molar weight, as well as its specific heat constants, and compare them to the standard tabulated values.
+El aire es una mezcla común que suele describirse con una composición volumétrica de $21 \ \%$ $\text{O}_{2}$ y $79 \ \%$ $\text{N}_{2}$. Las masas molares de esos componentes pueden obtenerse de tablas químicas estándar, así como los valores de la constante universal de los gases ($\text{R}_{\text{u}}$) y las constantes de calor específico de los componentes a temperaturas particulares. Suponiendo que el sistema analizado está compuesto por aire estándar a una temperatura de $25 \ ^{\circ}\text{C}$, calcula su masa molar efectiva, así como sus constantes de calor específico, y compáralas con los valores tabulados estándar.
 
-**Synthesis**
+**Síntesis**
 
-“Standard air” is modeled as an ideal gas **mixture** with **mole fractions** $y_{\mathrm{O_2}} = 0.21$, $y_{\mathrm{N_2}}=0.79$ at $T=25 \ ^\circ\text{C}$, and the following magnitudes are computed:
+El “aire estándar” se modela como una mezcla de gas ideal con **fracciones molares** $y_{\mathrm{O_2}} = 0{,}21$, $y_{\mathrm{N_2}}=0{,}79$ a $T=25 \ ^\circ\text{C}$, y se calculan las siguientes magnitudes:
 
-* **Effective molar mass**, $\text{MW}_{\text{air}}$,
-* **Mixture** $\overline{c_{p}}_{\text{air}}$ and $\overline{c_{v}}_{\text{air}}$ (molar basis), then **mass-based** $c_{p_{\text{air}}}$, $c_{v_{\text{air}}}$, $R_{\text{air}}$, and $\gamma_{\text{air}}=c_{p_{\text{air}}}/c_{v_{\text{air}}}$,
-* Compare to common **tabulated “standard air”** values at $\approx 300 \ \text{K}$.
+* **Masa molar efectiva**, $\text{M}_{\text{aire}}$,
+* **Mezcla** $\overline{c_{p}}_{\text{aire}}$ y $\overline{c_{v}}_{\text{aire}}$ (base molar), luego en **base másica** $c_{p_{\text{aire}}}$, $c_{v_{\text{aire}}}$, $R_{\text{aire}}$, y $\gamma_{\text{aire}}=c_{p_{\text{aire}}}/c_{v_{\text{aire}}}$,
+* Comparación con valores **tabulados de “aire estándar”** a $\approx 300 \ \text{K}$.
 
 ---
 
-**Problem data**{cite}`2015Cengel`
+**Datos del problema**{cite}`2015Cengel`
 
-| Quantity                                    |                  Symbol                  | Value                                                                                                  |
+| Magnitud                                    |                  Símbolo                  | Valor                                                                                                  |
 | :------------------------------------------ | :--------------------------------------: | :----------------------------------------------------------------------------------------------------- |
-| Mole fractions                              |   $\left(y_{\mathrm{O_2}}, \ y_{\mathrm{N_2}}\right)$   | $\left(0.21, \ 0.79\right)$                                                                                          |
-| Molar masses                                |   $\left(\text{MW}_{\mathrm{O_2}}, \ \text{MW}_{\mathrm{N_2}}\right)$   | $\left(31.998, \ 28.0134\right) \ \text{g/mol}$                                                                       |
-| Universal gas constant                      |                   $R_u$                  | $8.314462618 \ \text{J mol}^{-1}\text{K}^{-1}$                                                          |
-| Component $\overline{c_{p}}$ at $25^\circ\text{C}$ | $\left(\overline{c_{p}}_{\mathrm{O_2}}, \ \overline{c_{p}}_{\mathrm{N_2}}\right)$ | $\left(29.355, \ 29.124\right) \ \text{J mol}^{-1}\text{K}^{-1}$                                                      |
-| Reference standard air (tabulated) | $\left(\text{MW}_{\text{air}_{\text{tb}}}, \ R_{\text{air}_{\text{tb}}}, \ c_{p_{\text{air}_{\text{tb}}}}, \ c_{v_{\text{air}_{\text{tb}}}}, \ \gamma_{\text{air}_{\text{tb}}}\right)$ | $\left(28.965, \ 287.058, \ 1005, \ 718, \ 1.400\right)$ |
+| Fracciones molares                          |   $\left(y_{\mathrm{O_2}}, \ y_{\mathrm{N_2}}\right)$   | $\left(0{,}21, \ 0{,}79\right)$                                                                                          |
+| Masas molares                               |   $\left(\text{M}_{\mathrm{O_2}}, \ \text{M}_{\mathrm{N_2}}\right)$   | $\left(31{,}998, \ 28{,}0134\right) \ \text{g/mol}$                                                                       |
+| Constante universal de los gases            |                   $R_u$                  | $8{,}314462618 \ \text{J mol}^{-1}\text{K}^{-1}$                                                          |
+| Componentes $\overline{c_{p}}$ a $25^\circ\text{C}$ | $\left(\overline{c_{p}}_{\mathrm{O_2}}, \ \overline{c_{p}}_{\mathrm{N_2}}\right)$ | $\left(29{,}355, \ 29{,}124\right) \ \text{J mol}^{-1}\text{K}^{-1}$                                                      |
+| Aire estándar (tabulado) | $\left(\text{M}_{\text{aire}_{\text{tb}}}, \ R_{\text{aire}_{\text{tb}}}, \ c_{p_{\text{aire}_{\text{tb}}}}, \ c_{v_{\text{aire}_{\text{tb}}}}, \ \gamma_{\text{aire}_{\text{tb}}}\right)$ | $\left(28{,}965, \ 287{,}058, \ 1005, \ 718, \ 1{,}400\right)$ |
 
 ---
 
-**Calculations**
+**Cálculos**
 
-1. **Effective molar mass (ideal mixture):**
-
-    $$
-    \text{MW}_{\text{air}} = \sum_i y_i M_i = 0.21(31.998) + 0.79(28.0134) = 28.850166\ \text{g/mol}.
-    $$
-    
-    $$
-    \boxed{\text{MW}_{\text{air}} = 28.850 \ \text{g/mol}}
-    $$
-
-2. **Mixture molar heat capacities (ideal gas mixture, Lewis rule):**
+1. **Masa molar efectiva (mezcla ideal):**
 
     $$
-    \overline{c_{p}}_{\text{air}}=\sum_i y_i \overline{c_{p}}_{i} = 0.21(29.355) + 0.79(29.124) = 29.17251 \ \text{J mol}^{-1}\text{K}^{-1},
+    \text{M}_{\text{aire}} = \sum_i y_i M_i = 0{,}21(31{,}998) + 0{,}79(28{,}0134) = 28{,}850166\ \text{g/mol}.
     $$
     
     $$
-    \overline{c_{v}}_{\text{air}} = \overline{c_{p}}_{\text{air}} - R_u = 29.17251 - 8.314462618 = 20.85805 \ \text{J mol}^{-1}\text{K}^{-1}.
+    \boxed{\text{M}_{\text{aire}} = 28{,}850 \ \text{g/mol}}
+    $$
+
+2. **Calores molares de la mezcla (mezcla de gas ideal, regla de Lewis):**
+
+    $$
+    \overline{c_{p}}_{\text{aire}}=\sum_i y_i \overline{c_{p}}_{i} = 0{,}21(29{,}355) + 0{,}79(29{,}124) = 29{,}17251 \ \text{J mol}^{-1}\text{K}^{-1},
     $$
     
     $$
-    \boxed{\overline{c_{p}}_{\text{air}} = 29.173\ \text{J mol}^{-1}\text{K}^{-1}}, \qquad \boxed{\overline{c_{v}}_{\text{air}} = 20.858\ \text{J mol}^{-1}\text{K}^{-1}}
+    \overline{c_{v}}_{\text{aire}} = \overline{c_{p}}_{\text{aire}} - R_u = 29{,}17251 - 8{,}314462618 = 20{,}85805 \ \text{J mol}^{-1}\text{K}^{-1}.
+    $$
+    
+    $$
+    \boxed{\overline{c_{p}}_{\text{aire}} = 29{,}173\ \text{J mol}^{-1}\text{K}^{-1}}, \qquad \boxed{\overline{c_{v}}_{\text{aire}} = 20{,}858\ \text{J mol}^{-1}\text{K}^{-1}}
     $$
 
-3. **Mass-based properties** (using $\text{MW}_{\text{air}}$ in $\text{kg/mol}$):
+3. **Propiedades en base másica** (usando $\text{M}_{\text{aire}}$ en $\text{kg/mol}$):
 
-    Convert $\text{MW}_{\text{air}}$ to $\text{kg/mol}$: $ \ \text{MW}_{\text{air}} = 28.850166\times10^{-3}\ \text{kg/mol}$.
+    Convertir $\text{M}_{\text{aire}}$ a $\text{kg/mol}$: $ \ \text{M}_{\text{aire}} = 28{,}850166\times10^{-3}\ \text{kg/mol}$.
 
-   * Specific gas constant:
+   * Constante específica de gas:
 
         $$
-        R_{\text{air}} = \frac{R_u}{\text{MW}_{\text{air}}} = \frac{8.314462618}{28.850166\times10^{-3}} = 288.1946\ \text{J kg}^{-1}\text{K}^{-1}.
+        R_{\text{aire}} = \frac{R_u}{\text{M}_{\text{aire}}} = \frac{8{,}314462618}{28{,}850166\times10^{-3}} = 288{,}1946\ \text{J kg}^{-1}\text{K}^{-1}.
         $$
 
-    * Mass-based heat capacities:
+    * Calores específicos en base másica:
     
         $$
-        c_{p_{\text{air}}}=\frac{\overline{c_{p}}_{\text{air}}}{\text{MW}_{\text{air}}} = \frac{29.17251}{28.850166\times10^{-3}} = 1.011 \ \text{kJ kg}^{-1}\text{K}^{-1},
+        c_{p_{\text{aire}}}=\frac{\overline{c_{p}}_{\text{aire}}}{\text{M}_{\text{aire}}} = \frac{29{,}17251}{28{,}850166\times10^{-3}} = 1{,}011 \ \text{kJ kg}^{-1}\text{K}^{-1},
         $$
     
         $$
-        c_{v_{\text{air}}}=\frac{\overline{c_{v}}_{\text{air}}}{\text{MW}_{\text{air}}} = \frac{20.85805}{28.850166\times10^{-3}} = 0.723 \ \text{kJ kg}^{-1}\text{K}^{-1}.
+        c_{v_{\text{aire}}}=\frac{\overline{c_{v}}_{\text{aire}}}{\text{M}_{\text{aire}}} = \frac{20{,}85805}{28{,}850166\times10^{-3}} = 0{,}723 \ \text{kJ kg}^{-1}\text{K}^{-1}.
         $$
 
-    * Isentropic exponent:
+    * Exponente isentrópico:
 
         $$
-        \gamma_{\text{air}}=\frac{c_{p_{\text{air}}}}{c_{v_{\text{air}}}} = \frac{1.011}{0.723} = 1.39862.
+        \gamma_{\text{aire}}=\frac{c_{p_{\text{aire}}}}{c_{v_{\text{aire}}}} = \frac{1{,}011}{0{,}723} = 1{,}39862.
         $$
 
     $$
-    \boxed{R_{\text{air}} = 288.195\ \text{J kg}^{-1}\text{K}^{-1}},\quad
-    \boxed{c_{p_{\text{air}}} = 1.011 \ \text{kJ kg}^{-1}\text{K}^{-1}},
+    \boxed{R_{\text{aire}} = 288{,}195\ \text{J kg}^{-1}\text{K}^{-1}},\quad
+    \boxed{c_{p_{\text{aire}}} = 1{,}011 \ \text{kJ kg}^{-1}\text{K}^{-1}},
     $$
 
     $$
-    \boxed{c_{v_{\text{air}}} = 0.723 \ \text{kJ kg}^{-1}\text{K}^{-1}},\quad
-    \boxed{\gamma_{\text{air}} = 1.3986}
+    \boxed{c_{v_{\text{aire}}} = 0{,}723 \ \text{kJ kg}^{-1}\text{K}^{-1}},\quad
+    \boxed{\gamma_{\text{aire}} = 1{,}3986}
     $$
 
 ---
 
-**Comparison to tabulated “standard air”**
+**Comparación con valores tabulados de “aire estándar”**
 
-| Property  | Present calculations | Tabulated |  Rel. diff |
+| Propiedad  | Cálculo actual | Tabulado |  Dif. rel. |
 | :-------------------------- | --------: | --------: | ---------: |
-| $\text{MW} \ [\text{g}/\text{mol}]$                    |  $28.850$ |  $28.965$ | $-0.40 \ \%$ |
-| $R_{\text{air}} \ [\text{J kg}^{-1}K^{-1}]$            | $288.195$ | $287.058$ | $+0.40 \ \%$ |
-| $c_{p_{\text{air}}} \ [\text{kJ kg}^{-1}K^{-1}]$       | $1.011$ |    $1.005$ | $+0.61 \ \%$ |
-| $c_{v_{\text{air}}} \ [\text{J kg}^{-1}K^{-1}]$        |  $0.723$ |     $0.718$ | $+0.69 \ \%$ |
-| $\gamma_{\text{air}} \ [–]$                            |  $1.3986$ |   $1.400$ | $-0.10 \ \%$ |
+| $\text{M} \ [\text{g}/\text{mol}]$                    |  $28{,}850$ |  $28{,}965$ | $-0{,}40 \ \%$ |
+| $R_{\text{aire}} \ [\text{J kg}^{-1}K^{-1}]$            | $288{,}195$ | $287{,}058$ | $+0{,}40 \ \%$ |
+| $c_{p_{\text{aire}}} \ [\text{kJ kg}^{-1}K^{-1}]$       | $1{,}011$ |    $1{,}005$ | $+0{,}61 \ \%$ |
+| $c_{v_{\text{aire}}} \ [\text{kJ kg}^{-1}K^{-1}]$       |  $0{,}723$ |     $0{,}718$ | $+0{,}69 \ \%$ |
+| $\gamma_{\text{aire}} \ [–]$                            |  $1{,}3986$ |   $1{,}400$ | $-0{,}10 \ \%$ |
 
 ---
 
 :::{tip}
 
-**INTERPRETATION**
+**INTERPRETACIÓN**
 
-Differences are **sub-percent** and stem from:
-1. The simplified binary composition (no $\text{Ar}$, $\text{CO}_{2}$, etc.; argon alone shifts $\text{MW}_{\text{air}}$ upward).
-2. Mild temperature dependencies of $c_{p}$ for real gases around $300\ \text{K}$.
+Las diferencias son **inferiores al 1 %** y se deben a:
+1. La composición binaria simplificada (sin $\text{Ar}$, $\text{CO}_{2}$, etc.; el argón por sí solo aumenta la $\text{M}_{\text{aire}}$).
+2. Dependencias suaves de $c_{p}$ con la temperatura para gases reales alrededor de $300\ \text{K}$.
 
-Including minor species (e.g., $\sim0.93 \ \% \ \text{Ar}$) and using high-precision $c_p(T)$ polynomials would bring the results essentially into line with the tabulated “standard air” values.
+Incluir especies menores (p. ej., $\sim0{,}93 \ \% \ \text{Ar}$) y usar polinomios $c_p(T)$ de alta precisión acercaría los resultados a los valores tabulados de “aire estándar”.
 :::
 
 ::::
@@ -263,10 +269,11 @@ Including minor species (e.g., $\sim0.93 \ \% \ \text{Ar}$) and using high-preci
 ---
 
 (subsec_conceptual_closure_gas_mixtures)=
-### Conceptual closure
+### Cierre conceptual
 
-* {ref}`Mass and molar fractions <eq_mass_molar_fractions>` serve as the cornerstone of mixture analysis. Their {ref}`normalization constraint <eq_normalization_mass_molar>` guarantees a complete composition description.
-* {ref}`Dalton’s law of pressures <eq_dalton_law>` and {ref}`Amagat’s law of volumes <eq_amagat_law>` establish the additive behavior of ideal mixtures for pressure and volume.
-* Both **partial pressures** and **partial volumes** {ref}`scale with the molar fraction <eq_y_relation>`, which explains its central role in mixture formulations.
-* **Property evaluation** follows the same additive logic: specific heats (in their {ref}`molar <eq_molar_specific_heats>` and {ref}`mass <eq_mass_specific_heats>` formulations), {ref}`molar mass <eq_mixture_molar_mass>`, and {ref}`gas constant <eq_mixture_gas_constant>` are all weighted averages.
-* **State-property variations** such as {ref}`internal energy <eq_state_property_changes>`, {ref}`enthalpy <eq_enthalpy_change_mixture>` and {ref}`entropy <eq_entropy_change_mixture>` are mass-weighted sums, extending the same principle to energy and entropy analysis.
+* Las {ref}`fracciones másicas y molares <eq_mass_molar_fractions>` son la base del análisis de mezclas. Su {ref}`condición de normalización <eq_normalization_mass_molar>` garantiza una descripción completa de la composición.
+* La {ref}`ley de Dalton de presiones <eq_dalton_law>` y la {ref}`ley de Amagat de volúmenes <eq_amagat_law>` establecen el comportamiento aditivo de las mezclas ideales para presión y volumen.
+* Tanto las **presiones parciales** como los **volúmenes parciales** {ref}`se escalan con la fracción molar <eq_y_relation>`, lo que explica su papel central en las formulaciones de mezclas.
+* La **evaluación de propiedades** sigue la misma lógica aditiva: calores específicos (en sus formulaciones {ref}`molares <eq_molar_specific_heats>` y {ref}`másicas <eq_mass_specific_heats>`), {ref}`masa molar <eq_mixture_molar_mass>` y {ref}`constante de gas <eq_mixture_gas_constant>` son todos promedios ponderados.
+* Las **variaciones de propiedades de estado** como {ref}`energía interna <eq_state_property_changes>`, {ref}`entalpía <eq_enthalpy_change_mixture>` y {ref}`entropía <eq_entropy_change_mixture>` son sumas ponderadas por masa, extendiendo el mismo principio al análisis de energía y entropía.
+

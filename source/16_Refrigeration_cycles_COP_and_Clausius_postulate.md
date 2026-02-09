@@ -1,74 +1,74 @@
 (sec_refrigeration_cycles_COP_clausius)=
-## Refrigeration cycles, COP, and the Clausius postulate
+## Ciclos de refrigeración, COP y el postulado de Clausius
 
-The $2^{\text{nd}}$ law shows that **heat engines** can convert only part of the heat they receive into work, rejecting the remainder to a cooler reservoir.
-If this principle is **reversed**, we obtain devices that use external work to make heat flow *against* its natural direction — from a colder region to a warmer one.
-Such **refrigeration systems** and **heat pumps** embody the complementary operation of heat engines: they do not produce work from heat, but **consume work** to drive a non-spontaneous heat transfer.
+La **$2^{\text{a}}$ ley** muestra que los **motores térmicos** solo pueden convertir en trabajo una parte del calor que reciben, rechazando el resto hacia un foco más frío.
+Si este principio se **invierte**, obtenemos dispositivos que utilizan trabajo externo para forzar que el calor fluya *en contra* de su dirección natural — es decir, de una región más fría hacia una más caliente.
+Tales **sistemas de refrigeración** y **bombas de calor** representan la operación complementaria de los motores térmicos: no producen trabajo a partir de calor, sino que **consumen trabajo** para inducir una transferencia de calor no espontánea.
 
 ---
 
 (subsec_refrigeration_cycles_definition)=
-### Refrigeration cycles and heat pumps
+### Ciclos de refrigeración y bombas de calor
 
-A **reversed heat-engine cycle** forms the basis of both refrigerators and heat pumps.
-Their operation can be summarized as follows:
+Un **ciclo de motor térmico invertido** constituye la base tanto de los refrigeradores como de las bombas de calor.
+Su funcionamiento puede resumirse del siguiente modo:
 
-1. **Heat extraction:** the device absorbs heat $Q_L$ from a **low-temperature region**.
-2. **Work input:** an external work $W_{\text{net,in}}$ is supplied (by a compressor or motor).
-3. **Heat rejection:** the device expels heat $Q_H$ to a **high-temperature region**.
-4. **Cyclic operation:** the working fluid returns to its initial state at the end of each cycle.
+1. **Extracción de calor:** el dispositivo absorbe calor $Q_L$ desde una **región a baja temperatura**.
+2. **Aporte de trabajo:** se suministra un trabajo externo $W_{\text{neto,in}}$ (mediante un compresor o motor).
+3. **Rechazo de calor:** el dispositivo expulsa calor $Q_H$ hacia una **región a alta temperatura**.
+4. **Operación cíclica:** el fluido de trabajo regresa a su estado inicial al final de cada ciclo.
 
-The two devices differ only in purpose:
+La diferencia entre ambos dispositivos radica únicamente en su propósito:
 
-* a **refrigerator** removes heat from a low-temperature space,
-* a **heat pump** delivers heat to a warm space.
+* un **refrigerador** extrae calor de un espacio a baja temperatura,
+* una **bomba de calor** entrega calor a un espacio cálido.
 
 :::{important}
 
-**REVERSED-DIRECTION OPERATION**
+**OPERACIÓN EN DIRECCIÓN INVERSA**
 
-While a **heat engine** converts part of the natural heat flow (hot → cold) into work,
-a **reversed heat engine** consumes work to make heat flow **cold → hot**.
-This constitutes the essential difference between both classes of cyclic devices.
+Mientras un **motor térmico** convierte parte del flujo natural de calor (caliente → frío) en trabajo,
+un **motor térmico invertido** consume trabajo para hacer que el calor fluya en dirección **frío → caliente**.
+Esta constituye la diferencia esencial entre ambas clases de dispositivos cíclicos.
 
 :::
 
 ---
 
 (subsec_COP_definition)=
-### Coefficient of performance
+### Coeficiente de operación (COP)
 
-The **coefficient of performance $(\text{COP})$** plays for refrigeration devices the same conceptual role that **efficiency** plays for heat engines: it measures the ratio between the **useful effect obtained** and the **energy required** to achieve it.
+El coeficiente de operación (COP, del inglés ***Coefficient Of Performance***) desempeña para los dispositivos de refrigeración el mismo papel conceptual que el **rendimiento** para los motores térmicos: mide la razón entre el **efecto útil obtenido** y la **energía requerida** para lograrlo.
 
-However, while a heat engine produces work and thus its useful output is the *net work delivered* ($W_{\text{net,out}}$), a **reversed device** (refrigerator or heat pump) **consumes** work. In heat engines, multiple work interactions may occur within the cycle, so the **net work output** $W_{\text{net,out}}$ represents their overall balance. Reversed cycles usually involve a **single dominant work input** (e.g., compressor power), so it is denoted simply as $W_{\text{in}}$.
+Sin embargo, mientras un motor térmico produce trabajo y su salida útil es el *trabajo neto entregado* $(W_{\text{neto,out}})$, un **dispositivo invertido** (refrigerador o bomba de calor) **consume** trabajo. En motores térmicos pueden producirse múltiples interacciones de trabajo a lo largo del ciclo, de modo que el **trabajo neto** representa el balance global. En ciclos invertidos suele haber un **único trabajo dominante** (el del compresor), que se denota simplemente como $W_{\text{in}}$.
 
-* **Refrigeration cycle:**
+* **Ciclo de refrigeración:**
 
-    For a **refrigerator**, the useful effect is the **heat absorbed** from the low-temperature region ($Q_L$). From the **energy balance** of a reversed cycle:
+    Para un **refrigerador**, el efecto útil es el **calor absorbido** de la región fría $(Q_L)$. A partir del **balance energético** de un ciclo invertido y tratando todos los términos como valores positivos:
 
     (eq_energy_balance_reversed_cycle)=
     $$
     Q_H = Q_L + W_{\text{in}},
-    \qquad \text{so that} \qquad W_{\text{in}} = Q_H - Q_L.
+    \qquad \text{de modo que} \qquad W_{\text{in}} = Q_H - Q_L.
     $$
 
-    By definition:
+    Por definición:
 
     (eq_COP_refrigerator)=
     $$
     \text{COP}_{\text{R}} = \frac{Q_L}{W_{\text{in}}} = \frac{Q_L}{Q_H - Q_L} \implies \boxed{\text{COP}_{\text{R}} = \frac{1}{Q_H/Q_L - 1}} \ .
     $$
 
-* **Heat pump cycle:**
+* **Ciclo de bomba de calor:**
 
-    For a **heat pump**, the useful effect is the **heat delivered** to the high-temperature region ($Q_H$). Following the same reasoning as before:
+    Para una **bomba de calor**, el efecto útil es el **calor entregado** a la región caliente $(Q_H)$. Siguiendo el mismo razonamiento:
 
     (eq_COP_heatpump)=
     $$
     \text{COP}_{\text{HP}} = \frac{Q_H}{W_{\text{in}}} = \frac{Q_H}{Q_H - Q_L} \implies \boxed{\text{COP}_{\text{HP}} = \frac{1}{1 - Q_L/Q_H}} \ .
     $$
 
-Both $\text{COP}$ values can be shown to be related:
+Ambos valores de $\text{COP}$ están relacionados:
 
 $$
 \text{COP}_{\text{HP}}=\frac{Q_H}{Q_H-Q_L} = \frac{Q_L}{Q_H-Q_L} + 1 = \text{COP}_{\text{R}} + 1 \implies \boxed{\text{COP}_{\text{HP}} = \text{COP}_{\text{R}} + 1} \ .
@@ -76,84 +76,83 @@ $$
 
 :::{important}
 
-**PHYSICAL INTERPRETATION OF COP VALUES**
+**INTERPRETACIÓN FÍSICA DE LOS VALORES DE COP**
 
-The **coefficient of performance** follows the *same conceptual logic* as **efficiency**: both express a **ratio between what is obtained and what it costs** to obtain it. In the case of the $\text{COP}$, such a ratio expresses how much heat transfer is achieved per unit of work supplied:
+El **coeficiente de operación** sigue la *misma lógica conceptual* que el **rendimiento**: ambos expresan la **razón entre lo que se obtiene y lo que cuesta** obtenerlo. En el caso del $\text{COP}$, esta razón indica cuánta transferencia de calor se logra por unidad de trabajo suministrado:
 
-* $\text{COP} > 1$ — the **normal condition** for practical devices.
-  It means that each unit of input work transfers *more than one unit* of heat between reservoirs.
-  For example, $\text{COP}_{\text{R}} = 4$ implies that $1$ unit of electrical work removes $4$ units of heat from the cold space — three units coming from the transferred heat and one from the work itself.
+* $\text{COP} > 1$ — la **condición habitual** en dispositivos reales.  
+  Significa que cada unidad de trabajo suministrado permite transferir *más de una unidad* de calor entre los focos. Por ejemplo, $\text{COP}_{\text{R}} = 4$ implica que $1$ unidad de trabajo eléctrico remueve cuatro unidades de calor del espacio frío.
 
-* $\text{COP} = 1$ — the limiting case where the system merely **converts work into an equal amount of heat transfer**; it no longer provides an energetic advantage.
+* $\text{COP} = 1$ — caso límite en el que el sistema simplemente **convierte trabajo en una cantidad equivalente de transferencia de calor**; deja de ser ventajoso.
 
-* $\text{COP} < 1$ — indicates an **inefficient or defective process**, where more work is consumed than the amount of heat transferred; the device would no longer be practical as a refrigerator or heat pump.
+* $\text{COP} < 1$ — indica un proceso **ineficiente o defectuoso**, donde se consume más trabajo que el calor que se transfiere; el dispositivo no sería práctico como refrigerador o bomba de calor.
 
-In contrast to the efficiency of heat engines (bounded by 1), the $\text{COP}$ can exceed unity because refrigeration and heat-pump systems **do not create energy** — they **redistribute** it, using mechanical work as a facilitator of heat transfer.
+A diferencia del rendimiento de los motores térmicos (limitado por 1), el $\text{COP}$ puede superar la unidad porque los sistemas de refrigeración y bombas de calor **no crean energía** — **la redistribuyen**, usando el trabajo mecánico para forzar una transferencia de calor.
+
 :::
 
 ---
 
 (subsec_clausius_postulate)=
-### The Clausius postulate
+### El postulado de Clausius
 
-Refrigeration cycles rely on **forcing heat to move from cold to hot**, a process that can occur only if **external work** is supplied.
-This restriction is expressed by the **Clausius postulate**, the complementary formulation of the $2^{\text{nd}}$ law:
+Los ciclos de refrigeración se basan en **forzar que el calor se desplace del frío al caliente**, un proceso que solo puede ocurrir si se suministra **trabajo externo**.
+Esta restricción queda expresada en el **postulado de Clausius**, la formulación complementaria de la **$2^{\text{a}}$ ley**:
 
 :::{epigraph}
-**No cyclic process can transfer heat from a colder body to a hotter body without consuming external work.**
+**Ningún proceso cíclico puede transferir calor de un cuerpo más frío a uno más caliente sin consumir trabajo externo.**
 :::
 
-The Clausius postulate conveys the same physical limitation as the **Kelvin–Planck** statement but viewed from the opposite perspective:
-the latter forbids total conversion of heat into work, while the former forbids spontaneous heat transfer from cold to hot.
+El postulado de Clausius expresa la misma limitación física que la formulación de **Kelvin–Planck**, pero desde la perspectiva opuesta:
+esta última prohíbe la conversión total de calor en trabajo, mientras que la primera prohíbe la transferencia espontánea de calor del frío al caliente.
 
 ---
 
 (subsec_complementarity_postulates)=
-### Complementarity of both postulates
+### Complementariedad de ambos postulados
 
-The **Kelvin–Planck** and **Clausius** formulations describe the same fundamental constraint on cyclic processes: one concerns **work production**, the other **heat transfer**.
-Their equivalence can be shown through the following reasoning.
+Las formulaciones de **Kelvin–Planck** y **Clausius** describen la misma restricción fundamental sobre los procesos cíclicos: una se refiere a la **producción de trabajo** y la otra a la **transferencia de calor**.
+Su equivalencia puede demostrarse mediante el razonamiento siguiente.
 
-Assume a **heat engine** capable of violating the Kelvin–Planck postulate, converting all absorbed heat $Q_H$ entirely into work ($Q_L = 0$).
-If this work drives a **refrigeration cycle** operating between the same two reservoirs, that cycle would absorb $Q_L$ from the cold reservoir and expel $Q_H + Q_L$ to the hot one.
-The overall effect would be a **net transfer of $Q_L$ from cold to hot without any external work** — a direct violation of the **Clausius postulate**.
-The inverse argument leads to the same conclusion, proving that both postulates are **logically equivalent** and impose identical restrictions on thermodynamic cycles.
+Supongamos un **motor térmico** capaz de violar el postulado de Kelvin–Planck, convirtiendo todo el calor absorbido $Q_H$ íntegramente en trabajo $(Q_L = 0)$.
+Si este trabajo alimenta un **ciclo de refrigeración** operando entre los mismos dos focos, dicho ciclo absorbería $Q_L$ del foco frío y expulsaría $Q_H + Q_L$ al foco caliente.
+El efecto global sería una **transferencia neta de $Q_L$ del frío al caliente sin aporte de trabajo externo** — una violación directa del **postulado de Clausius**. El argumento inverso conduce a la misma conclusión, demostrando que ambos postulados son **lógicamente equivalentes** e imponen restricciones idénticas a los ciclos termodinámicos.
 
 :::{important}
 
-**SUMMARY OF POSTULATE COMPLEMENTARITY**
+**RESUMEN DE LA COMPLEMENTARIEDAD DE LOS POSTULADOS**
 
-| **Aspect**                | **Kelvin–Planck (Heat engines)**              | **Clausius (Refrigerators / Heat pumps)**                                                 |
-| :------------------------ | :-------------------------------------------- | :---------------------------------------------------------------------------------------- |
-| **Cycle type**            | Direct (produces work)                        | Reversed (consumes work)                                                                  |
-| **Heat flow**             | Natural: hot → cold                           | Forced: cold → hot                                                                        |
-| **Work interaction**      | Output ($W_{\text{net,out}}$)                 | Input ($W_{\text{in}}$)                                                               |
-| **Performance measure**   | $\eta_{\text{th.}} = 1 - Q_L/Q_H$             | $\text{COP}_{\text{R}} = Q_L/W_{\text{in}}$, $\text{COP}_{\text{HP}} = Q_H/W_{\text{in}}$ |
-| **Limitation**            | Total conversion of heat into work impossible | Heat cannot move from cold to hot without work                                            |
-| **Energetic requirement** | Part of heat must be rejected                 | External work must be supplied                                                            |
-| **Physical meaning**      | Directionality of energy degradation          | Directionality of energy recovery                                                         |
+| **Aspecto**                | **Kelvin–Planck (Motores térmicos)**         | **Clausius (Refrigeradores / Bombas de calor)**                                            |
+| :------------------------ | :-------------------------------------------- | :------------------------------------------------------------------------------------------ |
+| **Tipo de ciclo**         | Directo (produce trabajo)                     | Invertido (consume trabajo)                                                                 |
+| **Flujo de calor**        | Natural: caliente → frío                      | Forzado: frío → caliente                                                                    |
+| **Interacción de trabajo**| Salida $(W_{\text{neto,out}})$                | Entrada $(W_{\text{in}})$                                                                   |
+| **Medida de desempeño**   | $\eta_{\text{th.}} = W_{\text{neto,out}}/Q_H = 1 - Q_L/Q_H$             | $\text{COP}_{\text{R}} = Q_L/W_{\text{in}}$, $\text{COP}_{\text{HP}} = Q_H/W_{\text{in}}$   |
+| **Limitación**            | Imposible conversión total **calor → trabajo**    | Imposible transferencia **frío → caliente** sin trabajo                                         |
+| **Requisito energético**  | Parte del calor debe rechazarse               | Debe suministrarse trabajo externo                                                          |
+| **Significado físico**    | Direccionalidad de la degradación energética  | Direccionalidad de la recuperación energética                                               |
 
 :::
 
-Both postulates express a single truth: **no cyclic process can occur without an energetic cost**.
-For heat engines, this cost is the **unavoidable heat rejection**; for refrigeration cycles, it is the **work input** needed to reverse heat flow.
-Together they reveal an inherent **asymmetry of energy transformation** — work can always degrade into heat, but reversing that transformation demands compensation.
+Ambos postulados expresan una misma verdad: **ningún proceso cíclico puede ocurrir sin un coste energético**.
+En los motores térmicos, este coste es el **rechazo inevitable de calor**; en los ciclos de refrigeración, es el **trabajo requerido** para invertir el flujo de calor.
+Juntos revelan una **asimetría inherente en las transformaciones energéticas**: el trabajo puede degradarse siempre en calor, pero invertir esa transformación requiere compensación.
 
-This equivalence sets the stage for the next fundamental question:
+Esta equivalencia prepara el terreno para la siguiente pregunta fundamental:
 
 :::{epigraph}
-**What is the maximum performance attainable by a thermodynamic cycle that still satisfies the $2^{\text{nd}}$ law?**
+**¿Cuál es el máximo rendimiento que puede alcanzar un ciclo termodinámico sin violar la $2^{\text{a}}$ ley?**
 :::
 
-Answering it requires distinguishing between **reversible** and **irreversible** processes.
+Responderla exige distinguir entre procesos **reversibles** e **irreversibles**.
 
 ---
 
 (subsec_conceptual_closure_refrigeration)=
-### Conceptual closure
+### Cierre conceptual
 
-* **Refrigerators** and **heat pumps** are reversed heat engines that use work to move heat *against* its natural direction.
-* Their performance is measured through the **coefficient of performance (COP)** — the useful heat transfer achieved per unit of supplied work.
-* The **Clausius postulate** states that such a reversed transfer cannot occur spontaneously.
-* The **Kelvin–Planck** and **Clausius** statements are complementary expressions of the same $2^{\text{nd}}$-law restriction.
-* Together, they define the **directionality and limits** of all cyclic energy transformations: every process carries an energetic cost, and perfect conversion remains physically unattainable.
+* Los **refrigeradores** y **bombas de calor** son motores térmicos invertidos que emplean trabajo para desplazar calor *en contra* de su dirección natural.
+* Su desempeño se mide mediante el **coeficiente de operación (COP)** — el calor útil transferido por unidad de trabajo suministrado.
+* El **postulado de Clausius** establece que dicho desplazamiento invertido no puede ocurrir espontáneamente.
+* Las formulaciones de **Kelvin–Planck** y **Clausius** son expresiones complementarias de la misma restricción impuesta por la **$2^{\text{a}}$ ley**.
+* En conjunto, definen la **direccionalidad y los límites** de todas las transformaciones cíclicas de energía: todo proceso tiene un coste energético, y la conversión perfecta es físicamente inalcanzable.

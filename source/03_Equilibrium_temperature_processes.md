@@ -1,210 +1,218 @@
 (sec_equilibrium_temperature_processes)=
-## Equilibrium, temperature scales, and processes
+## Equilibrio, escalas de temperatura y procesos
 
-This section builds upon the foundations introduced in {ref}`the previous section<sec_magnitudes_properties>` and formalizes how systems reach **equilibrium**, how we define and measure **temperature**, and how we characterize **states** and **processes**.
-Thermodynamic equilibrium serves as the conceptual bridge between observable properties and the laws that govern their transformations.
+Esta sección se basa en los fundamentos introducidos en {ref}`la sección anterior <sec_magnitudes_properties>` y formaliza cómo los sistemas alcanzan el **equilibrio**, cómo definimos y medimos la **temperatura**, y cómo caracterizamos los **estados** y **procesos**.
+El equilibrio termodinámico sirve como puente conceptual entre las propiedades observables y las leyes que gobiernan sus transformaciones.
 
 ---
 
 (subsec_thermodynamic_equilibrium)=
-### Thermodynamic equilibrium
+### Equilibrio termodinámico
 
-A system is in **equilibrium** when no measurable changes occur in its macroscopic properties while it is isolated from its surroundings.
-In such a state, every possible internal imbalance — mechanical, thermal, or chemical — has been cancelled out.
+Un sistema está en **equilibrio** cuando no ocurren cambios medibles en sus propiedades macroscópicas mientras permanece aislado de su entorno.
+En tal estado, todo posible desequilibrio interno — mecánico, térmico o químico — ha sido eliminado.
 
 :::{important}
+**SIGNIFICADO DE EQUILIBRIO**
 
-**MEANING OF EQUILIBRIUM**
-
-Thermodynamic equilibrium means that the system has reached a condition where no spontaneous internal evolution occurs.
-It represents a state of **maximum stability** under the given constraints.
+El equilibrio termodinámico significa que el sistema ha alcanzado una condición en la que no ocurre evolución interna espontánea.
+Representa un estado de **máxima estabilidad** bajo las restricciones dadas.
 :::
 
-Intuitively, all systems tend toward equilibrium when left undisturbed.
-Mathematically, this natural tendency is described by the **Second law of Thermodynamics**, which introduces **entropy ($S$)** as the magnitude that quantifies how systems evolve toward equilibrium.
+De manera intuitiva, todos los sistemas tienden al equilibrio cuando se dejan sin perturbaciones.
+Matemáticamente, esta tendencia natural se describe mediante la **Segunda Ley de la Termodinámica**, que introduce la **entropía ($S$)** como la magnitud que cuantifica cómo los sistemas evolucionan hacia el equilibrio.
 
-To verify whether a system is in equilibrium, we must examine the following aspects:
+Para verificar si un sistema está en equilibrio, debemos examinar los siguientes aspectos:
 
-* **Mechanical equilibrium:** absence of relative motion or unbalanced forces.
-  Since pressure is force per unit area, mechanical equilibrium requires that pressures be uniform throughout the system. Taking two arbitrary points ($1$ and $2$) in the system, it must be verified that $p_1 = p_2$.
+* **Equilibrio mecánico:** ausencia de movimiento relativo o fuerzas no balanceadas.
+  Dado que la presión es fuerza por unidad de área, el equilibrio mecánico requiere que las presiones sean uniformes en todo el sistema. Tomando dos puntos arbitrarios ($1$ y $2$) en el sistema, debe cumplirse que $p_1 = p_2$.
 
-* **Thermal equilibrium:** uniform temperature throughout the system and between interacting systems ($T_1 = T_2$).
+* **Equilibrio térmico:** temperatura uniforme en todo el sistema y entre sistemas que interactúan ($T_1 = T_2$).
 
-* **Chemical equilibrium:** uniform composition; chemical concentrations remain constant in time ($\mu_{1} = \mu_{2}$).
+* **Equilibrio químico:** composición uniforme; las concentraciones químicas permanecen constantes en el tiempo ($\mu_{1} = \mu_{2}$).
 
-A system in full equilibrium satisfies all three conditions simultaneously.
+Un sistema en equilibrio completo satisface simultáneamente las tres condiciones.
 
 ---
 
+
+
+
+
+
+
+
+
+
+
 (subsec_zeroth_law)=
-### $0^{\text{th}}$ law of Thermodynamics and empirical definition of temperature
+### Ley cero de la Termodinámica y definición empírica de la temperatura
 
-Chronologically, the **$0^{\text{th}}$ law** was formulated after the other laws, but it is **more fundamental** because it allows temperature to be defined as a measurable property.
+Cronológicamente, la **ley cero** se formuló después de las demás leyes, pero es **más fundamental** porque permite definir la temperatura como una propiedad medible.
 
-It can be stated as follows:
+Puede enunciarse así:
 
 :::{epigraph}
-**If two systems are each in thermal equilibrium with a third system, then they are in thermal equilibrium with each other.**
+**Si dos sistemas están cada uno en equilibrio térmico con un tercer sistema, entonces están en equilibrio térmico entre sí.**
 :::
 
-Formally, if system $A$ (at temperature $T_A$) is in equilibrium with system $B$ ($T_B$), and $B$ is in equilibrium with $C$ ($T_C$), then:
+Formalmente, si el sistema $A$ (a temperatura $T_A$) está en equilibrio con el sistema $B$ ($T_B$), y $B$ está en equilibrio con $C$ ($T_C$), entonces:
 
 (eq_zeroth_law_consequence)=
 $$
-T_A = T_B \quad \text{and} \quad T_B = T_C \ \Longrightarrow \ T_A = T_C
+T_A = T_B \quad \text{y} \quad T_B = T_C \ \Longrightarrow \ T_A = T_C
 $$
 
-This transitive property implies that temperature is a **well-defined property** independent of system size or composition.
-The $0^{\text{th}}$ law does not define a *numerical scale* for temperature but proves that **temperature is a property that can be measured** — it legitimizes the concept of a **thermometer**.
+Esta propiedad transitiva implica que la temperatura es una **propiedad bien definida**, independiente del tamaño o la composición del sistema.
+La ley cero no define una *escala numérica* para la temperatura, pero demuestra que **la temperatura es una propiedad que puede medirse** — legitima el concepto de **termómetro**.
 
-The schematic illustration below intends to represent the $0^{\text{th}}$ law as explained above. As observed, the conception of such a law enables defining the notion of thermometers.
+La ilustración esquemática siguiente pretende representar la ley cero tal como se explicó. Como se observa, la concepción de esta ley permite definir la noción de termómetros.
 
 :::{figure} 1_fundamentals_figs/schematic_zeroth_law.svg
 :name: zeroth_law
 :width: %
 :align: center
 
-Schematic representation of the $0^{\text{th}}$ law
+Representación esquemática de la ley cero
 :::
 
 :::{note}
+**SIGNIFICADO EMPÍRICO DE LA TEMPERATURA**
 
-**EMPIRICAL MEANING OF TEMPERATURE**
-
-Temperature is the **equilibrium state property** that determines whether two systems are in **thermal equilibrium** $\implies$  if two systems are said to be in thermal equilibrium, they **share the same temperature**.
+La temperatura es la **propiedad de estado en equilibrio** que determina si dos sistemas están en **equilibrio térmico** $\implies$ si dos sistemas están en equilibrio térmico, **comparten la misma temperatura**.
 :::
 
 ---
 
+
 (subsec_temperature_scales)=
-### Temperature scales
+### Escalas de temperatura
 
-Once the $0^{\text{th}}$ law is established, we can build **temperature scales** as comparative protocols.
-Any reproducible physical phenomenon that varies monotonically with temperature (such as volume of a liquid, resistance of a wire, or pressure of a gas) can serve as a basis for a scale.
+Una vez establecida la ley cero, podemos construir **escalas de temperatura** como protocolos comparativos.
+Cualquier fenómeno físico reproducible que varíe monótonamente con la temperatura (como el volumen de un líquido, la resistencia de un hilo o la presión de un gas) puede servir como base para una escala.
 
-The choice of a scale is conventional — multiple temperature scales coexist, though two are dominant in engineering and science.
+La elección de una escala es convencional — coexisten múltiples escalas de temperatura, aunque dos son dominantes en ingeniería y ciencia.
+``
+
 
 (subsubsec_celsius_scale)=
-#### The Celsius scale
+#### La escala Celsius
 
-The **Celsius scale** (symbol $[^\circ\text{C}]$) was proposed by Anders Celsius, taking as fixed points:
+La **escala Celsius** (símbolo $[^\circ\text{C}]$) fue propuesta por Anders Celsius, tomando como puntos fijos:
 
-* the **melting point of water**, $0\ [^\circ\text{C}]$, and
-* the **boiling point of water**, $100\ [^\circ\text{C}]$,
+* el **punto de fusión del agua**, $0\ [^\circ\text{C}]$, y
+* el **punto de ebullición del agua**, $100\ [^\circ\text{C}]$,
 
-both measured at standard atmospheric pressure ($1\ \text{atm} = 101325\ \text{Pa}$).
+ambos medidos a presión atmosférica estándar ($1\ \text{atm} = 101325\ \text{Pa}$).
 
-Its main advantage lies in its practical range: it gives convenient numbers for everyday phenomena.
+Su principal ventaja radica en su rango práctico: proporciona valores convenientes para fenómenos cotidianos.
+
+---
 
 (subsubsec_Kelvin_scale)=
-#### The Kelvin scale
+#### La escala Kelvin
 
-The **Kelvin scale** is the **thermodynamic temperature scale**, forming part of the International System (SI).
-It is directly related to the Celsius scale by:
+La **escala Kelvin** es la **escala termodinámica de temperatura**, que forma parte del Sistema Internacional (SI).
+Está directamente relacionada con la escala Celsius mediante:
 
 (eq_C_to_K)=
 $$
 T\left(\text{K}\right) = T\left(^\circ\text{C}\right) + 273.15
 $$
 
-William Thomson (Lord Kelvin) deduced the concept of **absolute zero**, the temperature at which molecular motion would theoretically cease.
-This lower limit, $0\ \text{K}$, corresponds to $-273.15\ [^\circ\text{C}]$.
-While absolute zero cannot be reached (as prohibited by quantum mechanics and the Third law), it provides a universal reference.
+William Thomson (Lord Kelvin) dedujo el concepto de **cero absoluto**, la temperatura a la cual el movimiento molecular cesaría teóricamente.
+Este límite inferior, $0\ \text{K}$, corresponde a $-273.15\ [^\circ\text{C}]$.
+Aunque el cero absoluto no puede alcanzarse (prohibido por la mecánica cuántica y la Tercera Ley), proporciona una referencia universal.
 
 :::{important}
+**TEMPERATURA ABSOLUTA**
 
-**ABSOLUTE TEMPERATURE**
-
-The absolute temperature scale is independent of material properties.
-Zero Kelvin represents the limit of complete molecular rest (conceptually), though quantum uncertainty prevents its realization.
-This universality makes the Kelvin scale the foundation for scientific and engineering applications.
+La escala de temperatura absoluta es independiente de las propiedades del material.
+El cero Kelvin representa el límite conceptual de reposo molecular completo, aunque la incertidumbre cuántica impide su realización.
+Esta universalidad convierte a la escala Kelvin en la base para aplicaciones científicas e ingenieriles.
 :::
 
 :::{tip}
+**UNIDADES Y NOTACIÓN**
 
-**UNITS AND NOTATION**
-
-The unit of thermodynamic temperature is the **Kelvin** ($[\text{K}]$), not “degree Kelvin.”
-The symbol $^\circ$ is used only for the Celsius scale.
+La unidad de temperatura termodinámica es el **Kelvin** ($[\text{K}]$), no “grado Kelvin”.
+El símbolo $^\circ$ se utiliza solo para la escala Celsius.
 :::
 
 ---
 
 (subsec_states_processes)=
-### States and processes
+### Estados y procesos
 
-Having introduced the basic measurable quantities and the notion of equilibrium, we can now define the final foundational concepts of Thermodynamics: **states** and **processes**.
+Tras haber introducido las magnitudes medibles básicas y la noción de equilibrio, podemos definir los conceptos fundamentales finales de la Termodinámica: **estados** y **procesos**.
 
-A **state** represents the set of physical conditions describing a system at a given moment — each property has a definite value ($p$, $T$, $V$, etc.).
-A system’s state can either change with time or remain constant:
+Un **estado** representa el conjunto de condiciones físicas que describen un sistema en un momento dado — cada propiedad tiene un valor definido ($p$, $T$, $V$, etc.).
+El estado de un sistema puede cambiar con el tiempo o permanecer constante:
 
-* **Steady state:** properties do not vary with time, $\frac{dX}{dt}=0$.
-* **Transient state:** properties evolve in time, $\frac{dX}{dt}\neq0$.
+* **Estado estacionario:** las propiedades no varían con el tiempo, $\frac{dX}{dt}=0$.
+* **Estado transitorio:** las propiedades evolucionan con el tiempo, $\frac{dX}{dt}\neq0$.
 
-A **process** represents the *transition between two states*.
-It can be viewed as a path that links an initial state $(1)$ and a final state $(2)$.
+Un **proceso** representa la *transición entre dos estados*.
+Puede considerarse como una trayectoria que conecta un estado inicial $(1)$ y un estado final $(2)$.
 
 :::{important}
+**DEFINICIÓN DE PROCESO**
 
-**DEFINITION OF PROCESS**
-
-A thermodynamic process is any transformation that carries a system from one equilibrium state to another.
-The **path** followed and the **time** required to reach the final state define the type of process.
+Un proceso termodinámico es cualquier transformación que lleva un sistema de un estado de equilibrio a otro.
+La **trayectoria** seguida y el **tiempo** requerido para alcanzar el estado final definen el tipo de proceso.
 :::
 
 ---
 
 (subsubsec_relaxation_time)=
-#### Relaxation time
+#### Tiempo de relajación
 
-When a system is perturbed, it needs a certain time to reach a new equilibrium.
-This characteristic duration is known as the **relaxation time** ($\tau$).
+Cuando un sistema se perturba, necesita cierto tiempo para alcanzar un nuevo equilibrio.
+Esta duración característica se conoce como **tiempo de relajación** ($\tau$).
 
-Empirically:
+Empíricamente:
 
-* $\tau$ increases with system **volume** ($V$); larger systems take longer to equilibrate.
-* $\tau$ decreases with **boundary surface area** ($A$); larger surfaces allow faster exchange.
+* $\tau$ aumenta con el **volumen** del sistema ($V$); los sistemas más grandes tardan más en equilibrarse.
+* $\tau$ disminuye con el **área de la superficie límite** ($A$); superficies mayores permiten un intercambio más rápido.
 
 :::{tip}
+**INTERPRETACIÓN DEL TIEMPO DE RELAJACIÓN**
 
-**INTERPRETING RELAXATION TIME**
-
-A large bath takes longer to heat up because of its larger volume,
-but increasing the heating surface reduces the time needed to reach equilibrium.
+Una bañera grande tarda más en calentarse debido a su mayor volumen,
+pero aumentar la superficie de calentamiento reduce el tiempo necesario para alcanzar el equilibrio.
 :::
 
 ---
 
+
+
 (subsec_typical_processes)=
-### Typical thermodynamic processes
+### Procesos termodinámicos típicos
 
-Although countless processes exist, only a few idealized cases have analytical importance:
+Aunque existen innumerables procesos, solo unos pocos casos idealizados tienen importancia analítica:
 
-1. **Cyclic processes (cycles):**
-   Repetitive transformations that start and end at the same state.
-   Examples include power and refrigeration cycles.
+1. **Procesos cíclicos (ciclos):**
+   Transformaciones repetitivas que comienzan y terminan en el mismo estado.
+   Ejemplos: ciclos de potencia y de refrigeración.
 
-2. **Quasi-static (reversible) processes:**
-   Infinitely slow transformations in which the system remains infinitesimally close to equilibrium at all times.
-   In practice, no process is truly quasi-static, but this idealization allows us to derive fundamental relationships among state variables.
+2. **Procesos cuasiestáticos (reversibles):**
+   Transformaciones infinitamente lentas en las que el sistema permanece infinitesimalmente cerca del equilibrio en todo momento.
+   En la práctica, ningún proceso es verdaderamente cuasiestático, pero esta idealización permite derivar relaciones fundamentales entre las variables de estado.
 
 :::{important}
+**CUASIESTÁTICO COMO LÍMITE IDEAL**
 
-**QUASI-STATIC AS AN IDEAL LIMIT**
-
-A quasi-static process is not real but serves as a **reference model**.
-Because equilibrium holds at every stage, the system passes through a continuous series of equilibrium states,
-making it possible to define and integrate its thermodynamic properties.
+Un proceso cuasiestático no es real, pero sirve como **modelo de referencia**.
+Como el equilibrio se mantiene en cada etapa, el sistema pasa por una serie continua de estados de equilibrio,
+lo que hace posible definir e integrar sus propiedades termodinámicas.
 :::
 
 ---
 
 (subsec_equilibrium_temperature_processes_conceptual_closure)=
-### Conceptual closure
+### Cierre conceptual
 
-* Equilibrium means absence of macroscopic changes.
-* The $0^{\text{th}}$ law defines temperature as the property indicating thermal equilibrium.
-* Temperature scales translate this concept into measurable quantities.
-* States describe the condition of a system; processes describe transformations between states.
-* Relaxation time connects dynamics with equilibrium.
-* Quasi-static processes, though idealized, form the analytical foundation of Thermodynamics.
+* El equilibrio significa ausencia de cambios macroscópicos.
+* La ley cero define la temperatura como la propiedad que indica el equilibrio térmico.
+* Las escalas de temperatura traducen este concepto en magnitudes medibles.
+

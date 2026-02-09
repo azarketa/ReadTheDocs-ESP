@@ -1,81 +1,87 @@
 (sec_exergy_closed_open)=
-## Exergy of closed and open systems
+## Exergía en sistemas cerrados y abiertos
 
-Having defined the concepts of **useful work**, **reversible work**, and **irreversibility**, we are now ready to formalize the **notion of exergy**.
-Exergy represents the **maximum theoretical work** obtainable as a system evolves **reversibly** from a given initial state to the **dead state** — the condition of **thermodynamic equilibrium** with its environment. It therefore quantifies, in energetic terms, the **quality** of a system’s energy and the **degradation** caused by irreversibilities.
+Una vez definidos los conceptos de **trabajo útil**, **trabajo reversible** e **irreversibilidad**, estamos preparados para formalizar la **noción de exergía**.  
+La exergía representa el **máximo trabajo teórico** que puede obtenerse cuando un sistema evoluciona **reversiblemente** desde un estado inicial dado hasta el **estado muerto**, es decir, la condición de **equilibrio termodinámico** con el entorno. Por tanto, cuantifica en términos energéticos la **calidad** de la energía de un sistema y la **degradación** causada por las irreversibilidades.
 
 ---
 
 (subsec_exergy_closed)=
-### Definition of exergy for a closed system
+### Definición de exergía para un sistema cerrado
 
-To illustrate the derivation of exergy in the most direct and transparent way, it is convenient to examine a **piston–cylinder system**. This configuration provides the **simplest representation of mechanical and thermal interactions** between a system and its surroundings: pressure–volume work at a movable boundary, and heat transfer to or from the environment. It therefore serves as a **paradigm for reversible energy exchange**, allowing the exergy concept to be derived explicitly from the $1^{\text{st}}$ and $2^{\text{nd}}$ laws before extending it to more complex systems.
+Para ilustrar la derivación de la exergía del modo más directo y transparente, resulta conveniente examinar un **sistema pistón–cilindro**. Esta configuración proporciona la **representación más simple de las interacciones mecánicas y térmicas** entre un sistema y su entorno: trabajo presión–volumen en una frontera móvil y transferencia de calor hacia/desde el ambiente. Sirve, por tanto, como un **paradigma del intercambio energético reversible**, permitiendo derivar el concepto de exergía explícitamente a partir de la **primera** y la **segunda ley**, antes de extenderlo a sistemas más complejos.
 
-Hence, consider a **piston–cylinder system** acting as the **source** of a **heat engine**, initially at $(p > p_0, T > T_0)$. As it expands **reversibly** to the **dead state** $(p_f = p_0, T_f = T_0)$, the system:
+Consideremos así un **sistema pistón–cilindro** actuando como **fuente** de un **motor térmico**, inicialmente en condiciones $(p > p_0, T > T_0)$. Al expandirse **reversiblemente** hasta el **estado muerto** $(p_f = p_0, T_f = T_0)$, el sistema:
 
-* Performs **boundary work** $\delta W_{\text{b.,useful}}$,
-* Releases a **heat quantity** $\delta Q$ that drives the heat engine,
-* Allows the engine to deliver an **additional work** $\delta W_{\text{HE}}$.
+* Realiza **trabajo de frontera** $\delta W_{\text{b.,useful}}$,
+* Libera una **cantidad de calor** $\delta Q$ que acciona el motor térmico,
+* Permite que el motor entregue un **trabajo adicional** $\delta W_{\text{HE}}$.
 
-Applying the **$1^{\text{st}}$ law** to the closed system:
-
-$$
-\delta E_{\text{in}} - \delta E_{\text{out}} = \mathrm{d}E_{\text{sys.}} \quad \Rightarrow \quad \delta Q - \delta W = \mathrm{d}U
-$$
-
-The **differential work** exerted at the boundary may be decomposed as:
+Aplicando la **primera ley** al sistema cerrado:
 
 $$
-\delta W = p\mathrm{d}V = (p - p_0)\mathrm{d}V + p_0 \mathrm{d}V = \delta W_{\text{b.,useful}} + \delta W_{\text{surr.}}
+\delta E_{\text{in}} - \delta E_{\text{out}} = \mathrm{d}E_{\text{sys.}} 
+\quad \Rightarrow \quad 
+\delta Q - \delta W = \mathrm{d}U
 $$
 
-The **work delivered by the heat engine** operating between the system (at $T$) and the environment (at $T_0$) is:
+El **trabajo diferencial** ejercido en la frontera puede descomponerse como:
 
 $$
-\delta W_{\text{HE}} = \left(1 - \frac{T_0}{T}\right)\delta Q = \delta Q - T_0\frac{\delta Q}{T} = \delta Q - T_0 \mathrm{d}S
+\delta W = p\,\mathrm{d}V = (p - p_0)\mathrm{d}V + p_0\mathrm{d}V 
+= \delta W_{\text{b.,useful}} + \delta W_{\text{surr.}}
 $$
 
-Substituting and rearranging yields the **total differential useful work** obtainable from the combined system–engine arrangement:
+El **trabajo entregado por el motor térmico** que opera entre el sistema (a $T$) y el ambiente (a $T_0$) es:
+
+$$
+\delta W_{\text{HE}} 
+= \left(1 - \frac{T_0}{T}\right)\delta Q
+= \delta Q - T_0\frac{\delta Q}{T} 
+= \delta Q - T_0\,\mathrm{d}S
+$$
+
+Sustituyendo y reordenando se obtiene el **trabajo útil total diferencial** recuperable del conjunto sistema + motor térmico:
 
 (eq_exergy_differential)=
 $$
-\delta W_{\text{total,useful}} = -\mathrm{d}U - p_0 \mathrm{d}V + T_0 \mathrm{d}S
+\delta W_{\text{total,useful}} = -\mathrm{d}U - p_0 \mathrm{d}V + T_0\, \mathrm{d}S
 $$
 
-Integrating between the initial state and the **dead state** gives:
+Integrando entre el estado inicial y el **estado muerto**:
 
 (eq_exergy_closed)=
 $$
 W_{\text{total,useful}} = (U - U_0) + p_0 (V - V_0) - T_0 (S - S_0).
 $$
 
-This quantity represents the **maximum useful work potential** of the system, attainable only through a **reversible process**.
+Esta cantidad representa el **máximo potencial de trabajo útil** del sistema, alcanzable únicamente mediante un **proceso reversible**.
 
-However, this formulation only includes **microscopic energy modes** ($U$, $S$, $V$).
-To obtain the **total exergy**, the **macroscopic energy contributions** — kinetic and potential — must be added:
-
-(eq_exergy_closed_total)=
-$$
-\boxed{X = (U - U_0) + p_0 (V - V_0) - T_0 (S - S_0) + \frac{m c^2}{2} + m g z} \ .
-$$
-
-Equivalently, by grouping the internal, kinetic and potential energies into a single specific term $E$ (the macroscopic energy):
+Sin embargo, esta formulación solo incluye **modos microscópicos de energía** ($U$, $S$, $V$). Para obtener la **exergía total**, deben añadirse las contribuciones **macroscópicas** de energía — cinética y potencial:
 
 (eq_exergy_closed_total)=
 $$
-\boxed{X = (E - E_0) + p_0 (V - V_0) - T_0 (S - S_0)} \ .
+\boxed{X = (U - U_0) + p_0 (V - V_0) - T_0 (S - S_0) + \frac{m c^2}{2} + m g z}
 $$
 
-Thus, **exergy** quantifies the **maximum useful work** extractable as the system moves reversibly from its initial state to equilibrium with the environment. If the system is already at the dead state and has no kinetic or potential energy, $X=0$: **no further useful work can be obtained.**
+De forma equivalente, agrupando las energías interna, cinética y potencial en el término específico $E$:
 
-Expressing exergy per unit mass yields its **specific (intensive)** form:
+(eq_exergy_closed_total)=
+$$
+\boxed{X = (E - E_0) + p_0 (V - V_0) - T_0 (S - S_0)}
+$$
+
+La **exergía** cuantifica así el **máximo trabajo útil** extraíble cuando el sistema se desplaza reversiblemente hacia el equilibrio con el entorno.  
+Si el sistema ya está en el estado muerto y no posee energía cinética ni potencial, $X = 0$: **no puede obtenerse trabajo útil adicional**.
+
+Expresando la exergía por unidad de masa se obtiene su forma **específica**:
 
 (eq_exergy_specific_simplified)=
 $$
 \boxed{\phi = (e - e_0) + p_0 (v - v_0) - T_0 (s - s_0)}
 $$
 
-The **change in specific exergy** for a process between two arbitrary states $(1)$ and $(2)$ is therefore:
+El **cambio de exergía específica** entre dos estados arbitrarios $(1)$ y $(2)$ es:
 
 (eq_exergy_change_specific)=
 $$
@@ -85,28 +91,28 @@ $$
 ---
 
 (subsec_exergy_open)=
-### Definition of exergy for an open system
+### Definición de exergía para un sistema abierto
 
-When dealing with **open systems**, the proper exergy formulation must include the **flow work** — the work required to push mass into or out of the system.
+Al tratar con **sistemas abiertos**, la formulación adecuada debe incluir el **trabajo de flujo** — el trabajo requerido para empujar masa hacia dentro o fuera del sistema.
 
-If a moving fluid exerts pressure $p$ as it crosses the boundary, the **flow exergy** is given by:
+Si un fluido en movimiento ejerce presión $p$ al cruzar la frontera, la **exergía de flujo** es:
 
 (eq_flow_exergy)=
 $$
-x_{\text{flow}} = (p - p_0)v
+x_{\text{flow}} = (p - p_0)\,v
 $$
 
-This term represents the **work needed to displace** the volume of atmospheric air occupied by the flowing fluid.
-It plays the same role here as the $p_0(v - v_0)$ term in the closed-system expression.
+Este término representa el **trabajo necesario para desplazar** el volumen de aire atmosférico ocupado por el fluido en movimiento.  
+Desempeña aquí el mismo papel que el término $p_0(v - v_0)$ en la expresión para sistemas cerrados.
 
-Adding the flow term to the closed-system exergy gives the **specific exergy for open systems**:
+Sumando el término de flujo a la exergía del sistema cerrado se obtiene la **exergía específica para sistemas abiertos**:
 
 (eq_exergy_open)=
 $$
 \boxed{\psi = (h - h_0) - T_0 (s - s_0) + \frac{c^2}{2} + g z}
 $$
 
-where $h = u + pv$ is the specific enthalpy. The corresponding **change in specific exergy** is:
+donde $h = u + pv$ es la entalpía específica. El **cambio de exergía específica** correspondiente es:
 
 (eq_exergy_change_open)=
 $$
@@ -116,44 +122,45 @@ $$
 ---
 
 (subsec_exergy_transfer_terms)=
-### Exergy transfer mechanisms
+### Mecanismos de transferencia de exergía
 
-Because exergy is a **transferable quantity**, it can cross system boundaries through **heat**, **work**, or **mass** transfer.
-The associated exergy terms are:
+Dado que la exergía es una **cantidad transferible**, puede atravesar fronteras de sistema mediante **calor**, **trabajo** o **masa**.  
+Los términos correspondientes son:
 
 (eq_exergy_heat_work_mass)=
 $$
 \begin{aligned}
-X_{\text{heat}} &= \left(1 - \frac{T_0}{T}\right) Q, \\[10pt]
-X_{\text{work}} &=
+X_{\text{calor}} &= \left(1 - \frac{T_0}{T}\right) Q, \\[10pt]
+X_{\text{trabajo}} &=
 \begin{cases}
-W - W_{\text{surr}}, & \text{for boundary work}, \\[6pt]
-W & \text{for other work modes},
+W - W_{\text{surr}}, & \text{para trabajo de frontera}, \\[6pt]
+W, & \text{para otros modos de trabajo},
 \end{cases} \\[10pt]
-X_{\text{mass}} &= \dot{m}\psi.
+X_{\text{masa}} &= \dot{m}\,\psi.
 \end{aligned}
 $$
 
 :::{important}
 
-**EXERGY TRANSFER INTERPRETATION**
+**INTERPRETACIÓN DE LOS MECANISMOS DE TRANSFERENCIA DE EXERGÍA**
 
-Each exergy transfer mechanism corresponds to a **potential for useful work**:
+Cada mecanismo de transferencia corresponde a un **potencial de trabajo útil**:
 
-* **Heat exergy** decreases with the temperature level of the source.
-* **Work exergy** equals the *useful* part of the work done.
-* **Mass exergy** reflects the *energetic and entropic state* carried by flowing matter.
+* La **exergía térmica** disminuye con el nivel de temperatura de la fuente.  
+* La **exergía de trabajo** equivale a la parte *útil* del trabajo realizado.  
+* La **exergía de masa** refleja el *estado energético y entrópico* transportado por la materia en movimiento.
+
 :::
 
 ---
 
 (subsec_conceptual_closure_exergy_closed_open)=
-### Conceptual closure
+### Cierre conceptual
 
-* **Exergy** represents the **maximum useful work** that a system can deliver as it moves **reversibly** toward equilibrium with its **environment** — the **dead state**.
-* In **closed systems**, exergy depends on the internal, kinetic, potential, and $p_0V$–$T_0S$ terms that express the system’s energetic deviation from its surroundings.
-* In **open systems**, the inclusion of **flow work** and **enthalpy** terms reflects the capacity of **moving matter** to transport useful energy.
-* Exergy transfer through **heat**, **work**, or **mass** represents the flow of *work potential* across boundaries.
-* When a system reaches the **dead state**, its exergy — and therefore its capacity to do useful work — **vanishes**.
+* La **exergía** representa el **máximo trabajo útil** que un sistema puede entregar al avanzar **reversiblemente** hacia el equilibrio con su **entorno** — el **estado muerto**.
+* En **sistemas cerrados**, la exergía depende de las energías interna, cinética y potencial, así como de los términos $p_0V$ y $T_0S$ que expresan la desviación energética respecto al ambiente.
+* En **sistemas abiertos**, la inclusión del **trabajo de flujo** y la **entalpía** refleja la capacidad de la **materia en movimiento** para transportar energía útil.
+* La exergía transferida mediante **calor**, **trabajo** o **masa** representa el flujo de *potencial de trabajo* a través de las fronteras.
+* Cuando un sistema alcanza el **estado muerto**, su exergía — y por tanto su capacidad de producir trabajo útil — **desaparece**.
 
-In essence, exergy provides a **quantitative measure of how far a system stands from complete equilibrium**. The next step is to formalize how this potential diminishes in all real processes — leading to the **principle of decreasing exergy** and the **definition of exergy destruction**.
+En esencia, la exergía proporciona una **medida cuantitativa de la distancia entre un sistema y el equilibrio completo**. El siguiente paso es formalizar cómo este potencial disminuye en todos los procesos reales — conduciendo al **principio de la disminución de la exergía** y a la definición de **destrucción de exergía**.

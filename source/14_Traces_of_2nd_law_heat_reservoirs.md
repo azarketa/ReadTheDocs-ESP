@@ -1,113 +1,112 @@
 (sec_traces_second_law)=
-## Traces of the $2^{\text{nd}}$ law
+## Vestigios de la $2^{\text{a}}$ ley
 
-The fulfillment of the $1^{\text{st}}$ law of thermodynamics — the **conservation of energy** — is unquestionable: in any process, energy is neither created nor destroyed.
-However, observation of natural phenomena shows that **not all energy transformations permitted by the $1^{\text{st}}$ law actually occur**.
-Everyday experience provides abundant evidence that some processes happen *spontaneously* in one direction, but never in the reverse one.
+El cumplimiento de la $1^{\text{a}}$ ley de la termodinámica — la **conservación de la energía** — es incuestionable: en cualquier proceso, la energía ni se crea ni se destruye.
+Sin embargo, la observación de fenómenos naturales muestra que **no todas las transformaciones de energía permitidas por la $1^{\text{a}}$ ley ocurren realmente**.
+La experiencia cotidiana proporciona abundantes pruebas de que algunos procesos suceden de manera *espontánea* en una dirección, pero nunca en la contraria.
 
 ---
 
 (subsec_everyday_irreversibilities)=
-### Everyday irreversibilities
+### Irreversibilidades cotidianas
 
-Consider a simple situation: a **glass of hot water** left in a room.
-With time, it cools down until reaching room temperature.
-Part of the energy initially stored in the water as **internal energy** is transferred to the surroundings as **heat**, and the total energy balance satisfies the $1^{\text{st}}$ law.
+Consideremos una situación sencilla: un **vaso de agua caliente** dejado en una habitación.
+Con el tiempo, se enfría hasta alcanzar la temperatura ambiente.
+Parte de la energía inicialmente almacenada en el agua como **energía interna** se transfiere al entorno en forma de **calor**, y el balance total de energía satisface la $1^{\text{a}}$ ley.
 
-But once thermal equilibrium is reached, the **reverse transformation** — the water heating itself back up by spontaneously absorbing heat from the cooler air — never occurs, even though such a process would also conserve energy.
+Pero una vez alcanzado el equilibrio térmico, la **transformación inversa** — que el agua vuelva a calentarse espontáneamente absorbiendo calor del aire más frío — nunca ocurre, aun cuando dicho proceso también conservaría la energía.
 
-A similar reflection arises with **mechanical processes**.
-When an **egg falls and breaks** upon impact, its potential energy converts into kinetic energy and, subsequently, into several forms:
+Una reflexión similar surge con los **procesos mecánicos**.
+Cuando un **huevo cae y se rompe** al impactar, su energía potencial se convierte en energía cinética y, posteriormente, en varias formas:
 
-* small temperature rises (heat),
-* deformations and fractures (internal mechanical energy),
-* and minor acoustic emissions (sound).
+* pequeños aumentos de temperatura (calor),
+* deformaciones y fracturas (energía mecánica interna),
+* y leves emisiones acústicas (sonido).
 
-All of these transformations comply with the energy balance — yet no spontaneous mechanism exists to reassemble the egg, lift it back up, and restore its initial state.
-Nature respects energy conservation but not *reversibility*.
+Todas estas transformaciones cumplen con el balance energético — pero no existe ningún mecanismo espontáneo que regenere el huevo, lo eleve de nuevo y restablezca su estado inicial.
+La naturaleza respeta la conservación de la energía pero no la *reversibilidad*.
 
 :::{important}
 
-**DIRECTIONALITY OF NATURAL PROCESSES**
+**DIRECCIONALIDAD DE LOS PROCESOS NATURALES**
 
-While the $1^{\text{st}}$ law ensures that the **total energy** remains constant, it says nothing about the **direction** of energy exchanges.
-The fact that processes proceed spontaneously only in one direction indicates that **an additional principle** governs natural transformations.
+Aunque la $1^{\text{a}}$ ley garantiza que la **energía total** permanece constante, no dice nada sobre la **dirección** de los intercambios de energía.
+El hecho de que los procesos avancen espontáneamente sólo en una dirección indica que **un principio adicional** gobierna las transformaciones naturales.
 :::
 
 ---
 
+
 (subsec_need_for_second_law)=
-### Beyond conservation: the need for a new principle
+### Más allá de la conservación: la necesidad de un nuevo principio
 
-From the examples above, it becomes clear that the $1^{\text{st}}$ law alone is **insufficient** to describe real processes.
-It allows both the direct and the reverse of any transformation, since both satisfy the same energy balance.
-To explain **why** one direction is observed and not the other, we need a new rule — a law that distinguishes between *possible* and *spontaneous* processes.
+A partir de los ejemplos anteriores, queda claro que la $1^{\text{a}}$ ley por sí sola es **insuficiente** para describir los procesos reales.
+Permite tanto la transformación directa como la inversa, puesto que ambas satisfacen el mismo balance de energía.
+Para explicar **por qué** observamos una dirección y no la otra, necesitamos una nueva regla — una ley que distinga entre procesos *posibles* y *espontáneos*.
 
-This rule is the **$2^{\text{nd}}$ law of thermodynamics**, which introduces a fundamental asymmetry in natural phenomena: it provides the **arrow of time** in thermodynamics.
+Esa regla es la **$2^{\text{a}}$ ley de la termodinámica**, que introduce una asimetría fundamental en los fenómenos naturales: proporciona la **flecha del tiempo** en termodinámica.
 
-The $2^{\text{nd}}$ law shows that:
+La $2^{\text{a}}$ ley muestra que:
 
-* Every real process involves a loss of **energy quality** (or *availability*), even if the total amount of energy remains constant.
-* Natural systems evolve toward **more uniform** states — thermal, mechanical, or compositional — and away from organized, ordered configurations.
+* Todo proceso real implica una pérdida de **calidad de la energía** (o *disponibilidad*), aunque la cantidad total de energía permanece constante.
+* Los sistemas naturales evolucionan hacia estados **más uniformes** — térmicos, mecánicos o composicionales — y se alejan de configuraciones organizadas u ordenadas.
 
 :::{note}
 
-**QUALITY VS. QUANTITY OF ENERGY**
+**CALIDAD VS. CANTIDAD DE ENERGÍA**
 
-The $1^{\text{st}}$ law deals with the **quantity** of energy — how much is stored or transferred.
-The $2^{\text{nd}}$ law deals with the **quality** of energy — whether it can still produce organized effects (like work).
-Energy degrades in usefulness as it spreads or dissipates, even though its total value remains unchanged.
+La $1^{\text{a}}$ ley trata de la **cantidad** de energía — cuánta se almacena o se transfiere.
+La $2^{\text{a}}$ ley trata de la **calidad** de la energía — si aún puede producir efectos organizados (como trabajo).
+La energía se degrada en utilidad a medida que se dispersa o se disipa, aunque su valor total permanezca inalterado.
 :::
 
 ---
 
 (subsec_from_traces_to_formulation)=
-### From traces to formulation
+### De las huellas a la formulación
 
-The empirical traces of the $2^{\text{nd}}$ law — spontaneous cooling, frictional heating, irreversible mixing — indicate that real processes have an inherent **directionality**.
-Yet, early thermodynamicists such as **Carnot**, **Clausius**, and **Kelvin** could not measure directionality directly.
-They sought instead to identify its signature within **cyclic devices**, where energy transformations could be tracked with precision.
+Las huellas empíricas de la $2^{\text{a}}$ ley — enfriamiento espontáneo, calentamiento por fricción, mezclas irreversibles — indican que los procesos reales poseen una **direccionalidad** inherente.
+Sin embargo, los primeros termodinámicos como **Carnot**, **Clausius** y **Kelvin** no podían medir directamente esa direccionalidad.
+Buscaron entonces identificar su rastro en **dispositivos cíclicos**, donde las transformaciones de energía podían seguirse con precisión.
 
-These **cyclic devices** — precursors of modern *heat engines* — repeatedly converted heat into work (or vice versa) while returning the working substance to its original state.
-By studying their limitations, scientists were able to recognize the deeper principle that governs *all* irreversible processes.
+Estos **dispositivos cíclicos** — precursores de los actuales *motores térmicos* — convertían repetidamente calor en trabajo (o viceversa) mientras el fluido de trabajo retornaba a su estado inicial.
+Al estudiar sus limitaciones, los científicos pudieron reconocer el principio más profundo que gobierna *todos* los procesos irreversibles.
 
 :::{important}
 
-**THE ROLE OF IDEALIZED CYCLIC DEVICES**
+**EL PAPEL DE LOS DISPOSITIVOS CÍCLICOS IDEALIZADOS**
 
-The first formal expressions of the $2^{\text{nd}}$ law arose not from abstract reasoning but from **observations on cyclic machines**.
-These devices demonstrated that even if the $1^{\text{st}}$ law is fully satisfied, it is **impossible** to convert all the supplied heat into work without additional effects on the surroundings.
-Such impossibility is what defines the need for the $2^{\text{nd}}$ law.
+Las primeras formulaciones de la $2^{\text{a}}$ ley no surgieron del razonamiento abstracto, sino de **observaciones sobre máquinas cíclicas**.
+Estos dispositivos mostraron que, aun cuando la $1^{\text{a}}$ ley se cumple por completo, es **imposible** convertir todo el calor suministrado en trabajo sin producir efectos adicionales en los alrededores.
+Esa imposibilidad es lo que define la necesidad de la $2^{\text{a}}$ ley.
 :::
 
 ---
 
 (subsec_need_for_reservoirs)=
-### Why thermal reservoirs are introduced
+### Por qué se introducen las fuentes térmicas
 
-Before defining what a **heat engine** is, we need to describe the **idealized environments** that make their operation conceptually possible.
-These are the **thermal reservoirs**, which serve as reference bodies capable of exchanging heat without undergoing measurable temperature changes.
+Antes de definir qué es un **motor térmico**, necesitamos describir los **entornos idealizados** que hacen posible su funcionamiento conceptual. Se trata de las **fuentes térmicas**, que actúan como cuerpos de referencia capaces de intercambiar calor sin experimentar cambios apreciables de temperatura.
 
-In real and experimental systems, the ability to treat the surroundings as having a **constant temperature** simplifies the energy analysis and isolates the essential behavior of the engine itself.
-A reservoir therefore represents an **ideal thermal source or sink**, not because it is a physical reality, but because it provides the theoretical framework for discussing heat exchanges under well-defined temperature boundaries.
+En sistemas reales y experimentales, la posibilidad de tratar el entorno como de **temperatura constante** simplifica el análisis energético y aísla el comportamiento esencial del propio motor. Una fuente térmica representa, por tanto, una **fuente o sumidero térmico ideal**, no porque exista físicamente, sino porque aporta el marco teórico para discutir intercambios de calor bajo límites de temperatura bien definidos.
 
 :::{note}
 
-**PHYSICAL INTUITION BEHIND RESERVOIRS**
+**INTUICIÓN FÍSICA DETRÁS DE LAS FUENTES TÉRMICAS**
 
-Thermal reservoirs can be imagined as **very large bodies** (for example, the atmosphere, the ocean, or a large river) whose temperature remains essentially constant while exchanging moderate amounts of heat.
-Their purpose in theory is to **anchor temperature levels** — to define “hot” and “cold” boundaries — without being affected by the heat exchanged.
+Las fuentes térmicas pueden imaginarse como **cuerpos muy grandes** (por ejemplo, la atmósfera, el océano o un gran río) cuya temperatura permanece esencialmente constante al intercambiar cantidades moderadas de calor. Su propósito en teoría es **anclar niveles de temperatura** — definir fronteras “calientes” y “frías” — sin verse afectados por el calor intercambiado.
 :::
 
 ---
 
 (subsec_conceptual_closure_traces)=
-### Conceptual closure
+### Cierre conceptual
 
-* The $1^{\text{st}}$ law ensures **energy conservation**, but says nothing about **directionality**.
-* Natural phenomena reveal that energy transformations are **irreversible** and proceed in a **preferred direction**.
-* The $2^{\text{nd}}$ law captures this directionality, expressing that while energy is conserved, its **usefulness** or **quality** inevitably degrades.
-* Historically, the law emerged from the **study of cyclic devices**, which made irreversibility experimentally evident.
-* The analysis of such devices requires the ideal notion of **thermal reservoirs**, introduced to represent systems capable of exchanging heat at constant temperature.
+* La $1^{\text{a}}$ ley garantiza la **conservación de la energía**, pero no dice nada sobre la **direccionalidad**.
+* Los fenómenos naturales muestran que las transformaciones de energía son **irreversibles** y avanzan en una **dirección preferente**.
+* La $2^{\text{a}}$ ley capta esta direccionalidad, expresando que, aunque la energía se conserva, su **utilidad** o **calidad** se degrada de forma inevitable.
+* Históricamente, la ley surgió del **estudio de dispositivos cíclicos**, que hicieron experimentalmente evidente la irreversibilidad.
+* El análisis de estos dispositivos requiere la noción ideal de **fuentes térmicas**, introducidos para representar sistemas capaces de intercambiar calor a temperatura constante.
 
-These ideas set the stage for the next conceptual step: the definition and analysis of **heat engines**, which will serve as the operational framework for formalizing the $2^{\text{nd}}$ law.
+Estas ideas preparan el terreno para el siguiente paso conceptual: la definición y el análisis de los **motores térmicos**, que servirán como marco operativo para formalizar la $2^{\text{a}}$ ley.
+

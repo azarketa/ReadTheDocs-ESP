@@ -1,99 +1,85 @@
 (sec_reversible_irreversible_processes)=
-## Reversible and irreversible processes
+## Procesos reversibles e irreversibles
 
-Thermodynamic processes can occur in two fundamentally different ways, depending on whether they can be perfectly undone or not. This distinction lies at the heart of the **$2^{\text{nd}}$ law**, since it separates **idealized behavior** (reversible) from **real behavior** (irreversible).
+Los procesos termodinámicos pueden darse de dos formas fundamentalmente distintas, según puedan deshacerse por completo o no. Esta distinción se encuentra en el núcleo de la **$2^{\text{a}}$ ley**, pues separa el **comportamiento idealizado** (reversible) del **comportamiento real** (irreversible).
 
 ---
 
 (subsec_definition_reversibility)=
-### Definition of reversibility
+### Definición de reversibilidad
 
-A **reversible process** is one that can be *completely undone*: both the system and its surroundings could, in principle, return to their original states **without any net macroscopic change** in the environment.
-Such processes must proceed **infinitely slowly** (quasi-statically) and **without dissipative effects** — that is, without friction, viscosity, turbulence, electrical resistance, or finite temperature differences during heat transfer.
+Un **proceso reversible** es aquel que puede *deshacerse completamente*: tanto el sistema como sus alrededores podrían, en principio, regresar a sus estados originales **sin ningún cambio macroscópico neto** en el entorno. Tales procesos deben desarrollarse **infinitamente despacio** (cuasiestáticamente) y **sin efectos disipativos** — es decir, sin fricción, viscosidad, turbulencia, resistencia eléctrica o diferencias de temperatura finitas durante la transferencia de calor.
 
-Conversely, an **irreversible process** is one that **cannot be reversed** without leaving some permanent trace on the surroundings.
-In these processes, **dissipation** is unavoidable: friction, viscous flow, spontaneous mixing, unrestrained expansion, or heat transfer through a finite temperature difference all contribute to the irreversibility of real phenomena.
+Por el contrario, un **proceso irreversible** es aquel que **no puede invertirse** sin dejar alguna huella permanente en los alrededores. En estos procesos, la **disipación** es inevitable: fricción, flujo viscoso, mezclado espontáneo, expansión no restringida o transferencia de calor a través de diferencias de temperatura finitas contribuyen a la irreversibilidad de los fenómenos reales.
 
 :::{important}
 
-**REVERSIBILITY AS AN IDEALIZATION**
+**LA REVERSIBILIDAD COMO IDEALIZACIÓN**
 
-Reversible processes are **ideal constructs**.
-They do not occur in practice but serve as **theoretical limits** that real, irreversible processes can only approach — never attain.
+Los procesos reversibles son **constructos ideales**. No ocurren en la práctica, pero sirven como **límites teóricos** que los procesos reales — irreversibles — solo pueden aproximar, nunca alcanzar.
 :::
 
 ---
 
 (subsec_internal_external_reversibility)=
-### Internal and external reversibility
+### Reversibilidad interna y externa
 
-Reversibility may be considered from two complementary standpoints:
+La reversibilidad puede considerarse desde dos puntos de vista complementarios:
 
-* A process is said to be **internally reversible** if *no dissipative effects occur within the system itself*.
-  The system passes through a sequence of equilibrium states, and all internal interactions (mechanical, thermal, etc.) are ideal and lossless.
+* Un proceso se dice **internamente reversible** si *no ocurren efectos disipativos dentro del propio sistema*. El sistema atraviesa una secuencia de estados de equilibrio, y todas sus interacciones internas (mecánicas, térmicas, etc.) son ideales y sin pérdidas.
 
-* A process is **externally reversible** if the **interactions between the system and its surroundings** — those across the **boundary** — occur **without finite gradients** or **net changes** in the environment.
-  For instance, heat transfer between the system and its surroundings must occur through an **infinitesimal temperature difference** to be externally reversible.
-  Conversely, if heat flows across a **finite temperature difference**, the process becomes **externally irreversible**, even if it remains **internally reversible** within the system.
+* Un proceso es **externamente reversible** si las **interacciones entre el sistema y sus alrededores** — aquellas a través de la **frontera** — ocurren **sin gradientes finitos** ni **cambios netos** en el entorno. Por ejemplo, la transferencia de calor entre el sistema y sus alrededores debe producirse mediante una **diferencia de temperatura infinitesimal** para ser externamente reversible. Por el contrario, si el calor fluye a través de una **diferencia de temperatura finita**, el proceso se vuelve **externamente irreversible**, incluso si permanece **internamente reversible** dentro del sistema.
 
-In practice, most real processes may be **internally reversible** (if the system is idealized as free of internal friction, turbulence, or viscosity) but **externally irreversible**, since the exchanges of heat or work with the environment occur across **finite temperature or pressure gradients** that leave a detectable change in the surroundings.
+En la práctica, muchos procesos reales pueden ser **internamente reversibles** (si el sistema se idealiza como libre de fricción interna, turbulencias o viscosidad), pero **externamente irreversibles**, ya que los intercambios de calor o trabajo con el entorno ocurren a través de **gradientes finitos de temperatura o presión** que dejan un cambio apreciable en los alrededores.
 
 :::{note}
 
-**EXAMPLE OF AN IRREVERSIBLE PROCESS**
+**EJEMPLO DE UN PROCESO IRREVERSIBLE**
 
-Consider a **can of soda** initially at $5 \ ^{\circ}\mathrm{C}$ placed in a room at $20 \ ^{\circ}\mathrm{C}$.
-Heat naturally flows from the warmer air to the colder can until both reach the same temperature.
-To restore the can to its initial condition, one would have to use a **refrigerator**, which removes heat from the can and expels it to the room air.
+Considera una **lata de refresco** inicialmente a $5 \ ^{\circ}\mathrm{C}$ colocada en una habitación a $20 \ ^{\circ}\mathrm{C}$. El calor fluye de forma natural del aire más cálido hacia la lata más fría hasta que ambos alcanzan la misma temperatura. Para devolver la lata a su estado inicial, haría falta un **refrigerador**, que extrae calor de la lata y lo expulsa al aire de la habitación.
 
-At the end of this restoration, the can regains its initial state, but the **room has warmed slightly** — it has absorbed the heat rejected by the refrigerator.
-Hence, although the system (the can) is back to its initial condition, the **environment is not**.
-The overall process is therefore **irreversible**.
+Al finalizar esta restauración, la lata recupera su estado inicial, pero la **habitación se ha calentado ligeramente** — ha absorbido el calor rechazado por el refrigerador. Por tanto, aunque el sistema (la lata) retorna a su condición inicial, el **entorno no lo hace**. El proceso global es, por tanto, **irreversible**.
 
-However, the **heat transfer within the can** — that is, inside the system’s boundaries — can be approximated as **internally reversible** if it proceeds quasi-statically and without dissipative effects.
-The **irreversibility** of the process arises from the **finite temperature difference** between the can and the room, i.e. from the **external interaction** between the system and its surroundings.
+No obstante, la **transferencia de calor dentro de la lata** — es decir, dentro de los límites del sistema — puede aproximarse como **internamente reversible** si ocurre cuasiestáticamente y sin disipación. La **irreversibilidad** del proceso proviene de la **diferencia finita de temperatura** entre la lata y la habitación, es decir, de la **interacción externa** entre el sistema y su entorno.
 
 :::
 
 ---
 
 (subsec_interest_reversibility)=
-### Why reversibility matters
+### Por qué importa la reversibilidad
 
-Even though reversible processes are idealizations, distinguishing them from irreversible ones is essential for two main reasons:
+Aunque los procesos reversibles son idealizaciones, distinguirlos de los irreversibles es esencial por dos razones principales:
 
-1. **Analytical simplicity:**
-   Reversible processes evolve **quasi-statically**, passing through a continuous series of equilibrium states.
-   This makes them **mathematically tractable** and allows us to apply the thermodynamic relations exactly at every step.
+1. **Simplicidad analítica:**  
+   Los procesos reversibles evolucionan **cuasiestáticamente**, pasando por una serie continua de estados de equilibrio. Esto los hace **matemáticamente tratables** y permite aplicar las relaciones termodinámicas exactamente en cada punto del proceso.
 
-2. **Theoretical benchmarks:**
-   Reversible processes serve as **reference limits** for real systems:
+2. **Referencias teóricas:**  
+   Los procesos reversibles sirven como **límites de referencia** para los sistemas reales:
 
-   * For **heat engines**, they yield the **maximum possible efficiency**.
-   * For **refrigeration cycles and heat pumps**, they require the **minimum possible work input**.
+   * En **motores térmicos**, proporcionan el **máximo rendimiento posible**.  
+   * En **ciclos de refrigeración y bombas de calor**, requieren el **mínimo trabajo posible**.
 
-Thus, reversible processes define the **upper and lower performance bounds** for all practical thermodynamic cycles, providing the standard against which **real, irreversible behavior** is measured.
+Así, los procesos reversibles definen los **límites superior e inferior del desempeño** de todos los ciclos termodinámicos prácticos, proporcionando el estándar frente al cual se mide el **comportamiento real e irreversible**.
 
 :::{note}
 
-**THE GLOBAL OR UNIVERSAL IRREVERSIBILITY**
+**LA IRREVERSIBILIDAD GLOBAL O UNIVERSAL**
 
-Because one can always define a larger system that includes both the original **system and its environment**, it is conceptually possible to enclose *all interactions* within a single, **isolated system** — the so-called **thermodynamic universe**.
-In this all-encompassing view, there is **no distinction between internal and external irreversibility**: every dissipative effect, whether inside the system or at its boundaries, contributes to the **overall irreversibility** of the universe.
+Como siempre puede definirse un sistema mayor que incluya tanto el **sistema original como su entorno**, es conceptualmente posible encerrar *todas las interacciones* dentro de un único **sistema aislado** — el llamado **universo termodinámico**. En esta visión global, no existe distinción entre irreversibilidad interna y externa: cualquier efecto disipativo, ya sea dentro del sistema o en su frontera, contribuye a la **irreversibilidad total** del universo.
 
-This idea leads directly to one of the most profound implications of the $2^{\text{nd}}$ law:
-the **total irreversibility of the universe increases** with every real process, and **no natural transformation can occur in a perfectly reversible way** when viewed as a whole.
+Esta idea conduce directamente a una de las implicaciones más profundas de la **$2^{\text{a}}$ ley**: la **irreversibilidad total del universo aumenta** con cada proceso real, y **ninguna transformación natural puede ocurrir de manera perfectamente reversible** cuando se analiza en su conjunto.
 
 :::
 
 ---
 
 (subsec_conceptual_closure_reversibility)=
-### Conceptual closure
+### Cierre conceptual
 
-* **Reversible processes** are **idealized** transformations that can be undone without leaving any macroscopic change in the surroundings. They proceed **quasi-statically** and **without dissipation**, allowing the system to pass continuously through equilibrium states.
-* **Irreversible processes**, in contrast, are **real** and **spontaneous**: they involve friction, viscosity, turbulence, or finite temperature gradients that prevent exact retracing of the initial state.
-* The distinction between **internal** and **external** reversibility clarifies whether dissipation occurs within the system or at its boundary with the environment. In reality, most processes are internally reversible but externally irreversible.
-* Although true reversibility is unattainable, **reversible models** provide **theoretical reference limits** — defining the **maximum efficiency** of heat engines and the **minimum work input** for refrigeration cycles.
+* Los **procesos reversibles** son transformaciones **idealizadas** que pueden deshacerse sin dejar ningún cambio macroscópico en los alrededores. Avanzan **cuasiestáticamente** y **sin disipación**, permitiendo que el sistema atraviese continuamente estados de equilibrio.
+* Los **procesos irreversibles**, en contraste, son **reales** y **espontáneos**: involucran fricción, viscosidad, turbulencia o gradientes de temperatura finitos que impiden reconstruir exactamente el estado inicial.
+* La distinción entre **reversibilidad interna** y **externa** aclara si la disipación se produce dentro del sistema o en su frontera con el entorno. En la realidad, la mayoría de los procesos son internamente reversibles pero externamente irreversibles.
+* Aunque la reversibilidad perfecta es inalcanzable, los **modelos reversibles** proporcionan **límites teóricos de referencia** — definiendo el **máximo rendimiento** de los motores térmicos y el **mínimo trabajo requerido** por los ciclos de refrigeración.
 
-In essence, reversibility marks the **ideal boundary** of thermodynamic perfection, while the $2^{\text{nd}}$ law reminds us that **real processes always carry an irreversible cost** — the signature of the thermodynamic arrow of time.
+En esencia, la reversibilidad marca el **límite ideal** de perfección termodinámica, mientras que la **$2^{\text{a}}$ ley** nos recuerda que los **procesos reales siempre conllevan un coste irreversible** — la firma del sentido termodinámico del tiempo.

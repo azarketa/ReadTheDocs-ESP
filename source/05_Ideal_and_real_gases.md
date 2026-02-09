@@ -1,457 +1,423 @@
 (sec_models_gases)=
-## Ideal and real gases
+## Gases ideales y reales
 
-Modeling gases is one of the key aspects of Thermodynamics. Gases differ by composition and molecular structure — air, carbon monoxide, hydrogen, methane, butane, or ethanol vapor all behave differently.
-However, under suitable conditions, all gases exhibit comparable patterns that can be captured through mathematical models.
+Modelar gases es uno de los aspectos clave de la Termodinámica. Los gases difieren por su composición y estructura molecular — aire, monóxido de carbono, hidrógeno, metano, butano o vapor de etanol se comportan de manera distinta.
+Sin embargo, bajo condiciones adecuadas, todos los gases muestran patrones comparables que pueden capturarse mediante modelos matemáticos.
 
-This section first develops the **ideal gas model**, valid at low pressures and high temperatures, and then introduces **real-gas models** that extend predictive accuracy under dense or cold conditions. A quantitative example illustrates their differences. The intensive variables used here connect directly to {ref}`the previous section <sec_characterization_substances>`, and the final forms satisfy {ref}`the general state relation eq_general_state_equation`.
+Esta sección desarrolla primero el **modelo de gas ideal**, válido a bajas presiones y altas temperaturas, y luego introduce **modelos de gases reales** que amplían la precisión predictiva en condiciones densas o frías. Un ejemplo cuantitativo ilustra sus diferencias. Las variables intensivas utilizadas aquí se conectan directamente con {ref}`la sección anterior <sec_characterization_substances>`, y las formas finales satisfacen {ref}`the general state relation <eq_general_state_equation>`.
 
 ---
 
 (subsec_ideal_gas_assumptions)=
-### Assumptions of the ideal gas model
+### Supuestos del modelo de gas ideal
 
-The **ideal gas model** rests on two simplifying postulates
+El **modelo de gas ideal** se basa en dos postulados simplificadores:
 
-1. **Negligible molecular volume:** molecules occupy a negligibly small portion of the total volume. This approximation is sound at **low pressures**.
+1. **Volumen molecular despreciable:** las moléculas ocupan una porción insignificante del volumen total. Esta aproximación es válida a **bajas presiones**.
 
-2. **Negligible intermolecular forces:** intermolecular attractions and repulsions are disregarded. This is reasonable at **high temperatures**, where kinetic energy dominates.
+2. **Fuerzas intermoleculares despreciables:** se ignoran las atracciones y repulsiones intermoleculares. Esto es razonable a **altas temperaturas**, donde domina la energía cinética.
 
 :::{important}
+**VALIDEZ DE LA APROXIMACIÓN DE GAS IDEAL**
 
-**VALIDITY OF THE IDEAL GAS APPROXIMATION**
-
-The ideal gas model describes gases under the limit of low density and high temperature, where molecular interactions vanish.
-In this regime, all gases behave similarly, regardless of their chemical nature.
+El modelo de gas ideal describe gases en el límite de baja densidad y alta temperatura, donde las interacciones moleculares *desaparecen*.
+En este régimen, todos los gases se comportan de manera similar, independientemente de su naturaleza química.
 :::
 
 ---
 
-(subsec_ideal_gas_equation)=
-### The ideal gas equation
 
-The relationship among pressure, volume, temperature, and amount of substance is expressed by the **ideal gas law**.
+
+(subsec_ideal_gas_equation)=
+### La ecuación del gas ideal
+
+La relación entre presión, volumen, temperatura y cantidad de sustancia se expresa mediante la **ley del gas ideal**.
 
 (eq_ideal_gas_molar_form)=
 $$
 p{}V = n{}\text{R}_{\text{u}}{}T
 $$
 
-where
+donde:
 
-* $p$ is the absolute pressure ($\text{Pa}$),
-* $V$ is the volume ($\text{m}^3$),
-* $n$ is the amount of substance ($\text{mol}$),
-* $T$ is the absolute temperature ($\text{K}$), and
-* $\text{R}_{\text{u}} = 8.314 \ [\text{J}/(\text{mol}\cdot\text{K})]$ is the universal gas constant.
+* $p$ es la presión absoluta ($\text{Pa}$),
+* $V$ es el volumen ($\text{m}^3$),
+* $n$ es la cantidad de sustancia ($\text{mol}$),
+* $T$ es la temperatura absoluta ($\text{K}$), y
+* $\text{R}_{\text{u}} = 8{,}314 \ [\text{J}/(\text{mol}\cdot\text{K})]$ es la constante universal de los gases.
 
-The **specific gas constant** $R$ is
+La **constante específica del gas** $R$ se define como:
 
 (eq_specific_gas_constant)=
 $$
-R = \frac{\text{R}_{\text{u}}}{\text{MW}}
+R = \frac{\text{R}_{\text{u}}}{\text{M}}
 $$
 
-where $\text{MW}$ is the molecular weight ($\text{kg}/\text{mol}$). Since $\text{MW} = m/n$, the **mass form** follows as
+donde $\text{M}$ es la masa molar ($\text{kg}/\text{mol}$). Como $\text{M} = m/n$, se obtiene la **forma en masa**:
 
 (eq_ideal_gas_mass_form)=
 $$
 p{}V = m{}R{}T
 $$
 
-Dividing by mass $m$ yields the **specific form**
+Dividiendo por la masa $m$ se obtiene la **forma específica**:
 
 (eq_ideal_gas_specific_form)=
 $$
 p{}v = R{}T
 $$
 
-where $v = V/m$ is the specific volume ($\text{m}^3/\text{kg}$).
+donde $v = V/m$ es el volumen específico ($\text{m}^3/\text{kg}$).
 
 :::{note}
+**RELACIÓN CON EL POSTULADO DEL ESTADO**
 
-**RELATION TO THE STATE POSTULATE**
-
-The relation $p{}v = R{}T$ connects the three intensive variables introduced in {ref}`the previous section <sec_characterization_substances>` and is a particular realization of {ref}`the generic state relation <eq_general_state_equation>`.
+La relación $p{}v = R{}T$ conecta las tres variables intensivas introducidas en {ref}`la sección anterior <sec_characterization_substances>` y constituye una realización particular de {ref}`la relación general de estado <eq_general_state_equation>`.
 :::
 
 ---
 
-(subsec_real_gases)=
-### Real gases and deviations from ideal behavior
 
-When gases are compressed or cooled, their behavior departs from that predicted by the ideal gas law. These deviations occur because real molecules **occupy finite space** and **exert forces** on each other — effects neglected in the ideal model. To quantify such departures, we introduce the **compressibility factor**:
+
+(subsec_real_gases)=
+### Gases reales y desviaciones del comportamiento ideal
+
+Cuando los gases se comprimen o se enfrían, su comportamiento se aparta del predicho por la ley del gas ideal. Estas desviaciones ocurren porque las moléculas reales **ocupan un espacio finito** y **ejercen fuerzas** entre sí — efectos que el modelo ideal desprecia. Para cuantificar estas diferencias, introducimos el **factor de compresibilidad**:
 
 (eq_compressibility_factor)=
 $$
 Z = \frac{p{}v}{R{}T}
 $$
 
-For an ideal gas, $Z = 1$. If $Z < 1$, attractive interactions dominate; if $Z > 1$, repulsive effects prevail. The compressibility factor thus provides a compact, dimensionless measure of real-gas deviation.
+Para un gas ideal, $Z = 1$. Si $Z < 1$, dominan las interacciones atractivas; si $Z > 1$, prevalecen los efectos repulsivos. El factor de compresibilidad proporciona así una medida compacta y adimensional de la desviación respecto al comportamiento ideal.
 
 :::{note}
+**SIGNIFICADO DE $Z$**
 
-**THE MEANING OF $Z$**
-
-The compressibility factor $Z$ quantifies how far a real gas deviates from the ideal law under a given combination of $p$ and $T$.
-Plotting $Z$ versus $p$ for several gases at various temperatures reveals a common trend —
-they all approach $Z=1$ at low pressure, showing that ideal-gas behavior is the limiting case of real gases.
+El factor de compresibilidad $Z$ cuantifica cuánto se desvía un gas real de la ley ideal bajo una combinación dada de $p$ y $T$.
+Al representar $Z$ frente a $p$ para varios gases a distintas temperaturas se observa una tendencia común:
+todos se aproximan a $Z = 1$ a baja presión, mostrando que el comportamiento de gas ideal es el caso límite de los gases reales.
 :::
 
 ---
 
 (subsec_reduced_variables)=
-### Critical properties and reduced variables
+### Propiedades críticas y variables reducidas
 
-Experimental studies show that every substance exhibits a **critical point** beyond which the distinction between liquid and vapor disappears. This point is defined by three characteristic magnitudes: the **critical pressure** $p_c$, **critical temperature** $T_c$, and **critical specific volume** $v_c$.
+Los estudios experimentales muestran que toda sustancia presenta un **punto crítico** más allá del cual desaparece la distinción entre líquido y vapor. Este punto se define por tres magnitudes características: la **presión crítica** $p_c$, la **temperatura crítica** $T_c$ y el **volumen específico crítico** $v_c$.
 
-These values are experimentally measurable and provide a natural reference frame for comparing substances.
-Although the detailed meaning of “critical point” will be addressed later,
-we can already define the **reduced variables**:
+Estos valores son medibles experimentalmente y proporcionan un marco de referencia natural para comparar sustancias.
+Aunque el significado detallado de “punto crítico” se abordará más adelante,
+ya podemos definir las **variables reducidas**:
 
 (eq_reduced_variables)=
 $$
 T_r = \frac{T}{T_c}, \qquad p_r = \frac{p}{p_c}, \qquad v_r = \frac{v}{v_c}
 $$
 
-Expressing thermodynamic relationships in terms of $(T_r, p_r, v_r)$ makes the behavior of different gases **comparable on a universal basis**, which is the essence of the **law of corresponding states**.
+Expresar las relaciones termodinámicas en términos de $(T_r, p_r, v_r)$ hace que el comportamiento de diferentes gases sea **comparable en una base universal**, lo que constituye la esencia de la **ley de los estados correspondientes**.
 
 :::{tip}
+**LEY DE LOS ESTADOS CORRESPONDIENTES**
 
-**THE LAW OF CORRESPONDING STATES**
-
-When data for various gases are plotted in terms of the reduced variables $(T_r, p_r, v_r)$, their compressibility curves collapse onto nearly the same surface. This empirical observation implies that the thermodynamic behavior of gases is fundamentally governed by non-dimensional ratios, not by their absolute properties.
+Cuando los datos de varios gases se representan en función de las variables reducidas $(T_r, p_r, v_r)$, sus curvas de compresibilidad se superponen sobre la misma superficie. Esta observación empírica implica que el comportamiento termodinámico de los gases está gobernado fundamentalmente por relaciones adimensionales, no por sus propiedades absolutas.
 :::
 
 ---
 
-(subsec_cubic_models)=
-### Classical and modern real gas models
 
-While $Z$ serves as an excellent descriptor of real-gas behavior, we still need **explicit equations** linking $p$, $v$, and $T$ to calculate states and processes.
-To this end, several **semi-empirical EOS** have been developed. These equations modify the ideal gas law by including corrective terms
-for **finite molecular volume** and **intermolecular attractions**.
+
+(subsec_cubic_models)=
+### Modelos clásicos y modernos de gases reales
+
+Aunque $Z$ es un excelente descriptor del comportamiento de los gases reales, aún necesitamos **ecuaciones explícitas** que vinculen $p$, $v$ y $T$ para calcular estados y procesos.
+Con este fin, se han desarrollado varias **ecuaciones de estado semiempríricas**. Estas ecuaciones modifican la ley del gas ideal incluyendo términos correctivos para el **volumen molecular finito** y las **fuerzas intermoleculares**.
 
 :::{note}
+**POR QUÉ APARECEN LAS ECUACIONES CÚBICAS**
 
-**WHY CUBIC EQUATIONS APPEAR**
-
-When the ideal gas law is corrected by one term proportional to $1/v^2$ (to model attractions) and another that subtracts a finite volume $b$ (to model repulsions),
-the resulting expression becomes **cubic in specific volume** $v$. That is why most classical EOS — van der Waals, Redlich–Kwong, Peng–Robinson —
-belong to the family of **cubic EOS**. They are the simplest algebraic forms capable of reproducing the experimentally observed S-shaped $p$–$v$ curves
-near phase transitions while remaining solvable in closed form.
+Cuando la ley del gas ideal se corrige con un término proporcional a $1/v^2$ (para modelar atracciones) y otro que resta un volumen finito $b$ (para modelar repulsiones),
+la expresión resultante se vuelve **cúbica en el volumen específico** $v$. Por eso la mayoría de las ecuaciones de estado clásicas — van der Waals, Redlich–Kwong, Peng–Robinson —
+pertenecen a la familia de **ecuaciones cúbicas**. Son las formas algebraicas más simples capaces de reproducir las curvas $p$–$v$ con forma de S observadas experimentalmente
+cerca de las transiciones de fase, manteniendo la posibilidad de resolverse en forma cerrada.
 :::
 
-* **The van der Waals equation**
+* **Ecuación de van der Waals**
 
-  The first equation introducing both types of molecular corrections:
+  La primera ecuación que introduce ambos tipos de correcciones moleculares:
 
   (eq_vanderwaals)=
   $$
   \bigl(p + a{}\tfrac{n^{2}}{V^{2}}\bigr)\bigl(V - n{}b\bigr) = n{}\text{R}_{\text{u}}{}T
   $$
 
-  where:
+  donde:
 
-  * $a$ corrects for *intermolecular attractions*,
-  * $b$ corrects for *finite molecular size*.
+  * $a$ corrige las *atracciones intermoleculares*,
+  * $b$ corrige el *tamaño molecular finito*.
 
-  When $a = b = 0$, the ideal gas law is recovered.
+  Cuando $a = b = 0$, se recupera la ley del gas ideal.
 
-* **The Redlich–Kwong equation**
+* **Ecuación de Redlich–Kwong**
 
-  An improvement introducing a temperature-dependent attraction term:
+  Una mejora que introduce un término de atracción dependiente de la temperatura:
 
   (eq_redlich_kwong)=
   $$
   p = \frac{\text{R}_{\text{u}}{}T}{V_m - b} - \frac{a}{T^{1/2}{}V_m{}(V_m + b)}
   $$
 
-  This model performs well for moderate pressures and high temperatures
-  and remains algebraically simple.
+  Este modelo funciona bien para presiones moderadas y altas temperaturas,
+  y sigue siendo algebraicamente simple.
 
-* **The Peng–Robinson equation**
+* **Ecuación de Peng–Robinson**
 
-  Developed to improve accuracy near the critical and liquid regions:
+  Desarrollada para mejorar la precisión cerca de las regiones crítica y líquida:
 
   (eq_peng_robinson)=
   $$
   p = \frac{\text{R}_{\text{u}}{}T}{V_m - b} - \frac{a\alpha(T)}{V_m(V_m + b) + b(V_m - b)}
   $$
 
-  with:
+  con:
   * $\alpha(T) = [1 + \kappa(1 - \sqrt{T/T_c})]^2$,
-  * $\kappa = 0.37464 + 1.54226\omega - 0.26992\omega^2$,
-  * and $\omega$ the **acentric factor** of the gas.
+  * $\kappa = 0{,}37464 + 1{,}54226\omega - 0{,}26992\omega^2$,
+  * y $\omega$ el **factor acéntrico** del gas (medida de la no esfericidad o acentricidad de las moléculas).
 
-  The Peng–Robinson model is particularly effective for calculating vapor–liquid equilibria
-  and is widely used in engineering thermodynamics.
+  El modelo Peng–Robinson es particularmente eficaz para calcular equilibrios vapor–líquido
+  y se utiliza ampliamente en la termodinámica aplicada.
 
 :::{note}
+**PRECISIÓN COMPARATIVA**
 
-**COMPARATIVE ACCURACY**
+* **Van der Waals** — cualitativa pero demasiado simplificada.
+* **Redlich–Kwong** — mejora el comportamiento con la temperatura, precisión moderada.
+* **Peng–Robinson** — alta precisión en regiones vapor–líquido y cerca del punto crítico.
 
-* **van der Waals** — qualitative but oversimplified.
-* **Redlich–Kwong** — improved temperature behavior, moderate accuracy.
-* **Peng–Robinson** — high accuracy across vapor–liquid regions and near the critical point.
-
-Each of these equations can later be expressed in terms of the compressibility factor $Z$
-for cross-comparison and connection to theoretical expansions.
+Cada una de estas ecuaciones puede expresarse posteriormente en términos del factor de compresibilidad $Z$
+para comparaciones cruzadas y conexión con expansiones teóricas.
 :::
 
 ---
 
-(subsec_virial_equation)=
-### The Virial EOS
 
-Although cubic models offer practical engineering correlations, a more fundamental theoretical approach emerges from **statistical mechanics**, where the pressure of a gas is expanded in powers of density. This leads to the **Virial EOS**, expressed in terms of the compressibility factor:
+
+(subsec_virial_equation)=
+### La ecuación de estado virial
+
+Aunque los modelos cúbicos ofrecen correlaciones prácticas para ingeniería, un enfoque teórico más fundamental surge de la **mecánica estadística**, donde la presión de un gas se expande en potencias de la densidad. Esto conduce a la **ecuación de estado virial**, expresada en términos del factor de compresibilidad:
 
 (eq_virial_expansion)=
 $$
 Z = 1 + \frac{B(T)}{v} + \frac{C(T)}{v^{2}} + \frac{D(T)}{v^{3}} + \cdots
 $$
 
-The coefficients $B(T)$, $C(T)$, and $D(T)$ are known as the **Virial coefficients**,
-each corresponding to increasingly complex molecular interactions:
+Los coeficientes $B(T)$, $C(T)$ y $D(T)$ se conocen como **coeficientes viriales**,
+cada uno correspondiente a interacciones moleculares de complejidad creciente:
 
-* $B(T)$ — pairwise interactions,
-* $C(T)$ — three-body interactions,
-* $D(T)$ — four-body and higher effects.
+* $B(T)$ — interacciones de pares,
+* $C(T)$ — interacciones de tres cuerpos,
+* $D(T)$ — efectos de cuatro cuerpos y superiores.
 
-At large $v$ (low density), the higher-order terms vanish, and the ideal gas law is recovered. At moderate densities, the first few terms suffice to capture real-gas deviations.
+A grandes valores de $v$ (baja densidad), los términos de orden superior desaparecen y se recupera la ley del gas ideal. A densidades moderadas, bastan los primeros términos para capturar las desviaciones de los gases reales.
 
 :::{note}
+**CONEXIÓN CON LAS ECUACIONES CÚBICAS**
 
-**CONNECTION WITH CUBIC EQUATIONS**
+Expandir cualquier ecuación de estado cúbica — van der Waals, Redlich–Kwong o Peng–Robinson — para presiones pequeñas ($p_r \ll 1$) o volúmenes específicos grandes produce una **serie tipo virial**. En ese límite, las constantes $a$ y $b$ de esos modelos cúbicos pueden expresarse en términos de los coeficientes viriales $B(T)$ y $C(T)$. Por tanto, la ecuación de estado virial representa el **límite universal a baja presión** de todos los modelos de gases reales.
 
-Expanding any cubic EOS — van der Waals, Redlich–Kwong, or Peng–Robinson — for small pressures ($p_r \ll 1$) or large specific volumes yields a **Virial-type series**. In that limit, the constants $a$ and $b$ from those cubic models can be expressed in terms of the Virial coefficients $B(T)$ and $C(T)$. Therefore, the Virial equation represents the **universal low-pressure limit** of all real-gas models.
-
-In engineering practice, the series is often truncated after the first correction term:
+En la práctica ingenieril, la serie suele truncarse tras el primer término correctivo:
 
 (eq_virial_first_order)=
 $$
 Z \approx 1 + \frac{B(T)}{v}
 $$
 
-Substituting into the ideal gas law yields:
+Sustituyendo en la ley del gas ideal se obtiene:
 
 (eq_virial_pressure_correction)=
 $$
 p \approx \frac{R{}T}{v}\left(1 + \frac{B(T)}{v}\right)
 $$
 
-This **first-order Virial approximation** provides a convenient correction for real-gas effects at moderate pressures while remaining computationally simple.
+Esta **aproximación virial de primer orden** proporciona una corrección conveniente para efectos de gas real a presiones moderadas, manteniendo la simplicidad computacional.
 
-The truncated Virial expansion is accurate at **low to moderate pressures**, where intermolecular interactions are limited to short-range effects.
+La expansión virial truncada es precisa a **presiones bajas o moderadas**, donde las interacciones intermoleculares se limitan a efectos de corto alcance.
 
-At higher pressures or near the critical point, cubic equations such as Peng–Robinson offer better accuracy and thermodynamic consistency.
+A presiones altas o cerca del punto crítico, las ecuaciones cúbicas como Peng–Robinson ofrecen mejor precisión y consistencia termodinámica.
 :::
 
 :::{note}
+**SIGNIFICADO Y ORIGEN DE LA PALABRA *VIRIAL***
 
-**THE MEANING AND ORIGIN OF THE WORD *VIRIAL***
+La palabra **“virial”** proviene del término latino *vis*, que significa *fuerza* o *energía*. Fue introducida por el físico alemán **Rudolf Clausius** en 1870 en el contexto de sus estudios sobre la teoría mecánica del calor. Clausius utilizó la expresión *“virialis”* para denotar la *energía asociada a las fuerzas moleculares*, y a partir de ella formuló lo que hoy se conoce como el **Teorema de Virial**.
 
-The word **“Virial”** comes from the Latin term *vis*, meaning *force* or *strength*. It was first introduced by the German physicist **Rudolf Clausius** in 1870
-in the context of his studies on the mechanical theory of heat. Clausius used the expression *“virialis”* to denote the *energy associated with molecular forces*,
-and from it he formulated what is now known as the **Virial Theorem**.
+En esencia, el teorema de Virial relaciona la **energía cinética promedio** de las moléculas en un sistema con la **energía potencial promedio** derivada de sus interacciones mutuas. A partir de esta relación mecánica, Clausius estableció un vínculo entre las fuerzas microscópicas y la presión macroscópica — conexión que dio origen a la **ecuación virial**, que expresa la presión de un gas como una serie en potencias de la densidad.
 
-In essence, the Virial theorem relates the **average kinetic energy** of the molecules in a system to the **average potential energy** arising from their mutual interactions. From this mechanical relationship, Clausius derived a connection between microscopic forces and macroscopic pressure — a link that later gave birth to the **Virial EOS**, which expresses the pressure of a gas as a power series in density.
-
-So the term *Virial* refers to the “force-energy content” (*vis*) of a system, not to variance or series expansion. Each coefficient in the Virial equation represents the cumulative effect of molecular forces: two-body, three-body, and higher interactions. Thus, the name emphasizes the mechanical origin of the equation — it is fundamentally a **force-derived** expression of state.
+Así, el término *virial* se refiere al “contenido de energía-fuerza” (*vis*) de un sistema, no a la varianza ni a la expansión de series. Cada coeficiente en la ecuación de virial representa el efecto acumulado de las fuerzas moleculares: interacciones de dos cuerpos, tres cuerpos y superiores. El nombre enfatiza el origen mecánico de la ecuación — es, fundamentalmente, una expresión de estado derivada de las fuerzas.
 :::
 
 ---
 
+
+
 ::::{important}
+**EJEMPLO RESUELTO — PRESIÓN Y FACTOR DE COMPRESIBILIDAD DEL $\text{CO}_2$ A $300 \ \text{K}$**
 
-**WORKED EXAMPLE — PRESSURE AND COMPRESSIBILITY OF $\text{CO}_2$ AT $300 \ \text{K}$**
+**Enunciado del problema**
 
-**Problem statement**
+Determinar la **presión** y el **factor de compresibilidad** $Z$ para el **dióxido de carbono** bajo condiciones termodinámicas especificadas, utilizando tanto **modelos ideales** como **modelos de gas real**. El gas ocupa un **volumen molar** de $V_m = 0{,}01 \ \text{m}^3/\text{mol}$ y se mantiene a una **temperatura** de $T = 300 \ \text{K}$. Esto corresponde a una condición cercana al punto crítico del $\text{CO}_2$, lo que lo convierte en un caso significativo para evaluar la fidelidad de los modelos.
 
-Determine the **pressure** and the **compressibility factor** $Z$ for **carbon dioxide** under specified thermodynamic conditions, using both **ideal** and **real gas models**. The gas occupies a **molar volume** of $V_m = 0.01 \ \text{m}^3/\text{mol}$ and is held at a **temperature** of $T = 300 \ \text{K}$. This corresponds to a near-critical condition for $\text{CO}_2$, making it a meaningful case for evaluating model fidelity.
+Los modelos considerados son:
 
-The following models are considered:
+1. Gas ideal  
+2. Van der Waals  
+3. Redlich–Kwong  
+4. Peng–Robinson  
+5. Virial (aproximación de primer orden)  
+6. Virial (aproximación de segundo orden)  
 
-1. Ideal gas
-2. van der Waals
-3. Redlich–Kwong
-4. Peng–Robinson
-5. Virial (first-order approximation)
-6. Virial (second-order approximation)
+**Síntesis**
 
-**Synthesis**
-
-Different gas models are applied for computing the pressure of a mole of $\text{CO}_{2}$ that occupies a $0.01 \ \text{m}^{3}$ volume at a temperature of $T = 300 \ \text{K}$.
-
----
-
-**Problem data**{cite}`weast1972handbook, mit_virial`
-
-| Quantity               |                   Symbol                  |                    Value                   |
-| :--------------------- | :---------------------------------------: | :----------------------------------------: |
-| Temperature            |                    $T$                    |               $300 \ \text{K}$               |
-| Molar volume           |                   $V_m$                   |        $0.01 \ \text{m}^3/\text{mol}$        |
-| Universal gas constant |                   $\text{R}_{\text{u}}$                   | $8.314 \ \text{J}/(\text{mol}\cdot\text{K})$ |
-| $a$ (vdW–RK–PR)        |                    $a$                    | $0.364 \ \text{Pa}{\cdot}\text{m}^6/\text{mol}^2$ |
-| $b$ (vdW–RK–PR)        |                    $b$                    | $4.27\times10^{-5} \ \text{m}^3/\text{mol}$ |
-| Critical temperature   |                   $T_c$                   |              $304.2 \ \text{K}$              |
-| Critical pressure      |                   $p_c$                   |         $7.38\times10^6 \ \text{Pa}$         |
-| Acentric factor        |                  $\omega$                 |                   $0.225$                  |
-| **2nd Virial coefficient** (at $300 \ \text{K}$) | $B$ | $-121.5\times10^{-6} \ \text{m}^3/\text{mol}$ |
-| **3rd Virial coefficient** (at $300 \ \text{K}$) | $C$ |  $5.2\times10^{-9} \ \text{m}^6/\text{mol}^2$ |
+Se aplican diferentes modelos de gas para calcular la presión de un mol de $\text{CO}_{2}$ que ocupa un volumen de $0{,}01 \ \text{m}^{3}$ a una temperatura de $T = 300 \ \text{K}$.
 
 ---
 
-1. **Computing reduced properties**
+**Datos del problema**{cite}`weast1972handbook, mit_virial`
+
+| Magnitud                | Símbolo | Valor |
+| :---------------------- | :------: | :---: |
+| Temperatura             | $T$ | $300 \ \text{K}$ |
+| Volumen molar           | $V_m$ | $0{,}01 \ \text{m}^3/\text{mol}$ |
+| Constante universal de los gases | $\text{R}_{\text{u}}$ | $8{,}314 \ \text{J}/(\text{mol}\cdot\text{K})$ |
+| $a$ (vdW–RK–PR)         | $a$ | $0{,}364 \ \text{Pa}{\cdot}\text{m}^6/\text{mol}^2$ |
+| $b$ (vdW–RK–PR)         | $b$ | $4{,}27\times10^{-5} \ \text{m}^3/\text{mol}$ |
+| Temperatura crítica     | $T_c$ | $304{,}2 \ \text{K}$ |
+| Presión crítica         | $p_c$ | $7{,}38\times10^6 \ \text{Pa}$ |
+| Factor acéntrico        | $\omega$ | $0{,}225$ |
+| **2º coeficiente de Virial** (a $300 \ \text{K}$) | $B$ | $-121{,}5\times10^{-6} \ \text{m}^3/\text{mol}$ |
+| **3º coeficiente de Virial** (a $300 \ \text{K}$) | $C$ | $5{,}2\times10^{-9} \ \text{m}^6/\text{mol}^2$ |
+
+---
+
+1. **Cálculo de propiedades reducidas**
 
 (eq_example_reduced_props)=
 $$
-T_r = \frac{T}{T_c} = 0.986,
+T_r = \frac{T}{T_c} = 0{,}986,
 \qquad
 p_r = \frac{p}{p_c}.
 $$
 
-Because $p$ is to be determined, $p_r$ will be evaluated separately for each model.
+Como $p$ debe determinarse, $p_r$ se evaluará por separado para cada modelo.
 
 ---
 
-2. Calculating model predictions
+2. **Predicciones de los modelos**
 
-    * **Ideal gas model**
-    
-        (eq_example_ideal_gas)=
-        $$
-        \boxed{p = \frac{\text{R}_{\text{u}}{}T}{V_m} = 2.49\times10^{5} \ \text{Pa}} \ ,
-        $$
-        
-        $$
-        \boxed{Z = \frac{p{}V_m}{\text{R}_{\text{u}}{}T} = 1.000} \ .
-        $$
-
-    ---
-
-    * **van der Waals equation**
-    
-        (eq_example_vdw)=
-        $$
-        \boxed{p = \frac{\text{R}_{\text{u}}{}T}{V_m - b} - a{}\frac{1}{V_m^2}
-        = 2.13\times10^{5} \ \text{Pa}} \ ,
-        $$
-        
-        $$
-        \boxed{Z = \frac{p{}V_m}{\text{R}_{\text{u}}{}T} = 0.857} \ .
-        $$
-
-    ---
-   
-    * **Redlich–Kwong equation**
-    
-        (eq_example_rk)=
-        $$
-        \boxed{p = \frac{\text{R}_{\text{u}}{}T}{V_m - b} - \frac{a}{T^{1/2}{}V_m(V_m + b)} = 2.20\times10^{5} \ \text{Pa}} \ ,
-        $$
-        
-        $$
-        \boxed{Z = 0.885} \ .
-        $$
-
-    ---
-   
-    * **Peng–Robinson equation**
-    
-        (eq_example_pr)=
-        $$
-        p =
-        \frac{\text{R}_{\text{u}}{}T}{V_m - b} = \frac{a\alpha(T)}{V_m(V_m + b) + b(V_m - b)},
-        $$
-        
-        where:
-        
-        $$
-        \alpha(T) = [1 + \kappa(1 - \sqrt{T/T_c})]^2,
-        \qquad
-        \kappa = 0.37464 + 1.54226\omega - 0.26992\omega^2.
-        $$
-        
-        Numerically:
-        
-        $$
-        \boxed{p = 2.25\times10^{5} \ \text{Pa}} \ ,
-        $$
-      
-        $$
-        \boxed{Z = 0.905} \ .
-        $$
-
-    ---
-    
-    * **Virial equation (first-order approximation)**
-        
-        (eq_example_virial)=
-        $$
-        \boxed{p = \frac{\text{R}_{\text{u}}{}T}{V_m}{}\left(1 + \frac{B}{V_m}\right) = 2.47\times10^{5}{} \ \text{Pa}} \ ,
-        $$
-        
-        $$
-        \boxed{Z = 1 + \frac{B}{V_m} = 0.994} \ .
-        $$
-
-   ---
-
-   * **Virial equation (second-order approximation)**
-
-        (eq_example_virial2)=
-        $$
-        \frac{C}{V_m^{2}} = \frac{5.2\times10^{-9}}{(0.01)^2} = 5.2\times10^{-5},
-        $$
-        
-        $$
-        \boxed{Z = 1 - 0.01215 + 5.2\times10^{-5} = 0.98790} \ ,
-        $$
-        
-        $$
-        \boxed{p = \frac{\text{R}_{\text{u}}{}T}{V_m}{}Z \approx 2.4642\times10^{5}{}\text{Pa}} \ .
-        $$
-
+* **Modelo de gas ideal**
+$$
+\boxed{p = \frac{\text{R}_{\text{u}}{}T}{V_m} = 2{,}49\times10^{5} \ \text{Pa}} \ ,
+$$
+$$
+\boxed{Z = \frac{p{}V_m}{\text{R}_{\text{u}}{}T} = 1{,}000} \ .
+$$
 
 ---
 
-3. **Reduced-pressure evaluation**
+* **Ecuación de van der Waals**
+$$
+\boxed{p = \frac{\text{R}_{\text{u}}{}T}{V_m - b} - a{}\frac{1}{V_m^2}
+= 2{,}13\times10^{5} \ \text{Pa}} \ ,
+$$
+$$
+\boxed{Z = \frac{p{}V_m}{\text{R}_{\text{u}}{}T} = 0{,}857} \ .
+$$
 
-    (eq_example_reduced_pressure)=
-    $$
-    p_r = \frac{p}{p_c}.
-    $$
-    
-    | Model           |      $p$ [$\text{Pa}$]      |  $Z$  |  $p_r$ | $\Delta{}p$ [%] vs Peng-Robinson |
-    | :-------------- | :----------------: | :---: | :----: | :----------: |
-    | Ideal gas       | $2.49{\times}10^5$ | 1.000 | 0.0337 |     +10.7    |
-    | van der Waals   | $2.13{\times}10^5$ | 0.857 | 0.0288 |     −5.3     |
-    | Redlich–Kwong   | $2.20{\times}10^5$ | 0.885 | 0.0298 |     −2.2     |
-    | Peng–Robinson   | $2.25{\times}10^5$ | 0.905 | 0.0305 |      0.0     |
-    | Virial (1-term) | $2.47{\times}10^5$ | 0.994 | 0.0335 |     +9.8     |
-    | Virial (2-term) | $2.4642{\times}10^5$ | 0.98790 | 0.0334 | +9.5 |
+---
+
+* **Ecuación de Redlich–Kwong**
+$$
+\boxed{p = \frac{\text{R}_{\text{u}}{}T}{V_m - b} - \frac{a}{T^{1/2}{}V_m(V_m + b)} = 2{,}20\times10^{5} \ \text{Pa}} \ ,
+$$
+$$
+\boxed{Z = 0{,}885} \ .
+$$
+
+---
+
+* **Ecuación de Peng–Robinson**
+$$
+p =
+\frac{\text{R}_{\text{u}}{}T}{V_m - b} - \frac{a\alpha(T)}{V_m(V_m + b) + b(V_m - b)},
+$$
+donde:
+$$
+\alpha(T) = [1 + \kappa(1 - \sqrt{T/T_c})]^2,
+\qquad
+\kappa = 0{,}37464 + 1{,}54226\omega - 0{,}26992\omega^2.
+$$
+Numéricamente:
+$$
+\boxed{p = 2{,}25\times10^{5} \ \text{Pa}} \ ,
+$$
+$$
+\boxed{Z = 0{,}905} \ .
+$$
+
+---
+
+* **Ecuación de Virial (aproximación de primer orden)**
+$$
+\boxed{p = \frac{\text{R}_{\text{u}}{}T}{V_m}{}\left(1 + \frac{B}{V_m}\right) = 2{,}47\times10^{5}{} \ \text{Pa}} \ ,
+$$
+$$
+\boxed{Z = 1 + \frac{B}{V_m} = 0{,}994} \ .
+$$
+
+---
+
+* **Ecuación de Virial (aproximación de segundo orden)**
+$$
+\frac{C}{V_m^{2}} = \frac{5{,}2\times10^{-9}}{(0{,}01)^2} = 5{,}2\times10^{-5},
+$$
+$$
+\boxed{Z = 1 - 0{,}01215 + 5{,}2\times10^{-5} = 0{,}98790} \ ,
+$$
+$$
+\boxed{p = \frac{\text{R}_{\text{u}}{}T}{V_m}{}Z \approx 2{,}4642\times10^{5}{}\text{Pa}} \ .
+$$
+
+---
+
+3. **Evaluación de presión reducida**
+(eq_example_reduced_pressure)=
+$$
+p_r = \frac{p}{p_c}.
+$$
+
+| Modelo           | $p$ [$\text{Pa}$] | $Z$ | $p_r$ | $\Delta{}p$ [%] vs Peng–Robinson |
+| :-------------- | :----------------: | :---: | :----: | :----------: |
+| Gas ideal       | $2{,}49{\times}10^5$ | 1{,}000 | 0{,}0337 | +10{,}7 |
+| van der Waals   | $2{,}13{\times}10^5$ | 0{,}857 | 0{,}0288 | −5{,}3 |
+| Redlich–Kwong   | $2{,}20{\times}10^5$ | 0{,}885 | 0{,}0298 | −2{,}2 |
+| Peng–Robinson   | $2{,}25{\times}10^5$ | 0{,}905 | 0{,}0305 | 0{,}0 |
+| Virial (1 término) | $2{,}47{\times}10^5$ | 0{,}994 | 0{,}0335 | +9{,}8 |
+| Virial (2 términos) | $2{,}4642{\times}10^5$ | 0{,}988 | 0{,}0334 | +9{,}5 |
 
 ---
 
 :::{tip}
+**INTERPRETACIÓN**
 
-**INTERPRETATION**
+A $T_r \approx 0{,}99$, el $\text{CO}_2$ se encuentra cerca de su región crítica.
 
-At $T_r \approx 0.99$, $\text{CO}_2$ lies close to its critical region.
-
-* The **ideal gas model** overestimates pressure by about 10 %, since it neglects molecular attractions.
-
-* The **van der Waals model** underestimates it slightly, as it overcorrects for cohesion.
-
-* **Redlich–Kwong** and **Peng–Robinson** capture both repulsion and attraction more accurately, with the latter providing the best agreement.
-
-* Finally, the **Virial model** nearly reproduces the ideal-gas prediction — a clear indication that it is reliable mainly at low pressures, where intermolecular forces become negligible.
-
-* The one-term Virial approximation reduces the ideal-gas pressure only slightly (to $Z{}\approx{}0.988$), still **overestimating** by $\sim 9.5 \ \%$ vs **Peng–Robinson**. Adding the **third virial term** changes $Z$ by only $5.2\times10^{-5}$, so the two-term Virial approximation is practically identical here.
-
-* Near-critical curvature of the $p$–$v$–$T$ surface is captured much better by **cubic EOS** (Redlich-Kwong/Peng-Robinson) than by **low-order Virial truncations**.
-
+* El **modelo de gas ideal** sobreestima la presión en ~10 %, ya que ignora las atracciones moleculares.
+* El **modelo de van der Waals** la subestima ligeramente, al sobrecorregir por cohesión.
+* **Redlich–Kwong** y **Peng–Robinson** capturan repulsión y atracción con mayor precisión, siendo este último el más exacto.
+* El **modelo virial** reproduce casi la predicción del gas ideal — señal clara de que es fiable principalmente a bajas presiones.
+* La aproximación de un término reduce la presión ideal solo ligeramente ($Z{}\approx{}0{,}988$), aún **sobreestimando** ~9{,}5 % frente a **Peng–Robinson**. Añadir el **tercer término virial** cambia $Z$ solo en $5{,}2\times10^{-5}$, por lo que la aproximación de dos términos es prácticamente idéntica.
+* La curvatura cerca del punto crítico en la superficie $p$–$v$–$T$ se captura mucho mejor con **ecuaciones de estado cúbicas** (Redlich–Kwong/Peng–Robinson) que con truncamientos viriales de bajo orden.
 :::
 
 ::::
@@ -459,9 +425,10 @@ At $T_r \approx 0.99$, $\text{CO}_2$ lies close to its critical region.
 ---
 
 (subsec_conceptual_closure_gases)=
-### Conceptual closure
+### Cierre conceptual
 
-* The **ideal gas law** ($p{}v = R{}T$) describes the low-density limit and satisfies {ref}`the generic state relation <eq_general_state_equation>`.
-* **Real-gas** behavior requires corrections for finite size and interactions — via {ref}`van der Waals <eq_vanderwaals>`, {ref}`Redlich–Kwong <eq_redlich_kwong>`, {ref}`Virial <eq_virial_equation>`, and {ref}`Peng–Robinson <eq_peng_robinson>`.
-* For broad engineering conditions, **Peng–Robinson** typically offers the best accuracy–simplicity balance; **Redlich–Kwong** is a solid lighter-weight alternative.
-* Truncated **virial** forms remain valuable for dilute gases but are not the most accurate at moderate densities or near phase boundaries.
+* La **ley del gas ideal** $(p{}v = R{}T)$, para *bajas* presiones y *altas* temperaturas, satisface {ref}`la relación general de estado <eq_general_state_equation>`.
+* El comportamiento de **gases reales** requiere correcciones por tamaño finito e interacciones — mediante {ref}`van der Waals <eq_vanderwaals>`, {ref}`Redlich–Kwong <eq_redlich_kwong>`, {ref}`Virial <eq_virial_equation>` y {ref}`Peng–Robinson <eq_peng_robinson>`.
+* Para condiciones amplias en ingeniería, **Peng–Robinson** ofrece el mejor equilibrio entre precisión y simplicidad; **Redlich–Kwong** es una alternativa más ligera.
+* Las formas truncadas de **Virial** siguen siendo útiles para gases diluidos, pero no son las más precisas a densidades moderadas o cerca de límites de fase.
+

@@ -1,4 +1,4 @@
-GAS CYCLES
+CICLOS DE GAS
 ===================
 
 .. toctree::

@@ -1,111 +1,112 @@
 (sec_characterization_of_substances)=
-## Characterization of substances
+## Caracterización de las sustancias
 
-Once the basic concepts of {ref}`equilibrium, temperature scales and processes<sec_equilibrium_temperature_processes>` have been established,
-the next step is to understand how these notions apply to the **real materials** that make up thermodynamic systems.
-Every system consists of *substances*, and the task of Thermodynamics is to characterize their states and transformations.
+Una vez establecidos los conceptos básicos de {ref}`equilibrio, escalas de temperatura y procesos <sec_equilibrium_temperature_processes>`,
+el siguiente paso es comprender cómo se aplican estas nociones a los **materiales reales** que conforman los sistemas termodinámicos.
+Cada sistema está formado por *sustancias*, y la tarea de la Termodinámica es caracterizar sus estados y transformaciones.
 
-The key questions are:
+Las preguntas clave son:
 
-* What do we mean by a *substance*?
-* How can we describe the *state changes* that substances undergo?
+* ¿Qué entendemos por *sustancia*?
+* ¿Cómo podemos describir los *cambios de estado* que experimentan las sustancias?
 
 ---
 
 (subsec_classification_substances)=
-### Classification of substances
+### Clasificación de las sustancias
 
-Substances are categorized according to their **chemical composition** and **homogeneity**.
+Las sustancias se clasifican según su **composición química** y **homogeneidad**.
 
-* **Pure substances**: uniform and invariable chemical composition.
+* **Sustancias puras**: composición química uniforme e invariable.
 
-  * *Simple*: composed of a single chemical element (e.g. $\text{H}_2$, $\text{O}_2$).
-  * *Compound*: composed of more than one element (e.g. $\text{H}_2\text{O}$, $\text{CO}_2$).
+  * *Simple*: compuesta por un solo elemento químico (p. ej., $\text{H}_2$, $\text{O}_2$).
+  * *Compuesta*: formada por más de un elemento (p. ej., $\text{H}_2\text{O}$, $\text{CO}_2$).
 
-* **Mixtures**: physical combinations of two or more pure substances.
+* **Mezclas**: combinaciones físicas de dos o más sustancias puras.
 
-  * *Homogeneous mixtures*: uniform composition throughout (e.g. air, aqueous solutions).
-  * *Heterogeneous mixtures*: composition varies spatially (e.g. oil and water).
+  * *Mezclas homogéneas*: composición uniforme en todo el volumen (p. ej., aire, soluciones acuosas).
+  * *Mezclas heterogéneas*: composición variable espacialmente (p. ej., aceite y agua).
 
-The **phase** of a substance refers to a spatial region where its physical properties are uniform.
-In thermodynamics, *phase changes* always imply *state changes* — the two notions are considered synonymous.
+La **fase** de una sustancia se refiere a una región espacial donde sus propiedades físicas son uniformes.
+En termodinámica, los *cambios de fase* implican siempre *cambios de estado* — ambas nociones se consideran sinónimas.
 
 :::{note}
+**FASES COMO DOMINIOS TERMODINÁMICOS**
 
-**PHASES AS THERMODYNAMIC DOMAINS**
-
-A *phase* defines a region of physical uniformity in both composition and properties.
-When a substance changes phase, its thermodynamic state changes discontinuously.
+Una *fase* define una región de uniformidad física tanto en composición como en propiedades.
+Cuando una sustancia cambia de fase, su estado termodinámico cambia de manera discontinua.
 :::
 
-Although Thermodynamics can describe any phase of any substance, the emphasis here will be on **fluids** — particularly **gases** — since they constitute the working media of most thermal systems.
+Aunque la Termodinámica puede describir cualquier fase de cualquier sustancia, aquí se hará énfasis en los **fluidos** — en particular los **gases** — ya que constituyen el medio de trabajo de la mayoría de los sistemas térmicos.
 
 ---
+
+
 
 (subsec_state_postulate)=
-### State postulate
+### Postulado del estado
 
-The study of thermodynamic systems aims to describe their equilibrium states through measurable properties.
-The central question is: **how many independent properties are required to define the state of a system?** This is answered by the **State Postulate**, formulated by Kline and Köenig back in 1957:
+El estudio de los sistemas termodinámicos tiene como objetivo describir sus estados de equilibrio mediante propiedades medibles.
+La pregunta central es: **¿cuántas propiedades independientes se requieren para definir el estado de un sistema?** Esto se responde con el **postulado del estado**, formulado por Kline y Köenig en 1957:
 
 :::{epigraph}
-The equilibrium state of a system is completely specified when $n + 1$ independent thermodynamic variables are known,
-where $n$ is the number of independent ways to perform quasi-static, reversible work on the system.
+El estado de equilibrio de un sistema queda completamente especificado cuando se conocen $n + 1$ variables termodinámicas independientes,
+donde $n$ es el número de formas independientes de realizar trabajo cuasiestático y reversible sobre el sistema.
 :::
 
-In practice:
+En la práctica:
 
-* For most **fluids**, the relevant form of reversible work is **compression or expansion work**.
-* A **simple system** is one that allows reversible work in **only one way** (e.g. by changing its volume).
-* Systems capable of multiple kinds of work (electrical, elastic, magnetic, etc.) are **compound systems**, but these can often be divided into simple subsystems whose only reversible work is of the compression/expansion type.
+* Para la mayoría de los **fluidos**, la forma relevante de trabajo reversible es el **trabajo de compresión o expansión**.
+* Un **sistema simple** es aquel que permite trabajo reversible de **una sola forma** (por ejemplo, variando su volumen).
+* Los sistemas capaces de múltiples tipos de trabajo (eléctrico, elástico, magnético, etc.) son **sistemas compuestos**, pero estos pueden dividirse en subsistemas simples cuyo único trabajo reversible es del tipo compresión/expansión.
 
 :::{important}
+**COROLARIO DEL POSTULADO DEL ESTADO**
 
-**COROLLARY OF THE STATE POSTULATE**
-
-**Simple compressible systems** — the main focus of this course — require only **two independent properties** to define their equilibrium state.
+Los **sistemas simples compresibles** — el enfoque principal de este curso — requieren solo **dos propiedades independientes** para definir su estado de equilibrio.
 :::
 
 :::{note}
+**VARIABLES INDEPENDIENTES**
 
-**INDEPENDENT VARIABLES**
-
-The properties chosen to describe a state must be *intensive* (independent of system size and geometry) and *mutually independent*.
-For fluid systems, the primary variables are **pressure** ($p$), **specific volume** ($v = 1/\rho$), and **temperature** ($T$).
+Las propiedades elegidas para describir un estado deben ser *intensivas* (independientes del tamaño y la geometría del sistema) y *mutuamente independientes*.
+Para sistemas de fluidos, las variables principales son **presión** ($p$), **volumen específico** ($v = 1/\rho$) y **temperatura** ($T$).
 :::
 
 ---
 
-(subsec_equation_of_state)=
-### Equation of state (EOS)
 
-If any one of the three fundamental variables ($p$, $v$, $T$) can be expressed as a function of the other two, the system is fully characterized, and the **state postulate** is satisfied. Such a relation is known as the **equation of state (EOS)**.
+
+(subsec_equation_of_state)=
+### Ecuación de estado
+
+Si cualquiera de las tres variables fundamentales ($p$, $v$, $T$) puede expresarse como función de las otras dos, el sistema queda completamente caracterizado y se cumple el **postulado del estado**. Tal relación se conoce como **ecuación de estado**.
 
 (eq_general_state_equation)=
 $$
 f(p, v, T) = 0
 $$
 
-This general expression defines how the thermodynamic properties of a substance are interrelated.
-Specific forms of this function — such as the **model of perfect gases** — will be explored next.
+Esta expresión general define cómo se interrelacionan las propiedades termodinámicas de una sustancia.
+Formas específicas de esta función — como el **modelo de gases perfectos** — se explorarán a continuación.
 
 :::{tip}
+**POR QUÉ IMPORTAN LAS ECUACIONES DE ESTADO**
 
-**WHY EQUATIONS OF STATE MATTER**
-
-Equations of state provide the bridge between theory and measurable reality.
-They make it possible to compute one property (e.g. pressure) from others (e.g. temperature and volume),
-thereby connecting the abstract framework of Thermodynamics to experimental data.
+Las ecuaciones de estado proporcionan el puente entre la teoría y la realidad medible.
+Permiten calcular una propiedad (por ejemplo, la presión) a partir de otras (por ejemplo, temperatura y volumen específico),
+conectando así el marco abstracto de la Termodinámica con los datos experimentales.
 :::
 
 ---
 
 (subsec_conceptual_closure_characterization_substances)=
-### Conceptual closure
+### Cierre conceptual
 
-* Substances define the physical basis of thermodynamic systems; their composition and phase determine how they behave and transform.
-* The **State Postulate** specifies how many independent variables are required to describe a system completely.
-* For **simple compressible systems**, two independent intensive properties (commonly $p$, $v$, and $T$) are sufficient.
-* Expressing one of these properties as a function of the other two gives the **EOS**, the mathematical link between measurable quantities.
-* These principles provide the foundation for the study of {ref}`Models of Gases<sec_models_gases>`,
-  where specific functional forms of the EOS are introduced.
+* Las sustancias definen la base física de los sistemas termodinámicos; su composición y fase determinan cómo se comportan y transforman.
+* El **Postulado del Estado** especifica cuántas variables independientes se requieren para describir completamente un sistema.
+* Para los **sistemas simples compresibles**, dos propiedades intensivas independientes (comúnmente $p$, $v$ y $T$) son suficientes.
+* Expresar una de estas propiedades como función de las otras dos da la **ecuación de estado**, el vínculo matemático entre magnitudes medibles.
+* Estos principios proporcionan la base para el estudio de {ref}`Modelos de Gases <sec_models_gases>`,
+  donde se introducen formas funcionales específicas de la ecuación de estado.
+

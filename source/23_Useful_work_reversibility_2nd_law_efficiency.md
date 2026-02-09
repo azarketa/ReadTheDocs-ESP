@@ -1,171 +1,169 @@
 (sec_useful_work_reversibility_efficiency)=
-## Useful work, reversibility, and $2^{\text{nd}}$-law efficiency
+## Trabajo útil, reversibilidad y eficiencia de la segunda ley
 
-Having clarified the notions of **dead state**, **surroundings**, and **work potential**, we can now introduce the **work-related quantities** that serve as a bridge toward the **definition of exergy**. These magnitudes connect the **energy exchanges** of a system with the **quality** of those exchanges, showing how *irreversibilities* reduce the amount of *useful* work that can be obtained.
+Una vez aclarados los conceptos de **estado muerto**, **entorno** y **potencial de trabajo**, podemos introducir las **magnitudes relacionadas con el trabajo** que sirven de puente hacia la **definición de exergía**. Estas magnitudes conectan los **intercambios de energía** de un sistema con la **calidad** de dichos intercambios, mostrando cómo las *irreversibilidades* reducen la cantidad de trabajo *útil* que puede obtenerse.
 
 ---
 
 (subsec_surroundings_and_useful_work)=
-### Surroundings work and useful work
+### Trabajo del entorno y trabajo útil
 
-The notions of **surroundings work** and **useful work** are introduced to separate the **total mechanical work** exerted at a system’s boundary from the **portion that represents usable energy**. Whenever a system interacts mechanically with its environment, part of the boundary work simply counteracts the **ambient (atmospheric) pressure**, maintaining equilibrium with the surroundings. Only the remaining part — the **useful work** — effectively contributes to changing the system’s energetic state and, therefore, to its **exergy** or **work potential**.
+Las nociones de **trabajo del entorno** y **trabajo útil** se introducen para separar el **trabajo mecánico total** ejercido en la frontera de un sistema de la **porción que representa energía aprovechable**. Siempre que un sistema interactúa mecánicamente con su ambiente, parte del trabajo de frontera simplemente contrarresta la **presión ambiente (atmosférica)**, manteniendo el equilibrio con el entorno. Solo la parte restante — el **trabajo útil** — contribuye efectivamente a modificar el estado energético del sistema y, por tanto, su **exergía** o **potencial de trabajo**.
 
-This distinction is best illustrated through a **piston–cylinder system**, the simplest and most representative configuration for mechanical interaction. The **piston face** is exposed to the **atmosphere**, which acts as the **surroundings** exerting a constant pressure $p_0$. When the system’s volume changes from $V_1$ to $V_2$, the surroundings perform **mechanical work** on the system corresponding to this environmental pressure, expressed as
+Esta distinción se ilustra mejor mediante un **sistema pistón–cilindro**, la configuración más sencilla y representativa de la interacción mecánica. La **cara del pistón** está expuesta a la **atmósfera**, que actúa como **entorno** ejerciendo una presión constante $p_0$. Cuando el volumen del sistema cambia de $V_1$ a $V_2$, el entorno realiza **trabajo mecánico** sobre el sistema correspondiente a esta presión ambiental, expresado como
 
 (eq_work_surr)=
 $$
 \boxed{W_{\text{surr.}} = p_0 (V_2 - V_1)}
 $$
 
-This quantity expresses the **mechanical action of the ambient pressure** upon the boundary.
+Esta magnitud expresa la **acción mecánica de la presión ambiente** sobre la frontera.
 
-The **useful work** is then defined as the **net work** obtained after subtracting this unavoidable environmental contribution from the total boundary work $W$:
+El **trabajo útil** se define entonces como el **trabajo neto** obtenido tras restar esta contribución ambiental inevitable del trabajo total de frontera $W$:
 
 (eq_work_useful)=
 $$
 \boxed{W_u = W - W_{\text{surr.}}}
 $$
 
-This distinction clarifies that:
+Esta distinción aclara que:
 
-* For an **expanding system**, the surroundings work acts as a **resisting force** that must be overcome — it **reduces** the useful work output.
-* For a **compressing system**, the surroundings work assists compression — it **reduces** the required external work input.
+* Para un sistema en **expansión**, el trabajo del entorno actúa como una **fuerza resistente** que debe superarse — **reduce** el trabajo útil obtenido.
+* Para un sistema en **compresión**, el trabajo del entorno ayuda a la compresión — **reduce** el trabajo externo requerido.
 
-Hence, $W_u$ represents the **effective mechanical energy** that remains available for use once the environmental pressure effects are discounted.
+Por tanto, $W_u$ representa la **energía mecánica efectiva** que queda disponible una vez descontados los efectos de la presión ambiental.
 
 :::{note}
 
-**BOUNDARY WORK IN OPEN SYSTEMS**
+**TRABAJO DE FRONTERA EN SISTEMAS ABIERTOS**
 
-In **open systems**, where mass crosses the control surface, the concept of boundary work appears implicitly as **flow work**, defined per unit mass as $p v$.
-Each fluid element must “push” the surrounding fluid as it enters or leaves the control volume, and this mechanical effect is already included in the **enthalpy** term $h = u + p v$.
-Thus, the distinction between **total** and **useful** work remains valid — but it is embedded within the definition of enthalpy rather than appearing explicitly as $p_0(V_2 - V_1)$.
+En **sistemas abiertos**, donde la masa atraviesa la superficie de control, el concepto de trabajo de frontera aparece implícitamente como **trabajo de flujo**, definido por unidad de masa como $p v$.
+Cada elemento de fluido debe “empujar” al fluido circundante al entrar o salir del volumen de control, y este efecto mecánico ya está incluido en el término **entalpía**, $h = u + p v$.
+Así, la distinción entre trabajo **total** y **útil** sigue siendo válida — pero queda incorporada en la definición de entalpía en lugar de aparecer explícitamente como $p_0(V_2 - V_1)$.
 :::
 
 ---
 
 (subsec_reversible_work_and_irreversibility)=
-### Reversible work and irreversibility
+### Trabajo reversible e irreversibilidad
 
-Among all possible transformations between two given states, the **reversible process** yields the **maximum possible useful work** (or requires the **minimum input work**). This defines the **reversible work**, $W_{\text{rev.,out}}$.
+Entre todas las transformaciones posibles entre dos estados dados, el **proceso reversible** proporciona el **máximo trabajo útil posible** (o requiere el **mínimo trabajo de entrada**). Esto define el **trabajo reversible**, $W_{\text{rev.,out}}$.
 
-The **irreversibility**, $I$, quantifies the **loss of useful work potential** due to the presence of dissipative effects. It is therefore expressed as
+La **irreversibilidad**, $I$, cuantifica la **pérdida de potencial de trabajo útil** debida a la presencia de efectos disipativos. Se expresa, por tanto, como:
 
 (eq_irreversibility)=
 $$
 \boxed{I = W_{\text{rev.,out}} - W_{u,\text{out}}}
 $$
 
-where the subscript **out** denotes that the quantities refer to **work output**.
+donde el subíndice **out** indica que las magnitudes se refieren a **trabajo de salida**.
 
-In real systems, $I > 0$, and only in the **ideal reversible limit** does $I = 0$, indicating no loss of work potential.
+En sistemas reales, $I > 0$, y solo en el **límite reversible ideal** se cumple $I = 0$, lo que indica ausencia de pérdida de potencial de trabajo.
 
 :::{note}
 
-**DISTINCTION IN THE USE OF THE TERM *IRREVERSIBILITY***
+**DISTINCIÓN EN EL USO DEL TÉRMINO *IRREVERSIBILIDAD***
 
-The word **irreversibility** is used in two related senses:
+La palabra **irreversibilidad** se usa en dos sentidos relacionados:
 
-* Qualitatively, it refers to the **presence of dissipative effects** (such as friction, finite temperature differences, or mixing) that prevent a process from being reversible.
-* Quantitatively, it designates the **magnitude $I$**, which measures the **energetic equivalent** of those effects — the *work potential destroyed* because of entropy generation.
+* Cualitativamente, se refiere a la **presencia de efectos disipativos** (como fricción, diferencias de temperatura finitas o mezclado) que impiden que un proceso sea reversible.
+* Cuantitativamente, designa la **magnitud $I$**, que mide el **equivalente energético** de dichos efectos — el *potencial de trabajo destruido* debido a la generación de entropía.
 
-Although both meanings are connected, the first is descriptive, while the second is **numerical** and **measurable** in joules.
+Aunque ambos significados están conectados, el primero es descriptivo, mientras que el segundo es **numérico** y **medible** en julios.
 :::
 
 ---
 
 (subsec_second_law_efficiency)=
-### $2^{\text{nd}}$-law efficiency and the measure of energy quality
+### Eficiencia de la segunda ley y la medida de la calidad de la energía
 
-The **$2^{\text{nd}}$-law efficiency**, also called **rational efficiency**, complements the **thermal efficiency** by taking into account not only the **quantity** but also the **quality** of the energy exchanged. While the **$1^{\text{st}}$ law** concerns itself with conservation of energy, the **$2^{\text{nd}}$ law** evaluates *how effectively* that energy can be converted into useful work.
+La **eficiencia de la segunda ley**, también llamada **eficiencia racional**, complementa la **eficiencia térmica** al considerar no solo la **cantidad**, sino también la **calidad** de la energía intercambiada. Mientras que la **primera ley** se ocupa de la conservación de la energía, la **segunda ley** evalúa *cuán eficazmente* puede transformarse esa energía en trabajo útil.
 
-To grasp this idea, imagine two heat engines operating under different temperature ranges but yielding the **same thermal efficiency**. Although their energy ratios ($W/Q_H$) are equal, their **thermodynamic contexts** differ: the engine operating between a smaller temperature difference works under less favorable conditions. When compared with the **reversible (Carnot) limit** corresponding to each temperature range, the engine that operates effectively under the more restrictive temperature difference shows a **higher $2^{\text{nd}}$-law efficiency**, since it comes **closer to its own ideal limit**.
+Para comprender esta idea, imaginemos dos motores térmicos que operan bajo distintos rangos de temperatura pero que presentan la **misma eficiencia térmica**. Aunque sus relaciones energéticas $(W/Q_H)$ sean iguales, sus **contextos termodinámicos** difieren: el motor que opera con una diferencia de temperatura menor trabaja en condiciones menos favorables. Al compararlos con el **límite reversible (Carnot)** correspondiente a cada rango de temperaturas, el motor que funciona eficazmente bajo la diferencia de temperatura más restrictiva muestra una **eficiencia de la segunda ley mayor**, ya que se encuentra **más cerca de su propio límite ideal**.
 
-Hence, the $2^{\text{nd}}$-law efficiency expresses how effectively a device approaches its **reversible benchmark**, regardless of the absolute temperature levels involved. Formally, for a heat engine:
+Así, la eficiencia de la segunda ley expresa cuán eficazmente un dispositivo se aproxima a su **referencia reversible**, independientemente de los niveles absolutos de temperatura involucrados. Formalmente, para un motor térmico:
 
 (eq_eta_II_engines)=
 $$
 \boxed{\eta_{II} = \frac{\eta_{\text{th.}}}{\eta_{\text{th.,rev.}}}}
 $$
 
-To illustrate this quantitatively, consider two heat engines, **A** and **B**, each with a **thermal efficiency** of $\eta_{\text{th.}} = 0.30$. Engine **A** operates between $T_H = 600\ \text{K}$ and $T_L = 300\ \text{K}$, while engine **B** operates between $T_H = 1000\ \text{K}$ and $T_L = 300\ \text{K}$.
+Para ilustrarlo cuantitativamente, consideremos dos motores térmicos, **A** y **B**, cada uno con una **eficiencia térmica** de $\eta_{\text{th.}} = 0{,}30$. El motor **A** opera entre $T_H = 600\ \text{K}$ y $T_L = 300\ \text{K}$, mientras que el motor **B** opera entre $T_H = 1000\ \text{K}$ y $T_L = 300\ \text{K}$.
 
-Their **reversible (Carnot) efficiencies** are:
-
-$$
-\eta_{\text{th.,rev.,A}} = 1 - \frac{300}{600} = 0.50,
-$$
+Sus **eficiencias reversibles (Carnot)** son:
 
 $$
-\eta_{\text{th.,rev.,B}} = 1 - \frac{300}{1000} = 0.70.
-$$
-
-Accordingly, their **$2^{\text{nd}}$-law efficiencies** are:
-
-$$
-\eta_{II,\text{A}} = \frac{0.30}{0.50} = 0.60,
+\eta_{\text{th.,rev.,A}} = 1 - \frac{300}{600} = 0{,}50,
 $$
 
 $$
-\eta_{II,\text{B}} = \frac{0.30}{0.70} \approx 0.43.
+\eta_{\text{th.,rev.,B}} = 1 - \frac{300}{1000} = 0{,}70.
 $$
 
-Although both engines transform the same *fraction* of heat into work, engine **A** achieves its performance **under less favorable conditions** and thus operates **closer to its reversible limit**. This shows that $\eta_{II}$ measures not just *how much* energy is converted, but *how well* the system performs relative to its theoretical potential.
+En consecuencia, sus **eficiencias de la segunda ley** son:
 
-In general, depending on the system’s purpose, this efficiency can be expressed as:
+$$
+\eta_{II,\text{A}} = \frac{0{,}30}{0{,}50} = 0{,}60,
+$$
+
+$$
+\eta_{II,\text{B}} = \frac{0{,}30}{0{,}70} \approx 0{,}43.
+$$
+
+Aunque ambos motores transforman la misma *fracción* del calor en trabajo, el motor **A** alcanza su rendimiento **en condiciones menos favorables**, y por tanto opera **más cerca de su límite reversible**. Esto muestra que $\eta_{II}$ mide no solo *cuánta* energía se convierte, sino *qué tan bien* se desempeña el sistema respecto a su potencial teórico.
+
+En general, y dependiendo del propósito del sistema, esta eficiencia puede expresarse como:
 
 :::{important}
 
-**GENERAL DEFINITIONS OF $2^{\text{nd}}$-LAW EFFICIENCY**
+**DEFINICIONES GENERALES DE EFICIENCIA DE LA SEGUNDA LEY**
 
-| **Device type** | **Definition** | **Interpretation** |
+| **Tipo de dispositivo** | **Definición** | **Interpretación** |
 | :- | :- | :- |
-| **Work-producing device** | $\displaystyle \eta_{II} = \frac{\eta_{\text{th.}}}{\eta_{\text{th.,rev.}}} = \frac{W_u}{W_{\text{rev.}}}$ | Fraction of maximum work actually obtained |
-| **Work-consuming device** | $\displaystyle \eta_{II} = \frac{\eta_{\text{th.}}}{\eta_{\text{th.,rev.}}} = \frac{W_{\text{rev.}}}{W_u}$ | Fractional closeness to the reversible minimum input |
-| **Refrigerator / heat pump** | $\displaystyle \eta_{II} = \frac{\text{COP}}{\text{COP}_{\text{rev.}}} = \frac{\text{COP}}{\text{COP}_{\text{rev.}}}$ | Fraction of ideal performance achieved |
-
+| **Dispositivo productor de trabajo** | $\displaystyle \eta_{II} = \frac{\eta_{\text{th.}}}{\eta_{\text{th.,rev.}}} = \frac{W_u}{W_{\text{rev.}}}$ | Fracción del trabajo máximo que realmente se obtiene |
+| **Dispositivo consumidor de trabajo** | $\displaystyle \eta_{II} = \frac{\eta_{\text{th.}}}{\eta_{\text{th.,rev.}}} = \frac{W_{\text{rev.}}}{W_u}$ | Cercanía fraccional al mínimo reversible de entrada |
+| **Refrigerador / bomba de calor** | $\displaystyle \eta_{II} = \frac{\text{COP}}{\text{COP}_{\text{rev.}}}$ | Fracción del rendimiento ideal alcanzado |
 :::
 
 :::{note}
 
-**INTERPRETING THE $2^{\text{nd}}$-LAW EFFICIENCY**
+**INTERPRETACIÓN DE LA EFICIENCIA DE LA SEGUNDA LEY**
 
-The **$2^{\text{nd}}$-law efficiency** may also be viewed as a measure of the **room for improvement** of a real system. A value of $\eta_{II}$ close to 1 indicates that the process already operates **near its reversible limit**, leaving little potential for enhancement. Conversely, a low $\eta_{II}$ reveals a **large gap** between actual and ideal performance, quantifying the **scope for reducing irreversibilities** and **improving energy quality** within the device.
+La **eficiencia de la segunda ley** también puede entenderse como una medida del **margen de mejora** de un sistema real. Un valor de $\eta_{II}$ cercano a 1 indica que el proceso ya opera **cerca de su límite reversible**, dejando poco potencial de mejora. Por el contrario, una $\eta_{II}$ baja revela una **gran diferencia** entre el rendimiento real y el ideal, cuantificando el **potencial para reducir irreversibilidades** y **mejorar la calidad energética** del dispositivo.
 
 :::
 
 ---
 
 (subsec_efficiency_comparison)=
-### Comparison of efficiencies defined so far
+### Comparación de las eficiencias definidas hasta ahora
 
-At this stage, several **efficiency measures** have been introduced, each addressing a **different dimension of performance** and grounded in distinct principles:
+A este punto se han introducido varias **medidas de eficiencia**, cada una abordando una **dimensión distinta del rendimiento** y basada en principios diferentes:
 
-* **Thermal efficiency**, $\eta_{\text{th.}}$, quantifies the **fraction of input heat converted to work**—the $1^{\text{st}}$-law (energy-balance) view for heat engines.
-* **Carnot efficiency**, $\eta_{\text{Carnot}}=\eta_{\text{th.,rev.}}$, is the **thermal efficiency of a reversible heat engine**; it is the **maximum possible** $\eta_{\text{th.}}$ achievable between $T_H$ and $T_L$, hence a **particular (reversible) case** of thermal efficiency.
-* **Isentropic efficiency**, $\eta_{\text{is.}}$, compares an **actual process** to its **adiabatic + reversible** (isentropic) counterpart— a **device-specific** measure for compressors, turbines, and nozzles.
-* **$2^{\text{nd}}$-law efficiency**, $\eta_{II}$, compares **actual performance** to the **reversible limit** (Carnot or equivalent), merging **energy quantity** and **energy quality** in one nondimensional indicator.
+* La **eficiencia térmica**, $\eta_{\text{th.}}$, cuantifica la **fracción de calor de entrada convertida en trabajo**: la perspectiva de la primera ley (balance energético) para motores térmicos.
+* La **eficiencia de Carnot**, $\eta_{\text{Carnot}}=\eta_{\text{th.,rev.}}$, es la **eficiencia térmica de un motor reversible**; representa la **máxima eficiencia posible** entre $T_H$ y $T_L$, siendo así un **caso particular (reversible)** de eficiencia térmica.
+* La **eficiencia isentrópica**, $\eta_{\text{s}}$, compara un **proceso real** con su contraparte **adiabática + reversible** (isentrópica): una medida **específica del dispositivo** para compresores, turbinas y toberas.
+* La **eficiencia de la segunda ley**, $\eta_{II}$, compara el **rendimiento real** con el **límite reversible** (Carnot o equivalente), combinando **cantidad** y **calidad** de energía en un único indicador adimensional.
 
 :::{important}
 
-**SUMMARY AND COMPARISON OF EFFICIENCY TYPES**
+**RESUMEN Y COMPARACIÓN DE LOS TIPOS DE EFICIENCIA**
 
-| **Efficiency type** | **Definition / ratio** | **Ideal reference** | **Physical meaning** |
+| **Tipo de eficiencia** | **Definición / relación** | **Referencia ideal** | **Significado físico** |
 | :- | :- | :- | :- |
-| **Thermal efficiency** | $\displaystyle \eta_{\text{th.}} = \frac{W_{\text{out}}}{Q_{\text{in}}} = 1 - \frac{Q_L}{Q_H}$ | None (energy-balance based) | Measures energy conversion according to the $1^{\text{st}}$ law (quantity only) |
-| **Carnot efficiency** | $\displaystyle \eta_{\text{Carnot}}=\eta_{\text{th.,rev.}} = 1 - \frac{T_L}{T_H}$ | Itself | Measures maximum achievable energy conversion according to the $1^{\text{st}}$ law (quantity only) |
-| **Isentropic efficiency** | $\displaystyle \eta_{\text{is.}} = \frac{(\Delta h)_{\text{s}}}{(\Delta h)_{\text{a}}}$ or equivalent, depending on the process | Ideal adiabatic + reversible (isentropic) process | Device-specific comparison of real vs. isentropic performance |
-| **$2^{\text{nd}}$-law efficiency** | $\displaystyle \eta_{II} = \frac{\eta_{\text{th.}}}{\eta_{\text{th.,rev.}}}$ | Reversible (Carnot or general) limit | Considers both energy quantity and quality — proximity to the reversible bound |
-
+| **Eficiencia térmica** | $\displaystyle \eta_{\text{th.}} = \frac{W_{\text{out}}}{Q_{\text{in}}} = 1 - \frac{Q_L}{Q_H}$ | Ninguna (basada en balance energético) | Mide conversión de energía según la primera ley (cantidad) |
+| **Eficiencia de Carnot** | $\displaystyle \eta_{\text{Carnot}}=\eta_{\text{th.,rev.}} = 1 - \frac{T_L}{T_H}$ | Ella misma | Mide la conversión máxima posible según la primera ley |
+| **Eficiencia isentrópica** | $\displaystyle \eta_{\text{s}} = \frac{(\Delta h)_{\text{s}}}{(\Delta h)_{\text{a}}}$ u otra equivalente según el proceso | Proceso adiabático + reversible (isentrópico) | Comparación específica entre proceso real e isentrópico |
+| **Eficiencia de la segunda ley** | $\displaystyle \eta_{II} = \frac{\eta_{\text{th.}}}{\eta_{\text{th.,rev.}}}$ | Límite reversible (Carnot o general) | Considera cantidad y calidad — cercanía al límite reversible |
 :::
 
 ---
 
 (subsec_conceptual_closure_useful_work)=
-### Conceptual closure
+### Cierre conceptual
 
-* **Surroundings work** isolates the mechanical effect of ambient pressure.
-* **Useful work** measures the effective mechanical contribution after discounting that environmental effect.
-* **Reversible work** represents the theoretical upper limit of usefulness; **irreversibility** measures how much of that potential is lost.
-* The **$2^{\text{nd}}$-law efficiency** generalizes this idea into a nondimensional indicator, linking the $1^{\text{st}}$ and $2^{\text{nd}}$ laws.
-* Together, these concepts establish the foundation for the next step: the definition of **exergy** as the unified measure of *usable energy* — the maximum useful work a system can deliver as it comes into equilibrium with its environment.
+* El **trabajo del entorno** aísla el efecto mecánico de la presión ambiente.
+* El **trabajo útil** mide la contribución mecánica efectiva tras descontar dicho efecto ambiental.
+* El **trabajo reversible** representa el límite teórico máximo; la **irreversibilidad** cuantifica la pérdida de ese potencial.
+* La **eficiencia de la segunda ley** generaliza este concepto en un indicador adimensional, enlazando la primera y la segunda ley.
+* En conjunto, estos conceptos establecen la base para el siguiente paso: la definición de **exergía** como la medida unificada de *energía útil* — el máximo trabajo útil que un sistema puede entregar al alcanzar el equilibrio con su entorno.

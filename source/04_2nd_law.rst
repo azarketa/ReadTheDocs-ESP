@@ -1,5 +1,5 @@
 ========
-2nd Law
+2a ley
 ========
 
 .. toctree::

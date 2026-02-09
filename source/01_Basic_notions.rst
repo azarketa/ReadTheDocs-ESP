@@ -1,10 +1,10 @@
 ==============
-Basic notions
+Nociones básicas
 ==============
 
 .. toctree::
    :maxdepth: 2
 
-   Systems, surroundings and boundaries <01_Systems_surroundings_boundaries>
-   Magnitudes and properties <02_Magnitudes_and_properties>
-   Equilibrium, temperature scales and processes <03_Equilibrium_temperature_processes>
+   Sistemas, entorno y límites <01_Systems_surroundings_boundaries>
+   Magnitudes y propiedades <02_Magnitudes_and_properties>
+   Equilibrio, escalas de temperatura y procesos <03_Equilibrium_temperature_processes>

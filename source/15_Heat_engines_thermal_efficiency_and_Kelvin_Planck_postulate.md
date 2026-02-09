@@ -1,67 +1,66 @@
 (sec_heat_engines_efficiency_kelvin_planck)=
-## Heat engines, thermal efficiency, and the Kelvin–Planck postulate
+## Motores térmicos, rendimiento térmico y el postulado de Kelvin–Planck
 
-The preceding discussion showed that many natural processes, while fully consistent with the $1^{\text{st}}$ law, occur only in **one direction**.
-This observation revealed the existence of a deeper restriction — the **$2^{\text{nd}}$ law** — which governs the *directionality* and *degradation* of energy transformations.
+La discusión precedente mostró que muchos procesos naturales, aunque plenamente consistentes con la **$1^{\text{a}}$ ley**, ocurren solo en **una dirección**.
+Esta observación reveló la existencia de una restricción más profunda — la **$2^{\text{a}}$ ley** — que gobierna la *direccionalidad* y la *degradación* de las transformaciones energéticas.
 
-One of the clearest manifestations of this limitation arises when **heat** is used as a means to produce **work**.
-Although work can be entirely transformed into heat, the inverse transformation — the complete conversion of heat into work — is **never observed**.
-To analyze this limitation quantitatively, we introduce the concept of **heat engines**, the devices through which such transformations take place cyclically.
+Una de las manifestaciones más claras de esta limitación aparece cuando se utiliza el **calor** como medio para producir **trabajo**.
+Aunque el trabajo puede transformarse íntegramente en calor, la transformación inversa — la conversión completa de calor en trabajo — **nunca se observa**.
+Para analizar cuantitativamente esta limitación, introducimos el concepto de **motores térmicos**, los dispositivos mediante los cuales dichas transformaciones tienen lugar de forma cíclica.
 
-It is through the study of these engines that the **$2^{\text{nd}}$ law** was first formalized, and that its practical consequences — notably, the **Kelvin–Planck postulate** — became evident.
-
+Es a través del estudio de estos motores que la **$2^{\text{a}}$ ley** se formalizó por primera vez, y que sus consecuencias prácticas — en particular, el **postulado de Kelvin–Planck** — se hicieron evidentes.
 
 ---
 
 (subsec_heat_engines_definition)=
-### Heat engines: transforming heat into work
+### Motores térmicos: transformar calor en trabajo
 
-It is easy to transform **work into heat**.
-For example, stirring a glass of water with a spoon warms it: the mechanical work applied through friction is converted into internal energy, raising the temperature of the fluid.
-Such transformations — from work to heat — are straightforward and complete.
+Es fácil transformar **trabajo en calor**.
+Por ejemplo, agitar un vaso de agua con una cuchara lo calienta: el trabajo mecánico aplicado mediante la fricción se convierte en energía interna, elevando la temperatura del fluido.
+Tales transformaciones — de trabajo a calor — son directas y completas.
 
-However, the **reverse process** is not possible in its entirety: one cannot convert all the **absorbed heat** into **mechanical work**.
-To transform part of the heat into work in a **cyclic and controlled manner**, we require special devices known as **heat engines**.
+Sin embargo, el **proceso inverso** no es posible en su totalidad: no se puede convertir **todo el calor absorbido** en **trabajo mecánico**.
+Para transformar una parte del calor en trabajo de manera **cíclica y controlada**, se requieren dispositivos especiales conocidos como **motores térmicos**.
 
-Despite their many technological forms — internal‐combustion engines, steam turbines, gas turbines, or power plants — all heat engines share the same **conceptual scheme**:
+A pesar de sus muchas formas tecnológicas — motores de combustión interna, turbinas de vapor, turbinas de gas o centrales eléctricas — todos los motores térmicos comparten el mismo **esquema conceptual**:
 
-1. They **absorb heat** from a **high-temperature thermal reservoir**. We will address this heat as $Q_{H}$.
-2. They **convert part of that heat into mechanical work**. Such a work will correpsond to the net work output from the system, i.e. $W_{\text{net,out}}$.
-3. They **reject the remaining heat** to a **low-temperature reservoir**. We will symbolize it as $Q_L$.
-4. They operate **cyclically**, returning their working fluid to its initial state after each cycle.
+1. **Absorben calor** de un **foco térmico a alta temperatura**. Denotaremos este calor como $Q_{H}$.
+2. **Convierten parte de ese calor en trabajo mecánico**. Este trabajo corresponde al trabajo neto entregado por el sistema, es decir, $W_{\text{out}}$.
+3. **Rechazan el calor restante** a un **foco a baja temperatura**. Lo simbolizaremos como $Q_L$ asignándole el valor positivo de $Q_L = |Q_\text{out}|$.
+4. Operan de forma **cíclica**, devolviendo su fluido de trabajo al estado inicial tras cada ciclo.
 
 :::{important}
 
-**THE CYCLIC CONDITION**
+**CONDICIÓN CÍCLICA**
 
-Because a heat engine returns to its initial thermodynamic state after each cycle, its **net change in energy** is zero:
+Como un motor térmico regresa a su estado termodinámico inicial tras cada ciclo, su **cambio neto de energía** es nulo:
 
 $$
-\Delta E_{\text{cycle}} = 0.
+\Delta E_{\text{ciclo}} = 0.
 $$
 
-The only energetic transfers occurring in the heat-engine system are $Q_{H}$, $Q_{L}$ and $W_{\text{net,out}}$. Consequently, by the $1^{\text{st}}$ law:
+Los únicos intercambios energéticos que tienen lugar en el sistema son $Q_{H}$, $Q_{L}$ y $W_{\text{out}}$. En consecuencia, por la **$1^{\text{a}}$ ley**:
 
 (eq_energetic_balance_heat_engine_ver1)=
 $$
-\Delta E_{\text{cycle}} = 0 = Q_{\text{net}} - W_{\text{net}}
+\Delta E_{\text{ciclo}} = 0 = Q_{\text{neto}} - W_{\text{neto}}
 $$
 
-As:
+Como:
 
 (eq_energetic_balance_heat_engine_ver2)=
 $$
 \begin{gather*}
-Q_{\text{net}} = Q_{\text{in}} - Q_{\text{out}} = Q_{H} - Q_{L} , \\[10pt]
-W_{\text{net}} = W_{\text{net,out}} - W_{\text{net,in}} = W_{\text{net,out}} , \\[10pt]
+Q_{\text{neto}} = Q_{\text{in}} + Q_{\text{out}} = Q_{H} - Q_{L} , \\[10pt]
+W_{\text{neto}} = W_{\text{out}} + W_{\text{in}} , \\[10pt]
 \end{gather*}
 $$
 
-we get:
+se obtiene:
 
 (eq_energetic_balance_heat_engine_ver3)=
 $$
-\boxed{Q_H - Q_L = W_{\text{net,out}}} \ .
+\boxed{Q_H - Q_L = W_{\text{out}}} \ .
 $$
 
 :::
@@ -69,136 +68,136 @@ $$
 ---
 
 (subsec_impossibility_of_total_conversion)=
-### Why total conversion of heat into work is impossible
+### Por qué la conversión total de calor en trabajo es imposible
 
-In the previous discussion, we established that a **heat engine** operates cyclically, exchanging energy with its surroundings in three distinct ways:
+En la discusión anterior establecimos que un **motor térmico** opera cíclicamente, intercambiando energía con el entorno de tres maneras distintas:
 
-* it **absorbs heat** from a high-temperature reservoir,
-* it **produces work**,
-* and **rejects heat** to a lower-temperature reservoir.
+* **absorbe calor** de un foco a alta temperatura,
+* **produce trabajo**,
+* y **rechaza calor** a un foco a menor temperatura.
 
-This cyclic structure is essential, because the working substance must return to its initial thermodynamic state after each cycle.
+Esta estructura cíclica es esencial, porque la sustancia de trabajo debe regresar a su estado termodinámico inicial tras cada ciclo.
 
-Let us now ask whether the rejection of heat is truly unavoidable.
+Preguntémonos ahora si el rechazo de calor es realmente inevitable.
 
 :::{epigraph}
-Could one, in principle, design a cyclic process in which *all* the absorbed heat is transformed into work, leaving no remainder to be expelled?
+¿Podría diseñarse, en principio, un proceso cíclico en el que *todo* el calor absorbido se transformase en trabajo, sin dejar remanente que deba expulsarse?
 :::
 
-Imagine an idealized system that receives a finite amount of heat $Q_H$ from a high-temperature source and delivers a certain amount of work $W_{\text{out}}$ to the surroundings — for instance, by lifting a weight or moving a load. If the process is to be **cyclic**, the system must end exactly as it began: same temperature, same internal energy, same configuration. By the $1^{\text{st}}$ law, the total energy balance over a complete cycle reads
+Imaginemos un sistema idealizado que recibe una cantidad finita de calor $Q_H$ de una fuente a alta temperatura y entrega una cierta cantidad de trabajo $W_{\text{out}}$ al entorno — por ejemplo, elevando un peso o moviendo una carga. Si el proceso ha de ser **cíclico**, el sistema debe terminar exactamente como empezó: misma temperatura, misma energía interna, misma configuración. Por la **$1^{\text{a}}$ ley**, el balance energético total a lo largo de un ciclo completo es
 
 $$
-Q_{\text{net}} = W_{\text{net,out}},
+Q_{\text{neto}} = W_{\text{neto}},
 $$
 
-so that, for a hypothetical complete conversion of heat into work,
+de modo que, para una hipotética conversión completa de calor en trabajo,
 
 $$
-Q_H = W_{\text{net,out}}, \qquad Q_L = 0.
+Q_H = W_{\text{neto}}, \qquad Q_L = 0.
 $$
 
-However, to return to its initial state, the system must release any internal energy gained during the transformation. This requires a **reverse flow of heat** from the system back to its surroundings. If the surroundings are at the same temperature as the source, such a transfer would imply heat flowing *spontaneously from a colder to a hotter body* — a violation of the observed direction of natural processes.
+Sin embargo, para retornar a su estado inicial, el sistema debe liberar cualquier energía interna adquirida durante la transformación. Esto requiere un **flujo de calor en sentido inverso** desde el sistema hacia el entorno. Si el entorno estuviese a la misma temperatura que la fuente, tal transferencia implicaría que el calor fluyera *espontáneamente de un cuerpo más frío a uno más caliente* — una violación del sentido observado de los procesos naturales.
 
-Hence, it is **impossible** for a cyclic device to restore its initial state while converting the entirety of the absorbed heat into work. To close the cycle, a portion of the input heat must be **rejected** to another body at a **lower temperature**, ensuring that heat flows in the natural direction (from hot to cold). This expelled fraction $Q_L$ constitutes the part of energy that has become **degraded** — still present, but no longer available for producing work.
+Por tanto, es **imposible** que un dispositivo cíclico restaure su estado inicial convirtiendo la totalidad del calor absorbido en trabajo. Para cerrar el ciclo, una porción del calor de entrada debe ser **rechazada** hacia otro cuerpo a **menor temperatura**, garantizando que el calor fluya en la dirección natural (del caliente al frío). Esta fracción expulsada $Q_L$ constituye la parte de la energía que ha quedado **degradada** — sigue presente, pero ya no está disponible para producir trabajo.
 
 :::{note}
 
-**A TOY EXAMPLE WITH A PISTON-CYLINDER SYSTEM**
+**UN EJEMPLO SENCILLO CON UN SISTEMA PISTÓN–CILINDRO**
 
-A **piston–cylinder** arrangement provides a simple, tangible example of the general reasoning above.
-Suppose the cylinder contains a gas initially at $30 \ ^{\circ}\mathrm{C}$ and is placed in contact with a **hot reservoir** at $100 \ ^{\circ}\mathrm{C}$.
-During expansion, the gas absorbs **$100 \ \text{kJ}$** of heat and performs **$15 \ \text{kJ}$** of work by lifting a weight.
+Un **conjunto pistón–cilindro** proporciona un ejemplo simple y tangible del razonamiento general expuesto.
+Supongamos que el cilindro contiene un gas inicialmente a $30 \ ^{\circ}\mathrm{C}$ y se pone en contacto con un **foco caliente** a $100 \ ^{\circ}\mathrm{C}$.
+Durante la expansión, el gas absorbe **$100 \ \text{kJ}$** de calor y realiza **$15 \ \text{kJ}$** de trabajo al elevar una masa.
 
-Even if the process is ideal — frictionless, quasi-static, and perfectly reversible — the gas becomes warmer than it started: not all absorbed heat becomes work; part increases its internal energy.
-To **close the cycle**, the gas must cool back to $30 \ ^{\circ}\mathrm{C}$, restoring its initial state.
-But this requires releasing the excess **$85 \ \text{kJ}$** of energy to a **colder reservoir** (below $30 \ ^{\circ}\mathrm{C}$), since heat cannot flow spontaneously from a cooler body to a hotter one.
+Incluso si el proceso es ideal — sin fricción, cuasiestático y perfectamente reversible — el gas queda más caliente que al inicio: no todo el calor absorbido se convierte en trabajo; una parte incrementa su energía interna.
+Para **cerrar el ciclo**, el gas debe enfriarse de nuevo hasta $30 \ ^{\circ}\mathrm{C}$, recuperando su estado inicial.
+Pero esto requiere liberar el **exceso de $85 \ \text{kJ}$** de energía hacia un **foco más frío** (por debajo de $30 \ ^{\circ}\mathrm{C}$), puesto que el calor no puede fluir espontáneamente de un cuerpo más frío a otro más caliente.
 
-Thus, even in this idealized case, **part of the absorbed heat must be rejected** — precisely as the $2^{\text{nd}}$ law dictates. The remaining $Q_L = 85 \text{kJ}$ represents **degraded energy**, unavailable for conversion into work.
+Así, incluso en este caso idealizado, **una parte del calor absorbido debe ser rechazada** — precisamente como dicta la **$2^{\text{a}}$ ley**. El remanente $Q_L = 85 \ \text{kJ}$ representa **energía degradada**, no disponible para su conversión en trabajo.
 
 $$
 Q_H = 100~\text{kJ}, \quad W_{\text{out}} = 15~\text{kJ}, \quad Q_L = 85~\text{kJ}.
 $$
 
-This example illustrates in concrete form the **general limitation** just discussed: no cyclic process — no matter how ideal — can transform all the absorbed heat into mechanical work.
+Este ejemplo ilustra de forma concreta la **limitación general** recién discutida: ningún proceso cíclico — por ideal que sea — puede transformar todo el calor absorbido en trabajo mecánico.
 
 :::
 
 :::{important}
 
-**$Q_{L}$ AS A THERMODYNAMIC NECESSITY**
+**$Q_{L}$ COMO NECESIDAD TERMODINÁMICA**
 
-Every heat engine must **reject a portion of its absorbed heat** to a reservoir at lower temperature. This rejection is not a technical flaw but a **fundamental thermodynamic necessity**, expressing the directionality of energy transformations and marking the direct manifestation of the $2^{\text{nd}}$ law.
+Todo motor térmico debe **rechazar una porción del calor absorbido** hacia un foco a menor temperatura. Este rechazo no es un fallo técnico, sino una **necesidad termodinámica fundamental**, que expresa la direccionalidad de las transformaciones energéticas y constituye la manifestación directa de la **$2^{\text{a}}$ ley**.
 :::
 
 ---
 
 (subsec_efficiency_heat_engines)=
-### Thermal efficiency
+### Rendimiento térmico
 
-The notion of **thermal efficiency** is meaningful only for systems that behave as **heat engines** — that is, devices operating **cyclically** while exchanging heat with **two thermal reservoirs** at different temperatures. Such engines absorb energy as heat from the **high-temperature source**, convert part of it into **mechanical work**, and reject the remainder to the **low-temperature sink** to complete the cycle. The **thermal efficiency** ($\eta$) quantifies this **conversion capability** by comparing the useful output (net work) to the energy input (heat absorbed from the hot source).
+La noción de **rendimiento térmico** solo tiene sentido para sistemas que se comportan como **motores térmicos** — esto es, dispositivos que operan **cíclicamente** intercambiando calor con **dos focos térmicos** a distinta temperatura. Tales motores absorben energía en forma de calor de la **fuente a alta temperatura**, convierten parte de ella en **trabajo mecánico**, y rechazan el resto hacia el **sumidero a baja temperatura** para completar el ciclo. El **rendimiento térmico** ($\eta$ o $\eta_\text{th.}$) cuantifica esta **capacidad de conversión** comparando la salida útil (trabajo neto) con la entrada de energía (calor absorbido del foco caliente).
 
 (eq_efficiency_def)=
 $$
-\eta_{\text{th.}} = \frac{W_{\text{net,out}}}{Q_H}.
+\eta_{\text{th.}} = \frac{W_{\text{neto}}}{Q_H}.
 $$
 
-From the **cyclic energy balance** of any engine, the total work output equals the difference between the heat absorbed ($Q_H$) and the heat rejected ($Q_L$):
+A partir del **balance energético cíclico** de cualquier motor, el trabajo neto producido es igual a la diferencia entre el calor absorbido $(Q_H)$ y el calor rechazado $(Q_L)$, este último en valor absoluto:
 
 (eq_efficiency_substitution)=
 $$
 \eta_{\text{th.}} = \frac{Q_H - Q_L}{Q_H} = 1 - \frac{Q_L}{Q_H}.
 $$
 
-This simple relation expresses a fundamental limitation: only the portion of heat that is *not rejected* can be converted into work. The efficiency therefore depends on the ratio between the heats exchanged with the high- and low-temperature reservoirs.
+Esta relación simple expresa una limitación fundamental: solo la fracción de calor que *no se rechaza* puede convertirse en trabajo. El rendimiento depende, por tanto, de la razón entre los calores intercambiados con los focos a alta y baja temperatura.
 
 :::{important}
 
-**THE GENERALIZED NOTION OF EFFICIENCY**
+**LA NOCIÓN GENERALIZADA DE RENDIMIENTO**
 
-**Efficiency**, in its most general sense, expresses the **ratio between what a process yields and what it consumes** — that is, the useful effect obtained relative to the energy (or resource) required to produce it.
-It serves as a **measure of performance**: the closer this ratio is to unity, the more effectively the process converts its input into the intended output.
+El **rendimiento**, en su sentido más general, expresa la **razón entre lo que un proceso entrega y lo que consume** — esto es, el efecto útil obtenido frente a la energía (o recurso) requerida para producirlo.
+Sirve como **medida de desempeño**: cuanto más próximo a la unidad sea este cociente, con mayor eficacia convierte el proceso su entrada en la salida deseada.
 
-This abstract notion applies to any transformation — mechanical, electrical, thermal, or otherwise — and provides a common language for comparing how well different systems use energy.
+Esta noción abstracta aplica a cualquier transformación — mecánica, eléctrica, térmica o de otro tipo — y proporciona un lenguaje común para comparar cómo distintos sistemas usan la energía.
 
-In the specific case of **heat engines**, this general concept becomes the **thermal efficiency**, where the useful output is the *work produced* and the cost is the *heat absorbed* from the high-temperature source.
+En el caso específico de los **motores térmicos**, este concepto general se vuelve el **rendimiento térmico**, donde la salida útil es el *trabajo producido* y el coste es el *calor absorbido* de la fuente a alta temperatura.
 :::
 
 ---
 
 (subsec_kelvin_planck_postulate)=
-### The Kelvin–Planck postulate
+### El postulado de Kelvin–Planck
 
-The conclusions drawn so far — the necessity of two heat reservoirs and the impossibility of completely transforming heat into work — are compactly expressed by the **Kelvin–Planck postulate**, one of the foundational formulations of the $2^{\text{nd}}$ law of thermodynamics.
+Las conclusiones alcanzadas — la necesidad de dos focos térmicos y la imposibilidad de transformar completamente el calor en trabajo — se expresan de manera concisa mediante el **postulado de Kelvin–Planck**, una de las formulaciones fundacionales de la **$2^{\text{a}}$ ley** de la termodinámica.
 
 :::{epigraph}
-**It is impossible to construct a device that operates in a cycle and produces no other effect than the extraction of heat from a single thermal reservoir and its complete conversion into work.**
+**Es imposible construir un dispositivo que opere en ciclo y produzca como único efecto la extracción de calor de un solo foco térmico y su conversión completa en trabajo.**
 :::
 
-This statement formalizes the limitation inherent to all heat engines: a **cyclic device** cannot transform into work the entire quantity of heat it absorbs from a single source.
-Part of that energy must always be rejected as heat to a lower-temperature sink.
+Esta afirmación formaliza la limitación inherente a todos los motores térmicos: un **dispositivo cíclico** no puede transformar en trabajo la totalidad del calor que absorbe de una única fuente.
+Una parte de esa energía debe ser siempre rechazada como calor hacia un foco a menor temperatura.
 
 :::{important}
 
-**IMPLICATIONS OF THE KELVIN-PLANCK STATEMENT**
+**IMPLICACIONES DE LA FORMULACIÓN DE KELVIN–PLANCK**
 
-The Kelvin–Planck postulate establishes several fundamental consequences:
+El postulado de Kelvin–Planck establece varias consecuencias fundamentales:
 
-* Even though a process that converts all absorbed heat into work **could satisfy the $1^{\text{st}}$ law**, it **violates** the $2^{\text{nd}}$ law.
-* A true heat engine must exchange heat with **two reservoirs** at different temperatures — one from which heat is absorbed ($Q_H$) and another to which part of that energy is rejected ($Q_L$).
-* The **thermal efficiency** of such an engine, $\eta_{\text{th.}} = 1 - Q_L/Q_H$, is therefore always **less than unity**, i.e. $\eta_{\text{th.}} < 1$.
-* The smaller the temperature difference between reservoirs, the lower the achievable efficiency. Increasing this temperature gap improves performance, but **no finite difference can yield $\eta = 1$**.
+* Aunque un proceso que convirtiese todo el calor absorbido en trabajo **podría cumplir la $1^{\text{a}}$ ley**, **violaría** la **$2^{\text{a}}$ ley**.
+* Un verdadero motor térmico debe intercambiar calor con **dos focos** a diferentes temperaturas — uno del que se absorbe calor $(Q_H)$ y otro al que se rechaza una parte de esa energía $(Q_L)$.
+* El **rendimiento térmico** de tal motor, $\eta_{\text{th.}} = 1 - Q_L/Q_H$, es por tanto siempre **menor que la unidad**, es decir, $\eta_{\text{th.}} < 1$.
+* Cuanto menor es la diferencia de temperatura entre los focos, menor es el rendimiento alcanzable. Aumentar esa diferencia mejora el desempeño, pero **ninguna diferencia finita puede dar $\eta_\text{th.} = 1$**.
 :::
 
 ---
 
 (subsec_conceptual_closure_heat_engines)=
-### Conceptual closure
+### Cierre conceptual
 
-* A **heat engine** is a cyclic system that transforms part of the heat absorbed from a **hot reservoir** into **useful work**, rejecting the rest to a **cold reservoir** to close the cycle.
-* The **thermal efficiency** $\eta_{\text{th.}} = 1 - Q_L/Q_H$ expresses the fraction of the heat input that becomes work, setting a **quantitative measure** of the conversion limit.
-* The **Kelvin–Planck postulate** expresses the **qualitative boundary**: total conversion of heat into work in a cyclic process is **impossible**.
-* This limitation arises because **heat transfer is inherently directional** — it flows naturally from hot to cold, and any cyclic conversion requires this asymmetry.
-* The rejected heat $Q_L$ constitutes **degraded energy**, an inevitable consequence of the loss of energy quality during transformation.
+* Un **motor térmico** es un sistema cíclico que transforma parte del calor absorbido de un **foco caliente** en **trabajo útil**, rechazando el resto a un **foco frío** para cerrar el ciclo.
+* El **rendimiento térmico** $\eta_{\text{th.}} = 1 - Q_L/Q_H$ expresa la fracción de la entrada de calor que se convierte en trabajo, fijando una **medida cuantitativa** del límite de conversión.
+* El **postulado de Kelvin–Planck** expresa el **límite cualitativo**: la conversión total de calor en trabajo en un proceso cíclico es **imposible**.
+* Esta limitación surge porque la **transferencia de calor es intrínsecamente direccional**, fluye de manera natural del caliente al frío.
+* El calor rechazado $Q_L$ constituye **energía degradada**, consecuencia inevitable de la pérdida de calidad de la energía durante la transformación.
 
-In essence, the $2^{\text{nd}}$ law introduces a **hierarchy of energy quality**: while all forms of energy are equivalent in amount (as stated by the $1^{\text{st}}$ law), not all are **equally convertible**.
-It establishes a fundamental **limit to the efficiency of all cyclic processes**, defining the directional nature of real thermodynamic transformations.
+En esencia, la **$2^{\text{a}}$ ley** introduce una **jerarquía de calidad energética**: aunque todas las formas de energía son equivalentes en cantidad (según la **$1^{\text{a}}$ ley**), no todas son **igualmente convertibles**.
+Establece un **límite fundamental al rendimiento de todos los procesos cíclicos**, definiendo la direccionalidad de las transformaciones termodinámicas reales.

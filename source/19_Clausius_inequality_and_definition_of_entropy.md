@@ -1,133 +1,122 @@
 (sec_clausius_inequality_entropy)=
-## Clausius's inequality and the definition of entropy
+## La desigualdad de Clausius y la definición de entropía
 
-Up to this point, the **$2^{\text{nd}}$ law** has been formulated for **cyclic devices** — heat engines, refrigerators, and heat pumps — where energy exchange occurs repeatedly between reservoirs.
-However, thermodynamics applies not only to cycles but to **any transformation of state**.
-Just as the **$1^{\text{st}}$ law** expresses energy conservation for all processes, the **$2^{\text{nd}}$ law** must also be expressible in a general, process-based form — one that holds even for **non-cyclic** transformations.
+Hasta este punto, la **$2^{\text{a}}$ ley** se ha formulado para **dispositivos cíclicos** — motores térmicos, refrigeradores y bombas de calor — donde el intercambio de energía ocurre repetidamente entre focos térmicos. Sin embargo, la termodinámica se aplica no solo a ciclos, sino a **cualquier transformación de estado**. Del mismo modo que la **$1^{\text{a}}$ ley** expresa la conservación de la energía para **todos** los procesos, la **$2^{\text{a}}$ ley** debe poder expresarse en una forma general, basada en procesos — que valga incluso para **transformaciones no cíclicas**.
 
 ---
 
 (subsec_clausius_inequality)=
-### Clausius's inequality
+### La desigualdad de Clausius
 
-To generalize the $2^{\text{nd}}$ law, **Rudolf Clausius** proposed a particularly insightful configuration:
-he considered a **reversible heat engine** and a **separate auxiliary system** that absorbs the heat rejected by the engine and uses it to produce additional work.
+Para generalizar la **$2^{\text{a}}$ ley**, **Rudolf Clausius** propuso una configuración particularmente esclarecedora: consideró un **motor térmico reversible** y un **sistema auxiliar** separado que absorbe el calor rechazado por el motor y lo utiliza para producir trabajo adicional.
 
-Consider, then, a **reversible engine** that absorbs an infinitesimal amount of heat $\delta Q_R$ from a **thermal reservoir** at temperature $T_R$ and produces a small amount of **work** $\delta W_{\text{rev}}$.
-The heat it rejects, $\delta Q$, is fed to a **piston–cylinder assembly** containing a gas at temperature $T$.
-As the gas expands quasi-statically while absorbing this heat, it performs work $\delta W_{\text{sys}}$.
+Consideremos, entonces, un **motor reversible** que absorbe una cantidad infinitesimal de calor $\delta Q_R$ de un **foco térmico** a temperatura $T_R$ y produce una pequeña cantidad de **trabajo** $\delta W_{\text{rev}}$. El calor que rechaza, $\delta Q$, se envía a un **conjunto pistón–cilindro** que contiene un gas a temperatura $T$. Al expandirse cuasiestáticamente mientras absorbe ese calor, el gas realiza un trabajo $\delta W_{\text{sys}}$.
 
-The **total work output** of the combined system is therefore
+El **trabajo total** del sistema combinado es, por tanto,
 
 $$
-\delta W_{\text{net}} = \delta W_{\text{rev}} + \delta W_{\text{sys}}.
+\delta W_{\text{neto}} = \delta W_{\text{rev}} + \delta W_{\text{sys}}.
 $$
 
-Applying the **$1^{\text{st}}$ law** to the whole (engine + cylinder) system yields
+Aplicando la **$1^{\text{a}}$ ley** al sistema completo (motor + cilindro) se obtiene
 
 $$
-\mathrm{d}E_{\text{net}} = \delta Q_R - \delta W_{\text{net}}.
+\mathrm{d}E_{\text{neto}} = \delta Q_R - \delta W_{\text{neto}}.
 $$
 
-For a **cyclic** combined process, the total energy change is zero ($dE_{\text{net}} = 0$), and therefore
+Para un proceso **cíclico** combinado, el cambio total de energía es nulo $(\mathrm{d}E_{\text{neto}} = 0)$, y por tanto
 
 $$
-\delta W_{\text{net}} = \delta Q_R.
+\delta W_{\text{neto}} = \delta Q_R.
 $$
 
-Because the engine is **reversible**, the Carnot relation applies to the heats and temperatures involved:
+Dado que el motor es **reversible**, se aplica la relación de Carnot a los calores y temperaturas implicados:
 
 $$
 \frac{\delta Q}{\delta Q_R} = \frac{T}{T_R}.
 $$
 
-Substituting this into the previous relation and integrating around a complete cycle gives
+Sustituyendo en la relación anterior e integrando sobre un ciclo completo se llega a
 
 (eq_clausius_intermediate)=
 $$
-W_{\text{net}} = T_R \oint \frac{\delta Q}{T}.
+W_{\text{neto}} = T_R \oint \frac{\delta Q}{T}.
 $$
 
-This equation appears to describe a system that receives heat from a single reservoir (at $T_R$) and converts it entirely into work — a clear **violation of the Kelvin–Planck postulate**.
-Since such a process cannot occur, the integral must not correspond to a positive work output; therefore, it must satisfy
+Esta ecuación **parece** describir un sistema que toma calor de un único foco (a $T_R$) y lo convierte íntegramente en trabajo — una **violación** del postulado de Kelvin–Planck. Puesto que tal proceso no puede ocurrir, el integral no puede corresponder a un trabajo positivo; por consiguiente, debe cumplirse
 
 (eq_clausius_inequality)=
 $$
 \boxed{\oint \frac{\delta Q}{T} \leq 0.}
 $$
 
-This is the **Clausius's inequality**, a general statement of the **$2^{\text{nd}}$ law** applicable to any **cyclic process**.
+Esta es la **desigualdad de Clausius**, una formulación general de la **$2^{\text{a}}$ ley** aplicable a cualquier **proceso cíclico**.
 
 :::{important}
 
-**PHYSICAL INTERPRETATION OF THE INEQUALITY**
+**INTERPRETACIÓN FÍSICA DE LA DESIGUALDAD**
 
-* For a **reversible cycle**, $\displaystyle \oint \frac{\delta Q}{T} = 0$.
-* For an **irreversible cycle**, $\displaystyle \oint \frac{\delta Q}{T} < 0$.
+* Para un **ciclo reversible**, $\displaystyle \oint \frac{\delta Q}{T} = 0$.
+* Para un **ciclo irreversible**, $\displaystyle \oint \frac{\delta Q}{T} < 0$.
 
-Equality marks the ideal, quasi-static limit where no dissipative effects occur; inequality marks the **irreversibility** inherent to all real processes.
+La igualdad señala el límite ideal, cuasiestático, sin efectos disipativos; la desigualdad marca la **irreversibilidad** inherente a todos los procesos reales.
 :::
 
 :::{note}
 
-**WHY CLAUSIUS'S CONFIGURATION MATTERS**
+**POR QUÉ IMPORTA LA CONSTRUCCIÓN DE CLAUSIUS**
 
-This conceptual setup is not arbitrary — it is a **thought experiment** designed to test the consistency of the $2^{\text{nd}}$ law.
-By coupling a reversible engine to another system that reuses its rejected heat, Clausius was able to explore whether it would be possible, *in principle*, to build a device that takes heat from a single reservoir and converts it entirely into work — precisely the situation forbidden by the **Kelvin–Planck postulate**.
+Esta configuración conceptual no es arbitraria — es un **experimento mental** diseñado para poner a prueba la coherencia de la **$2^{\text{a}}$ ley**. Al acoplar un motor reversible con otro sistema que reutiliza su calor rechazado, Clausius examinó si sería posible, *en principio*, construir un dispositivo que tomase calor de un único foco y lo convirtiese íntegramente en trabajo — precisamente la situación prohibida por el **postulado de Kelvin–Planck**.
 
-This construction therefore serves as a **consistency test**: if the resulting combined system ever produces a net positive work while exchanging heat with only one reservoir, the postulate would be violated.
-Hence, the configuration provides a rigorous and didactic way to derive a **quantitative restriction** on all cycles — the **Clausius's inequality**.
+Esta construcción actúa, por tanto, como una **prueba de consistencia**: si el sistema combinado llegase a producir un trabajo neto positivo intercambiando calor con un solo foco, el postulado quedaría violado. Así, la configuración proporciona una vía rigurosa y didáctica para derivar una **restricción cuantitativa** sobre todos los ciclos — la **desigualdad de Clausius**.
 :::
 
 ---
 
 (subsec_entropy_definition)=
-### From the cyclic form to a general process: the definition of entropy
+### De la forma cíclica al proceso general: la definición de entropía
 
-The **Clausius's inequality** was first derived for cyclic transformations, but its implications reach much further.
-If for a reversible cycle the integral
+La **desigualdad de Clausius** se obtuvo primero para transformaciones cíclicas, pero sus implicaciones alcanzan mucho más lejos. Si para un ciclo reversible se cumple
 
 $$
 \oint \frac{\delta Q}{T} = 0,
 $$
 
-then the integral of $\frac{\delta Q}{T}$ between two given states — *provided the process is reversible* — must depend **only on those states**, not on the path followed between them.
-Mathematically, this means the integral defines a **state function**.
+entonces el integral de $\frac{\delta Q}{T}$ entre dos estados dados — *siempre que el proceso sea reversible* — debe depender **solo de esos estados**, no del camino seguido entre ellos.
+En términos matemáticos, esto significa que el integral define una **función de estado**.
 
-The **differential form** of that state function is therefore
+La **forma diferencial** de esa función de estado es, por tanto,
 
 (eq_entropy_differential)=
 $$
 \boxed{\mathrm{d}S = \left(\frac{\delta Q}{T}\right)_{\text{rev}}.}
 $$
 
-This new quantity, introduced by Clausius, is called **entropy** ($S$).
-It provides a bridge between the **cycle-based** and **process-based** formulations of the $2^{\text{nd}}$ law.
-Entropy measures both the **thermodynamic state** of a system and the **degree of irreversibility** of a process.
+Esta nueva magnitud, introducida por Clausius, se denomina **entropía** $(S)$. Constituye un puente entre las formulaciones de la **$2^{\text{a}}$ ley** basadas en **ciclos** y las basadas en **procesos**. La entropía mide tanto el **estado termodinámico** de un sistema como el **grado de irreversibilidad** de un proceso.
 
-For a real (irreversible) process, the Clausius's inequality can then be written in general form as
+Para un proceso real (irreversible), la desigualdad de Clausius puede escribirse en forma general como
 
 (eq_entropy_inequality)=
 $$
 \boxed{\Delta S \ge \int \frac{\delta Q}{T}},
 $$
 
-where the equality holds only for **reversible** transformations.
+donde la igualdad solo se cumple para transformaciones **reversibles**.
 
 :::{important}
 
-**THE MEANING OF ENTROPY AND THE GENERALIZATION OF THE $2^{\text{nd}}$ LAW**
+**SIGNIFICADO DE LA ENTROPÍA Y GENERALIZACIÓN DE LA $2^{\text{a}}$ LEY**
 
-* Entropy is a **state property**, allowing the $2^{\text{nd}}$ law to be expressed for **non-cyclic processes**.
-* For any **reversible process**, $\Delta S = \int \frac{\delta Q_{\text{rev}}}{T}$.
-* For any **irreversible process**, $\Delta S > \int \frac{\delta Q_{\text{irrev}}}{T}$ — meaning that the **entropy of the universe increases**.
-  :::
+* La entropía es una **propiedad de estado**, lo que permite expresar la **$2^{\text{a}}$ ley** para **procesos no cíclicos**.
+* Para cualquier **proceso reversible**, $\Delta S = \int \frac{\delta Q_{\text{rev}}}{T}$.
+* Para cualquier **proceso irreversible**, $\Delta S > \int \frac{\delta Q_{\text{irrev}}}{T}$ — lo que significa que la **entropía del universo aumenta**.
+:::
 
 :::{note}
 
-**UNITS OF ENTROPY**
+**UNIDADES DE ENTROPÍA**
 
-Mind that, according to the {re}`above equation <eq_entropy_inequality>`, entropy (and specific entropy, i.e. entropy per unit mass) shares the same **dimensional structure** as the quotient of heat and temperature:
+Ten en cuenta que, según la {ref}`ecuación anterior <eq_entropy_inequality>`, la entropía (y la entropía específica, i.e., entropía por unidad de masa) comparte la misma **estructura dimensional** que el cociente entre calor y temperatura:
 
 $$
 \begin{gather*}
@@ -136,41 +125,37 @@ $$
 \end{gather*}
 $$
 
-The units of $s$ match those of $c_p$ or $c_v$ — reflecting that both describe **energy per unit mass per unit temperature**.
+Las unidades de $s$ coinciden con las de $c_p$ o $c_v$ — reflejando que todas describen **energía por unidad de masa y por unidad de temperatura**.
 :::
 
 ---
 
 (subsec_principle_increasing_entropy)=
-### The principle of increasing entropy
+### El principio de aumento de la entropía
 
-Having established **entropy** as a property that quantifies reversible heat transfer, we can now extend its use to **all real processes**.
-The **Clausius inequality** provides the key: it allows comparing any actual (irreversible) transformation with a reversible one between the same two states.
-Through this comparison, the $2^{\text{nd}}$ law reveals a universal rule governing the evolution of entropy in nature — the **principle of increasing entropy**.
+Una vez establecida la **entropía** como propiedad que cuantifica la transferencia de calor reversible, podemos extender su uso a **todos los procesos reales**. La **desigualdad de Clausius** proporciona la clave: permite comparar cualquier transformación real (irreversible) con una reversible entre los mismos dos estados. Mediante esta comparación, la **$2^{\text{a}}$ ley** revela una regla universal que gobierna la evolución de la entropía en la naturaleza — el **principio de aumento de la entropía**.
 
-Consider a **generic process** between two states, $(1)$ and $(2)$, which may be reversible or irreversible.
-By appending to it an **internally reversible return path** $(2) \rightarrow (1)$, a complete cycle is formed, and the **Clausius inequality** applies:
+Considera un **proceso genérico** entre dos estados, $(1)$ y $(2)$, que puede ser reversible o irreversible. Si le añadimos un **camino de retorno internamente reversible** $(2) \rightarrow (1)$, se forma un ciclo completo y se aplica la **desigualdad de Clausius**:
 
 $$
 \oint \frac{\delta Q}{T} \le 0.
 $$
 
-Expanding the cyclic integral gives
+Desarrollando el integral cíclico se obtiene
 
 $$
 \int_1^2 \frac{\delta Q}{T} + \int_2^1 \left( \frac{\delta Q}{T} \right)_{\text{rev.}} \le 0,
 $$
 
-and since the second term equals $S_1 - S_2$, we obtain
+y, dado que el segundo término vale $S_1 - S_2$, resulta
 
 $$
 S_2 - S_1 \ge \int_1^2 \frac{\delta Q}{T},
-\qquad \text{or equivalently,} \qquad
+\qquad \text{o, de forma equivalente,} \qquad
 \mathrm{d}S \ge \frac{\delta Q}{T}.
 $$
 
-This inequality expresses that, for any real (irreversible) process, the **entropy increase of the system** is greater than the **entropy transferred** through heat alone.
-The total entropy change can therefore be written as
+Esta desigualdad expresa que, para cualquier proceso real (irreversible), el **aumento de entropía del sistema** es mayor que la **entropía transferida** únicamente mediante calor. El cambio total de entropía puede escribirse entonces como
 
 (eq_entropy_generation)=
 $$
@@ -178,72 +163,65 @@ $$
 \qquad S_{\text{gen.}} \ge 0,
 $$
 
-where $S_{\text{gen}}$ represents the **entropy generated internally** due to irreversibilities.
-For a reversible process, $S_{\text{gen}} = 0$; for an irreversible one, $S_{\text{gen}} > 0$.
+donde $S_{\text{gen.}}$ representa la **entropía generada internamente** debido a las irreversibilidades. Para un proceso reversible, $S_{\text{gen.}} = 0$; para uno irreversible, $S_{\text{gen.}} > 0$.
 
-In an **isolated system**, no heat or mass crosses the boundary ($\delta Q = 0$), so
+En un **sistema aislado**, no cruza la frontera ni calor ni masa ($\delta Q = 0$), de modo que
 
 $$
-\Delta S_{\text{isolated}} = S_{\text{gen.}} \ge 0.
+\Delta S_{\text{aislado}} = S_{\text{gen.}} \ge 0.
 $$
 
-Thus, entropy can only **remain constant** (for reversible processes) or **increase** (for irreversible ones).
-Extending this idea to the **thermodynamic universe** — the system and its surroundings together — gives
+Así, la entropía solo puede **permanecer constante** (para procesos reversibles) o **aumentar** (para procesos irreversibles). Extendiendo esta idea al **universo termodinámico** — el sistema y sus alrededores conjuntamente — se obtiene
 
 (eq_entropy_universe)=
 $$
 \boxed{\Delta S_{\text{univ.}} = \Delta S_{\text{sys.}} + \Delta S_{\text{surr.}} = S_{\text{gen.,univ.}} \ge 0.}
 $$
 
-Local decreases in entropy are possible within subsystems, but they must always be offset by greater increases elsewhere, ensuring that the **total entropy of the universe never decreases**.
+Son posibles disminuciones locales de entropía dentro de subsistemas, pero siempre deben compensarse con aumentos mayores en otros lugares, asegurando que la **entropía total del universo no disminuye jamás**.
 
 :::{important}
 
-**PHYSICAL MEANING**
+**SIGNIFICADO FÍSICO**
 
-* Entropy is **conserved** only in reversible processes and **created** in irreversible ones.
-* The increase of entropy defines the **natural direction of all processes** and establishes the **thermodynamic arrow of time**.
-* While entropy can decrease locally, the **global balance** (system + surroundings) always satisfies $\Delta S_{\text{univ.}} \ge 0$.
-
+* La entropía se **conserva** solo en procesos reversibles y se **crea** en los irreversibles.
+* El aumento de entropía define la **dirección natural de los procesos** y establece la **flecha termodinámica del tiempo**.
+* Aunque la entropía puede disminuir localmente, el **balance global** (sistema + alrededores) siempre satisface $\Delta S_{\text{univ.}} \ge 0$.
 :::
 
 ---
 
 (subsec_conceptual_closure_clausius_entropy)=
-### Conceptual closure
+### Cierre conceptual
 
-* The **Clausius configuration** transforms the $2^{\text{nd}}$ law from a qualitative limitation on cyclic devices into a **quantitative principle** valid for all processes.
-
-* By coupling a reversible engine with another system, Clausius showed that complete heat-to-work conversion would **violate** the $2^{\text{nd}}$ law, leading to the **Clausius's inequality**
-
+* La **construcción de Clausius** transforma la **$2^{\text{a}}$ ley** de una limitación cualitativa sobre dispositivos cíclicos en un **principio cuantitativo** válido para todos los procesos.
+* Al acoplar un motor reversible con otro sistema, Clausius mostró que la conversión completa de calor en trabajo **violaría** la **$2^{\text{a}}$ ley**, conduciendo a la **desigualdad de Clausius**
+  
   $$
   \oint \frac{\delta Q}{T} \le 0.
   $$
   
-* This relation distinguishes **reversible** ($=$) from **irreversible** ($<$) cycles and reveals that the reversible integral defines a new **state property** — **entropy**:
+* Esta relación distingue los ciclos **reversibles** ($=$) de los **irreversibles** ($<$) y revela que el integral reversible define una nueva **propiedad de estado** — la **entropía**:
   
   $$
   \mathrm{d}S = \left( \frac{\delta Q}{T} \right)_{\text{rev.}}.
   $$
   
-* Entropy extends the $2^{\text{nd}}$ law to **any process**, measuring both the **energy distribution** within a system and the **irreversibility** of real transformations.
-
-* The **entropy balance**,
+* La entropía extiende la **$2^{\text{a}}$ ley** a **cualquier proceso**, midiendo tanto la **distribución de energía** dentro de un sistema como la **irreversibilidad** de las transformaciones reales.
+* El **balance de entropía**,
   
   $$
   \Delta S_{\text{sys.}} = \int \frac{\delta Q}{T} + S_{\text{gen.}},
   $$
-
-  distinguishes entropy **transfer** (via heat) from entropy **generation** (via irreversibility).
   
-* The **principle of increasing entropy** establishes that, for any isolated system or for the universe as a whole,
-
+  distingue la **transferencia** de entropía (vía calor) de la **generación** de entropía (vía irreversibilidad).
+* El **principio de aumento de la entropía** establece que, para cualquier sistema aislado o para el universo en su conjunto,
+  
   $$
   \Delta S_{\text{univ.}} \ge 0,
   $$
-
-  expressing the natural direction of all processes.
   
-* Reversible transformations conserve entropy, while irreversible ones create it — defining both the **limit of ideal performance** and the **thermodynamic arrow of time**.
+  expresando la dirección natural de todos los procesos.
+* Las transformaciones reversibles conservan entropía, mientras que las irreversibles la crean — definiendo simultáneamente el **límite de desempeño ideal** y la **flecha termodinámica del tiempo**.
 
-In summary, the $2^{\text{nd}}$ law attains its most general form: energy remains conserved, but its **quality** — measured by entropy — inevitably **degrades** in every real process.
+En resumen, la **$2^{\text{a}}$ ley** alcanza su forma más general: la energía sigue conservándose, pero su **calidad** — medida por la entropía — **se degrada inevitablemente** en todo proceso real.

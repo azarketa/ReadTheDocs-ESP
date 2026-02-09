@@ -1,4 +1,4 @@
-ICRE
+MACI
 ====
 
 .. toctree::
