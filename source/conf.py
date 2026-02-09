@@ -34,6 +34,10 @@ extensions = [
     'hoverxref.extension'
 ]
 
+source_suffix = {
+    ".rst": "restructuredtext",
+}
+
 # Make formal refs hoverable without changing markup.
 hoverxref_auto_ref = True
 hoverxref_roles = ["eq"]                # add others like "numref" if you want
