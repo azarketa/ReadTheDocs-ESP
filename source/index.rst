@@ -15,7 +15,7 @@ Ingeniería térmica y de fluidos: píldoras teóricas
    .. toctree::
       :maxdepth: 1
       :titlesonly:
-      :caption: BIBLIOGRAPHY
+      :caption: BIBLIOGRFÍA
 
       bibliography_section	  
 	  
