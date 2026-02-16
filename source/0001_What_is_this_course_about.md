@@ -118,28 +118,22 @@ Esta jerarquía revela la riqueza y la universalidad de la teoría.
 
 (subsubsec_engineering_and_applied_thermodynamics)=
 ### Ingeniería y termodinámica aplicada
-
 Este es el dominio **práctico** donde los principios termodinámicos se utilizan para analizar y diseñar sistemas reales. Considera la materia como continua y se centra en magnitudes macroscópicas — presión, temperatura, entalpía, entropía y eficiencia. Proporciona la base para la ingeniería mecánica, química y ambiental, donde la conversión y utilización de energía son las preocupaciones centrales.
 
 (subsubsec_classical_thermodynamics)=
 ### Termodinámica clásica (macroscópica)
-
 La forma **axiomática** de la termodinámica, construida sobre postulados y propiedades medibles. Define **funciones de estado** ($U$, $H$, $S$, etc.), clasifica procesos como **reversibles** o **irreversibles**, y describe el equilibrio como el estado más estable de un sistema aislado. No depende del detalle molecular: es una ciencia fenomenológica, que trata directamente con magnitudes observables.
 
 (subsubsec_statistical_thermodynamics)=
 ### Termodinámica estadística
-
-La **base microscópica** de la termodinámica.  
-Conecta las leyes macroscópicas con el comportamiento estadístico de las moléculas. La entropía se convierte en una medida de **probabilidad**, expresada como $S{}={}k_B{}\ln{}\Omega$. Aquí, la $2^{\text{a}}$ ley surge de forma natural cuando los sistemas evolucionan hacia la **distribución más probable** de estados energéticos. Este nivel explica *por qué* las leyes macroscópicas son válidas.
+La **base microscópica** de la termodinámica. Conecta las leyes macroscópicas con el comportamiento estadístico de las moléculas. La entropía se convierte en una medida de **probabilidad**, expresada como $S{}={}k_B{}\ln{}\Omega$. Aquí, la $2^{\text{a}}$ ley surge de forma natural cuando los sistemas evolucionan hacia la **distribución más probable** de estados energéticos. Este nivel explica *por qué* las leyes macroscópicas son válidas.
 
 (subsubsec_quantum_thermodynamics)=
 ### Termodinámica cuántica
-
 A escala cuántica, la termodinámica se fusiona con la mecánica cuántica. El intercambio de energía se vuelve cuantizado, y fenómenos como la coherencia y el entrelazamiento modifican cómo interpretamos el calor, el trabajo y la entropía. Este dominio explora **motores cuánticos**, **refrigeradores microscópicos** y la relación entre **información y energía**. Incluso aquí, las mismas dos leyes persisten: la energía se conserva y la entropía nunca disminuye.
 
 (subsubsec_a_universal_framework)=
 ### Un marco universal
-
 En todos estos niveles, el mensaje sigue siendo el mismo:
 
 * La **$1^{\text{a}}$ ley** impone la conservación de la energía.
