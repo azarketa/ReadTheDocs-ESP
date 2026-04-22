@@ -43,7 +43,7 @@ $$
 W_{\text{neto}} = T_R \oint \frac{\delta Q}{T}.
 $$
 
-Esta ecuación **parece** describir un sistema que toma calor de un único foco (a $T_R$) y lo convierte íntegramente en trabajo — una **violación** del postulado de Kelvin–Planck. Puesto que tal proceso no puede ocurrir, el integral no puede corresponder a un trabajo positivo; por consiguiente, debe cumplirse
+Esta ecuación **parece** describir un sistema que toma calor de un único foco (a $T_R$) y lo convierte íntegramente en trabajo — una **violación** del postulado de Kelvin–Planck. Puesto que tal proceso no puede ocurrir, la integral no puede corresponder a un trabajo positivo; por consiguiente, debe cumplirse
 
 (eq_clausius_inequality)=
 $$
@@ -82,8 +82,8 @@ $$
 \oint \frac{\delta Q}{T} = 0,
 $$
 
-entonces el integral de $\frac{\delta Q}{T}$ entre dos estados dados — *siempre que el proceso sea reversible* — debe depender **solo de esos estados**, no del camino seguido entre ellos.
-En términos matemáticos, esto significa que el integral define una **función de estado**.
+entonces la integral de $\frac{\delta Q}{T}$ entre dos estados dados — *siempre que el proceso sea reversible* — debe depender **solo de esos estados**, no del camino seguido entre ellos.
+En términos matemáticos, esto significa que la integral define una **función de estado**.
 
 La **forma diferencial** de esa función de estado es, por tanto,
 
@@ -141,7 +141,7 @@ $$
 \oint \frac{\delta Q}{T} \le 0.
 $$
 
-Desarrollando el integral cíclico se obtiene
+Desarrollando la integral cíclico se obtiene
 
 $$
 \int_1^2 \frac{\delta Q}{T} + \int_2^1 \left( \frac{\delta Q}{T} \right)_{\text{rev.}} \le 0,
@@ -201,7 +201,7 @@ Son posibles disminuciones locales de entropía dentro de subsistemas, pero siem
   \oint \frac{\delta Q}{T} \le 0.
   $$
   
-* Esta relación distingue los ciclos **reversibles** ($=$) de los **irreversibles** ($<$) y revela que el integral reversible define una nueva **propiedad de estado** — la **entropía**:
+* Esta relación distingue los ciclos **reversibles** ($=$) de los **irreversibles** ($<$) y revela que la integral reversible define una nueva **propiedad de estado** — la **entropía**:
   
   $$
   \mathrm{d}S = \left( \frac{\delta Q}{T} \right)_{\text{rev.}}.

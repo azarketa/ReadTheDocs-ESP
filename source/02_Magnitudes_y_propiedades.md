@@ -123,7 +123,7 @@ A la misma temperatura y presión, un mol de cualquier gas ocupa el mismo volume
 
   
     La figura siguiente muestra una definición esquemática de la magnitud presión. Un gas confinado dentro del volumen cilíndrico de un sistema pistón–cilindro está sometido a una presión $(p)$ que resulta de dividir la fuerza $(F_{\perp})$ aplicada sobre el pistón entre el área de la sección transversal $(A = \pi D^{2}/4)$ del cilindro.
-    :::{figure} 1_fundamentals_figs/pressure_definition.svg
+    :::{figure} 1_fundamentos_figs/pressure_definition.svg
     :name: pressure_definition
     :width: 50%
     :align: center
@@ -165,7 +165,7 @@ No sentimos esta carga porque la presión interna del cuerpo la contrarresta; so
 ---
 
 
-subsec_local_relative_pressures)=
+(subsec_local_relative_pressures)=
 ### Medición local y relativa de la presión
 
 Al medir la presión, lo que registran los instrumentos suele ser la **diferencia** entre la presión local y la presión atmosférica circundante.
@@ -206,7 +206,7 @@ A diferencia de magnitudes extensivas como la masa o la energía, **la temperatu
 
 La figura siguiente ilustra la diferencia entre propiedades extensivas e intensivas al combinar dos sistemas ($A$ y $B$) que, antes de unirse, presentan sus propias masas, volúmenes, temperaturas y presiones. La extensividad de masa y volumen permite sumarlos para obtener la masa y el volumen del sistema combinado. Sin embargo, tal aditividad no es aplicable a la temperatura y la presión, debido a la naturaleza intensiva de estas magnitudes.
 
-:::{figure} 1_fundamentals_figs/magnitudes_extensivity_intensivity.svg
+:::{figure} 1_fundamentos_figs/magnitudes_extensivity_intensivity.svg
 :name: magnitudes_extensivity_intensivity
 :width: 60%
 :align: center

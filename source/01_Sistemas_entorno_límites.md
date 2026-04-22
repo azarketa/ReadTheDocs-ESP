@@ -135,7 +135,7 @@ Resumen en forma tabular:
 
 La figura siguiente muestra los tipos de límites de manera ilustrativa, atendiendo a los tipos de interacción con el entorno.
 
-:::{figure} 1_fundamentals_figs/system_boundary_types.svg
+:::{figure} 1_fundamentos_figs/system_boundary_types.svg
 :name: fig-system-boundaries
 :width: 90%
 :align: center

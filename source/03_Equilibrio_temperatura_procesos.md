@@ -57,7 +57,7 @@ La ley cero no define una *escala numérica* para la temperatura, pero demuestra
 
 La ilustración esquemática siguiente pretende representar la ley cero tal como se explicó. Como se observa, la concepción de esta ley permite definir la noción de termómetros.
 
-:::{figure} 1_fundamentals_figs/schematic_zeroth_law.svg
+:::{figure} 1_fundamentos_figs/schematic_zeroth_law.svg
 :name: zeroth_law
 :width: %
 :align: center

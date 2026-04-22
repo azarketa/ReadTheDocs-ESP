@@ -98,7 +98,7 @@ togglebutton_hint = ""
 togglebutton_hint_none = True
 
 # Point to your .bib file(s)
-bibtex_bibfiles = ["references.bib"]
+bibtex_bibfiles = ["referencias.bib"]
 
 # Formatting settings
 bibtex_default_style = "unsrt"
