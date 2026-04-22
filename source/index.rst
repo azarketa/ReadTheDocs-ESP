@@ -6,11 +6,11 @@ Ingeniería térmica y de fluidos: píldoras teóricas
    :maxdepth: 2
    :titlesonly:
 
-   índice_introducción
-   índice_módulo1
-   índice_modulo2
-   índice_modulo3
-   sección_bibliografía_latex   
+   indice_introduccion
+   indice_modulo1
+   indice_modulo2
+   indice_modulo3
+   seccion_bibliografia_latex
 
 .. only:: html
 	  
@@ -19,11 +19,11 @@ Ingeniería térmica y de fluidos: píldoras teóricas
       :titlesonly:
       :caption: BIBLIOGRFÍA
 
-      sección_bibliografía	  
+      seccion_bibliografia	  
 	  
 .. only:: latex
 
    .. toctree::
       :maxdepth: 2
 
-      sección_bibliografía_latex
+      seccion_bibliografia_latex
