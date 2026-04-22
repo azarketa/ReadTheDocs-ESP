@@ -8,6 +8,8 @@ Ingeniería térmica y de fluidos: píldoras teóricas
 
    índice_introducción
    índice_módulo1
+   índice_modulo2
+   índice_modulo3
    sección_bibliografía_latex   
 
 .. only:: html
