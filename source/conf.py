@@ -186,7 +186,7 @@ latex_elements = {
 }
 
 latex_documents = [
-    ("índice",
+    ("index",
      "teflu.tex",
      "Ingeniería térmica y de fluidos: píldoras teóricas",
      "TEFLU Arloa, Mondragon Goi Eskola Politeknikoa (MGEP)",
