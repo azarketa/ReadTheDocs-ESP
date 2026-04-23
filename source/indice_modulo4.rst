@@ -1,4 +1,4 @@
-Ciclos de vapor
+CICLOS DE VAPOR
 ===============
 
 .. toctree::
