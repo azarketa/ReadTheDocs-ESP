@@ -1,5 +1,5 @@
 (sec_steam_cycles_intro)=
-## Concibiendo un ciclo de vapor práctico
+## Concibiendo un ciclo de vapor realizable
 
 Hasta este punto, los ciclos de potencia discutidos (Brayton, Otto, Diesel) han sido **ciclos de potencia de gas**: el fluido de trabajo permanece en fase gaseosa durante todo el recorrido. En muchas situaciones prácticas, sin embargo, resulta ventajoso permitir que el fluido de trabajo **cambie de fase**, o que opere como una **mezcla bifásica** (líquido–vapor) durante parte del ciclo. Los ciclos de este tipo se conocen como **ciclos de potencia de vapor**.
 
