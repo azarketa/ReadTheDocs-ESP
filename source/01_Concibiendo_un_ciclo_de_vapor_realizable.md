@@ -9,7 +9,7 @@ El fluido de trabajo prototípico de un ciclo de vapor es el **agua/vapor**. Las
 - es segura y fácil de manejar a gran escala (en comparación con muchas alternativas),
 - y posee un **alto calor latente de vaporización**, lo que permite grandes transferencias de energía a temperatura casi constante durante la ebullición y la condensación.
 
-En la práctica, las centrales de ciclo de vapor suelen denominarse según su **fuente de calor** —carbón, nuclear, gas natural, solar térmica— porque el equipo encargado del aporte de calor varía. Sin embargo, desde el punto de vista del análisis termodinámico, el propio lazo de vapor suele seguir la **misma estructura cíclica básica** con independencia de cómo se suministre el calor. Por eso muchas centrales aparentemente distintas pueden estudiarse con las mismas herramientas conceptuales.
+En la práctica, las centrales de ciclo de vapor suelen denominarse según su **fuente de calor** —carbón, nuclear, gas natural, solar térmica— porque el equipo encargado del aporte de calor varía. Sin embargo, desde el punto de vista del análisis termodinámico, el propio ciclo de vapor suele seguir la **misma estructura cíclica básica** con independencia de cómo se suministre el calor. Por eso muchas centrales aparentemente distintas pueden estudiarse con las mismas herramientas conceptuales.
 
 Entre todos los ciclos de potencia de vapor, la referencia más extendida y didáctica es el **ciclo Rankine**, que será el foco del presente tema. Otras configuraciones se mencionarán más adelante —como los **ciclos combinados**, el **ciclo Rankine orgánico (ORC)**, los **ciclos binarios** y la **cogeneración**—, pero el ciclo Rankine proporciona la base esencial.
 
@@ -36,7 +36,7 @@ La respuesta es que, aunque un ciclo de Carnot de vapor puede **dibujarse** y **
 
 Para entender por qué, considérese un ciclo de Carnot de flujo estacionario que utilice agua/vapor como fluido de trabajo. La campana de saturación aparece de forma natural en los diagramas $T\!-\!s$ porque el cambio de fase se produce a lo largo de regiones extensas en los procesos reales del vapor.
 
-Una posible implementación de Carnot (a menudo dibujada con el lazo intersectando la campana de saturación) es:
+Una posible implementación de Carnot (a menudo dibujada con el ciclo intersectando la campana de saturación) es:
 
 - **Proceso $1 \rightarrow 2$ (adición de calor isotérmica y reversible en un evaporador):**  
   El fluido de trabajo recibe calor a temperatura constante. En una región bifásica, esto puede lograrse manteniendo la presión constante, ya que la temperatura de saturación queda entonces fijada por la presión de saturación.
@@ -114,7 +114,7 @@ A primera vista, esto parece viable: existen evaporadores, turbinas, condensador
 (subsec_steam_carnot_alternative)=
 ### Las disposiciones alternativas de Carnot no resuelven los problemas de fondo
 
-Es posible reorganizar el lazo de Carnot (por ejemplo, intentando evitar ciertas operaciones bifásicas en un componente). Tales disposiciones alternativas pueden eliminar una dificultad, pero introducen otras, tales como:
+Es posible reorganizar el ciclo de Carnot (por ejemplo, intentando evitar ciertas operaciones bifásicas en un componente). Tales disposiciones alternativas pueden eliminar una dificultad, pero introducen otras, tales como:
 
 - compresión hasta presiones extremadamente elevadas,
 - requisitos de transferencia de calor isotérmica bajo presiones variables,
