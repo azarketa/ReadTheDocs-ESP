@@ -127,16 +127,19 @@ donde $c_{\text{flight}}$ es la velocidad de vuelo.
 A partir de las definiciones anteriores, se introducen tres eficiencias:
 
 - **Eficiencia térmica:**
+
   $$
   \eta_{\text{th}} = \frac{\dot{W}_{\text{flow}}}{\dot{Q}_{\text{th}}}.
   $$
 
 - **Eficiencia propulsiva:**
+
   $$
   \eta_{\text{prop}} = \frac{\dot{W}_{\text{prop}}}{\dot{W}_{\text{flow}}}.
   $$
 
 - **Eficiencia global (motopropulsiva):**
+
   $$
   \eta_{\text{global}} = \frac{\dot{W}_{\text{prop}}}{\dot{Q}_{\text{th}}} = \eta_{\text{th}}{\cdot}\eta_{\text{prop}}.
   $$

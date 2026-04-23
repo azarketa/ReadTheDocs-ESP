@@ -95,7 +95,7 @@ $$
 q_{\text{out}} = h_4 - h_1 = c_p (T_4 - T_1).
 $$
 
-El rendimiento térmico resulta
+El rendimiento térmico resulta:
 
 (eq_eta_brayton_general)=
 $$

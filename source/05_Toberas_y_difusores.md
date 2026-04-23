@@ -247,7 +247,6 @@ $$
 
 (subsec_nozzles_conceptual_closure)=
 ### Cierre conceptual
-
 - Las toberas convierten entalpía en energía cinética; los difusores realizan la conversión inversa.
 - La variación de área necesaria para acelerar o desacelerar un flujo depende del número de Mach.
 - La relación clave es $\dfrac{dA}{A} = -\dfrac{dc}{c}(1-Ma^2)$.

@@ -75,10 +75,24 @@ En los ciclos regenerativos, el caudal másico no es constante en todo el lazo. 
 * Entonces $(1 - y)$ es la fracción que continúa hasta el condensador.
 
 **Análisis energético (por unidad de masa de vapor de caldera):**
-* **Calor aportado:** $q_{\text{in}} = h_{\text{turb,in}} - h_{\text{boiler,in}}$
-* **Calor rechazado:** $q_{\text{out}} = (1 - y)(h_{\text{turb,exit}} - h_{\text{cond,exit}})$
+* **Calor aportado:**
+
+    $$
+    q_{\text{in}} = h_{\text{turb,in}} - h_{\text{boiler,in}}
+    $$
+  
+* **Calor rechazado:**
+  
+    $$
+    q_{\text{out}} = (1 - y)(h_{\text{turb,exit}} - h_{\text{cond,exit}})
+    $$
+  
 * **Trabajo de turbina:**
-    $$w_{\text{turb}} = (h_{\text{in}} - h_{\text{extract}}) + (1-y)(h_{\text{extract}} - h_{\text{exit}})$$
+  
+    $$
+    w_{\text{turb}} = (h_{\text{in}} - h_{\text{extract}}) + (1-y)(h_{\text{extract}} - h_{\text{exit}})
+    $$
+  
 * **Trabajo de bomba:** ahora tenemos dos bombas (una antes del mezclador y otra después).
 
 :::{tip}

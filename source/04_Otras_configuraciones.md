@@ -1,100 +1,101 @@
 (sec_other_configurations)=
-## Other configurations: beyond the standard Rankine cycle
+## Otras configuraciones
 
-Having explored the ideal and real Rankine cycles, along with modifications like reheat and regeneration, we now turn to alternative configurations used in industry. These designs address specific needs, such as utilizing low-temperature heat sources or maximizing efficiency by combining different thermodynamic cycles.
+Tras haber estudiado los ciclos Rankine ideal y real, junto con modificaciones como el recalentamiento y la regeneración, pasamos ahora a configuraciones alternativas utilizadas en la industria. Estos diseños responden a necesidades específicas, como el aprovechamiento de fuentes de calor a baja temperatura o la maximización de la eficiencia mediante la combinación de distintos ciclos termodinámicos.
 
 ---
 
 (subsec_cogeneration)=
-### Cogeneration
+### Cogeneración
 
-In the standard power cycles discussed so far, the sole objective is to convert heat into **work** (electricity), which is the most valuable form of energy. The remaining heat is rejected to the environment (lake, ocean, atmosphere) because its quality is considered too low to be useful.
+En los ciclos de potencia estándar estudiados hasta ahora, el único objetivo es convertir calor en **trabajo** (electricidad), que es la forma de energía de mayor valor. El calor restante se rechaza al entorno (lago, océano, atmósfera) porque se considera de calidad demasiado baja como para resultar útil.
 
-However, many industries require massive inputs of heat energy, known as **process heat**.
-* **Industries:** chemical, paper, oil refining, steel, food processing, and textiles.
-* **Requirements:** steam typically between $5$ and $7\ \text{atm}$ and temperatures of $150\text{--}200 \ ^\circ\text{C}$.
+Sin embargo, muchas industrias requieren grandes aportes de energía térmica, conocidos como **calor de proceso**.
+* **Industrias:** química, papelera, refino de petróleo, siderurgia, procesado de alimentos y textil.
+* **Requisitos:** vapor típicamente entre $5$ y $7\ \text{atm}$ y temperaturas de $150\text{--}200 \ ^\circ\text{C}$.
 
-**The thermodynamic problem:**
-Traditionally, these industries burn fuel (coal, gas, oil) just to generate this low-temperature steam. This is highly inefficient because fuel combustion generates very high temperatures (high-quality energy), which is then immediately degraded to produce low-temperature steam (low-quality energy). Using high-quality potential to perform a low-quality task is a waste of exergy.
+**El problema termodinámico:**
+Tradicionalmente, estas industrias queman combustible (carbón, gas, petróleo) únicamente para generar este vapor de baja temperatura. Esto es muy ineficiente porque la combustión del combustible genera temperaturas muy elevadas (energía de alta calidad), que después se degradan inmediatamente para producir vapor a baja temperatura (energía de baja calidad). Utilizar un potencial de alta calidad para realizar una tarea de baja calidad supone un despilfarro de exergía.
 
-**The solution:**
-Since these industries need both **electricity** and **process heat**, it makes sense to produce the electricity first and use the "waste" heat from that process to supply the factory floor.
+**La solución:**
+Dado que estas industrias necesitan tanto **electricidad** como **calor de proceso**, tiene sentido producir primero la electricidad y utilizar después el calor “residual” de ese proceso para abastecer la planta industrial.
 
-**Definition:**
-**Cogeneration** is the production of more than one form of useful energy (usually process heat + electricity) from a single energy source.
+**Definición:**
+La **cogeneración** es la producción de más de una forma de energía útil (normalmente calor de proceso + electricidad) a partir de una única fuente de energía.
 
 ---
 
 (subsec_combined_cycle)=
-### Combined cycle (gas-steam)
+### Ciclo combinado (gas-vapor)
 
-The relentless pursuit of higher thermal efficiency led engineers to combine different cycles. The most important configuration is the **combined gas-steam cycle**, which places a gas power cycle on top of a steam power cycle.
+La búsqueda constante de una mayor eficiencia térmica llevó a los ingenieros a combinar distintos ciclos. La configuración más importante es el **ciclo combinado gas-vapor**, que sitúa un ciclo de potencia de gas sobre un ciclo de potencia de vapor.
 
-**The synergy:**
-* **Gas cycle (Brayton):** operates at very high temperatures. Modern gas turbines handle inlet temperatures up to $1425 \ ^\circ\text{C}$ (thanks to ceramic coatings and blade cooling). However, they exhaust gas at relatively high temperatures ($>500 \ ^\circ\text{C}$), representing wasted potential.
-* **Steam cycle (Rankine):** limited by metallurgical constraints to roughly $620\ ^\circ\text{C}$.
+**La sinergia:**
+* **Ciclo de gas (Brayton):** opera a temperaturas muy elevadas. Las turbinas de gas modernas soportan temperaturas de entrada de hasta $1425 \ ^\circ\text{C}$ (gracias a recubrimientos cerámicos y refrigeración de los álabes). Sin embargo, descargan gases a temperaturas todavía elevadas ($>500 \ ^\circ\text{C}$), lo que representa un potencial desaprovechado.
+* **Ciclo de vapor (Rankine):** está limitado por restricciones metalúrgicas a aproximadamente $620\ ^\circ\text{C}$.
 
-**How it works:**
-Instead of wasting the hot exhaust from the gas turbine, it is routed into a heat exchanger that acts as the **boiler** (evaporator) for a steam cycle located "beneath" it.
-1.  **Top:** gas turbine produces work and hot exhaust.
-2.  **Bottom:** steam cycle uses that exhaust to boil water and produce more work.
+**Cómo funciona:**
+En lugar de desperdiciar los gases calientes de escape de la turbina de gas, estos se conducen hacia un intercambiador de calor que actúa como la **caldera** (evaporador) de un ciclo de vapor situado “debajo”.
+1.  **Parte superior:** la turbina de gas produce trabajo y gases de escape calientes.
+2.  **Parte inferior:** el ciclo de vapor utiliza ese escape para hervir agua y producir más trabajo.
 
-**Result:**
-The combined cycle utilizes the high-temperature capabilities of gas turbines and the heat-recovery capabilities of steam cycles. Thermal efficiencies can exceed **$60\%$**, significantly higher than either cycle operating alone.
+**Resultado:**
+El ciclo combinado aprovecha la capacidad de las turbinas de gas para trabajar a altas temperaturas y la capacidad de los ciclos de vapor para recuperar calor. Las eficiencias térmicas pueden superar el **$60\%$**, significativamente por encima de las de cualquiera de los dos ciclos operando por separado.
 
 ---
 
 (subsec_working_fluid_characteristics)=
-### Desirable characteristics of a working fluid
+### Características deseables de un fluido de trabajo
 
-Water is the most common fluid because it is cheap and available, but it is not thermodynamically "ideal." An ideal working fluid would possess the following wish-list of properties:
+El agua es el fluido más habitual porque es barata y abundante, pero termodinámicamente no es “ideal”. Un fluido de trabajo ideal poseería la siguiente lista de propiedades deseables:
 
-1.  **High critical temperature:** this allows isothermal heat transfer at high temperatures (closer to Carnot efficiency).
-2.  **Safe maximum pressure:** high temperatures should not require dangerously high pressures that stress materials.
-3.  **Low triple point:** must be below the temperature of the surroundings to prevent the fluid from freezing during shutdowns or in cold condensers.
-4.  **Manageable condenser pressure:** saturation pressure at ambient temperature should not be extremely low (vacuum). Pressures far below atmospheric allow air to leak into the system, which is detrimental.
-5.  **High enthalpy of vaporization:** allows large heat transfer with low mass flow rates (smaller pumps/pipes).
-6.  **"Inverted U" saturation dome:** the shape of the dome should encourage dry expansion, eliminating the need for reheat or excessive superheating to avoid moisture in the turbine.
-7.  **Physical properties:** high thermal conductivity, non-toxic, chemically inert, and inexpensive.
+1.  **Alta temperatura crítica:** esto permite transferencia de calor isotérmica a altas temperaturas (más cercana a la eficiencia de Carnot).
+2.  **Presión máxima segura:** las altas temperaturas no deberían requerir presiones peligrosamente elevadas que sometan a los materiales a esfuerzos excesivos.
+3.  **Bajo punto triple:** debe estar por debajo de la temperatura del entorno para evitar que el fluido se congele durante paradas o en condensadores fríos.
+4.  **Presión de condensación manejable:** la presión de saturación a temperatura ambiente no debería ser extremadamente baja (vacío). Presiones muy por debajo de la atmosférica permiten la entrada de aire en el sistema, lo cual es perjudicial.
+5.  **Alta entalpía de vaporización:** permite grandes transferencias de calor con bajos caudales másicos (bombas y tuberías más pequeñas).
+6.  **Campana de saturación en “U invertida”:** la forma de la campana debería favorecer una expansión seca, eliminando la necesidad de recalentamiento o de un sobrecalentamiento excesivo para evitar humedad en la turbina.
+7.  **Propiedades físicas:** alta conductividad térmica, no tóxico, químicamente inerte y barato.
 
 ---
 
 (subsec_organic_rankine)=
-### Organic Rankine cycle (ORC)
+### Ciclo Rankine orgánico (ORC)
 
-Since no single fluid is perfect, engineers select fluids based on the application. For **low-temperature heat sources** (waste industrial heat, geothermal, solar collectors), water is often poor because boiling it requires high temperatures or vacuum pressures.
+Como no existe un fluido perfecto, los ingenieros seleccionan el fluido en función de la aplicación. Para **fuentes de calor a baja temperatura** (calor residual industrial, geotermia, captadores solares), el agua suele ser una mala opción porque hervirla requiere temperaturas elevadas o presiones de vacío.
 
-**The solution:**
-**Organic Rankine cycles** replace water with organic fluids (refrigerants, hydrocarbons).
+**La solución:**
+Los **ciclos Rankine orgánicos** sustituyen el agua por fluidos orgánicos (refrigerantes, hidrocarburos).
 
-**Advantages:**
-* They boil at lower temperatures, making them perfect for recovering low-grade heat.
-* **The saturation dome:** many organic fluids have a saturation dome shaped such that isentropic expansion naturally stays in the "dry" superheated region. This eliminates the risk of turbine blade erosion and removes the need for superheating.
+**Ventajas:**
+* Hierven a temperaturas más bajas, lo que los hace perfectos para recuperar calor de baja calidad.
+* **La campana de saturación:** muchos fluidos orgánicos presentan una campana de saturación cuya forma hace que la expansión isoentrópica permanezca naturalmente en la región seca y sobrecalentada. Esto elimina el riesgo de erosión de los álabes de la turbina y suprime la necesidad de sobrecalentamiento.
 
 ---
 
 (subsec_binary_cycle)=
-### Binary cycle
+### Ciclo binario
 
-A **binary cycle** uses two Rankine loops with different fluids: one for high temperatures and one for lower temperatures.
-* **Top cycle:** uses a fluid with a very high critical temperature (e.g., mercury, sodium, potassium).
-* **Bottom cycle:** uses water.
-* **Interface:** the condenser of the top cycle serves as the boiler for the bottom cycle.
+Un **ciclo binario** utiliza dos lazos Rankine con fluidos distintos: uno para altas temperaturas y otro para temperaturas más bajas.
+* **Ciclo superior:** utiliza un fluido con temperatura crítica muy alta (p. ej., mercurio, sodio, potasio).
+* **Ciclo inferior:** utiliza agua.
+* **Interfaz:** el condensador del ciclo superior actúa como caldera del ciclo inferior.
 
-**The mercury example:**
-Mercury has a critical temperature of $898 \ ^\circ\text{C}$ (excellent for high-temp heat absorption) and low critical pressure.
-* *Why not use mercury alone?* At ambient temperatures ($32 \ ^\circ\text{C}$), mercury's saturation pressure is virtually zero ($0.07\ \text{Pa}$). Maintaining such a vacuum is impossible.
-* *The fix:* use mercury only for the high-temperature loop. Condense it at roughly $237 \ ^\circ\text{C}$ (where its pressure is manageable), and use that heat to boil water for the bottom loop.
+**El ejemplo del mercurio:**
+El mercurio tiene una temperatura crítica de $898 \ ^\circ\text{C}$ (excelente para absorción de calor a alta temperatura) y una baja presión crítica.
+* *¿Por qué no utilizar solo mercurio?* A temperaturas ambiente ($32 \ ^\circ\text{C}$), la presión de saturación del mercurio es prácticamente nula ($0.07\ \text{Pa}$). Mantener un vacío así es imposible.
+* *La solución:* utilizar mercurio solo en el lazo de alta temperatura. Condensarlo en torno a $237 \ ^\circ\text{C}$ (donde su presión es manejable) y emplear ese calor para hervir agua en el lazo inferior.
 
-**Outcome:**
-Binary cycles approximate the Carnot cycle more closely than a single water cycle, achieving efficiencies $>50\%$. However, due to the toxicity and cost of fluids like mercury, they have largely been superseded by **combined cycles** (gas-steam), which are safer and even more efficient.
+**Resultado:**
+Los ciclos binarios aproximan el ciclo de Carnot más estrechamente que un ciclo simple de agua, alcanzando eficiencias $>50\%$. Sin embargo, debido a la toxicidad y al coste de fluidos como el mercurio, han sido en gran medida sustituidos por los **ciclos combinados** (gas-vapor), que son más seguros y todavía más eficientes.
 
 ---
 
 (subsec_configurations_closure)=
-### Conceptual closure
+### Cierre conceptual
 
-* **Cogeneration** stops the waste of low-grade heat by generating electricity *before* supplying process steam to industries, maximizing the total utility of the fuel.
-* **Combined cycles** represent the current gold standard for efficiency ($>60\%$) by stacking a high-temp gas cycle on top of a medium-temp steam cycle.
-* **Working fluids:** water is the standard, but **organic fluids** are superior for low-grade heat recovery (ORC), and liquid metals (mercury/sodium) were historically used in **binary cycles** to push temperature limits before gas turbines became dominant.
-* **The goal:** every configuration—whether modifying the cycle layout or changing the fluid—aims to better match the heat source to the thermodynamic process, minimizing exergy destruction.
+* La **cogeneración** evita el despilfarro de calor de baja calidad al generar electricidad *antes* de suministrar vapor de proceso a las industrias, maximizando la utilidad total del combustible.
+* Los **ciclos combinados** representan el actual patrón de referencia en eficiencia ($>60\%$) al superponer un ciclo de gas de alta temperatura sobre un ciclo de vapor de temperatura media.
+* **Fluidos de trabajo:** el agua es el estándar, pero los **fluidos orgánicos** son superiores para la recuperación de calor de baja calidad (ORC), y los metales líquidos (mercurio/sodio) se emplearon históricamente en **ciclos binarios** para empujar los límites de temperatura antes de que las turbinas de gas se volvieran dominantes.
+* **El objetivo:** toda configuración —ya sea modificando la disposición del ciclo o cambiando el fluido— busca adaptar mejor la fuente de calor al proceso termodinámico, minimizando la destrucción de exergía.
+

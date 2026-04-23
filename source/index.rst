@@ -10,6 +10,7 @@ Ingeniería térmica y de fluidos: píldoras teóricas
    indice_modulo1
    indice_modulo2
    indice_modulo3
+   indice_modulo4
    seccion_bibliografia_latex
 
 .. only:: html

@@ -12,28 +12,38 @@ Las variaciones de energía para cada proceso pueden escribirse como sigue:
 * **Bomba ($q=0$):**
     La bomba incrementa la presión del líquido.
 
-    $$w_{\text{pump,in}} = h_2 - h_1 \ ,$$
+    $$
+    w_{\text{pump,in}} = h_2 - h_1 \ ,
+    $$
 
     donde $w$ representa el trabajo y $h$ representa la entalpía.
 
 * **Evaporador ($w=0$):**
     Se añade calor al fluido a presión constante.
 
-    $$q_{\text{in}} = h_3 - h_2$$
+    $$
+    q_{\text{in}} = h_3 - h_2
+    $$
 
 * **Turbina ($q=0$):**
     El fluido se expande, produciendo trabajo.
 
-    $$w_{\text{turb,out}} = h_3 - h_4$$
+    $$
+    w_{\text{turb,out}} = h_3 - h_4
+    $$
 
 * **Condensador ($w=0$):**
     El fluido cede calor al entorno.
 
-    $$q_{\text{out}} = h_4 - h_1$$
+    $$
+    q_{\text{out}} = h_4 - h_1
+    $$
 
 La **eficiencia térmica** ($\eta_{\text{th}}$) del ciclo mantiene su definición termodinámica estándar:
 
-$$\eta_{\text{th}} = \frac{w_{\text{net}}}{q_{\text{in}}} = 1 - \frac{q_{\text{out}}}{q_{\text{in}}}$$
+$$
+\eta_{\text{th}} = \frac{w_{\text{net}}}{q_{\text{in}}} = 1 - \frac{q_{\text{out}}}{q_{\text{in}}}
+$$
 
 ---
 
@@ -69,9 +79,13 @@ El **ciclo Rankine real** difiere del modelo ideal debido a las **irreversibilid
 
 Las desviaciones en la bomba y en la turbina son particularmente relevantes. Las bombas reales requieren mayor energía de entrada, y las turbinas reales producen menos trabajo de salida. Tenemos en cuenta este comportamiento no isentrópico mediante las **eficiencias isentrópicas**:
 
-$$\eta_{\text{pump}} = \frac{w_s}{w_a} = \frac{h_{2s} - h_1}{h_{2a} - h_1}$$
+$$
+\eta_{\text{pump}} = \frac{w_s}{w_a} = \frac{h_{2s} - h_1}{h_{2a} - h_1}
+$$
 
-$$\eta_{\text{turb}} = \frac{w_a}{w_s} = \frac{h_3 - h_{4a}}{h_3 - h_{4s}}$$
+$$
+\eta_{\text{turb}} = \frac{w_a}{w_s} = \frac{h_3 - h_{4a}}{h_3 - h_{4s}}
+$$
 
 Aquí, los estados **$2a$** y **$4a$** corresponden a los procesos **reales**, mientras que **$2s$** y **$4s$** corresponden a los procesos **ideales** (isentrópicos).
 :::
